@@ -2852,95 +2852,95 @@ namespace MHW_Editor.Structs.Weapons {
             public const ulong FixedSizeCount = 1;
             public const string GridName = "W00p Params (5)";
 
-            protected float Unk_91_raw;
-            public const string Unk_91_displayName = "Unk 91";
-            public const int Unk_91_sortIndex = 50;
-            [SortOrder(Unk_91_sortIndex)]
-            [DisplayName(Unk_91_displayName)]
-            public virtual float Unk_91 {
-                get => Unk_91_raw;
+            protected float Over_Charge_Timing_Charge_Slash_raw;
+            public const string Over_Charge_Timing_Charge_Slash_displayName = "Over Charge Timing: Charge Slash";
+            public const int Over_Charge_Timing_Charge_Slash_sortIndex = 50;
+            [SortOrder(Over_Charge_Timing_Charge_Slash_sortIndex)]
+            [DisplayName(Over_Charge_Timing_Charge_Slash_displayName)]
+            public virtual float Over_Charge_Timing_Charge_Slash {
+                get => Over_Charge_Timing_Charge_Slash_raw;
                 set {
-                    if (Unk_91_raw == value) return;
-                    Unk_91_raw = value;
-                    ChangedItems.Add(nameof(Unk_91));
-                    OnPropertyChanged(nameof(Unk_91));
+                    if (Over_Charge_Timing_Charge_Slash_raw == value) return;
+                    Over_Charge_Timing_Charge_Slash_raw = value;
+                    ChangedItems.Add(nameof(Over_Charge_Timing_Charge_Slash));
+                    OnPropertyChanged(nameof(Over_Charge_Timing_Charge_Slash));
                 }
             }
 
             [DisplayName("Offset")]
-            public long Unk_91_offset { get; private set; }
+            public long Over_Charge_Timing_Charge_Slash_offset { get; private set; }
 
-            protected float Unk_92_raw;
-            public const string Unk_92_displayName = "Unk 92";
-            public const int Unk_92_sortIndex = 100;
-            [SortOrder(Unk_92_sortIndex)]
-            [DisplayName(Unk_92_displayName)]
-            public virtual float Unk_92 {
-                get => Unk_92_raw;
+            protected float Over_Charge_Timing_Strong_Charge_Slash_raw;
+            public const string Over_Charge_Timing_Strong_Charge_Slash_displayName = "Over Charge Timing: Strong Charge Slash";
+            public const int Over_Charge_Timing_Strong_Charge_Slash_sortIndex = 100;
+            [SortOrder(Over_Charge_Timing_Strong_Charge_Slash_sortIndex)]
+            [DisplayName(Over_Charge_Timing_Strong_Charge_Slash_displayName)]
+            public virtual float Over_Charge_Timing_Strong_Charge_Slash {
+                get => Over_Charge_Timing_Strong_Charge_Slash_raw;
                 set {
-                    if (Unk_92_raw == value) return;
-                    Unk_92_raw = value;
-                    ChangedItems.Add(nameof(Unk_92));
-                    OnPropertyChanged(nameof(Unk_92));
+                    if (Over_Charge_Timing_Strong_Charge_Slash_raw == value) return;
+                    Over_Charge_Timing_Strong_Charge_Slash_raw = value;
+                    ChangedItems.Add(nameof(Over_Charge_Timing_Strong_Charge_Slash));
+                    OnPropertyChanged(nameof(Over_Charge_Timing_Strong_Charge_Slash));
                 }
             }
 
             [DisplayName("Offset")]
-            public long Unk_92_offset { get; private set; }
+            public long Over_Charge_Timing_Strong_Charge_Slash_offset { get; private set; }
 
-            protected float Unk_93_raw;
-            public const string Unk_93_displayName = "Unk 93";
-            public const int Unk_93_sortIndex = 150;
-            [SortOrder(Unk_93_sortIndex)]
-            [DisplayName(Unk_93_displayName)]
-            public virtual float Unk_93 {
-                get => Unk_93_raw;
+            protected float Over_Charge_Timing_True_Charge_Slash_raw;
+            public const string Over_Charge_Timing_True_Charge_Slash_displayName = "Over Charge Timing: True Charge Slash";
+            public const int Over_Charge_Timing_True_Charge_Slash_sortIndex = 150;
+            [SortOrder(Over_Charge_Timing_True_Charge_Slash_sortIndex)]
+            [DisplayName(Over_Charge_Timing_True_Charge_Slash_displayName)]
+            public virtual float Over_Charge_Timing_True_Charge_Slash {
+                get => Over_Charge_Timing_True_Charge_Slash_raw;
                 set {
-                    if (Unk_93_raw == value) return;
-                    Unk_93_raw = value;
-                    ChangedItems.Add(nameof(Unk_93));
-                    OnPropertyChanged(nameof(Unk_93));
+                    if (Over_Charge_Timing_True_Charge_Slash_raw == value) return;
+                    Over_Charge_Timing_True_Charge_Slash_raw = value;
+                    ChangedItems.Add(nameof(Over_Charge_Timing_True_Charge_Slash));
+                    OnPropertyChanged(nameof(Over_Charge_Timing_True_Charge_Slash));
                 }
             }
 
             [DisplayName("Offset")]
-            public long Unk_93_offset { get; private set; }
+            public long Over_Charge_Timing_True_Charge_Slash_offset { get; private set; }
 
-            protected float Unk_94_raw;
-            public const string Unk_94_displayName = "Unk 94";
-            public const int Unk_94_sortIndex = 200;
-            [SortOrder(Unk_94_sortIndex)]
-            [DisplayName(Unk_94_displayName)]
-            public virtual float Unk_94 {
-                get => Unk_94_raw;
+            protected float Over_Charge_Timing_Rising_Charge_Slash_raw;
+            public const string Over_Charge_Timing_Rising_Charge_Slash_displayName = "Over Charge Timing: Rising Charge Slash";
+            public const int Over_Charge_Timing_Rising_Charge_Slash_sortIndex = 200;
+            [SortOrder(Over_Charge_Timing_Rising_Charge_Slash_sortIndex)]
+            [DisplayName(Over_Charge_Timing_Rising_Charge_Slash_displayName)]
+            public virtual float Over_Charge_Timing_Rising_Charge_Slash {
+                get => Over_Charge_Timing_Rising_Charge_Slash_raw;
                 set {
-                    if (Unk_94_raw == value) return;
-                    Unk_94_raw = value;
-                    ChangedItems.Add(nameof(Unk_94));
-                    OnPropertyChanged(nameof(Unk_94));
+                    if (Over_Charge_Timing_Rising_Charge_Slash_raw == value) return;
+                    Over_Charge_Timing_Rising_Charge_Slash_raw = value;
+                    ChangedItems.Add(nameof(Over_Charge_Timing_Rising_Charge_Slash));
+                    OnPropertyChanged(nameof(Over_Charge_Timing_Rising_Charge_Slash));
                 }
             }
 
             [DisplayName("Offset")]
-            public long Unk_94_offset { get; private set; }
+            public long Over_Charge_Timing_Rising_Charge_Slash_offset { get; private set; }
 
-            protected float Unk_95_raw;
-            public const string Unk_95_displayName = "Unk 95";
-            public const int Unk_95_sortIndex = 250;
-            [SortOrder(Unk_95_sortIndex)]
-            [DisplayName(Unk_95_displayName)]
-            public virtual float Unk_95 {
-                get => Unk_95_raw;
+            protected float Over_Charge_Timing_Midair_Charge_Slash_raw;
+            public const string Over_Charge_Timing_Midair_Charge_Slash_displayName = "Over Charge Timing: Midair Charge Slash";
+            public const int Over_Charge_Timing_Midair_Charge_Slash_sortIndex = 250;
+            [SortOrder(Over_Charge_Timing_Midair_Charge_Slash_sortIndex)]
+            [DisplayName(Over_Charge_Timing_Midair_Charge_Slash_displayName)]
+            public virtual float Over_Charge_Timing_Midair_Charge_Slash {
+                get => Over_Charge_Timing_Midair_Charge_Slash_raw;
                 set {
-                    if (Unk_95_raw == value) return;
-                    Unk_95_raw = value;
-                    ChangedItems.Add(nameof(Unk_95));
-                    OnPropertyChanged(nameof(Unk_95));
+                    if (Over_Charge_Timing_Midair_Charge_Slash_raw == value) return;
+                    Over_Charge_Timing_Midair_Charge_Slash_raw = value;
+                    ChangedItems.Add(nameof(Over_Charge_Timing_Midair_Charge_Slash));
+                    OnPropertyChanged(nameof(Over_Charge_Timing_Midair_Charge_Slash));
                 }
             }
 
             [DisplayName("Offset")]
-            public long Unk_95_offset { get; private set; }
+            public long Over_Charge_Timing_Midair_Charge_Slash_offset { get; private set; }
 
             protected byte Unk_96_raw;
             public const string Unk_96_displayName = "Unk 96";
@@ -3136,16 +3136,16 @@ namespace MHW_Editor.Structs.Weapons {
             public static W00p_Params_5_ LoadData(BinaryReader reader, ulong i) {
                 var data = new W00p_Params_5_();
                 data.Index = i;
-                data.Unk_91_offset = reader.BaseStream.Position;
-                data.Unk_91_raw = reader.ReadSingle();
-                data.Unk_92_offset = reader.BaseStream.Position;
-                data.Unk_92_raw = reader.ReadSingle();
-                data.Unk_93_offset = reader.BaseStream.Position;
-                data.Unk_93_raw = reader.ReadSingle();
-                data.Unk_94_offset = reader.BaseStream.Position;
-                data.Unk_94_raw = reader.ReadSingle();
-                data.Unk_95_offset = reader.BaseStream.Position;
-                data.Unk_95_raw = reader.ReadSingle();
+                data.Over_Charge_Timing_Charge_Slash_offset = reader.BaseStream.Position;
+                data.Over_Charge_Timing_Charge_Slash_raw = reader.ReadSingle();
+                data.Over_Charge_Timing_Strong_Charge_Slash_offset = reader.BaseStream.Position;
+                data.Over_Charge_Timing_Strong_Charge_Slash_raw = reader.ReadSingle();
+                data.Over_Charge_Timing_True_Charge_Slash_offset = reader.BaseStream.Position;
+                data.Over_Charge_Timing_True_Charge_Slash_raw = reader.ReadSingle();
+                data.Over_Charge_Timing_Rising_Charge_Slash_offset = reader.BaseStream.Position;
+                data.Over_Charge_Timing_Rising_Charge_Slash_raw = reader.ReadSingle();
+                data.Over_Charge_Timing_Midair_Charge_Slash_offset = reader.BaseStream.Position;
+                data.Over_Charge_Timing_Midair_Charge_Slash_raw = reader.ReadSingle();
                 data.Unk_96_offset = reader.BaseStream.Position;
                 data.Unk_96_raw = reader.ReadByte();
                 data.Unk_97_offset = reader.BaseStream.Position;
@@ -3170,11 +3170,11 @@ namespace MHW_Editor.Structs.Weapons {
             }
 
             public void WriteData(BinaryWriter writer) {
-                writer.Write(Unk_91_raw);
-                writer.Write(Unk_92_raw);
-                writer.Write(Unk_93_raw);
-                writer.Write(Unk_94_raw);
-                writer.Write(Unk_95_raw);
+                writer.Write(Over_Charge_Timing_Charge_Slash_raw);
+                writer.Write(Over_Charge_Timing_Strong_Charge_Slash_raw);
+                writer.Write(Over_Charge_Timing_True_Charge_Slash_raw);
+                writer.Write(Over_Charge_Timing_Rising_Charge_Slash_raw);
+                writer.Write(Over_Charge_Timing_Midair_Charge_Slash_raw);
                 writer.Write(Unk_96_raw);
                 writer.Write(Unk_97_raw);
                 writer.Write(Unk_98_raw);
@@ -3189,11 +3189,11 @@ namespace MHW_Editor.Structs.Weapons {
 
             public ObservableCollection<MultiStructItemCustomView> GetCustomView() {
                 return new ObservableCollection<MultiStructItemCustomView> {
-                    new MultiStructItemCustomView(this, "Unk 91", "Unk_91", "Unk_91_offset"),
-                    new MultiStructItemCustomView(this, "Unk 92", "Unk_92", "Unk_92_offset"),
-                    new MultiStructItemCustomView(this, "Unk 93", "Unk_93", "Unk_93_offset"),
-                    new MultiStructItemCustomView(this, "Unk 94", "Unk_94", "Unk_94_offset"),
-                    new MultiStructItemCustomView(this, "Unk 95", "Unk_95", "Unk_95_offset"),
+                    new MultiStructItemCustomView(this, "Over Charge Timing: Charge Slash", "Over_Charge_Timing_Charge_Slash", "Over_Charge_Timing_Charge_Slash_offset"),
+                    new MultiStructItemCustomView(this, "Over Charge Timing: Strong Charge Slash", "Over_Charge_Timing_Strong_Charge_Slash", "Over_Charge_Timing_Strong_Charge_Slash_offset"),
+                    new MultiStructItemCustomView(this, "Over Charge Timing: True Charge Slash", "Over_Charge_Timing_True_Charge_Slash", "Over_Charge_Timing_True_Charge_Slash_offset"),
+                    new MultiStructItemCustomView(this, "Over Charge Timing: Rising Charge Slash", "Over_Charge_Timing_Rising_Charge_Slash", "Over_Charge_Timing_Rising_Charge_Slash_offset"),
+                    new MultiStructItemCustomView(this, "Over Charge Timing: Midair Charge Slash", "Over_Charge_Timing_Midair_Charge_Slash", "Over_Charge_Timing_Midair_Charge_Slash_offset"),
                     new MultiStructItemCustomView(this, "Unk 96", "Unk_96", "Unk_96_offset"),
                     new MultiStructItemCustomView(this, "Unk 97", "Unk_97", "Unk_97_offset"),
                     new MultiStructItemCustomView(this, "Unk 98", "Unk_98", "Unk_98_offset"),

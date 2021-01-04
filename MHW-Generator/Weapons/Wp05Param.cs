@@ -13,10 +13,10 @@ namespace MHW_Generator.Weapons {
 
             structs.AddRange(new List<MhwMultiStructData.StructData> {
                 new MhwMultiStructData.StructData($"W{N}p Params ({++paramIndex})", new List<MhwMultiStructData.Entry> {
+                    new MhwMultiStructData.Entry($"Unk {++unkIndex}", typeof(float)), // 91
                     new MhwMultiStructData.Entry($"Unk {++unkIndex}", typeof(float)),
-                    new MhwMultiStructData.Entry($"Unk {++unkIndex}", typeof(float)),
-                    new MhwMultiStructData.Entry($"Unk {++unkIndex}", typeof(float)),
-                    new MhwMultiStructData.Entry($"Unk {++unkIndex}", typeof(float)),
+                    new MhwMultiStructData.Entry("Buff Range", typeof(float)),
+                    new MhwMultiStructData.Entry($"Unk {unkIndex += 2}", typeof(float)),
                     new MhwMultiStructData.Entry($"Unk {++unkIndex}", typeof(float))
                 }, 1, showVertically: true),
 
@@ -33,17 +33,17 @@ namespace MHW_Generator.Weapons {
                 new MhwMultiStructData.StructData($"Action Param {++actionParamIndex}", actionParam, 1),
 
                 new MhwMultiStructData.StructData($"W{N}p Params ({++paramIndex})", new List<MhwMultiStructData.Entry> {
-                    new MhwMultiStructData.Entry($"Unk {++unkIndex}", typeof(float)),
-                    new MhwMultiStructData.Entry($"Unk {++unkIndex}", typeof(float)),
-                    new MhwMultiStructData.Entry($"Unk {++unkIndex}", typeof(float)),
-                    new MhwMultiStructData.Entry($"Unk {++unkIndex}", typeof(float)),
-                    new MhwMultiStructData.Entry($"Unk {++unkIndex}", typeof(float)),
-                    new MhwMultiStructData.Entry($"Unk {++unkIndex}", typeof(float)),
-                    new MhwMultiStructData.Entry($"Unk {++unkIndex}", typeof(float)),
-                    new MhwMultiStructData.Entry($"Unk {++unkIndex}", typeof(float)),
-                    new MhwMultiStructData.Entry($"Unk {++unkIndex}", typeof(float)),
-                    new MhwMultiStructData.Entry($"Unk {++unkIndex}", typeof(float)),
-                    new MhwMultiStructData.Entry($"Unk {++unkIndex}", typeof(float))
+                    new MhwMultiStructData.Entry("Self-Improvement Movement Speed", typeof(float)), // 101
+                    new MhwMultiStructData.Entry("Self Improvement Movement Speed Additive Bonus With Speed Boost", typeof(float)),
+                    new MhwMultiStructData.Entry("Dragon Seal of Echo Wave 'Dragon' 1", typeof(float)),
+                    new MhwMultiStructData.Entry("Dragon Seal of Echo Wave 'Dragon' 2", typeof(float)),
+                    new MhwMultiStructData.Entry("Dragon Seal of Echo Wave 'Dragon' 3", typeof(float)),
+                    new MhwMultiStructData.Entry("Dragon Seal of Echo Wave 'Dragon' 4", typeof(float)),
+                    new MhwMultiStructData.Entry("Dragon Seal of Echo Wave 'Dragon' 5", typeof(float)),
+                    new MhwMultiStructData.Entry("Dragon Seal of Echo Wave 'Dragon' 6", typeof(float)),
+                    new MhwMultiStructData.Entry("Dragon Seal of Echo Wave 'Dragon' 7", typeof(float)),
+                    new MhwMultiStructData.Entry("Dragon Seal of Echo Wave 'Dragon' 8", typeof(float)),
+                    new MhwMultiStructData.Entry("Dragon Seal of Echo Wave 'Dragon' 9", typeof(float))
                 }, 1, showVertically: true),
 
                 new MhwMultiStructData.StructData($"Action Param {++actionParamIndex}", actionParam, 1),

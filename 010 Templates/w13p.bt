@@ -232,13 +232,13 @@ float Unk_166<name="Unk 166 (float)">;
 float Unk_167<name="Unk 167 (float)">;
 float Wyvernheart_Ammo_Cap<name="Wyvernheart Ammo Cap (float)">;
 float Delay_Between_Shots<name="Delay Between Shots (float)">;
-float Unk_170<name="Unk 170 (float)">;
+float Wyvernheart_Ammo_Consumption<name="Wyvernheart Ammo Consumption (float)">;
 float Wyvernheart_Ammo_Recharge<name="Wyvernheart Ammo Recharge (float)">;
-float Unk_172<name="Unk 172 (float)">;
-float Unk_173<name="Unk 173 (float)">;
-ubyte Unk_174<name="Unk 174 (ubyte)">;
+float Wyvernheart_Vertical_Deviation<name="Wyvernheart Vertical Deviation (float)">;
+float Wyvernheart_Horizontal_Deviation<name="Wyvernheart Horizontal Deviation (float)">;
+ubyte Wyvernheart_Hit_Count_Per_Actual_Hit<name="Wyvernheart Hit Count Per Actual Hit (ubyte)">;
 ubyte Unk_175<name="Unk 175 (ubyte)">;
-ubyte Unk_176<name="Unk 176 (ubyte)">;
+ubyte Wyvernheart_Hit_Count_Loss_Per_Every_Actual_Loss_Hit<name="Wyvernheart Hit Count Loss Per Every Actual Loss Hit (ubyte)">;
 ubyte Wyvernheart_Hit_Count_for_Damage_Bonus<name="Wyvernheart Hit Count for Damage Bonus (ubyte)">;
 ushort Hit_for_1st_Damage_Bonus<name="Hit for 1st Damage Bonus (ushort)">;
 ushort _1st_Damage_Bonus<name="(1st) Damage Bonus (ushort)">;
@@ -250,9 +250,9 @@ ushort Hit_for_4th_Damage_Bonus<name="Hit for 4th Damage Bonus (ushort)">;
 ushort _4th_Damage_Bonus<name="(4th) Damage Bonus (ushort)">;
 ushort Hit_for_5th_Damage_Bonus<name="Hit for 5th Damage Bonus (ushort)">;
 ushort _5th_Damage_Bonus<name="(5th) Damage Bonus (ushort)">;
-ubyte Unk_188<name="Unk 188 (ubyte)">;
+ubyte Wyvernheart_Mod_Hit_Count_Per_Actual_Hit<name="Wyvernheart Mod Hit Count Per Actual Hit (ubyte)">;
 ubyte Unk_189<name="Unk 189 (ubyte)">;
-ubyte Unk_190<name="Unk 190 (ubyte)">;
+ubyte Wyvernheart_Mod_Hit_Count_Loss_Per_Actual_Hit_Loss<name="Wyvernheart Mod Hit Count Loss Per Actual Hit Loss (ubyte)">;
 ubyte Wyvernheart_Mod_Hit_Count_for_Damage_Bonus<name="Wyvernheart Mod Hit Count for Damage Bonus (ubyte)">;
 ushort _Mod_Hit_for_1st_Damage_Bonus<name="(Mod) Hit for 1st Damage Bonus (ushort)">;
 ushort _Mod_1st_Damage_Bonus<name="(Mod, 1st) Damage Bonus (ushort)">;
@@ -274,30 +274,38 @@ ushort _Mod_Hit_for_9th_Damage_Bonus<name="(Mod) Hit for 9th Damage Bonus (ushor
 ushort _Mod_9th_Damage_Bonus<name="(Mod, 9th) Damage Bonus (ushort)">;
 ushort _Mod_Hit_for_10th_Damage_Bonus<name="(Mod) Hit for 10th Damage Bonus (ushort)">;
 ushort _Mod_10th_Damage_Bonus<name="(Mod, 10th) Damage Bonus (ushort)">;
-ubyte Unk_212<name="Unk 212 (ubyte)">;
-ushort Unk_213<name="Unk 213 (ushort)">;
-ushort Unk_214<name="Unk 214 (ushort)">;
-float Unk_215<name="Unk 215 (float)">;
-ushort Unk_216<name="Unk 216 (ushort)">;
-float Unk_217<name="Unk 217 (float)">;
-float Unk_218<name="Unk 218 (float)">;
-float Unk_219<name="Unk 219 (float)">;
-float Unk_220<name="Unk 220 (float)">;
-float Unk_221<name="Unk 221 (float)">;
-float Unk_222<name="Unk 222 (float)">;
-float Unk_223<name="Unk 223 (float)">;
-float Unk_224<name="Unk 224 (float)">;
-float Unk_225<name="Unk 225 (float)">;
-float Unk_226<name="Unk 226 (float)">;
-float Unk_227<name="Unk 227 (float)">;
-float Unk_228<name="Unk 228 (float)">;
-float Unk_229<name="Unk 229 (float)">;
-float Unk_230<name="Unk 230 (float)">;
-ubyte Unk_231<name="Unk 231 (ubyte)">;
+
+// Event Pad Vib
+typedef struct {
+    ubyte B<name="B (ubyte)">;
+    ushort X<name="X (ushort)">;
+    ushort Y<name="Y (ushort)">;
+    float Time<name="Time (float)">;
+    ushort P<name="P (ushort)">;
+} Event_Pad_Vib;
+
+Event_Pad_Vib Event_Pad_Vib_<name="Event Pad Vib">;
+
+// W13p Params (5.1)
+float Wyvernsnipe_Prone_Movement_Params_1<name="Wyvernsnipe Prone Movement Params 1 (float)">;
+float Wyvernsnipe_Prone_Movement_Params_2<name="Wyvernsnipe Prone Movement Params 2 (float)">;
+float Wyvernsnipe_Prone_Movement_Params_3<name="Wyvernsnipe Prone Movement Params 3 (float)">;
+float Wyvernsnipe_Prone_Movement_Params_4<name="Wyvernsnipe Prone Movement Params 4 (float)">;
+float Wyvernsnipe_Prone_Movement_Params_5<name="Wyvernsnipe Prone Movement Params 5 (float)">;
+float Wyvernsnipe_Prone_Movement_Params_6<name="Wyvernsnipe Prone Movement Params 6 (float)">;
+float Wyvernsnipe_Prone_Movement_Params_7<name="Wyvernsnipe Prone Movement Params 7 (float)">;
+float Wyvernsnipe_Prone_Movement_Params_8<name="Wyvernsnipe Prone Movement Params 8 (float)">;
+float Wyvernsnipe_Prone_Movement_Params_9<name="Wyvernsnipe Prone Movement Params 9 (float)">;
+float Wyvernsnipe_Prone_Movement_Params_10<name="Wyvernsnipe Prone Movement Params 10 (float)">;
+float Wyvernsnipe_Prone_Movement_Params_11<name="Wyvernsnipe Prone Movement Params 11 (float)">;
+float Wyvernsnipe_Prone_Movement_Params_12<name="Wyvernsnipe Prone Movement Params 12 (float)">;
+float Wyvernsnipe_Prone_Movement_Params_13<name="Wyvernsnipe Prone Movement Params 13 (float)">;
+float Wyvernsnipe_Prone_Movement_Params_14<name="Wyvernsnipe Prone Movement Params 14 (float)">;
+ubyte Wyrmsnipe_Capacity<name="Wyrmsnipe Capacity (ubyte)">;
 float Wyrmsnipe_Cooldown<name="Wyrmsnipe Cooldown (float)">;
-ubyte Unk_233<name="Unk 233 (ubyte)">;
-ubyte Unk_234<name="Unk 234 (ubyte)">;
-ubyte Unk_235<name="Unk 235 (ubyte)">;
+ubyte Wyvernsnipe_Number_of_Medium_Explosions_<name="Wyvernsnipe Number of Medium Explosions? (ubyte)">;
+ubyte Wyvernsnipe_Number_of_Larger_Explosions_<name="Wyvernsnipe Number of Larger Explosions? (ubyte)">;
+ubyte Wyvernsnipe_Number_of_End_Explosions_<name="Wyvernsnipe Number of End Explosions? (ubyte)">;
 float Unk_236<name="Unk 236 (float)">;
 float Unk_237<name="Unk 237 (float)">;
 uint Unk_238<name="Unk 238 (uint)">;
@@ -314,7 +322,7 @@ typedef struct {
 
 Unk_Arr_3 Unk_Arr_3_[16]<optimize=false, name="Unk Arr 3">;
 
-// Unk Arr 4
+// Bowgun Deviation (Last One Maybe High + Felyne Meal)
 typedef struct {
     float Unk_1<name="Unk 1 (float)">;
     uint Unk_2<name="Unk 2 (uint)">;
@@ -322,45 +330,19 @@ typedef struct {
     float Unk_4<name="Unk 4 (float)">;
     float Unk_5<name="Unk 5 (float)">;
     float Unk_6<name="Unk 6 (float)">;
-} Unk_Arr_4;
+} Bowgun_Deviation_Last_One_Maybe_High_Plus_Felyne_Meal_;
 
-Unk_Arr_4 Unk_Arr_4_[4]<optimize=false, name="Unk Arr 4">;
+Bowgun_Deviation_Last_One_Maybe_High_Plus_Felyne_Meal_ Bowgun_Deviation_Last_One_Maybe_High_Plus_Felyne_Meal__[4]<optimize=false, name="Bowgun Deviation (Last One Maybe High + Felyne Meal)">;
+
+// Ammo Shifting
+typedef struct {
+    float Vertical<name="Vertical (float)">;
+    float Horizontal<name="Horizontal (float)">;
+} Ammo_Shifting;
+
+Ammo_Shifting Ammo_Shifting_[17]<optimize=false, name="Ammo Shifting">;
 
 // W13p Params (6)
-float Unk_240<name="Unk 240 (float)">;
-float Unk_241<name="Unk 241 (float)">;
-float Unk_242<name="Unk 242 (float)">;
-float Unk_243<name="Unk 243 (float)">;
-float Unk_244<name="Unk 244 (float)">;
-float Unk_245<name="Unk 245 (float)">;
-float Unk_246<name="Unk 246 (float)">;
-float Unk_247<name="Unk 247 (float)">;
-float Unk_248<name="Unk 248 (float)">;
-float Unk_249<name="Unk 249 (float)">;
-float Unk_250<name="Unk 250 (float)">;
-float Unk_251<name="Unk 251 (float)">;
-float Unk_252<name="Unk 252 (float)">;
-float Unk_253<name="Unk 253 (float)">;
-float Unk_254<name="Unk 254 (float)">;
-float Unk_255<name="Unk 255 (float)">;
-float Unk_256<name="Unk 256 (float)">;
-float Unk_257<name="Unk 257 (float)">;
-float Unk_258<name="Unk 258 (float)">;
-float Unk_259<name="Unk 259 (float)">;
-float Unk_260<name="Unk 260 (float)">;
-float Unk_261<name="Unk 261 (float)">;
-float Unk_262<name="Unk 262 (float)">;
-float Unk_263<name="Unk 263 (float)">;
-float Unk_264<name="Unk 264 (float)">;
-float Unk_265<name="Unk 265 (float)">;
-float Unk_266<name="Unk 266 (float)">;
-float Unk_267<name="Unk 267 (float)">;
-float Unk_268<name="Unk 268 (float)">;
-float Unk_269<name="Unk 269 (float)">;
-float Unk_270<name="Unk 270 (float)">;
-float Unk_271<name="Unk 271 (float)">;
-float Unk_272<name="Unk 272 (float)">;
-float Unk_273<name="Unk 273 (float)">;
 float Close_range_Up_active_range_1<name="Close range Up active range 1 (float)">;
 float Close_range_Up_active_range_2<name="Close range Up active range 2 (float)">;
 float Close_range_Up_active_range_3<name="Close range Up active range 3 (float)">;
@@ -369,10 +351,10 @@ float Close_range_Up_Modifier_1<name="Close range Up Modifier 1 (float)">;
 float Close_range_Up_Modifier_2<name="Close range Up Modifier 2 (float)">;
 float Close_range_Up_Modifier_3<name="Close range Up Modifier 3 (float)">;
 float Close_range_Up_Modifier_4<name="Close range Up Modifier 4 (float)">;
-float Ranged_Attack_Up_active_distance_1<name="Ranged Attack Up active distance 1 (float)">;
-float Ranged_Attack_Up_active_distance_2<name="Ranged Attack Up active distance 2 (float)">;
-float Ranged_Attack_Up_active_distance_3<name="Ranged Attack Up active distance 3 (float)">;
-float Ranged_Attack_Up_active_distance_4<name="Ranged Attack Up active distance 4 (float)">;
+float Ranged_Attack_Up_Active_Distance_1<name="Ranged Attack Up Active Distance 1 (float)">;
+float Ranged_Attack_Up_Active_Distance_2<name="Ranged Attack Up Active Distance 2 (float)">;
+float Ranged_Attack_Up_Active_Distance_3<name="Ranged Attack Up Active Distance 3 (float)">;
+float Ranged_Attack_Up_Active_Distance_4<name="Ranged Attack Up Active Distance 4 (float)">;
 float Ranged_Attack_Up_Modifier_1<name="Ranged Attack Up Modifier 1 (float)">;
 float Ranged_Attack_Up_Modifier_2<name="Ranged Attack Up Modifier 2 (float)">;
 float Ranged_Attack_Up_Modifier_3<name="Ranged Attack Up Modifier 3 (float)">;
@@ -407,15 +389,19 @@ float Unk_281<name="Unk 281 (float)">;
 float Special_Scope_Zoom_Ratio_When_Focusing_1<name="Special Scope: Zoom Ratio When Focusing 1 (float)">;
 float Special_Scope_Zoom_Ratio_When_Focusing_2<name="Special Scope: Zoom Ratio When Focusing 2 (float)">;
 
-// Unk Arr 5
+// Power/Long Mod Params
 typedef struct {
-    float Unk_1<name="Unk 1 (float)">;
-    float Unk_2<name="Unk 2 (float)">;
-    float Unk_3<name="Unk 3 (float)">;
-    float Unk_4<name="Unk 4 (float)">;
-} Unk_Arr_5;
+    float Power_Mod_Unk_1<name="Power Mod: Unk 1 (float)">;
+    float Power_Mod_Unk_2<name="Power Mod: Unk 2 (float)">;
+    float Power_Mod_Unk_3<name="Power Mod: Unk 3 (float)">;
+    float Power_Mod_Unk_4<name="Power Mod: Unk 4 (float)">;
+    float Long_Mod_Unk_1<name="Long Mod: Unk 1 (float)">;
+    float Long_Mod_Unk_2<name="Long Mod: Unk 2 (float)">;
+    float Long_Mod_Unk_3<name="Long Mod: Unk 3 (float)">;
+    float Long_Mod_Unk_4<name="Long Mod: Unk 4 (float)">;
+} Power_Long_Mod_Params;
 
-Unk_Arr_5 Unk_Arr_5_[50]<optimize=false, name="Unk Arr 5">;
+Power_Long_Mod_Params Power_Long_Mod_Params_[25]<optimize=false, name="Power/Long Mod Params">;
 
 // W13p Params (7)
 ushort Unk_284<name="Unk 284 (ushort)">;
@@ -458,19 +444,25 @@ float Unk_320<name="Unk 320 (float)">;
 float Unk_321<name="Unk 321 (float)">;
 float Unk_322<name="Unk 322 (float)">;
 float Wyvernblast_Cooldown<name="Wyvernblast Cooldown (float)">;
-ubyte Unk_324<name="Unk 324 (ubyte)">;
-ubyte Unk_325<name="Unk 325 (ubyte)">;
+ubyte Wyvernblast_Capacity<name="Wyvernblast Capacity (ubyte)">;
+ubyte Wyvernblast_Initial_Charges<name="Wyvernblast Initial Charges (ubyte)">;
 ubyte Unk_326<name="Unk 326 (ubyte)">;
-ubyte Unk_327<name="Unk 327 (ubyte)">;
+ubyte Wyvernblast_Lifespan<name="Wyvernblast Lifespan (ubyte)">;
 ubyte Unk_328<name="Unk 328 (ubyte)">;
-ushort Unk_329<name="Unk 329 (ushort)">;
+ushort Wyvernblast_Counter_Explosion_Lifespan_<name="Wyvernblast Counter Explosion Lifespan? (ushort)">;
 float Unk_330<name="Unk 330 (float)">;
 ubyte Unk_331<name="Unk 331 (ubyte)">;
-float Unk_332<name="Unk 332 (float)">;
-float Unk_333<name="Unk 333 (float)">;
-float Unk_334<name="Unk 334 (float)">;
-float Unk_335<name="Unk 335 (float)">;
-float Unk_336<name="Unk 336 (float)">;
+
+// Action Param 1
+typedef struct {
+    float Gravity<name="Gravity (float)">;
+    float Speed_Rate<name="Speed Rate (float)">;
+    float X_Offset<name="X Offset (float)">;
+    float Y_Offset<name="Y Offset (float)">;
+    float Z_Offset<name="Z Offset (float)">;
+} Action_Param_1;
+
+Action_Param_1 Action_Param_1_<name="Action Param 1">;
 
 // HZD Ammo Gauge Levels
 typedef struct {

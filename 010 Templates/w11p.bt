@@ -210,7 +210,7 @@ typedef struct {
 
 Arrows_Shot Arrows_Shot_[3]<optimize=false, name="Arrows Shot">;
 
-// Unk Arr 5
+// Arrow Grid?
 typedef struct {
     float Unk_1<name="Unk 1 (float)">;
     float Unk_2<name="Unk 2 (float)">;
@@ -226,9 +226,9 @@ typedef struct {
     float Unk_12<name="Unk 12 (float)">;
     float Unk_13<name="Unk 13 (float)">;
     float Unk_14<name="Unk 14 (float)">;
-} Unk_Arr_5;
+} Arrow_Grid_;
 
-Unk_Arr_5 Unk_Arr_5_[12]<optimize=false, name="Unk Arr 5">;
+Arrow_Grid_ Arrow_Grid__[12]<optimize=false, name="Arrow Grid?">;
 
 // Action Param 1
 typedef struct {

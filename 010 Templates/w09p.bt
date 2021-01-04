@@ -234,11 +234,11 @@ typedef struct {
 Action_Param_2 Action_Param_2_<name="Action Param 2">;
 
 // W09p Params (8)
-float Unk_133<name="Unk 133 (float)">;
+float Charge_of_Sword_Charged_Double_Slash<name="Charge of [Sword]: Charged Double Slash (float)">;
 float Unk_134<name="Unk 134 (float)">;
-float Unk_135<name="Unk 135 (float)">;
+float Speed_From_a_Different_Move_to_Sword_Charged_Double_Slash<name="Speed From a Different Move to [Sword]: Charged Double Slash (float)">;
 float Unk_136<name="Unk 136 (float)">;
-float Unk_137<name="Unk 137 (float)">;
+float Charge_of_Sword_Condensed_Element_Slash<name="Charge of [Sword]: Condensed Element Slash (float)">;
 float Unk_138<name="Unk 138 (float)">;
 float Unk_139<name="Unk 139 (float)">;
 

@@ -2903,23 +2903,23 @@ namespace MHW_Editor.Structs.Weapons {
             [DisplayName("Offset")]
             public long Demon_Flurry_Cost_offset { get; private set; }
 
-            protected float Unk_99_raw;
-            public const string Unk_99_displayName = "Unk 99";
-            public const int Unk_99_sortIndex = 450;
-            [SortOrder(Unk_99_sortIndex)]
-            [DisplayName(Unk_99_displayName)]
-            public virtual float Unk_99 {
-                get => Unk_99_raw;
+            protected float Gauge_Cost_for_General_Moves_raw;
+            public const string Gauge_Cost_for_General_Moves_displayName = "Gauge Cost for General Moves";
+            public const int Gauge_Cost_for_General_Moves_sortIndex = 450;
+            [SortOrder(Gauge_Cost_for_General_Moves_sortIndex)]
+            [DisplayName(Gauge_Cost_for_General_Moves_displayName)]
+            public virtual float Gauge_Cost_for_General_Moves {
+                get => Gauge_Cost_for_General_Moves_raw;
                 set {
-                    if (Unk_99_raw == value) return;
-                    Unk_99_raw = value;
-                    ChangedItems.Add(nameof(Unk_99));
-                    OnPropertyChanged(nameof(Unk_99));
+                    if (Gauge_Cost_for_General_Moves_raw == value) return;
+                    Gauge_Cost_for_General_Moves_raw = value;
+                    ChangedItems.Add(nameof(Gauge_Cost_for_General_Moves));
+                    OnPropertyChanged(nameof(Gauge_Cost_for_General_Moves));
                 }
             }
 
             [DisplayName("Offset")]
-            public long Unk_99_offset { get; private set; }
+            public long Gauge_Cost_for_General_Moves_offset { get; private set; }
 
             protected float Unk_100_raw;
             public const string Unk_100_displayName = "Unk 100";
@@ -2939,41 +2939,41 @@ namespace MHW_Editor.Structs.Weapons {
             [DisplayName("Offset")]
             public long Unk_100_offset { get; private set; }
 
-            protected float Unk_101_raw;
-            public const string Unk_101_displayName = "Unk 101";
-            public const int Unk_101_sortIndex = 550;
-            [SortOrder(Unk_101_sortIndex)]
-            [DisplayName(Unk_101_displayName)]
-            public virtual float Unk_101 {
-                get => Unk_101_raw;
+            protected float Demon_Mode_Stamina_Drain_Rate__raw;
+            public const string Demon_Mode_Stamina_Drain_Rate__displayName = "Demon Mode Stamina Drain Rate?";
+            public const int Demon_Mode_Stamina_Drain_Rate__sortIndex = 550;
+            [SortOrder(Demon_Mode_Stamina_Drain_Rate__sortIndex)]
+            [DisplayName(Demon_Mode_Stamina_Drain_Rate__displayName)]
+            public virtual float Demon_Mode_Stamina_Drain_Rate_ {
+                get => Demon_Mode_Stamina_Drain_Rate__raw;
                 set {
-                    if (Unk_101_raw == value) return;
-                    Unk_101_raw = value;
-                    ChangedItems.Add(nameof(Unk_101));
-                    OnPropertyChanged(nameof(Unk_101));
+                    if (Demon_Mode_Stamina_Drain_Rate__raw == value) return;
+                    Demon_Mode_Stamina_Drain_Rate__raw = value;
+                    ChangedItems.Add(nameof(Demon_Mode_Stamina_Drain_Rate_));
+                    OnPropertyChanged(nameof(Demon_Mode_Stamina_Drain_Rate_));
                 }
             }
 
             [DisplayName("Offset")]
-            public long Unk_101_offset { get; private set; }
+            public long Demon_Mode_Stamina_Drain_Rate__offset { get; private set; }
 
-            protected float Unk_102_raw;
-            public const string Unk_102_displayName = "Unk 102";
-            public const int Unk_102_sortIndex = 600;
-            [SortOrder(Unk_102_sortIndex)]
-            [DisplayName(Unk_102_displayName)]
-            public virtual float Unk_102 {
-                get => Unk_102_raw;
+            protected float Speed_of_Spinning_Blade_Dance__raw;
+            public const string Speed_of_Spinning_Blade_Dance__displayName = "Speed of Spinning Blade Dance?";
+            public const int Speed_of_Spinning_Blade_Dance__sortIndex = 600;
+            [SortOrder(Speed_of_Spinning_Blade_Dance__sortIndex)]
+            [DisplayName(Speed_of_Spinning_Blade_Dance__displayName)]
+            public virtual float Speed_of_Spinning_Blade_Dance_ {
+                get => Speed_of_Spinning_Blade_Dance__raw;
                 set {
-                    if (Unk_102_raw == value) return;
-                    Unk_102_raw = value;
-                    ChangedItems.Add(nameof(Unk_102));
-                    OnPropertyChanged(nameof(Unk_102));
+                    if (Speed_of_Spinning_Blade_Dance__raw == value) return;
+                    Speed_of_Spinning_Blade_Dance__raw = value;
+                    ChangedItems.Add(nameof(Speed_of_Spinning_Blade_Dance_));
+                    OnPropertyChanged(nameof(Speed_of_Spinning_Blade_Dance_));
                 }
             }
 
             [DisplayName("Offset")]
-            public long Unk_102_offset { get; private set; }
+            public long Speed_of_Spinning_Blade_Dance__offset { get; private set; }
 
             protected float Unk_103_raw;
             public const string Unk_103_displayName = "Unk 103";
@@ -3011,23 +3011,23 @@ namespace MHW_Editor.Structs.Weapons {
             [DisplayName("Offset")]
             public long Demon_Mode_Animation_Speed_Increase_offset { get; private set; }
 
-            protected float Unk_105_raw;
-            public const string Unk_105_displayName = "Unk 105";
-            public const int Unk_105_sortIndex = 750;
-            [SortOrder(Unk_105_sortIndex)]
-            [DisplayName(Unk_105_displayName)]
-            public virtual float Unk_105 {
-                get => Unk_105_raw;
+            protected float Arch_Demon_Mode_Walking_Speed_Weapon_Drawn__raw;
+            public const string Arch_Demon_Mode_Walking_Speed_Weapon_Drawn__displayName = "Arch Demon Mode Walking Speed (Weapon Drawn)";
+            public const int Arch_Demon_Mode_Walking_Speed_Weapon_Drawn__sortIndex = 750;
+            [SortOrder(Arch_Demon_Mode_Walking_Speed_Weapon_Drawn__sortIndex)]
+            [DisplayName(Arch_Demon_Mode_Walking_Speed_Weapon_Drawn__displayName)]
+            public virtual float Arch_Demon_Mode_Walking_Speed_Weapon_Drawn_ {
+                get => Arch_Demon_Mode_Walking_Speed_Weapon_Drawn__raw;
                 set {
-                    if (Unk_105_raw == value) return;
-                    Unk_105_raw = value;
-                    ChangedItems.Add(nameof(Unk_105));
-                    OnPropertyChanged(nameof(Unk_105));
+                    if (Arch_Demon_Mode_Walking_Speed_Weapon_Drawn__raw == value) return;
+                    Arch_Demon_Mode_Walking_Speed_Weapon_Drawn__raw = value;
+                    ChangedItems.Add(nameof(Arch_Demon_Mode_Walking_Speed_Weapon_Drawn_));
+                    OnPropertyChanged(nameof(Arch_Demon_Mode_Walking_Speed_Weapon_Drawn_));
                 }
             }
 
             [DisplayName("Offset")]
-            public long Unk_105_offset { get; private set; }
+            public long Arch_Demon_Mode_Walking_Speed_Weapon_Drawn__offset { get; private set; }
 
             protected float Unk_106_raw;
             public const string Unk_106_displayName = "Unk 106";
@@ -3149,20 +3149,20 @@ namespace MHW_Editor.Structs.Weapons {
                 data.Demon_Flurry_Rush_Cost_raw = reader.ReadSingle();
                 data.Demon_Flurry_Cost_offset = reader.BaseStream.Position;
                 data.Demon_Flurry_Cost_raw = reader.ReadSingle();
-                data.Unk_99_offset = reader.BaseStream.Position;
-                data.Unk_99_raw = reader.ReadSingle();
+                data.Gauge_Cost_for_General_Moves_offset = reader.BaseStream.Position;
+                data.Gauge_Cost_for_General_Moves_raw = reader.ReadSingle();
                 data.Unk_100_offset = reader.BaseStream.Position;
                 data.Unk_100_raw = reader.ReadSingle();
-                data.Unk_101_offset = reader.BaseStream.Position;
-                data.Unk_101_raw = reader.ReadSingle();
-                data.Unk_102_offset = reader.BaseStream.Position;
-                data.Unk_102_raw = reader.ReadSingle();
+                data.Demon_Mode_Stamina_Drain_Rate__offset = reader.BaseStream.Position;
+                data.Demon_Mode_Stamina_Drain_Rate__raw = reader.ReadSingle();
+                data.Speed_of_Spinning_Blade_Dance__offset = reader.BaseStream.Position;
+                data.Speed_of_Spinning_Blade_Dance__raw = reader.ReadSingle();
                 data.Unk_103_offset = reader.BaseStream.Position;
                 data.Unk_103_raw = reader.ReadSingle();
                 data.Demon_Mode_Animation_Speed_Increase_offset = reader.BaseStream.Position;
                 data.Demon_Mode_Animation_Speed_Increase_raw = reader.ReadSingle();
-                data.Unk_105_offset = reader.BaseStream.Position;
-                data.Unk_105_raw = reader.ReadSingle();
+                data.Arch_Demon_Mode_Walking_Speed_Weapon_Drawn__offset = reader.BaseStream.Position;
+                data.Arch_Demon_Mode_Walking_Speed_Weapon_Drawn__raw = reader.ReadSingle();
                 data.Unk_106_offset = reader.BaseStream.Position;
                 data.Unk_106_raw = reader.ReadSingle();
                 data.Unk_107_offset = reader.BaseStream.Position;
@@ -3185,13 +3185,13 @@ namespace MHW_Editor.Structs.Weapons {
                 writer.Write(Gauge_Decay_Time_raw);
                 writer.Write(Demon_Flurry_Rush_Cost_raw);
                 writer.Write(Demon_Flurry_Cost_raw);
-                writer.Write(Unk_99_raw);
+                writer.Write(Gauge_Cost_for_General_Moves_raw);
                 writer.Write(Unk_100_raw);
-                writer.Write(Unk_101_raw);
-                writer.Write(Unk_102_raw);
+                writer.Write(Demon_Mode_Stamina_Drain_Rate__raw);
+                writer.Write(Speed_of_Spinning_Blade_Dance__raw);
                 writer.Write(Unk_103_raw);
                 writer.Write(Demon_Mode_Animation_Speed_Increase_raw);
-                writer.Write(Unk_105_raw);
+                writer.Write(Arch_Demon_Mode_Walking_Speed_Weapon_Drawn__raw);
                 writer.Write(Unk_106_raw);
                 writer.Write(Unk_107_raw);
                 writer.Write(Unk_108_raw);
@@ -3209,13 +3209,13 @@ namespace MHW_Editor.Structs.Weapons {
                     new MultiStructItemCustomView(this, "Gauge Decay Time", "Gauge_Decay_Time", "Gauge_Decay_Time_offset"),
                     new MultiStructItemCustomView(this, "Demon Flurry Rush Cost", "Demon_Flurry_Rush_Cost", "Demon_Flurry_Rush_Cost_offset"),
                     new MultiStructItemCustomView(this, "Demon Flurry Cost", "Demon_Flurry_Cost", "Demon_Flurry_Cost_offset"),
-                    new MultiStructItemCustomView(this, "Unk 99", "Unk_99", "Unk_99_offset"),
+                    new MultiStructItemCustomView(this, "Gauge Cost for General Moves", "Gauge_Cost_for_General_Moves", "Gauge_Cost_for_General_Moves_offset"),
                     new MultiStructItemCustomView(this, "Unk 100", "Unk_100", "Unk_100_offset"),
-                    new MultiStructItemCustomView(this, "Unk 101", "Unk_101", "Unk_101_offset"),
-                    new MultiStructItemCustomView(this, "Unk 102", "Unk_102", "Unk_102_offset"),
+                    new MultiStructItemCustomView(this, "Demon Mode Stamina Drain Rate?", "Demon_Mode_Stamina_Drain_Rate_", "Demon_Mode_Stamina_Drain_Rate__offset"),
+                    new MultiStructItemCustomView(this, "Speed of Spinning Blade Dance?", "Speed_of_Spinning_Blade_Dance_", "Speed_of_Spinning_Blade_Dance__offset"),
                     new MultiStructItemCustomView(this, "Unk 103", "Unk_103", "Unk_103_offset"),
                     new MultiStructItemCustomView(this, "Demon Mode Animation Speed Increase", "Demon_Mode_Animation_Speed_Increase", "Demon_Mode_Animation_Speed_Increase_offset"),
-                    new MultiStructItemCustomView(this, "Unk 105", "Unk_105", "Unk_105_offset"),
+                    new MultiStructItemCustomView(this, "Arch Demon Mode Walking Speed (Weapon Drawn)", "Arch_Demon_Mode_Walking_Speed_Weapon_Drawn_", "Arch_Demon_Mode_Walking_Speed_Weapon_Drawn__offset"),
                     new MultiStructItemCustomView(this, "Unk 106", "Unk_106", "Unk_106_offset"),
                     new MultiStructItemCustomView(this, "Unk 107", "Unk_107", "Unk_107_offset"),
                     new MultiStructItemCustomView(this, "Unk 108", "Unk_108", "Unk_108_offset"),
@@ -3339,23 +3339,23 @@ namespace MHW_Editor.Structs.Weapons {
             public const ulong FixedSizeCount = 1;
             public const string GridName = "W02p Params (6)";
 
-            protected float Unk_111_raw;
-            public const string Unk_111_displayName = "Unk 111";
-            public const int Unk_111_sortIndex = 50;
-            [SortOrder(Unk_111_sortIndex)]
-            [DisplayName(Unk_111_displayName)]
-            public virtual float Unk_111 {
-                get => Unk_111_raw;
+            protected float Spinning_Blade_Dance_Finisher_Distance_raw;
+            public const string Spinning_Blade_Dance_Finisher_Distance_displayName = "Spinning Blade Dance Finisher Distance";
+            public const int Spinning_Blade_Dance_Finisher_Distance_sortIndex = 50;
+            [SortOrder(Spinning_Blade_Dance_Finisher_Distance_sortIndex)]
+            [DisplayName(Spinning_Blade_Dance_Finisher_Distance_displayName)]
+            public virtual float Spinning_Blade_Dance_Finisher_Distance {
+                get => Spinning_Blade_Dance_Finisher_Distance_raw;
                 set {
-                    if (Unk_111_raw == value) return;
-                    Unk_111_raw = value;
-                    ChangedItems.Add(nameof(Unk_111));
-                    OnPropertyChanged(nameof(Unk_111));
+                    if (Spinning_Blade_Dance_Finisher_Distance_raw == value) return;
+                    Spinning_Blade_Dance_Finisher_Distance_raw = value;
+                    ChangedItems.Add(nameof(Spinning_Blade_Dance_Finisher_Distance));
+                    OnPropertyChanged(nameof(Spinning_Blade_Dance_Finisher_Distance));
                 }
             }
 
             [DisplayName("Offset")]
-            public long Unk_111_offset { get; private set; }
+            public long Spinning_Blade_Dance_Finisher_Distance_offset { get; private set; }
 
             protected float Unk_112_raw;
             public const string Unk_112_displayName = "Unk 112";
@@ -3425,8 +3425,8 @@ namespace MHW_Editor.Structs.Weapons {
             public static W02p_Params_6_ LoadData(BinaryReader reader, ulong i) {
                 var data = new W02p_Params_6_();
                 data.Index = i;
-                data.Unk_111_offset = reader.BaseStream.Position;
-                data.Unk_111_raw = reader.ReadSingle();
+                data.Spinning_Blade_Dance_Finisher_Distance_offset = reader.BaseStream.Position;
+                data.Spinning_Blade_Dance_Finisher_Distance_raw = reader.ReadSingle();
                 data.Unk_112_offset = reader.BaseStream.Position;
                 data.Unk_112_raw = reader.ReadSingle();
                 data.Unk_113_offset = reader.BaseStream.Position;
@@ -3437,7 +3437,7 @@ namespace MHW_Editor.Structs.Weapons {
             }
 
             public void WriteData(BinaryWriter writer) {
-                writer.Write(Unk_111_raw);
+                writer.Write(Spinning_Blade_Dance_Finisher_Distance_raw);
                 writer.Write(Unk_112_raw);
                 writer.Write(Unk_113_raw);
                 writer.Write(Unk_114_raw);
@@ -3445,7 +3445,7 @@ namespace MHW_Editor.Structs.Weapons {
 
             public ObservableCollection<MultiStructItemCustomView> GetCustomView() {
                 return new ObservableCollection<MultiStructItemCustomView> {
-                    new MultiStructItemCustomView(this, "Unk 111", "Unk_111", "Unk_111_offset"),
+                    new MultiStructItemCustomView(this, "Spinning Blade Dance Finisher Distance", "Spinning_Blade_Dance_Finisher_Distance", "Spinning_Blade_Dance_Finisher_Distance_offset"),
                     new MultiStructItemCustomView(this, "Unk 112", "Unk_112", "Unk_112_offset"),
                     new MultiStructItemCustomView(this, "Unk 113", "Unk_113", "Unk_113_offset"),
                     new MultiStructItemCustomView(this, "Unk 114", "Unk_114", "Unk_114_offset"),

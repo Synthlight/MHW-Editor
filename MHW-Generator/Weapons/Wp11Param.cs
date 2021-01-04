@@ -56,7 +56,7 @@ namespace MHW_Generator.Weapons {
                     new MhwMultiStructData.Entry("Level 4", typeof(uint))
                 }, 3),
 
-                new MhwMultiStructData.StructData($"Unk Arr {arrayIndex += 3}", new List<MhwMultiStructData.Entry> {
+                new MhwMultiStructData.StructData("Arrow Grid?", new List<MhwMultiStructData.Entry> {
                     new MhwMultiStructData.Entry("Unk 1", typeof(float)),
                     new MhwMultiStructData.Entry("Unk 2", typeof(float)),
                     new MhwMultiStructData.Entry("Unk 3", typeof(float)),
@@ -180,7 +180,7 @@ namespace MHW_Generator.Weapons {
                     new MhwMultiStructData.Entry("Number of Arrows Shot", typeof(uint))
                 }, 1, showVertically: true),
 
-                new MhwMultiStructData.StructData($"Unk Arr {++arrayIndex}", new List<MhwMultiStructData.Entry> {
+                new MhwMultiStructData.StructData($"Unk Arr {arrayIndex += 4}", new List<MhwMultiStructData.Entry> {
                     new MhwMultiStructData.Entry("Function Pointer", typeof(ulong), showAsHex: true),
                     new MhwMultiStructData.Entry("Unk 3", typeof(float)),
                     new MhwMultiStructData.Entry("Unk 4", typeof(float))

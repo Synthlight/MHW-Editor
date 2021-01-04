@@ -3631,9 +3631,9 @@ namespace MHW_Editor.Structs.Weapons {
             }
         }
 
-        public partial class Unk_Arr_5 : MhwStructItem, IWriteData {
+        public partial class Arrow_Grid_ : MhwStructItem, IWriteData {
             public const ulong FixedSizeCount = 12;
-            public const string GridName = "Unk Arr 5";
+            public const string GridName = "Arrow Grid?";
 
             protected float Unk_1_raw;
             public const string Unk_1_displayName = "Unk 1";
@@ -3847,8 +3847,8 @@ namespace MHW_Editor.Structs.Weapons {
 
             public const int lastSortIndex = 750;
 
-            public static ObservableMhwStructCollection<Unk_Arr_5> LoadData(BinaryReader reader) {
-                var list = new ObservableMhwStructCollection<Unk_Arr_5>();
+            public static ObservableMhwStructCollection<Arrow_Grid_> LoadData(BinaryReader reader) {
+                var list = new ObservableMhwStructCollection<Arrow_Grid_>();
                 const ulong count = 12UL;
                 for (ulong i = 0; i < count; i++) {
                     list.Add(LoadData(reader, i));
@@ -3856,8 +3856,8 @@ namespace MHW_Editor.Structs.Weapons {
                 return list;
             }
 
-            public static Unk_Arr_5 LoadData(BinaryReader reader, ulong i) {
-                var data = new Unk_Arr_5();
+            public static Arrow_Grid_ LoadData(BinaryReader reader, ulong i) {
+                var data = new Arrow_Grid_();
                 data.Index = i;
                 data.Unk_1_raw = reader.ReadSingle();
                 data.Unk_2_raw = reader.ReadSingle();
@@ -7372,8 +7372,8 @@ namespace MHW_Editor.Structs.Weapons {
             data.AddLast(W11p_Params_5__);
             var Arrows_Shot_ = new MhwStructDataContainer<Arrows_Shot>(Arrows_Shot.LoadData(reader), typeof(Arrows_Shot));
             data.AddLast(Arrows_Shot_);
-            var Unk_Arr_5_ = new MhwStructDataContainer<Unk_Arr_5>(Unk_Arr_5.LoadData(reader), typeof(Unk_Arr_5));
-            data.AddLast(Unk_Arr_5_);
+            var Arrow_Grid__ = new MhwStructDataContainer<Arrow_Grid_>(Arrow_Grid_.LoadData(reader), typeof(Arrow_Grid_));
+            data.AddLast(Arrow_Grid__);
             var Action_Param_1_ = new MhwStructDataContainer<Action_Param_1>(Action_Param_1.LoadData(reader), typeof(Action_Param_1));
             data.AddLast(Action_Param_1_);
             var W11p_Params_6_Bow_Coating_Params_ = new MhwStructDataContainer<W11p_Params_6_Bow_Coating_Params>(W11p_Params_6_Bow_Coating_Params.LoadData(reader), typeof(W11p_Params_6_Bow_Coating_Params));

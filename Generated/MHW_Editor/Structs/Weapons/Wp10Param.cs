@@ -2831,23 +2831,23 @@ namespace MHW_Editor.Structs.Weapons {
             [DisplayName("Offset")]
             public long Triple_Extract_Duration_offset { get; private set; }
 
-            protected float Unk_91_raw;
-            public const string Unk_91_displayName = "Unk 91";
-            public const int Unk_91_sortIndex = 250;
-            [SortOrder(Unk_91_sortIndex)]
-            [DisplayName(Unk_91_displayName)]
-            public virtual float Unk_91 {
-                get => Unk_91_raw;
+            protected float Twinkling_When_Extraction_Time_Remaining_is_10s_raw;
+            public const string Twinkling_When_Extraction_Time_Remaining_is_10s_displayName = "Twinkling When Extraction Time Remaining is 10s";
+            public const int Twinkling_When_Extraction_Time_Remaining_is_10s_sortIndex = 250;
+            [SortOrder(Twinkling_When_Extraction_Time_Remaining_is_10s_sortIndex)]
+            [DisplayName(Twinkling_When_Extraction_Time_Remaining_is_10s_displayName)]
+            public virtual float Twinkling_When_Extraction_Time_Remaining_is_10s {
+                get => Twinkling_When_Extraction_Time_Remaining_is_10s_raw;
                 set {
-                    if (Unk_91_raw == value) return;
-                    Unk_91_raw = value;
-                    ChangedItems.Add(nameof(Unk_91));
-                    OnPropertyChanged(nameof(Unk_91));
+                    if (Twinkling_When_Extraction_Time_Remaining_is_10s_raw == value) return;
+                    Twinkling_When_Extraction_Time_Remaining_is_10s_raw = value;
+                    ChangedItems.Add(nameof(Twinkling_When_Extraction_Time_Remaining_is_10s));
+                    OnPropertyChanged(nameof(Twinkling_When_Extraction_Time_Remaining_is_10s));
                 }
             }
 
             [DisplayName("Offset")]
-            public long Unk_91_offset { get; private set; }
+            public long Twinkling_When_Extraction_Time_Remaining_is_10s_offset { get; private set; }
 
             protected float Damage_Buff_Red_Plus_White_raw;
             public const string Damage_Buff_Red_Plus_White_displayName = "Damage Buff: Red + White";
@@ -2903,23 +2903,23 @@ namespace MHW_Editor.Structs.Weapons {
             [DisplayName("Offset")]
             public long Speed_Buff_White_offset { get; private set; }
 
-            protected float Unk_95_raw;
-            public const string Unk_95_displayName = "Unk 95";
-            public const int Unk_95_sortIndex = 450;
-            [SortOrder(Unk_95_sortIndex)]
-            [DisplayName(Unk_95_displayName)]
-            public virtual float Unk_95 {
-                get => Unk_95_raw;
+            protected float Moving_Displacement_Multi_Buff_White_raw;
+            public const string Moving_Displacement_Multi_Buff_White_displayName = "Moving Displacement Multi Buff: White";
+            public const int Moving_Displacement_Multi_Buff_White_sortIndex = 450;
+            [SortOrder(Moving_Displacement_Multi_Buff_White_sortIndex)]
+            [DisplayName(Moving_Displacement_Multi_Buff_White_displayName)]
+            public virtual float Moving_Displacement_Multi_Buff_White {
+                get => Moving_Displacement_Multi_Buff_White_raw;
                 set {
-                    if (Unk_95_raw == value) return;
-                    Unk_95_raw = value;
-                    ChangedItems.Add(nameof(Unk_95));
-                    OnPropertyChanged(nameof(Unk_95));
+                    if (Moving_Displacement_Multi_Buff_White_raw == value) return;
+                    Moving_Displacement_Multi_Buff_White_raw = value;
+                    ChangedItems.Add(nameof(Moving_Displacement_Multi_Buff_White));
+                    OnPropertyChanged(nameof(Moving_Displacement_Multi_Buff_White));
                 }
             }
 
             [DisplayName("Offset")]
-            public long Unk_95_offset { get; private set; }
+            public long Moving_Displacement_Multi_Buff_White_offset { get; private set; }
 
             protected float Defense_Buff_Orange_raw;
             public const string Defense_Buff_Orange_displayName = "Defense Buff: Orange";
@@ -2979,16 +2979,16 @@ namespace MHW_Editor.Structs.Weapons {
                 data.Orange_Extract_Duration_raw = reader.ReadSingle();
                 data.Triple_Extract_Duration_offset = reader.BaseStream.Position;
                 data.Triple_Extract_Duration_raw = reader.ReadSingle();
-                data.Unk_91_offset = reader.BaseStream.Position;
-                data.Unk_91_raw = reader.ReadSingle();
+                data.Twinkling_When_Extraction_Time_Remaining_is_10s_offset = reader.BaseStream.Position;
+                data.Twinkling_When_Extraction_Time_Remaining_is_10s_raw = reader.ReadSingle();
                 data.Damage_Buff_Red_Plus_White_offset = reader.BaseStream.Position;
                 data.Damage_Buff_Red_Plus_White_raw = reader.ReadSingle();
                 data.Damage_Buff_All_Three_Extracts_offset = reader.BaseStream.Position;
                 data.Damage_Buff_All_Three_Extracts_raw = reader.ReadSingle();
                 data.Speed_Buff_White_offset = reader.BaseStream.Position;
                 data.Speed_Buff_White_raw = reader.ReadSingle();
-                data.Unk_95_offset = reader.BaseStream.Position;
-                data.Unk_95_raw = reader.ReadSingle();
+                data.Moving_Displacement_Multi_Buff_White_offset = reader.BaseStream.Position;
+                data.Moving_Displacement_Multi_Buff_White_raw = reader.ReadSingle();
                 data.Defense_Buff_Orange_offset = reader.BaseStream.Position;
                 data.Defense_Buff_Orange_raw = reader.ReadSingle();
                 data.Defense_Buff_Orange_Plus_White_offset = reader.BaseStream.Position;
@@ -3001,11 +3001,11 @@ namespace MHW_Editor.Structs.Weapons {
                 writer.Write(White_Extract_Duration_raw);
                 writer.Write(Orange_Extract_Duration_raw);
                 writer.Write(Triple_Extract_Duration_raw);
-                writer.Write(Unk_91_raw);
+                writer.Write(Twinkling_When_Extraction_Time_Remaining_is_10s_raw);
                 writer.Write(Damage_Buff_Red_Plus_White_raw);
                 writer.Write(Damage_Buff_All_Three_Extracts_raw);
                 writer.Write(Speed_Buff_White_raw);
-                writer.Write(Unk_95_raw);
+                writer.Write(Moving_Displacement_Multi_Buff_White_raw);
                 writer.Write(Defense_Buff_Orange_raw);
                 writer.Write(Defense_Buff_Orange_Plus_White_raw);
             }
@@ -3016,11 +3016,11 @@ namespace MHW_Editor.Structs.Weapons {
                     new MultiStructItemCustomView(this, "White Extract Duration", "White_Extract_Duration", "White_Extract_Duration_offset"),
                     new MultiStructItemCustomView(this, "Orange Extract Duration", "Orange_Extract_Duration", "Orange_Extract_Duration_offset"),
                     new MultiStructItemCustomView(this, "Triple Extract Duration", "Triple_Extract_Duration", "Triple_Extract_Duration_offset"),
-                    new MultiStructItemCustomView(this, "Unk 91", "Unk_91", "Unk_91_offset"),
+                    new MultiStructItemCustomView(this, "Twinkling When Extraction Time Remaining is 10s", "Twinkling_When_Extraction_Time_Remaining_is_10s", "Twinkling_When_Extraction_Time_Remaining_is_10s_offset"),
                     new MultiStructItemCustomView(this, "Damage Buff: Red + White", "Damage_Buff_Red_Plus_White", "Damage_Buff_Red_Plus_White_offset"),
                     new MultiStructItemCustomView(this, "Damage Buff: All Three Extracts", "Damage_Buff_All_Three_Extracts", "Damage_Buff_All_Three_Extracts_offset"),
                     new MultiStructItemCustomView(this, "Speed Buff: White", "Speed_Buff_White", "Speed_Buff_White_offset"),
-                    new MultiStructItemCustomView(this, "Unk 95", "Unk_95", "Unk_95_offset"),
+                    new MultiStructItemCustomView(this, "Moving Displacement Multi Buff: White", "Moving_Displacement_Multi_Buff_White", "Moving_Displacement_Multi_Buff_White_offset"),
                     new MultiStructItemCustomView(this, "Defense Buff: Orange", "Defense_Buff_Orange", "Defense_Buff_Orange_offset"),
                     new MultiStructItemCustomView(this, "Defense Buff: Orange + White", "Defense_Buff_Orange_Plus_White", "Defense_Buff_Orange_Plus_White_offset"),
                 };
@@ -4519,23 +4519,23 @@ namespace MHW_Editor.Structs.Weapons {
             [DisplayName("Offset")]
             public long Kinsect_Max_Stamina_offset { get; private set; }
 
-            protected float Unk_141_raw;
-            public const string Unk_141_displayName = "Unk 141";
-            public const int Unk_141_sortIndex = 1650;
-            [SortOrder(Unk_141_sortIndex)]
-            [DisplayName(Unk_141_displayName)]
-            public virtual float Unk_141 {
-                get => Unk_141_raw;
+            protected float Reaction_Time_on_Kinsect_Recall_raw;
+            public const string Reaction_Time_on_Kinsect_Recall_displayName = "Reaction Time on Kinsect Recall";
+            public const int Reaction_Time_on_Kinsect_Recall_sortIndex = 1650;
+            [SortOrder(Reaction_Time_on_Kinsect_Recall_sortIndex)]
+            [DisplayName(Reaction_Time_on_Kinsect_Recall_displayName)]
+            public virtual float Reaction_Time_on_Kinsect_Recall {
+                get => Reaction_Time_on_Kinsect_Recall_raw;
                 set {
-                    if (Unk_141_raw == value) return;
-                    Unk_141_raw = value;
-                    ChangedItems.Add(nameof(Unk_141));
-                    OnPropertyChanged(nameof(Unk_141));
+                    if (Reaction_Time_on_Kinsect_Recall_raw == value) return;
+                    Reaction_Time_on_Kinsect_Recall_raw = value;
+                    ChangedItems.Add(nameof(Reaction_Time_on_Kinsect_Recall));
+                    OnPropertyChanged(nameof(Reaction_Time_on_Kinsect_Recall));
                 }
             }
 
             [DisplayName("Offset")]
-            public long Unk_141_offset { get; private set; }
+            public long Reaction_Time_on_Kinsect_Recall_offset { get; private set; }
 
             protected float Kinsect_Stamina_on_Recall_raw;
             public const string Kinsect_Stamina_on_Recall_displayName = "Kinsect Stamina on Recall";
@@ -4555,23 +4555,23 @@ namespace MHW_Editor.Structs.Weapons {
             [DisplayName("Offset")]
             public long Kinsect_Stamina_on_Recall_offset { get; private set; }
 
-            protected float Unk_143_raw;
-            public const string Unk_143_displayName = "Unk 143";
-            public const int Unk_143_sortIndex = 1750;
-            [SortOrder(Unk_143_sortIndex)]
-            [DisplayName(Unk_143_displayName)]
-            public virtual float Unk_143 {
-                get => Unk_143_raw;
+            protected float Kinsect_Penetration_Speed_During_Descending_Thrust_raw;
+            public const string Kinsect_Penetration_Speed_During_Descending_Thrust_displayName = "Kinsect Penetration Speed During Descending Thrust";
+            public const int Kinsect_Penetration_Speed_During_Descending_Thrust_sortIndex = 1750;
+            [SortOrder(Kinsect_Penetration_Speed_During_Descending_Thrust_sortIndex)]
+            [DisplayName(Kinsect_Penetration_Speed_During_Descending_Thrust_displayName)]
+            public virtual float Kinsect_Penetration_Speed_During_Descending_Thrust {
+                get => Kinsect_Penetration_Speed_During_Descending_Thrust_raw;
                 set {
-                    if (Unk_143_raw == value) return;
-                    Unk_143_raw = value;
-                    ChangedItems.Add(nameof(Unk_143));
-                    OnPropertyChanged(nameof(Unk_143));
+                    if (Kinsect_Penetration_Speed_During_Descending_Thrust_raw == value) return;
+                    Kinsect_Penetration_Speed_During_Descending_Thrust_raw = value;
+                    ChangedItems.Add(nameof(Kinsect_Penetration_Speed_During_Descending_Thrust));
+                    OnPropertyChanged(nameof(Kinsect_Penetration_Speed_During_Descending_Thrust));
                 }
             }
 
             [DisplayName("Offset")]
-            public long Unk_143_offset { get; private set; }
+            public long Kinsect_Penetration_Speed_During_Descending_Thrust_offset { get; private set; }
 
             protected float Unk_144_raw;
             public const string Unk_144_displayName = "Unk 144";
@@ -4777,12 +4777,12 @@ namespace MHW_Editor.Structs.Weapons {
                 data.Kinsect_Stamina_Drain_per_Second_raw = reader.ReadSingle();
                 data.Kinsect_Max_Stamina_offset = reader.BaseStream.Position;
                 data.Kinsect_Max_Stamina_raw = reader.ReadSingle();
-                data.Unk_141_offset = reader.BaseStream.Position;
-                data.Unk_141_raw = reader.ReadSingle();
+                data.Reaction_Time_on_Kinsect_Recall_offset = reader.BaseStream.Position;
+                data.Reaction_Time_on_Kinsect_Recall_raw = reader.ReadSingle();
                 data.Kinsect_Stamina_on_Recall_offset = reader.BaseStream.Position;
                 data.Kinsect_Stamina_on_Recall_raw = reader.ReadSingle();
-                data.Unk_143_offset = reader.BaseStream.Position;
-                data.Unk_143_raw = reader.ReadSingle();
+                data.Kinsect_Penetration_Speed_During_Descending_Thrust_offset = reader.BaseStream.Position;
+                data.Kinsect_Penetration_Speed_During_Descending_Thrust_raw = reader.ReadSingle();
                 data.Unk_144_offset = reader.BaseStream.Position;
                 data.Unk_144_raw = reader.ReadSingle();
                 data.Kinsect_Dust_Interval_Blast_offset = reader.BaseStream.Position;
@@ -4833,9 +4833,9 @@ namespace MHW_Editor.Structs.Weapons {
                 writer.Write(Unk_138_raw);
                 writer.Write(Kinsect_Stamina_Drain_per_Second_raw);
                 writer.Write(Kinsect_Max_Stamina_raw);
-                writer.Write(Unk_141_raw);
+                writer.Write(Reaction_Time_on_Kinsect_Recall_raw);
                 writer.Write(Kinsect_Stamina_on_Recall_raw);
-                writer.Write(Unk_143_raw);
+                writer.Write(Kinsect_Penetration_Speed_During_Descending_Thrust_raw);
                 writer.Write(Unk_144_raw);
                 writer.Write(Kinsect_Dust_Interval_Blast_raw);
                 writer.Write(Kinsect_Dust_Interval_Heal_raw);
@@ -4879,9 +4879,9 @@ namespace MHW_Editor.Structs.Weapons {
                     new MultiStructItemCustomView(this, "Unk 138", "Unk_138", "Unk_138_offset"),
                     new MultiStructItemCustomView(this, "Kinsect Stamina Drain per Second", "Kinsect_Stamina_Drain_per_Second", "Kinsect_Stamina_Drain_per_Second_offset"),
                     new MultiStructItemCustomView(this, "Kinsect Max Stamina", "Kinsect_Max_Stamina", "Kinsect_Max_Stamina_offset"),
-                    new MultiStructItemCustomView(this, "Unk 141", "Unk_141", "Unk_141_offset"),
+                    new MultiStructItemCustomView(this, "Reaction Time on Kinsect Recall", "Reaction_Time_on_Kinsect_Recall", "Reaction_Time_on_Kinsect_Recall_offset"),
                     new MultiStructItemCustomView(this, "Kinsect Stamina on Recall", "Kinsect_Stamina_on_Recall", "Kinsect_Stamina_on_Recall_offset"),
-                    new MultiStructItemCustomView(this, "Unk 143", "Unk_143", "Unk_143_offset"),
+                    new MultiStructItemCustomView(this, "Kinsect Penetration Speed During Descending Thrust", "Kinsect_Penetration_Speed_During_Descending_Thrust", "Kinsect_Penetration_Speed_During_Descending_Thrust_offset"),
                     new MultiStructItemCustomView(this, "Unk 144", "Unk_144", "Unk_144_offset"),
                     new MultiStructItemCustomView(this, "Kinsect Dust Interval: Blast", "Kinsect_Dust_Interval_Blast", "Kinsect_Dust_Interval_Blast_offset"),
                     new MultiStructItemCustomView(this, "Kinsect Dust Interval: Heal", "Kinsect_Dust_Interval_Heal", "Kinsect_Dust_Interval_Heal_offset"),

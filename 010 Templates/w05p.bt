@@ -155,7 +155,7 @@ float Unk_15_10_6<name="Unk (15.10) 6 (float)">;
 // W05p Params (5)
 float Unk_91<name="Unk 91 (float)">;
 float Unk_92<name="Unk 92 (float)">;
-float Unk_93<name="Unk 93 (float)">;
+float Buff_Range<name="Buff Range (float)">;
 float Unk_94<name="Unk 94 (float)">;
 float Unk_95<name="Unk 95 (float)">;
 
@@ -189,17 +189,17 @@ typedef struct {
 Action_Param_2 Action_Param_2_<name="Action Param 2">;
 
 // W05p Params (7)
-float Unk_101<name="Unk 101 (float)">;
-float Unk_102<name="Unk 102 (float)">;
-float Unk_103<name="Unk 103 (float)">;
-float Unk_104<name="Unk 104 (float)">;
-float Unk_105<name="Unk 105 (float)">;
-float Unk_106<name="Unk 106 (float)">;
-float Unk_107<name="Unk 107 (float)">;
-float Unk_108<name="Unk 108 (float)">;
-float Unk_109<name="Unk 109 (float)">;
-float Unk_110<name="Unk 110 (float)">;
-float Unk_111<name="Unk 111 (float)">;
+float Self_Improvement_Movement_Speed<name="Self-Improvement Movement Speed (float)">;
+float Self_Improvement_Movement_Speed_Additive_Bonus_With_Speed_Boost<name="Self Improvement Movement Speed Additive Bonus With Speed Boost (float)">;
+float Dragon_Seal_of_Echo_Wave_Dragon_1<name="Dragon Seal of Echo Wave 'Dragon' 1 (float)">;
+float Dragon_Seal_of_Echo_Wave_Dragon_2<name="Dragon Seal of Echo Wave 'Dragon' 2 (float)">;
+float Dragon_Seal_of_Echo_Wave_Dragon_3<name="Dragon Seal of Echo Wave 'Dragon' 3 (float)">;
+float Dragon_Seal_of_Echo_Wave_Dragon_4<name="Dragon Seal of Echo Wave 'Dragon' 4 (float)">;
+float Dragon_Seal_of_Echo_Wave_Dragon_5<name="Dragon Seal of Echo Wave 'Dragon' 5 (float)">;
+float Dragon_Seal_of_Echo_Wave_Dragon_6<name="Dragon Seal of Echo Wave 'Dragon' 6 (float)">;
+float Dragon_Seal_of_Echo_Wave_Dragon_7<name="Dragon Seal of Echo Wave 'Dragon' 7 (float)">;
+float Dragon_Seal_of_Echo_Wave_Dragon_8<name="Dragon Seal of Echo Wave 'Dragon' 8 (float)">;
+float Dragon_Seal_of_Echo_Wave_Dragon_9<name="Dragon Seal of Echo Wave 'Dragon' 9 (float)">;
 
 // Action Param 3
 typedef struct {

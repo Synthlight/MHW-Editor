@@ -2921,41 +2921,41 @@ namespace MHW_Editor.Structs.Weapons {
             [DisplayName("Offset")]
             public long Unk_99_offset { get; private set; }
 
-            protected float Unk_100_raw;
-            public const string Unk_100_displayName = "Unk 100";
-            public const int Unk_100_sortIndex = 500;
-            [SortOrder(Unk_100_sortIndex)]
-            [DisplayName(Unk_100_displayName)]
-            public virtual float Unk_100 {
-                get => Unk_100_raw;
+            protected float Jumping_Spirit_Blade_Cost_raw;
+            public const string Jumping_Spirit_Blade_Cost_displayName = "Jumping Spirit Blade Cost";
+            public const int Jumping_Spirit_Blade_Cost_sortIndex = 500;
+            [SortOrder(Jumping_Spirit_Blade_Cost_sortIndex)]
+            [DisplayName(Jumping_Spirit_Blade_Cost_displayName)]
+            public virtual float Jumping_Spirit_Blade_Cost {
+                get => Jumping_Spirit_Blade_Cost_raw;
                 set {
-                    if (Unk_100_raw == value) return;
-                    Unk_100_raw = value;
-                    ChangedItems.Add(nameof(Unk_100));
-                    OnPropertyChanged(nameof(Unk_100));
+                    if (Jumping_Spirit_Blade_Cost_raw == value) return;
+                    Jumping_Spirit_Blade_Cost_raw = value;
+                    ChangedItems.Add(nameof(Jumping_Spirit_Blade_Cost));
+                    OnPropertyChanged(nameof(Jumping_Spirit_Blade_Cost));
                 }
             }
 
             [DisplayName("Offset")]
-            public long Unk_100_offset { get; private set; }
+            public long Jumping_Spirit_Blade_Cost_offset { get; private set; }
 
-            protected float Unk_101_raw;
-            public const string Unk_101_displayName = "Unk 101";
-            public const int Unk_101_sortIndex = 550;
-            [SortOrder(Unk_101_sortIndex)]
-            [DisplayName(Unk_101_displayName)]
-            public virtual float Unk_101 {
-                get => Unk_101_raw;
+            protected float Jumping_Spirit_Blade_II_III_1st_Hit_Cost_raw;
+            public const string Jumping_Spirit_Blade_II_III_1st_Hit_Cost_displayName = "Jumping Spirit Blade II / III (1st Hit) Cost";
+            public const int Jumping_Spirit_Blade_II_III_1st_Hit_Cost_sortIndex = 550;
+            [SortOrder(Jumping_Spirit_Blade_II_III_1st_Hit_Cost_sortIndex)]
+            [DisplayName(Jumping_Spirit_Blade_II_III_1st_Hit_Cost_displayName)]
+            public virtual float Jumping_Spirit_Blade_II_III_1st_Hit_Cost {
+                get => Jumping_Spirit_Blade_II_III_1st_Hit_Cost_raw;
                 set {
-                    if (Unk_101_raw == value) return;
-                    Unk_101_raw = value;
-                    ChangedItems.Add(nameof(Unk_101));
-                    OnPropertyChanged(nameof(Unk_101));
+                    if (Jumping_Spirit_Blade_II_III_1st_Hit_Cost_raw == value) return;
+                    Jumping_Spirit_Blade_II_III_1st_Hit_Cost_raw = value;
+                    ChangedItems.Add(nameof(Jumping_Spirit_Blade_II_III_1st_Hit_Cost));
+                    OnPropertyChanged(nameof(Jumping_Spirit_Blade_II_III_1st_Hit_Cost));
                 }
             }
 
             [DisplayName("Offset")]
-            public long Unk_101_offset { get; private set; }
+            public long Jumping_Spirit_Blade_II_III_1st_Hit_Cost_offset { get; private set; }
 
             protected float Gauge_Required_to_Active_Foresight_That_Gives_45_I_Frames_raw;
             public const string Gauge_Required_to_Active_Foresight_That_Gives_45_I_Frames_displayName = "Gauge Required to Active Foresight That Gives 45 I-Frames";
@@ -2993,23 +2993,23 @@ namespace MHW_Editor.Structs.Weapons {
             [DisplayName("Offset")]
             public long Unk_103_offset { get; private set; }
 
-            protected float Unk_104_raw;
-            public const string Unk_104_displayName = "Unk 104";
-            public const int Unk_104_sortIndex = 700;
-            [SortOrder(Unk_104_sortIndex)]
-            [DisplayName(Unk_104_displayName)]
-            public virtual float Unk_104 {
-                get => Unk_104_raw;
+            protected float Aerial_Draw_Spirit_Blade_Cost_raw;
+            public const string Aerial_Draw_Spirit_Blade_Cost_displayName = "Aerial Draw Spirit Blade Cost";
+            public const int Aerial_Draw_Spirit_Blade_Cost_sortIndex = 700;
+            [SortOrder(Aerial_Draw_Spirit_Blade_Cost_sortIndex)]
+            [DisplayName(Aerial_Draw_Spirit_Blade_Cost_displayName)]
+            public virtual float Aerial_Draw_Spirit_Blade_Cost {
+                get => Aerial_Draw_Spirit_Blade_Cost_raw;
                 set {
-                    if (Unk_104_raw == value) return;
-                    Unk_104_raw = value;
-                    ChangedItems.Add(nameof(Unk_104));
-                    OnPropertyChanged(nameof(Unk_104));
+                    if (Aerial_Draw_Spirit_Blade_Cost_raw == value) return;
+                    Aerial_Draw_Spirit_Blade_Cost_raw = value;
+                    ChangedItems.Add(nameof(Aerial_Draw_Spirit_Blade_Cost));
+                    OnPropertyChanged(nameof(Aerial_Draw_Spirit_Blade_Cost));
                 }
             }
 
             [DisplayName("Offset")]
-            public long Unk_104_offset { get; private set; }
+            public long Aerial_Draw_Spirit_Blade_Cost_offset { get; private set; }
 
             protected float Spirit_Regeneration_Duration_After_Helm_Breaker_In_Seconds__raw;
             public const string Spirit_Regeneration_Duration_After_Helm_Breaker_In_Seconds__displayName = "Spirit Regeneration Duration After Helm Breaker (In Seconds)";
@@ -3029,131 +3029,131 @@ namespace MHW_Editor.Structs.Weapons {
             [DisplayName("Offset")]
             public long Spirit_Regeneration_Duration_After_Helm_Breaker_In_Seconds__offset { get; private set; }
 
-            protected float Spirit_Regeneration_After_Something_Unk_1_raw;
-            public const string Spirit_Regeneration_After_Something_Unk_1_displayName = "Spirit Regeneration After Something, Unk 1";
-            public const int Spirit_Regeneration_After_Something_Unk_1_sortIndex = 800;
-            [SortOrder(Spirit_Regeneration_After_Something_Unk_1_sortIndex)]
-            [DisplayName(Spirit_Regeneration_After_Something_Unk_1_displayName)]
-            public virtual float Spirit_Regeneration_After_Something_Unk_1 {
-                get => Spirit_Regeneration_After_Something_Unk_1_raw;
+            protected float Spirit_Regeneration_After_Red_Gauge_Spirit_Helm_Breaker_Duration_in_Seconds__raw;
+            public const string Spirit_Regeneration_After_Red_Gauge_Spirit_Helm_Breaker_Duration_in_Seconds__displayName = "Spirit Regeneration After: [Red Gauge] Spirit Helm Breaker (Duration in Seconds)";
+            public const int Spirit_Regeneration_After_Red_Gauge_Spirit_Helm_Breaker_Duration_in_Seconds__sortIndex = 800;
+            [SortOrder(Spirit_Regeneration_After_Red_Gauge_Spirit_Helm_Breaker_Duration_in_Seconds__sortIndex)]
+            [DisplayName(Spirit_Regeneration_After_Red_Gauge_Spirit_Helm_Breaker_Duration_in_Seconds__displayName)]
+            public virtual float Spirit_Regeneration_After_Red_Gauge_Spirit_Helm_Breaker_Duration_in_Seconds_ {
+                get => Spirit_Regeneration_After_Red_Gauge_Spirit_Helm_Breaker_Duration_in_Seconds__raw;
                 set {
-                    if (Spirit_Regeneration_After_Something_Unk_1_raw == value) return;
-                    Spirit_Regeneration_After_Something_Unk_1_raw = value;
-                    ChangedItems.Add(nameof(Spirit_Regeneration_After_Something_Unk_1));
-                    OnPropertyChanged(nameof(Spirit_Regeneration_After_Something_Unk_1));
+                    if (Spirit_Regeneration_After_Red_Gauge_Spirit_Helm_Breaker_Duration_in_Seconds__raw == value) return;
+                    Spirit_Regeneration_After_Red_Gauge_Spirit_Helm_Breaker_Duration_in_Seconds__raw = value;
+                    ChangedItems.Add(nameof(Spirit_Regeneration_After_Red_Gauge_Spirit_Helm_Breaker_Duration_in_Seconds_));
+                    OnPropertyChanged(nameof(Spirit_Regeneration_After_Red_Gauge_Spirit_Helm_Breaker_Duration_in_Seconds_));
                 }
             }
 
             [DisplayName("Offset")]
-            public long Spirit_Regeneration_After_Something_Unk_1_offset { get; private set; }
+            public long Spirit_Regeneration_After_Red_Gauge_Spirit_Helm_Breaker_Duration_in_Seconds__offset { get; private set; }
 
-            protected float Spirit_Regeneration_After_Something_Unk_2_raw;
-            public const string Spirit_Regeneration_After_Something_Unk_2_displayName = "Spirit Regeneration After Something, Unk 2";
-            public const int Spirit_Regeneration_After_Something_Unk_2_sortIndex = 850;
-            [SortOrder(Spirit_Regeneration_After_Something_Unk_2_sortIndex)]
-            [DisplayName(Spirit_Regeneration_After_Something_Unk_2_displayName)]
-            public virtual float Spirit_Regeneration_After_Something_Unk_2 {
-                get => Spirit_Regeneration_After_Something_Unk_2_raw;
+            protected float Spirit_Regeneration_After_Yellow_White_Gauge_Spirit_Helm_Breaker_Regen_Lower_Values_are_Faster__raw;
+            public const string Spirit_Regeneration_After_Yellow_White_Gauge_Spirit_Helm_Breaker_Regen_Lower_Values_are_Faster__displayName = "Spirit Regeneration After: [Yellow & White Gauge] Spirit Helm Breaker (Regen, Lower Values are Faster)";
+            public const int Spirit_Regeneration_After_Yellow_White_Gauge_Spirit_Helm_Breaker_Regen_Lower_Values_are_Faster__sortIndex = 850;
+            [SortOrder(Spirit_Regeneration_After_Yellow_White_Gauge_Spirit_Helm_Breaker_Regen_Lower_Values_are_Faster__sortIndex)]
+            [DisplayName(Spirit_Regeneration_After_Yellow_White_Gauge_Spirit_Helm_Breaker_Regen_Lower_Values_are_Faster__displayName)]
+            public virtual float Spirit_Regeneration_After_Yellow_White_Gauge_Spirit_Helm_Breaker_Regen_Lower_Values_are_Faster_ {
+                get => Spirit_Regeneration_After_Yellow_White_Gauge_Spirit_Helm_Breaker_Regen_Lower_Values_are_Faster__raw;
                 set {
-                    if (Spirit_Regeneration_After_Something_Unk_2_raw == value) return;
-                    Spirit_Regeneration_After_Something_Unk_2_raw = value;
-                    ChangedItems.Add(nameof(Spirit_Regeneration_After_Something_Unk_2));
-                    OnPropertyChanged(nameof(Spirit_Regeneration_After_Something_Unk_2));
+                    if (Spirit_Regeneration_After_Yellow_White_Gauge_Spirit_Helm_Breaker_Regen_Lower_Values_are_Faster__raw == value) return;
+                    Spirit_Regeneration_After_Yellow_White_Gauge_Spirit_Helm_Breaker_Regen_Lower_Values_are_Faster__raw = value;
+                    ChangedItems.Add(nameof(Spirit_Regeneration_After_Yellow_White_Gauge_Spirit_Helm_Breaker_Regen_Lower_Values_are_Faster_));
+                    OnPropertyChanged(nameof(Spirit_Regeneration_After_Yellow_White_Gauge_Spirit_Helm_Breaker_Regen_Lower_Values_are_Faster_));
                 }
             }
 
             [DisplayName("Offset")]
-            public long Spirit_Regeneration_After_Something_Unk_2_offset { get; private set; }
+            public long Spirit_Regeneration_After_Yellow_White_Gauge_Spirit_Helm_Breaker_Regen_Lower_Values_are_Faster__offset { get; private set; }
 
-            protected float Spirit_Regeneration_After_Something_Unk_3_raw;
-            public const string Spirit_Regeneration_After_Something_Unk_3_displayName = "Spirit Regeneration After Something, Unk 3";
-            public const int Spirit_Regeneration_After_Something_Unk_3_sortIndex = 900;
-            [SortOrder(Spirit_Regeneration_After_Something_Unk_3_sortIndex)]
-            [DisplayName(Spirit_Regeneration_After_Something_Unk_3_displayName)]
-            public virtual float Spirit_Regeneration_After_Something_Unk_3 {
-                get => Spirit_Regeneration_After_Something_Unk_3_raw;
+            protected float Spirit_Regeneration_After_Red_Gauge_Spirit_Helm_Breaker_Regen_Lower_Values_are_Faster__raw;
+            public const string Spirit_Regeneration_After_Red_Gauge_Spirit_Helm_Breaker_Regen_Lower_Values_are_Faster__displayName = "Spirit Regeneration After: [Red Gauge] Spirit Helm Breaker (Regen, Lower Values are Faster)";
+            public const int Spirit_Regeneration_After_Red_Gauge_Spirit_Helm_Breaker_Regen_Lower_Values_are_Faster__sortIndex = 900;
+            [SortOrder(Spirit_Regeneration_After_Red_Gauge_Spirit_Helm_Breaker_Regen_Lower_Values_are_Faster__sortIndex)]
+            [DisplayName(Spirit_Regeneration_After_Red_Gauge_Spirit_Helm_Breaker_Regen_Lower_Values_are_Faster__displayName)]
+            public virtual float Spirit_Regeneration_After_Red_Gauge_Spirit_Helm_Breaker_Regen_Lower_Values_are_Faster_ {
+                get => Spirit_Regeneration_After_Red_Gauge_Spirit_Helm_Breaker_Regen_Lower_Values_are_Faster__raw;
                 set {
-                    if (Spirit_Regeneration_After_Something_Unk_3_raw == value) return;
-                    Spirit_Regeneration_After_Something_Unk_3_raw = value;
-                    ChangedItems.Add(nameof(Spirit_Regeneration_After_Something_Unk_3));
-                    OnPropertyChanged(nameof(Spirit_Regeneration_After_Something_Unk_3));
+                    if (Spirit_Regeneration_After_Red_Gauge_Spirit_Helm_Breaker_Regen_Lower_Values_are_Faster__raw == value) return;
+                    Spirit_Regeneration_After_Red_Gauge_Spirit_Helm_Breaker_Regen_Lower_Values_are_Faster__raw = value;
+                    ChangedItems.Add(nameof(Spirit_Regeneration_After_Red_Gauge_Spirit_Helm_Breaker_Regen_Lower_Values_are_Faster_));
+                    OnPropertyChanged(nameof(Spirit_Regeneration_After_Red_Gauge_Spirit_Helm_Breaker_Regen_Lower_Values_are_Faster_));
                 }
             }
 
             [DisplayName("Offset")]
-            public long Spirit_Regeneration_After_Something_Unk_3_offset { get; private set; }
+            public long Spirit_Regeneration_After_Red_Gauge_Spirit_Helm_Breaker_Regen_Lower_Values_are_Faster__offset { get; private set; }
 
-            protected float Spirit_Regeneration_After_Something_Unk_4_raw;
-            public const string Spirit_Regeneration_After_Something_Unk_4_displayName = "Spirit Regeneration After Something, Unk 4";
-            public const int Spirit_Regeneration_After_Something_Unk_4_sortIndex = 950;
-            [SortOrder(Spirit_Regeneration_After_Something_Unk_4_sortIndex)]
-            [DisplayName(Spirit_Regeneration_After_Something_Unk_4_displayName)]
-            public virtual float Spirit_Regeneration_After_Something_Unk_4 {
-                get => Spirit_Regeneration_After_Something_Unk_4_raw;
+            protected float Spirit_Regeneration_After_Iai_Slash_Duration_in_Seconds__raw;
+            public const string Spirit_Regeneration_After_Iai_Slash_Duration_in_Seconds__displayName = "Spirit Regeneration After: Iai Slash (Duration in Seconds)";
+            public const int Spirit_Regeneration_After_Iai_Slash_Duration_in_Seconds__sortIndex = 950;
+            [SortOrder(Spirit_Regeneration_After_Iai_Slash_Duration_in_Seconds__sortIndex)]
+            [DisplayName(Spirit_Regeneration_After_Iai_Slash_Duration_in_Seconds__displayName)]
+            public virtual float Spirit_Regeneration_After_Iai_Slash_Duration_in_Seconds_ {
+                get => Spirit_Regeneration_After_Iai_Slash_Duration_in_Seconds__raw;
                 set {
-                    if (Spirit_Regeneration_After_Something_Unk_4_raw == value) return;
-                    Spirit_Regeneration_After_Something_Unk_4_raw = value;
-                    ChangedItems.Add(nameof(Spirit_Regeneration_After_Something_Unk_4));
-                    OnPropertyChanged(nameof(Spirit_Regeneration_After_Something_Unk_4));
+                    if (Spirit_Regeneration_After_Iai_Slash_Duration_in_Seconds__raw == value) return;
+                    Spirit_Regeneration_After_Iai_Slash_Duration_in_Seconds__raw = value;
+                    ChangedItems.Add(nameof(Spirit_Regeneration_After_Iai_Slash_Duration_in_Seconds_));
+                    OnPropertyChanged(nameof(Spirit_Regeneration_After_Iai_Slash_Duration_in_Seconds_));
                 }
             }
 
             [DisplayName("Offset")]
-            public long Spirit_Regeneration_After_Something_Unk_4_offset { get; private set; }
+            public long Spirit_Regeneration_After_Iai_Slash_Duration_in_Seconds__offset { get; private set; }
 
-            protected float Spirit_Regeneration_After_Something_Unk_5_raw;
-            public const string Spirit_Regeneration_After_Something_Unk_5_displayName = "Spirit Regeneration After Something, Unk 5";
-            public const int Spirit_Regeneration_After_Something_Unk_5_sortIndex = 1000;
-            [SortOrder(Spirit_Regeneration_After_Something_Unk_5_sortIndex)]
-            [DisplayName(Spirit_Regeneration_After_Something_Unk_5_displayName)]
-            public virtual float Spirit_Regeneration_After_Something_Unk_5 {
-                get => Spirit_Regeneration_After_Something_Unk_5_raw;
+            protected float Spirit_Regeneration_After_Timed_Iai_Slash_Duration_in_Seconds__raw;
+            public const string Spirit_Regeneration_After_Timed_Iai_Slash_Duration_in_Seconds__displayName = "Spirit Regeneration After: Timed Iai Slash (Duration in Seconds)";
+            public const int Spirit_Regeneration_After_Timed_Iai_Slash_Duration_in_Seconds__sortIndex = 1000;
+            [SortOrder(Spirit_Regeneration_After_Timed_Iai_Slash_Duration_in_Seconds__sortIndex)]
+            [DisplayName(Spirit_Regeneration_After_Timed_Iai_Slash_Duration_in_Seconds__displayName)]
+            public virtual float Spirit_Regeneration_After_Timed_Iai_Slash_Duration_in_Seconds_ {
+                get => Spirit_Regeneration_After_Timed_Iai_Slash_Duration_in_Seconds__raw;
                 set {
-                    if (Spirit_Regeneration_After_Something_Unk_5_raw == value) return;
-                    Spirit_Regeneration_After_Something_Unk_5_raw = value;
-                    ChangedItems.Add(nameof(Spirit_Regeneration_After_Something_Unk_5));
-                    OnPropertyChanged(nameof(Spirit_Regeneration_After_Something_Unk_5));
+                    if (Spirit_Regeneration_After_Timed_Iai_Slash_Duration_in_Seconds__raw == value) return;
+                    Spirit_Regeneration_After_Timed_Iai_Slash_Duration_in_Seconds__raw = value;
+                    ChangedItems.Add(nameof(Spirit_Regeneration_After_Timed_Iai_Slash_Duration_in_Seconds_));
+                    OnPropertyChanged(nameof(Spirit_Regeneration_After_Timed_Iai_Slash_Duration_in_Seconds_));
                 }
             }
 
             [DisplayName("Offset")]
-            public long Spirit_Regeneration_After_Something_Unk_5_offset { get; private set; }
+            public long Spirit_Regeneration_After_Timed_Iai_Slash_Duration_in_Seconds__offset { get; private set; }
 
-            protected float Spirit_Regeneration_After_Something_Unk_6_raw;
-            public const string Spirit_Regeneration_After_Something_Unk_6_displayName = "Spirit Regeneration After Something, Unk 6";
-            public const int Spirit_Regeneration_After_Something_Unk_6_sortIndex = 1050;
-            [SortOrder(Spirit_Regeneration_After_Something_Unk_6_sortIndex)]
-            [DisplayName(Spirit_Regeneration_After_Something_Unk_6_displayName)]
-            public virtual float Spirit_Regeneration_After_Something_Unk_6 {
-                get => Spirit_Regeneration_After_Something_Unk_6_raw;
+            protected float Spirit_Regeneration_After_Iai_Slash_Regen_Lower_Values_are_Faster__raw;
+            public const string Spirit_Regeneration_After_Iai_Slash_Regen_Lower_Values_are_Faster__displayName = "Spirit Regeneration After: Iai Slash (Regen, Lower Values are Faster)";
+            public const int Spirit_Regeneration_After_Iai_Slash_Regen_Lower_Values_are_Faster__sortIndex = 1050;
+            [SortOrder(Spirit_Regeneration_After_Iai_Slash_Regen_Lower_Values_are_Faster__sortIndex)]
+            [DisplayName(Spirit_Regeneration_After_Iai_Slash_Regen_Lower_Values_are_Faster__displayName)]
+            public virtual float Spirit_Regeneration_After_Iai_Slash_Regen_Lower_Values_are_Faster_ {
+                get => Spirit_Regeneration_After_Iai_Slash_Regen_Lower_Values_are_Faster__raw;
                 set {
-                    if (Spirit_Regeneration_After_Something_Unk_6_raw == value) return;
-                    Spirit_Regeneration_After_Something_Unk_6_raw = value;
-                    ChangedItems.Add(nameof(Spirit_Regeneration_After_Something_Unk_6));
-                    OnPropertyChanged(nameof(Spirit_Regeneration_After_Something_Unk_6));
+                    if (Spirit_Regeneration_After_Iai_Slash_Regen_Lower_Values_are_Faster__raw == value) return;
+                    Spirit_Regeneration_After_Iai_Slash_Regen_Lower_Values_are_Faster__raw = value;
+                    ChangedItems.Add(nameof(Spirit_Regeneration_After_Iai_Slash_Regen_Lower_Values_are_Faster_));
+                    OnPropertyChanged(nameof(Spirit_Regeneration_After_Iai_Slash_Regen_Lower_Values_are_Faster_));
                 }
             }
 
             [DisplayName("Offset")]
-            public long Spirit_Regeneration_After_Something_Unk_6_offset { get; private set; }
+            public long Spirit_Regeneration_After_Iai_Slash_Regen_Lower_Values_are_Faster__offset { get; private set; }
 
-            protected float Spirit_Regeneration_After_Something_Unk_7_raw;
-            public const string Spirit_Regeneration_After_Something_Unk_7_displayName = "Spirit Regeneration After Something, Unk 7";
-            public const int Spirit_Regeneration_After_Something_Unk_7_sortIndex = 1100;
-            [SortOrder(Spirit_Regeneration_After_Something_Unk_7_sortIndex)]
-            [DisplayName(Spirit_Regeneration_After_Something_Unk_7_displayName)]
-            public virtual float Spirit_Regeneration_After_Something_Unk_7 {
-                get => Spirit_Regeneration_After_Something_Unk_7_raw;
+            protected float Spirit_Regeneration_After_Timed_Iai_Slash_Regen_Lower_Values_are_Faster__raw;
+            public const string Spirit_Regeneration_After_Timed_Iai_Slash_Regen_Lower_Values_are_Faster__displayName = "Spirit Regeneration After: Timed Iai Slash (Regen, Lower Values are Faster)";
+            public const int Spirit_Regeneration_After_Timed_Iai_Slash_Regen_Lower_Values_are_Faster__sortIndex = 1100;
+            [SortOrder(Spirit_Regeneration_After_Timed_Iai_Slash_Regen_Lower_Values_are_Faster__sortIndex)]
+            [DisplayName(Spirit_Regeneration_After_Timed_Iai_Slash_Regen_Lower_Values_are_Faster__displayName)]
+            public virtual float Spirit_Regeneration_After_Timed_Iai_Slash_Regen_Lower_Values_are_Faster_ {
+                get => Spirit_Regeneration_After_Timed_Iai_Slash_Regen_Lower_Values_are_Faster__raw;
                 set {
-                    if (Spirit_Regeneration_After_Something_Unk_7_raw == value) return;
-                    Spirit_Regeneration_After_Something_Unk_7_raw = value;
-                    ChangedItems.Add(nameof(Spirit_Regeneration_After_Something_Unk_7));
-                    OnPropertyChanged(nameof(Spirit_Regeneration_After_Something_Unk_7));
+                    if (Spirit_Regeneration_After_Timed_Iai_Slash_Regen_Lower_Values_are_Faster__raw == value) return;
+                    Spirit_Regeneration_After_Timed_Iai_Slash_Regen_Lower_Values_are_Faster__raw = value;
+                    ChangedItems.Add(nameof(Spirit_Regeneration_After_Timed_Iai_Slash_Regen_Lower_Values_are_Faster_));
+                    OnPropertyChanged(nameof(Spirit_Regeneration_After_Timed_Iai_Slash_Regen_Lower_Values_are_Faster_));
                 }
             }
 
             [DisplayName("Offset")]
-            public long Spirit_Regeneration_After_Something_Unk_7_offset { get; private set; }
+            public long Spirit_Regeneration_After_Timed_Iai_Slash_Regen_Lower_Values_are_Faster__offset { get; private set; }
 
             protected float Gauge_Duration_White_raw;
             public const string Gauge_Duration_White_displayName = "Gauge Duration: White";
@@ -3281,77 +3281,77 @@ namespace MHW_Editor.Structs.Weapons {
             [DisplayName("Offset")]
             public long Gauge_Damage_Buff_Red_offset { get; private set; }
 
-            protected float Unk_120_raw;
-            public const string Unk_120_displayName = "Unk 120";
-            public const int Unk_120_sortIndex = 1500;
-            [SortOrder(Unk_120_sortIndex)]
-            [DisplayName(Unk_120_displayName)]
-            public virtual float Unk_120 {
-                get => Unk_120_raw;
+            protected float Spirit_Gen_Multiplier_Varies_HZV_After_Applying_Sharpness_1_raw;
+            public const string Spirit_Gen_Multiplier_Varies_HZV_After_Applying_Sharpness_1_displayName = "Spirit Gen Multiplier Varies HZV After Applying Sharpness 1";
+            public const int Spirit_Gen_Multiplier_Varies_HZV_After_Applying_Sharpness_1_sortIndex = 1500;
+            [SortOrder(Spirit_Gen_Multiplier_Varies_HZV_After_Applying_Sharpness_1_sortIndex)]
+            [DisplayName(Spirit_Gen_Multiplier_Varies_HZV_After_Applying_Sharpness_1_displayName)]
+            public virtual float Spirit_Gen_Multiplier_Varies_HZV_After_Applying_Sharpness_1 {
+                get => Spirit_Gen_Multiplier_Varies_HZV_After_Applying_Sharpness_1_raw;
                 set {
-                    if (Unk_120_raw == value) return;
-                    Unk_120_raw = value;
-                    ChangedItems.Add(nameof(Unk_120));
-                    OnPropertyChanged(nameof(Unk_120));
+                    if (Spirit_Gen_Multiplier_Varies_HZV_After_Applying_Sharpness_1_raw == value) return;
+                    Spirit_Gen_Multiplier_Varies_HZV_After_Applying_Sharpness_1_raw = value;
+                    ChangedItems.Add(nameof(Spirit_Gen_Multiplier_Varies_HZV_After_Applying_Sharpness_1));
+                    OnPropertyChanged(nameof(Spirit_Gen_Multiplier_Varies_HZV_After_Applying_Sharpness_1));
                 }
             }
 
             [DisplayName("Offset")]
-            public long Unk_120_offset { get; private set; }
+            public long Spirit_Gen_Multiplier_Varies_HZV_After_Applying_Sharpness_1_offset { get; private set; }
 
-            protected float Unk_121_raw;
-            public const string Unk_121_displayName = "Unk 121";
-            public const int Unk_121_sortIndex = 1550;
-            [SortOrder(Unk_121_sortIndex)]
-            [DisplayName(Unk_121_displayName)]
-            public virtual float Unk_121 {
-                get => Unk_121_raw;
+            protected float Spirit_Gen_Multiplier_Varies_HZV_After_Applying_Sharpness_2_raw;
+            public const string Spirit_Gen_Multiplier_Varies_HZV_After_Applying_Sharpness_2_displayName = "Spirit Gen Multiplier Varies HZV After Applying Sharpness 2";
+            public const int Spirit_Gen_Multiplier_Varies_HZV_After_Applying_Sharpness_2_sortIndex = 1550;
+            [SortOrder(Spirit_Gen_Multiplier_Varies_HZV_After_Applying_Sharpness_2_sortIndex)]
+            [DisplayName(Spirit_Gen_Multiplier_Varies_HZV_After_Applying_Sharpness_2_displayName)]
+            public virtual float Spirit_Gen_Multiplier_Varies_HZV_After_Applying_Sharpness_2 {
+                get => Spirit_Gen_Multiplier_Varies_HZV_After_Applying_Sharpness_2_raw;
                 set {
-                    if (Unk_121_raw == value) return;
-                    Unk_121_raw = value;
-                    ChangedItems.Add(nameof(Unk_121));
-                    OnPropertyChanged(nameof(Unk_121));
+                    if (Spirit_Gen_Multiplier_Varies_HZV_After_Applying_Sharpness_2_raw == value) return;
+                    Spirit_Gen_Multiplier_Varies_HZV_After_Applying_Sharpness_2_raw = value;
+                    ChangedItems.Add(nameof(Spirit_Gen_Multiplier_Varies_HZV_After_Applying_Sharpness_2));
+                    OnPropertyChanged(nameof(Spirit_Gen_Multiplier_Varies_HZV_After_Applying_Sharpness_2));
                 }
             }
 
             [DisplayName("Offset")]
-            public long Unk_121_offset { get; private set; }
+            public long Spirit_Gen_Multiplier_Varies_HZV_After_Applying_Sharpness_2_offset { get; private set; }
 
-            protected float Unk_122_raw;
-            public const string Unk_122_displayName = "Unk 122";
-            public const int Unk_122_sortIndex = 1600;
-            [SortOrder(Unk_122_sortIndex)]
-            [DisplayName(Unk_122_displayName)]
-            public virtual float Unk_122 {
-                get => Unk_122_raw;
+            protected float Spirit_Gen_Multiplier_Varies_HZV_After_Applying_Sharpness_3_raw;
+            public const string Spirit_Gen_Multiplier_Varies_HZV_After_Applying_Sharpness_3_displayName = "Spirit Gen Multiplier Varies HZV After Applying Sharpness 3";
+            public const int Spirit_Gen_Multiplier_Varies_HZV_After_Applying_Sharpness_3_sortIndex = 1600;
+            [SortOrder(Spirit_Gen_Multiplier_Varies_HZV_After_Applying_Sharpness_3_sortIndex)]
+            [DisplayName(Spirit_Gen_Multiplier_Varies_HZV_After_Applying_Sharpness_3_displayName)]
+            public virtual float Spirit_Gen_Multiplier_Varies_HZV_After_Applying_Sharpness_3 {
+                get => Spirit_Gen_Multiplier_Varies_HZV_After_Applying_Sharpness_3_raw;
                 set {
-                    if (Unk_122_raw == value) return;
-                    Unk_122_raw = value;
-                    ChangedItems.Add(nameof(Unk_122));
-                    OnPropertyChanged(nameof(Unk_122));
+                    if (Spirit_Gen_Multiplier_Varies_HZV_After_Applying_Sharpness_3_raw == value) return;
+                    Spirit_Gen_Multiplier_Varies_HZV_After_Applying_Sharpness_3_raw = value;
+                    ChangedItems.Add(nameof(Spirit_Gen_Multiplier_Varies_HZV_After_Applying_Sharpness_3));
+                    OnPropertyChanged(nameof(Spirit_Gen_Multiplier_Varies_HZV_After_Applying_Sharpness_3));
                 }
             }
 
             [DisplayName("Offset")]
-            public long Unk_122_offset { get; private set; }
+            public long Spirit_Gen_Multiplier_Varies_HZV_After_Applying_Sharpness_3_offset { get; private set; }
 
-            protected float Unk_123_raw;
-            public const string Unk_123_displayName = "Unk 123";
-            public const int Unk_123_sortIndex = 1650;
-            [SortOrder(Unk_123_sortIndex)]
-            [DisplayName(Unk_123_displayName)]
-            public virtual float Unk_123 {
-                get => Unk_123_raw;
+            protected float Spirit_Gen_Multiplier_Varies_HZV_After_Applying_Sharpness_4_raw;
+            public const string Spirit_Gen_Multiplier_Varies_HZV_After_Applying_Sharpness_4_displayName = "Spirit Gen Multiplier Varies HZV After Applying Sharpness 4";
+            public const int Spirit_Gen_Multiplier_Varies_HZV_After_Applying_Sharpness_4_sortIndex = 1650;
+            [SortOrder(Spirit_Gen_Multiplier_Varies_HZV_After_Applying_Sharpness_4_sortIndex)]
+            [DisplayName(Spirit_Gen_Multiplier_Varies_HZV_After_Applying_Sharpness_4_displayName)]
+            public virtual float Spirit_Gen_Multiplier_Varies_HZV_After_Applying_Sharpness_4 {
+                get => Spirit_Gen_Multiplier_Varies_HZV_After_Applying_Sharpness_4_raw;
                 set {
-                    if (Unk_123_raw == value) return;
-                    Unk_123_raw = value;
-                    ChangedItems.Add(nameof(Unk_123));
-                    OnPropertyChanged(nameof(Unk_123));
+                    if (Spirit_Gen_Multiplier_Varies_HZV_After_Applying_Sharpness_4_raw == value) return;
+                    Spirit_Gen_Multiplier_Varies_HZV_After_Applying_Sharpness_4_raw = value;
+                    ChangedItems.Add(nameof(Spirit_Gen_Multiplier_Varies_HZV_After_Applying_Sharpness_4));
+                    OnPropertyChanged(nameof(Spirit_Gen_Multiplier_Varies_HZV_After_Applying_Sharpness_4));
                 }
             }
 
             [DisplayName("Offset")]
-            public long Unk_123_offset { get; private set; }
+            public long Spirit_Gen_Multiplier_Varies_HZV_After_Applying_Sharpness_4_offset { get; private set; }
 
             protected float Gauge_No_Decay_Time_after_Spirit_Gauge_Upgrade_raw;
             public const string Gauge_No_Decay_Time_after_Spirit_Gauge_Upgrade_displayName = "Gauge No-Decay Time after Spirit Gauge Upgrade";
@@ -3637,32 +3637,32 @@ namespace MHW_Editor.Structs.Weapons {
                 data.Unk_98_raw = reader.ReadSingle();
                 data.Unk_99_offset = reader.BaseStream.Position;
                 data.Unk_99_raw = reader.ReadSingle();
-                data.Unk_100_offset = reader.BaseStream.Position;
-                data.Unk_100_raw = reader.ReadSingle();
-                data.Unk_101_offset = reader.BaseStream.Position;
-                data.Unk_101_raw = reader.ReadSingle();
+                data.Jumping_Spirit_Blade_Cost_offset = reader.BaseStream.Position;
+                data.Jumping_Spirit_Blade_Cost_raw = reader.ReadSingle();
+                data.Jumping_Spirit_Blade_II_III_1st_Hit_Cost_offset = reader.BaseStream.Position;
+                data.Jumping_Spirit_Blade_II_III_1st_Hit_Cost_raw = reader.ReadSingle();
                 data.Gauge_Required_to_Active_Foresight_That_Gives_45_I_Frames_offset = reader.BaseStream.Position;
                 data.Gauge_Required_to_Active_Foresight_That_Gives_45_I_Frames_raw = reader.ReadSingle();
                 data.Unk_103_offset = reader.BaseStream.Position;
                 data.Unk_103_raw = reader.ReadSingle();
-                data.Unk_104_offset = reader.BaseStream.Position;
-                data.Unk_104_raw = reader.ReadSingle();
+                data.Aerial_Draw_Spirit_Blade_Cost_offset = reader.BaseStream.Position;
+                data.Aerial_Draw_Spirit_Blade_Cost_raw = reader.ReadSingle();
                 data.Spirit_Regeneration_Duration_After_Helm_Breaker_In_Seconds__offset = reader.BaseStream.Position;
                 data.Spirit_Regeneration_Duration_After_Helm_Breaker_In_Seconds__raw = reader.ReadSingle();
-                data.Spirit_Regeneration_After_Something_Unk_1_offset = reader.BaseStream.Position;
-                data.Spirit_Regeneration_After_Something_Unk_1_raw = reader.ReadSingle();
-                data.Spirit_Regeneration_After_Something_Unk_2_offset = reader.BaseStream.Position;
-                data.Spirit_Regeneration_After_Something_Unk_2_raw = reader.ReadSingle();
-                data.Spirit_Regeneration_After_Something_Unk_3_offset = reader.BaseStream.Position;
-                data.Spirit_Regeneration_After_Something_Unk_3_raw = reader.ReadSingle();
-                data.Spirit_Regeneration_After_Something_Unk_4_offset = reader.BaseStream.Position;
-                data.Spirit_Regeneration_After_Something_Unk_4_raw = reader.ReadSingle();
-                data.Spirit_Regeneration_After_Something_Unk_5_offset = reader.BaseStream.Position;
-                data.Spirit_Regeneration_After_Something_Unk_5_raw = reader.ReadSingle();
-                data.Spirit_Regeneration_After_Something_Unk_6_offset = reader.BaseStream.Position;
-                data.Spirit_Regeneration_After_Something_Unk_6_raw = reader.ReadSingle();
-                data.Spirit_Regeneration_After_Something_Unk_7_offset = reader.BaseStream.Position;
-                data.Spirit_Regeneration_After_Something_Unk_7_raw = reader.ReadSingle();
+                data.Spirit_Regeneration_After_Red_Gauge_Spirit_Helm_Breaker_Duration_in_Seconds__offset = reader.BaseStream.Position;
+                data.Spirit_Regeneration_After_Red_Gauge_Spirit_Helm_Breaker_Duration_in_Seconds__raw = reader.ReadSingle();
+                data.Spirit_Regeneration_After_Yellow_White_Gauge_Spirit_Helm_Breaker_Regen_Lower_Values_are_Faster__offset = reader.BaseStream.Position;
+                data.Spirit_Regeneration_After_Yellow_White_Gauge_Spirit_Helm_Breaker_Regen_Lower_Values_are_Faster__raw = reader.ReadSingle();
+                data.Spirit_Regeneration_After_Red_Gauge_Spirit_Helm_Breaker_Regen_Lower_Values_are_Faster__offset = reader.BaseStream.Position;
+                data.Spirit_Regeneration_After_Red_Gauge_Spirit_Helm_Breaker_Regen_Lower_Values_are_Faster__raw = reader.ReadSingle();
+                data.Spirit_Regeneration_After_Iai_Slash_Duration_in_Seconds__offset = reader.BaseStream.Position;
+                data.Spirit_Regeneration_After_Iai_Slash_Duration_in_Seconds__raw = reader.ReadSingle();
+                data.Spirit_Regeneration_After_Timed_Iai_Slash_Duration_in_Seconds__offset = reader.BaseStream.Position;
+                data.Spirit_Regeneration_After_Timed_Iai_Slash_Duration_in_Seconds__raw = reader.ReadSingle();
+                data.Spirit_Regeneration_After_Iai_Slash_Regen_Lower_Values_are_Faster__offset = reader.BaseStream.Position;
+                data.Spirit_Regeneration_After_Iai_Slash_Regen_Lower_Values_are_Faster__raw = reader.ReadSingle();
+                data.Spirit_Regeneration_After_Timed_Iai_Slash_Regen_Lower_Values_are_Faster__offset = reader.BaseStream.Position;
+                data.Spirit_Regeneration_After_Timed_Iai_Slash_Regen_Lower_Values_are_Faster__raw = reader.ReadSingle();
                 data.Gauge_Duration_White_offset = reader.BaseStream.Position;
                 data.Gauge_Duration_White_raw = reader.ReadSingle();
                 data.Gauge_Duration_Yellow_offset = reader.BaseStream.Position;
@@ -3677,14 +3677,14 @@ namespace MHW_Editor.Structs.Weapons {
                 data.Gauge_Damage_Buff_Yellow_raw = reader.ReadSingle();
                 data.Gauge_Damage_Buff_Red_offset = reader.BaseStream.Position;
                 data.Gauge_Damage_Buff_Red_raw = reader.ReadSingle();
-                data.Unk_120_offset = reader.BaseStream.Position;
-                data.Unk_120_raw = reader.ReadSingle();
-                data.Unk_121_offset = reader.BaseStream.Position;
-                data.Unk_121_raw = reader.ReadSingle();
-                data.Unk_122_offset = reader.BaseStream.Position;
-                data.Unk_122_raw = reader.ReadSingle();
-                data.Unk_123_offset = reader.BaseStream.Position;
-                data.Unk_123_raw = reader.ReadSingle();
+                data.Spirit_Gen_Multiplier_Varies_HZV_After_Applying_Sharpness_1_offset = reader.BaseStream.Position;
+                data.Spirit_Gen_Multiplier_Varies_HZV_After_Applying_Sharpness_1_raw = reader.ReadSingle();
+                data.Spirit_Gen_Multiplier_Varies_HZV_After_Applying_Sharpness_2_offset = reader.BaseStream.Position;
+                data.Spirit_Gen_Multiplier_Varies_HZV_After_Applying_Sharpness_2_raw = reader.ReadSingle();
+                data.Spirit_Gen_Multiplier_Varies_HZV_After_Applying_Sharpness_3_offset = reader.BaseStream.Position;
+                data.Spirit_Gen_Multiplier_Varies_HZV_After_Applying_Sharpness_3_raw = reader.ReadSingle();
+                data.Spirit_Gen_Multiplier_Varies_HZV_After_Applying_Sharpness_4_offset = reader.BaseStream.Position;
+                data.Spirit_Gen_Multiplier_Varies_HZV_After_Applying_Sharpness_4_raw = reader.ReadSingle();
                 data.Gauge_No_Decay_Time_after_Spirit_Gauge_Upgrade_offset = reader.BaseStream.Position;
                 data.Gauge_No_Decay_Time_after_Spirit_Gauge_Upgrade_raw = reader.ReadSingle();
                 data.Unk_125_offset = reader.BaseStream.Position;
@@ -3726,19 +3726,19 @@ namespace MHW_Editor.Structs.Weapons {
                 writer.Write(Spirit_Jumping_Slash_Cost_raw);
                 writer.Write(Unk_98_raw);
                 writer.Write(Unk_99_raw);
-                writer.Write(Unk_100_raw);
-                writer.Write(Unk_101_raw);
+                writer.Write(Jumping_Spirit_Blade_Cost_raw);
+                writer.Write(Jumping_Spirit_Blade_II_III_1st_Hit_Cost_raw);
                 writer.Write(Gauge_Required_to_Active_Foresight_That_Gives_45_I_Frames_raw);
                 writer.Write(Unk_103_raw);
-                writer.Write(Unk_104_raw);
+                writer.Write(Aerial_Draw_Spirit_Blade_Cost_raw);
                 writer.Write(Spirit_Regeneration_Duration_After_Helm_Breaker_In_Seconds__raw);
-                writer.Write(Spirit_Regeneration_After_Something_Unk_1_raw);
-                writer.Write(Spirit_Regeneration_After_Something_Unk_2_raw);
-                writer.Write(Spirit_Regeneration_After_Something_Unk_3_raw);
-                writer.Write(Spirit_Regeneration_After_Something_Unk_4_raw);
-                writer.Write(Spirit_Regeneration_After_Something_Unk_5_raw);
-                writer.Write(Spirit_Regeneration_After_Something_Unk_6_raw);
-                writer.Write(Spirit_Regeneration_After_Something_Unk_7_raw);
+                writer.Write(Spirit_Regeneration_After_Red_Gauge_Spirit_Helm_Breaker_Duration_in_Seconds__raw);
+                writer.Write(Spirit_Regeneration_After_Yellow_White_Gauge_Spirit_Helm_Breaker_Regen_Lower_Values_are_Faster__raw);
+                writer.Write(Spirit_Regeneration_After_Red_Gauge_Spirit_Helm_Breaker_Regen_Lower_Values_are_Faster__raw);
+                writer.Write(Spirit_Regeneration_After_Iai_Slash_Duration_in_Seconds__raw);
+                writer.Write(Spirit_Regeneration_After_Timed_Iai_Slash_Duration_in_Seconds__raw);
+                writer.Write(Spirit_Regeneration_After_Iai_Slash_Regen_Lower_Values_are_Faster__raw);
+                writer.Write(Spirit_Regeneration_After_Timed_Iai_Slash_Regen_Lower_Values_are_Faster__raw);
                 writer.Write(Gauge_Duration_White_raw);
                 writer.Write(Gauge_Duration_Yellow_raw);
                 writer.Write(Gauge_Duration_Red_raw);
@@ -3746,10 +3746,10 @@ namespace MHW_Editor.Structs.Weapons {
                 writer.Write(Gauge_Damage_Buff_White_raw);
                 writer.Write(Gauge_Damage_Buff_Yellow_raw);
                 writer.Write(Gauge_Damage_Buff_Red_raw);
-                writer.Write(Unk_120_raw);
-                writer.Write(Unk_121_raw);
-                writer.Write(Unk_122_raw);
-                writer.Write(Unk_123_raw);
+                writer.Write(Spirit_Gen_Multiplier_Varies_HZV_After_Applying_Sharpness_1_raw);
+                writer.Write(Spirit_Gen_Multiplier_Varies_HZV_After_Applying_Sharpness_2_raw);
+                writer.Write(Spirit_Gen_Multiplier_Varies_HZV_After_Applying_Sharpness_3_raw);
+                writer.Write(Spirit_Gen_Multiplier_Varies_HZV_After_Applying_Sharpness_4_raw);
                 writer.Write(Gauge_No_Decay_Time_after_Spirit_Gauge_Upgrade_raw);
                 writer.Write(Unk_125_raw);
                 writer.Write(Foresight_Slash_Damage_Multiplier_on_Successful_Evasion_raw);
@@ -3777,19 +3777,19 @@ namespace MHW_Editor.Structs.Weapons {
                     new MultiStructItemCustomView(this, "Spirit Jumping Slash Cost", "Spirit_Jumping_Slash_Cost", "Spirit_Jumping_Slash_Cost_offset"),
                     new MultiStructItemCustomView(this, "Unk 98", "Unk_98", "Unk_98_offset"),
                     new MultiStructItemCustomView(this, "Unk 99", "Unk_99", "Unk_99_offset"),
-                    new MultiStructItemCustomView(this, "Unk 100", "Unk_100", "Unk_100_offset"),
-                    new MultiStructItemCustomView(this, "Unk 101", "Unk_101", "Unk_101_offset"),
+                    new MultiStructItemCustomView(this, "Jumping Spirit Blade Cost", "Jumping_Spirit_Blade_Cost", "Jumping_Spirit_Blade_Cost_offset"),
+                    new MultiStructItemCustomView(this, "Jumping Spirit Blade II / III (1st Hit) Cost", "Jumping_Spirit_Blade_II_III_1st_Hit_Cost", "Jumping_Spirit_Blade_II_III_1st_Hit_Cost_offset"),
                     new MultiStructItemCustomView(this, "Gauge Required to Active Foresight That Gives 45 I-Frames", "Gauge_Required_to_Active_Foresight_That_Gives_45_I_Frames", "Gauge_Required_to_Active_Foresight_That_Gives_45_I_Frames_offset"),
                     new MultiStructItemCustomView(this, "Unk 103", "Unk_103", "Unk_103_offset"),
-                    new MultiStructItemCustomView(this, "Unk 104", "Unk_104", "Unk_104_offset"),
+                    new MultiStructItemCustomView(this, "Aerial Draw Spirit Blade Cost", "Aerial_Draw_Spirit_Blade_Cost", "Aerial_Draw_Spirit_Blade_Cost_offset"),
                     new MultiStructItemCustomView(this, "Spirit Regeneration Duration After Helm Breaker (In Seconds)", "Spirit_Regeneration_Duration_After_Helm_Breaker_In_Seconds_", "Spirit_Regeneration_Duration_After_Helm_Breaker_In_Seconds__offset"),
-                    new MultiStructItemCustomView(this, "Spirit Regeneration After Something, Unk 1", "Spirit_Regeneration_After_Something_Unk_1", "Spirit_Regeneration_After_Something_Unk_1_offset"),
-                    new MultiStructItemCustomView(this, "Spirit Regeneration After Something, Unk 2", "Spirit_Regeneration_After_Something_Unk_2", "Spirit_Regeneration_After_Something_Unk_2_offset"),
-                    new MultiStructItemCustomView(this, "Spirit Regeneration After Something, Unk 3", "Spirit_Regeneration_After_Something_Unk_3", "Spirit_Regeneration_After_Something_Unk_3_offset"),
-                    new MultiStructItemCustomView(this, "Spirit Regeneration After Something, Unk 4", "Spirit_Regeneration_After_Something_Unk_4", "Spirit_Regeneration_After_Something_Unk_4_offset"),
-                    new MultiStructItemCustomView(this, "Spirit Regeneration After Something, Unk 5", "Spirit_Regeneration_After_Something_Unk_5", "Spirit_Regeneration_After_Something_Unk_5_offset"),
-                    new MultiStructItemCustomView(this, "Spirit Regeneration After Something, Unk 6", "Spirit_Regeneration_After_Something_Unk_6", "Spirit_Regeneration_After_Something_Unk_6_offset"),
-                    new MultiStructItemCustomView(this, "Spirit Regeneration After Something, Unk 7", "Spirit_Regeneration_After_Something_Unk_7", "Spirit_Regeneration_After_Something_Unk_7_offset"),
+                    new MultiStructItemCustomView(this, "Spirit Regeneration After: [Red Gauge] Spirit Helm Breaker (Duration in Seconds)", "Spirit_Regeneration_After_Red_Gauge_Spirit_Helm_Breaker_Duration_in_Seconds_", "Spirit_Regeneration_After_Red_Gauge_Spirit_Helm_Breaker_Duration_in_Seconds__offset"),
+                    new MultiStructItemCustomView(this, "Spirit Regeneration After: [Yellow & White Gauge] Spirit Helm Breaker (Regen, Lower Values are Faster)", "Spirit_Regeneration_After_Yellow_White_Gauge_Spirit_Helm_Breaker_Regen_Lower_Values_are_Faster_", "Spirit_Regeneration_After_Yellow_White_Gauge_Spirit_Helm_Breaker_Regen_Lower_Values_are_Faster__offset"),
+                    new MultiStructItemCustomView(this, "Spirit Regeneration After: [Red Gauge] Spirit Helm Breaker (Regen, Lower Values are Faster)", "Spirit_Regeneration_After_Red_Gauge_Spirit_Helm_Breaker_Regen_Lower_Values_are_Faster_", "Spirit_Regeneration_After_Red_Gauge_Spirit_Helm_Breaker_Regen_Lower_Values_are_Faster__offset"),
+                    new MultiStructItemCustomView(this, "Spirit Regeneration After: Iai Slash (Duration in Seconds)", "Spirit_Regeneration_After_Iai_Slash_Duration_in_Seconds_", "Spirit_Regeneration_After_Iai_Slash_Duration_in_Seconds__offset"),
+                    new MultiStructItemCustomView(this, "Spirit Regeneration After: Timed Iai Slash (Duration in Seconds)", "Spirit_Regeneration_After_Timed_Iai_Slash_Duration_in_Seconds_", "Spirit_Regeneration_After_Timed_Iai_Slash_Duration_in_Seconds__offset"),
+                    new MultiStructItemCustomView(this, "Spirit Regeneration After: Iai Slash (Regen, Lower Values are Faster)", "Spirit_Regeneration_After_Iai_Slash_Regen_Lower_Values_are_Faster_", "Spirit_Regeneration_After_Iai_Slash_Regen_Lower_Values_are_Faster__offset"),
+                    new MultiStructItemCustomView(this, "Spirit Regeneration After: Timed Iai Slash (Regen, Lower Values are Faster)", "Spirit_Regeneration_After_Timed_Iai_Slash_Regen_Lower_Values_are_Faster_", "Spirit_Regeneration_After_Timed_Iai_Slash_Regen_Lower_Values_are_Faster__offset"),
                     new MultiStructItemCustomView(this, "Gauge Duration: White", "Gauge_Duration_White", "Gauge_Duration_White_offset"),
                     new MultiStructItemCustomView(this, "Gauge Duration: Yellow", "Gauge_Duration_Yellow", "Gauge_Duration_Yellow_offset"),
                     new MultiStructItemCustomView(this, "Gauge Duration: Red", "Gauge_Duration_Red", "Gauge_Duration_Red_offset"),
@@ -3797,10 +3797,10 @@ namespace MHW_Editor.Structs.Weapons {
                     new MultiStructItemCustomView(this, "Gauge Damage Buff: White", "Gauge_Damage_Buff_White", "Gauge_Damage_Buff_White_offset"),
                     new MultiStructItemCustomView(this, "Gauge Damage Buff: Yellow", "Gauge_Damage_Buff_Yellow", "Gauge_Damage_Buff_Yellow_offset"),
                     new MultiStructItemCustomView(this, "Gauge Damage Buff: Red", "Gauge_Damage_Buff_Red", "Gauge_Damage_Buff_Red_offset"),
-                    new MultiStructItemCustomView(this, "Unk 120", "Unk_120", "Unk_120_offset"),
-                    new MultiStructItemCustomView(this, "Unk 121", "Unk_121", "Unk_121_offset"),
-                    new MultiStructItemCustomView(this, "Unk 122", "Unk_122", "Unk_122_offset"),
-                    new MultiStructItemCustomView(this, "Unk 123", "Unk_123", "Unk_123_offset"),
+                    new MultiStructItemCustomView(this, "Spirit Gen Multiplier Varies HZV After Applying Sharpness 1", "Spirit_Gen_Multiplier_Varies_HZV_After_Applying_Sharpness_1", "Spirit_Gen_Multiplier_Varies_HZV_After_Applying_Sharpness_1_offset"),
+                    new MultiStructItemCustomView(this, "Spirit Gen Multiplier Varies HZV After Applying Sharpness 2", "Spirit_Gen_Multiplier_Varies_HZV_After_Applying_Sharpness_2", "Spirit_Gen_Multiplier_Varies_HZV_After_Applying_Sharpness_2_offset"),
+                    new MultiStructItemCustomView(this, "Spirit Gen Multiplier Varies HZV After Applying Sharpness 3", "Spirit_Gen_Multiplier_Varies_HZV_After_Applying_Sharpness_3", "Spirit_Gen_Multiplier_Varies_HZV_After_Applying_Sharpness_3_offset"),
+                    new MultiStructItemCustomView(this, "Spirit Gen Multiplier Varies HZV After Applying Sharpness 4", "Spirit_Gen_Multiplier_Varies_HZV_After_Applying_Sharpness_4", "Spirit_Gen_Multiplier_Varies_HZV_After_Applying_Sharpness_4_offset"),
                     new MultiStructItemCustomView(this, "Gauge No-Decay Time after Spirit Gauge Upgrade", "Gauge_No_Decay_Time_after_Spirit_Gauge_Upgrade", "Gauge_No_Decay_Time_after_Spirit_Gauge_Upgrade_offset"),
                     new MultiStructItemCustomView(this, "Unk 125", "Unk_125", "Unk_125_offset"),
                     new MultiStructItemCustomView(this, "Foresight Slash Damage Multiplier on Successful Evasion", "Foresight_Slash_Damage_Multiplier_on_Successful_Evasion", "Foresight_Slash_Damage_Multiplier_on_Successful_Evasion_offset"),

@@ -161,13 +161,13 @@ float Speed_Increase_When_Drawn_With_Full_Gauge<name="Speed Increase When Drawn 
 float Gauge_Decay_Time<name="Gauge Decay Time (float)">;
 float Demon_Flurry_Rush_Cost<name="Demon Flurry Rush Cost (float)">;
 float Demon_Flurry_Cost<name="Demon Flurry Cost (float)">;
-float Unk_99<name="Unk 99 (float)">;
+float Gauge_Cost_for_General_Moves<name="Gauge Cost for General Moves (float)">;
 float Unk_100<name="Unk 100 (float)">;
-float Unk_101<name="Unk 101 (float)">;
-float Unk_102<name="Unk 102 (float)">;
+float Demon_Mode_Stamina_Drain_Rate_<name="Demon Mode Stamina Drain Rate? (float)">;
+float Speed_of_Spinning_Blade_Dance_<name="Speed of Spinning Blade Dance? (float)">;
 float Unk_103<name="Unk 103 (float)">;
 float Demon_Mode_Animation_Speed_Increase<name="Demon Mode Animation Speed Increase (float)">;
-float Unk_105<name="Unk 105 (float)">;
+float Arch_Demon_Mode_Walking_Speed_Weapon_Drawn_<name="Arch Demon Mode Walking Speed (Weapon Drawn) (float)">;
 float Unk_106<name="Unk 106 (float)">;
 float Unk_107<name="Unk 107 (float)">;
 float Unk_108<name="Unk 108 (float)">;
@@ -186,7 +186,7 @@ typedef struct {
 Action_Param_1 Action_Param_1_[2]<optimize=false, name="Action Param 1">;
 
 // W02p Params (6)
-float Unk_111<name="Unk 111 (float)">;
+float Spinning_Blade_Dance_Finisher_Distance<name="Spinning Blade Dance Finisher Distance (float)">;
 float Unk_112<name="Unk 112 (float)">;
 float Unk_113<name="Unk 113 (float)">;
 float Unk_114<name="Unk 114 (float)">;

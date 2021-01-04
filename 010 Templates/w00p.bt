@@ -163,11 +163,11 @@ typedef struct {
 Charge_Times Charge_Times_[5]<optimize=false, name="Charge Times">;
 
 // W00p Params (5)
-float Unk_91<name="Unk 91 (float)">;
-float Unk_92<name="Unk 92 (float)">;
-float Unk_93<name="Unk 93 (float)">;
-float Unk_94<name="Unk 94 (float)">;
-float Unk_95<name="Unk 95 (float)">;
+float Over_Charge_Timing_Charge_Slash<name="Over Charge Timing: Charge Slash (float)">;
+float Over_Charge_Timing_Strong_Charge_Slash<name="Over Charge Timing: Strong Charge Slash (float)">;
+float Over_Charge_Timing_True_Charge_Slash<name="Over Charge Timing: True Charge Slash (float)">;
+float Over_Charge_Timing_Rising_Charge_Slash<name="Over Charge Timing: Rising Charge Slash (float)">;
+float Over_Charge_Timing_Midair_Charge_Slash<name="Over Charge Timing: Midair Charge Slash (float)">;
 ubyte Unk_96<name="Unk 96 (ubyte)">;
 ubyte Unk_97<name="Unk 97 (ubyte)">;
 ubyte Unk_98<name="Unk 98 (ubyte)">;

@@ -57,7 +57,7 @@ namespace MHW_Generator.Weapons {
                 new MhwMultiStructData.StructData($"Action Param {++actionParamIndex}", actionParam, 1),
 
                 new MhwMultiStructData.StructData($"W{N}p Params ({++paramIndex})", new List<MhwMultiStructData.Entry> {
-                    new MhwMultiStructData.Entry($"Unk {++unkIndex}", typeof(float)),
+                    new MhwMultiStructData.Entry($"Unk {++unkIndex}", typeof(float)), // 123
                     new MhwMultiStructData.Entry($"Unk {++unkIndex}", typeof(float)),
                     new MhwMultiStructData.Entry($"Unk {++unkIndex}", typeof(float)),
                     new MhwMultiStructData.Entry($"Unk {++unkIndex}", typeof(float)),
@@ -77,25 +77,25 @@ namespace MHW_Generator.Weapons {
                 }, 4),
 
                 new MhwMultiStructData.StructData($"W{N}p Params ({++paramIndex})", new List<MhwMultiStructData.Entry> {
+                    new MhwMultiStructData.Entry($"Unk {++unkIndex}", typeof(float)) // 132
+                }, 1, showVertically: true),
+
+                new MhwMultiStructData.StructData($"Action Param {++actionParamIndex}", actionParam, 1),
+
+                new MhwMultiStructData.StructData($"W{N}p Params ({++paramIndex})", new List<MhwMultiStructData.Entry> {
+                    new MhwMultiStructData.Entry("Charge of [Sword]: Charged Double Slash", typeof(float)), // 133
+                    new MhwMultiStructData.Entry($"Unk {unkIndex += 2}", typeof(float)),
+                    new MhwMultiStructData.Entry("Speed From a Different Move to [Sword]: Charged Double Slash", typeof(float)),
+                    new MhwMultiStructData.Entry($"Unk {unkIndex += 2}", typeof(float)),
+                    new MhwMultiStructData.Entry("Charge of [Sword]: Condensed Element Slash", typeof(float)),
+                    new MhwMultiStructData.Entry($"Unk {unkIndex += 2}", typeof(float)),
                     new MhwMultiStructData.Entry($"Unk {++unkIndex}", typeof(float))
                 }, 1, showVertically: true),
 
                 new MhwMultiStructData.StructData($"Action Param {++actionParamIndex}", actionParam, 1),
 
                 new MhwMultiStructData.StructData($"W{N}p Params ({++paramIndex})", new List<MhwMultiStructData.Entry> {
-                    new MhwMultiStructData.Entry($"Unk {++unkIndex}", typeof(float)),
-                    new MhwMultiStructData.Entry($"Unk {++unkIndex}", typeof(float)),
-                    new MhwMultiStructData.Entry($"Unk {++unkIndex}", typeof(float)),
-                    new MhwMultiStructData.Entry($"Unk {++unkIndex}", typeof(float)),
-                    new MhwMultiStructData.Entry($"Unk {++unkIndex}", typeof(float)),
-                    new MhwMultiStructData.Entry($"Unk {++unkIndex}", typeof(float)),
-                    new MhwMultiStructData.Entry($"Unk {++unkIndex}", typeof(float))
-                }, 1, showVertically: true),
-
-                new MhwMultiStructData.StructData($"Action Param {++actionParamIndex}", actionParam, 1),
-
-                new MhwMultiStructData.StructData($"W{N}p Params ({++paramIndex})", new List<MhwMultiStructData.Entry> {
-                    new MhwMultiStructData.Entry($"Unk {++unkIndex}", typeof(float))
+                    new MhwMultiStructData.Entry($"Unk {++unkIndex}", typeof(float)) // 140
                 }, 1, showVertically: true),
 
                 new MhwMultiStructData.StructData($"Action Param {++actionParamIndex}", actionParam, 1),

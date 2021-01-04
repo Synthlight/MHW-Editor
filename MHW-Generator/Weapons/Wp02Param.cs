@@ -21,14 +21,14 @@ namespace MHW_Generator.Weapons {
                     new MhwMultiStructData.Entry("Gauge Decay Time", typeof(float)),
                     new MhwMultiStructData.Entry("Demon Flurry Rush Cost", typeof(float)),
                     new MhwMultiStructData.Entry("Demon Flurry Cost", typeof(float)),
-                    new MhwMultiStructData.Entry($"Unk {unkIndex += 5}", typeof(float)),
-                    new MhwMultiStructData.Entry($"Unk {++unkIndex}", typeof(float)),
-                    new MhwMultiStructData.Entry($"Unk {++unkIndex}", typeof(float)),
-                    new MhwMultiStructData.Entry($"Unk {++unkIndex}", typeof(float)),
-                    new MhwMultiStructData.Entry($"Unk {++unkIndex}", typeof(float)),
+                    new MhwMultiStructData.Entry("Gauge Cost for General Moves", typeof(float)),
+                    new MhwMultiStructData.Entry($"Unk {unkIndex += 6}", typeof(float)),
+                    new MhwMultiStructData.Entry("Demon Mode Stamina Drain Rate?", typeof(float)),
+                    new MhwMultiStructData.Entry("Speed of Spinning Blade Dance?", typeof(float)),
+                    new MhwMultiStructData.Entry($"Unk {unkIndex += 3}", typeof(float)),
                     new MhwMultiStructData.Entry("Demon Mode Animation Speed Increase", typeof(float)),
-                    new MhwMultiStructData.Entry($"Unk {unkIndex += 2}", typeof(float)),
-                    new MhwMultiStructData.Entry($"Unk {++unkIndex}", typeof(float)),
+                    new MhwMultiStructData.Entry("Arch Demon Mode Walking Speed (Weapon Drawn)", typeof(float)),
+                    new MhwMultiStructData.Entry($"Unk {unkIndex += 3}", typeof(float)),
                     new MhwMultiStructData.Entry($"Unk {++unkIndex}", typeof(float)),
                     new MhwMultiStructData.Entry($"Unk {++unkIndex}", typeof(float)),
                     new MhwMultiStructData.Entry($"Unk {++unkIndex}", typeof(float)),
@@ -38,8 +38,8 @@ namespace MHW_Generator.Weapons {
                 new MhwMultiStructData.StructData($"Action Param {++actionParamIndex}", actionParam, 2),
 
                 new MhwMultiStructData.StructData($"W{N}p Params ({++paramIndex})", new List<MhwMultiStructData.Entry> {
-                    new MhwMultiStructData.Entry($"Unk {++unkIndex}", typeof(float)),
-                    new MhwMultiStructData.Entry($"Unk {++unkIndex}", typeof(float)),
+                    new MhwMultiStructData.Entry("Spinning Blade Dance Finisher Distance", typeof(float)), // 111
+                    new MhwMultiStructData.Entry($"Unk {unkIndex += 2}", typeof(float)),
                     new MhwMultiStructData.Entry($"Unk {++unkIndex}", typeof(float)),
                     new MhwMultiStructData.Entry($"Unk {++unkIndex}", typeof(float))
                 }, 1, showVertically: true),

@@ -4103,23 +4103,23 @@ namespace MHW_Editor.Structs.Weapons {
             public const ulong FixedSizeCount = 1;
             public const string GridName = "W09p Params (8)";
 
-            protected float Unk_133_raw;
-            public const string Unk_133_displayName = "Unk 133";
-            public const int Unk_133_sortIndex = 50;
-            [SortOrder(Unk_133_sortIndex)]
-            [DisplayName(Unk_133_displayName)]
-            public virtual float Unk_133 {
-                get => Unk_133_raw;
+            protected float Charge_of_Sword_Charged_Double_Slash_raw;
+            public const string Charge_of_Sword_Charged_Double_Slash_displayName = "Charge of [Sword]: Charged Double Slash";
+            public const int Charge_of_Sword_Charged_Double_Slash_sortIndex = 50;
+            [SortOrder(Charge_of_Sword_Charged_Double_Slash_sortIndex)]
+            [DisplayName(Charge_of_Sword_Charged_Double_Slash_displayName)]
+            public virtual float Charge_of_Sword_Charged_Double_Slash {
+                get => Charge_of_Sword_Charged_Double_Slash_raw;
                 set {
-                    if (Unk_133_raw == value) return;
-                    Unk_133_raw = value;
-                    ChangedItems.Add(nameof(Unk_133));
-                    OnPropertyChanged(nameof(Unk_133));
+                    if (Charge_of_Sword_Charged_Double_Slash_raw == value) return;
+                    Charge_of_Sword_Charged_Double_Slash_raw = value;
+                    ChangedItems.Add(nameof(Charge_of_Sword_Charged_Double_Slash));
+                    OnPropertyChanged(nameof(Charge_of_Sword_Charged_Double_Slash));
                 }
             }
 
             [DisplayName("Offset")]
-            public long Unk_133_offset { get; private set; }
+            public long Charge_of_Sword_Charged_Double_Slash_offset { get; private set; }
 
             protected float Unk_134_raw;
             public const string Unk_134_displayName = "Unk 134";
@@ -4139,23 +4139,23 @@ namespace MHW_Editor.Structs.Weapons {
             [DisplayName("Offset")]
             public long Unk_134_offset { get; private set; }
 
-            protected float Unk_135_raw;
-            public const string Unk_135_displayName = "Unk 135";
-            public const int Unk_135_sortIndex = 150;
-            [SortOrder(Unk_135_sortIndex)]
-            [DisplayName(Unk_135_displayName)]
-            public virtual float Unk_135 {
-                get => Unk_135_raw;
+            protected float Speed_From_a_Different_Move_to_Sword_Charged_Double_Slash_raw;
+            public const string Speed_From_a_Different_Move_to_Sword_Charged_Double_Slash_displayName = "Speed From a Different Move to [Sword]: Charged Double Slash";
+            public const int Speed_From_a_Different_Move_to_Sword_Charged_Double_Slash_sortIndex = 150;
+            [SortOrder(Speed_From_a_Different_Move_to_Sword_Charged_Double_Slash_sortIndex)]
+            [DisplayName(Speed_From_a_Different_Move_to_Sword_Charged_Double_Slash_displayName)]
+            public virtual float Speed_From_a_Different_Move_to_Sword_Charged_Double_Slash {
+                get => Speed_From_a_Different_Move_to_Sword_Charged_Double_Slash_raw;
                 set {
-                    if (Unk_135_raw == value) return;
-                    Unk_135_raw = value;
-                    ChangedItems.Add(nameof(Unk_135));
-                    OnPropertyChanged(nameof(Unk_135));
+                    if (Speed_From_a_Different_Move_to_Sword_Charged_Double_Slash_raw == value) return;
+                    Speed_From_a_Different_Move_to_Sword_Charged_Double_Slash_raw = value;
+                    ChangedItems.Add(nameof(Speed_From_a_Different_Move_to_Sword_Charged_Double_Slash));
+                    OnPropertyChanged(nameof(Speed_From_a_Different_Move_to_Sword_Charged_Double_Slash));
                 }
             }
 
             [DisplayName("Offset")]
-            public long Unk_135_offset { get; private set; }
+            public long Speed_From_a_Different_Move_to_Sword_Charged_Double_Slash_offset { get; private set; }
 
             protected float Unk_136_raw;
             public const string Unk_136_displayName = "Unk 136";
@@ -4175,23 +4175,23 @@ namespace MHW_Editor.Structs.Weapons {
             [DisplayName("Offset")]
             public long Unk_136_offset { get; private set; }
 
-            protected float Unk_137_raw;
-            public const string Unk_137_displayName = "Unk 137";
-            public const int Unk_137_sortIndex = 250;
-            [SortOrder(Unk_137_sortIndex)]
-            [DisplayName(Unk_137_displayName)]
-            public virtual float Unk_137 {
-                get => Unk_137_raw;
+            protected float Charge_of_Sword_Condensed_Element_Slash_raw;
+            public const string Charge_of_Sword_Condensed_Element_Slash_displayName = "Charge of [Sword]: Condensed Element Slash";
+            public const int Charge_of_Sword_Condensed_Element_Slash_sortIndex = 250;
+            [SortOrder(Charge_of_Sword_Condensed_Element_Slash_sortIndex)]
+            [DisplayName(Charge_of_Sword_Condensed_Element_Slash_displayName)]
+            public virtual float Charge_of_Sword_Condensed_Element_Slash {
+                get => Charge_of_Sword_Condensed_Element_Slash_raw;
                 set {
-                    if (Unk_137_raw == value) return;
-                    Unk_137_raw = value;
-                    ChangedItems.Add(nameof(Unk_137));
-                    OnPropertyChanged(nameof(Unk_137));
+                    if (Charge_of_Sword_Condensed_Element_Slash_raw == value) return;
+                    Charge_of_Sword_Condensed_Element_Slash_raw = value;
+                    ChangedItems.Add(nameof(Charge_of_Sword_Condensed_Element_Slash));
+                    OnPropertyChanged(nameof(Charge_of_Sword_Condensed_Element_Slash));
                 }
             }
 
             [DisplayName("Offset")]
-            public long Unk_137_offset { get; private set; }
+            public long Charge_of_Sword_Condensed_Element_Slash_offset { get; private set; }
 
             protected float Unk_138_raw;
             public const string Unk_138_displayName = "Unk 138";
@@ -4243,16 +4243,16 @@ namespace MHW_Editor.Structs.Weapons {
             public static W09p_Params_8_ LoadData(BinaryReader reader, ulong i) {
                 var data = new W09p_Params_8_();
                 data.Index = i;
-                data.Unk_133_offset = reader.BaseStream.Position;
-                data.Unk_133_raw = reader.ReadSingle();
+                data.Charge_of_Sword_Charged_Double_Slash_offset = reader.BaseStream.Position;
+                data.Charge_of_Sword_Charged_Double_Slash_raw = reader.ReadSingle();
                 data.Unk_134_offset = reader.BaseStream.Position;
                 data.Unk_134_raw = reader.ReadSingle();
-                data.Unk_135_offset = reader.BaseStream.Position;
-                data.Unk_135_raw = reader.ReadSingle();
+                data.Speed_From_a_Different_Move_to_Sword_Charged_Double_Slash_offset = reader.BaseStream.Position;
+                data.Speed_From_a_Different_Move_to_Sword_Charged_Double_Slash_raw = reader.ReadSingle();
                 data.Unk_136_offset = reader.BaseStream.Position;
                 data.Unk_136_raw = reader.ReadSingle();
-                data.Unk_137_offset = reader.BaseStream.Position;
-                data.Unk_137_raw = reader.ReadSingle();
+                data.Charge_of_Sword_Condensed_Element_Slash_offset = reader.BaseStream.Position;
+                data.Charge_of_Sword_Condensed_Element_Slash_raw = reader.ReadSingle();
                 data.Unk_138_offset = reader.BaseStream.Position;
                 data.Unk_138_raw = reader.ReadSingle();
                 data.Unk_139_offset = reader.BaseStream.Position;
@@ -4261,22 +4261,22 @@ namespace MHW_Editor.Structs.Weapons {
             }
 
             public void WriteData(BinaryWriter writer) {
-                writer.Write(Unk_133_raw);
+                writer.Write(Charge_of_Sword_Charged_Double_Slash_raw);
                 writer.Write(Unk_134_raw);
-                writer.Write(Unk_135_raw);
+                writer.Write(Speed_From_a_Different_Move_to_Sword_Charged_Double_Slash_raw);
                 writer.Write(Unk_136_raw);
-                writer.Write(Unk_137_raw);
+                writer.Write(Charge_of_Sword_Condensed_Element_Slash_raw);
                 writer.Write(Unk_138_raw);
                 writer.Write(Unk_139_raw);
             }
 
             public ObservableCollection<MultiStructItemCustomView> GetCustomView() {
                 return new ObservableCollection<MultiStructItemCustomView> {
-                    new MultiStructItemCustomView(this, "Unk 133", "Unk_133", "Unk_133_offset"),
+                    new MultiStructItemCustomView(this, "Charge of [Sword]: Charged Double Slash", "Charge_of_Sword_Charged_Double_Slash", "Charge_of_Sword_Charged_Double_Slash_offset"),
                     new MultiStructItemCustomView(this, "Unk 134", "Unk_134", "Unk_134_offset"),
-                    new MultiStructItemCustomView(this, "Unk 135", "Unk_135", "Unk_135_offset"),
+                    new MultiStructItemCustomView(this, "Speed From a Different Move to [Sword]: Charged Double Slash", "Speed_From_a_Different_Move_to_Sword_Charged_Double_Slash", "Speed_From_a_Different_Move_to_Sword_Charged_Double_Slash_offset"),
                     new MultiStructItemCustomView(this, "Unk 136", "Unk_136", "Unk_136_offset"),
-                    new MultiStructItemCustomView(this, "Unk 137", "Unk_137", "Unk_137_offset"),
+                    new MultiStructItemCustomView(this, "Charge of [Sword]: Condensed Element Slash", "Charge_of_Sword_Condensed_Element_Slash", "Charge_of_Sword_Condensed_Element_Slash_offset"),
                     new MultiStructItemCustomView(this, "Unk 138", "Unk_138", "Unk_138_offset"),
                     new MultiStructItemCustomView(this, "Unk 139", "Unk_139", "Unk_139_offset"),
                 };

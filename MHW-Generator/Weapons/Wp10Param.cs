@@ -17,11 +17,11 @@ namespace MHW_Generator.Weapons {
                     new MhwMultiStructData.Entry("White Extract Duration", typeof(float)),
                     new MhwMultiStructData.Entry("Orange Extract Duration", typeof(float)),
                     new MhwMultiStructData.Entry("Triple Extract Duration", typeof(float)),
-                    new MhwMultiStructData.Entry($"Unk {++unkIndex}", typeof(float)),
+                    new MhwMultiStructData.Entry("Twinkling When Extraction Time Remaining is 10s", typeof(float)), // 91
                     new MhwMultiStructData.Entry("Damage Buff: Red + White", typeof(float)),
                     new MhwMultiStructData.Entry("Damage Buff: All Three Extracts", typeof(float)),
                     new MhwMultiStructData.Entry("Speed Buff: White", typeof(float)),
-                    new MhwMultiStructData.Entry($"Unk {unkIndex += 4}", typeof(float)),
+                    new MhwMultiStructData.Entry("Moving Displacement Multi Buff: White", typeof(float)),
                     new MhwMultiStructData.Entry("Defense Buff: Orange", typeof(float)),
                     new MhwMultiStructData.Entry("Defense Buff: Orange + White", typeof(float))
                 }, 1, showVertically: true),
@@ -29,7 +29,7 @@ namespace MHW_Generator.Weapons {
                 new MhwMultiStructData.StructData("Action Param (Relate Vault)", actionParam, 16),
 
                 new MhwMultiStructData.StructData($"W{N}p Params ({++paramIndex})", new List<MhwMultiStructData.Entry> {
-                    new MhwMultiStructData.Entry($"Unk {unkIndex += 3}", typeof(float)),
+                    new MhwMultiStructData.Entry($"Unk {unkIndex += 8}", typeof(float)),
                     new MhwMultiStructData.Entry($"Unk {++unkIndex}", typeof(float)),
                     new MhwMultiStructData.Entry($"Unk {++unkIndex}", typeof(float))
                 }, 1, showVertically: true),
@@ -92,10 +92,10 @@ namespace MHW_Generator.Weapons {
                     new MhwMultiStructData.Entry($"Unk {++unkIndex}", typeof(float)),
                     new MhwMultiStructData.Entry("Kinsect Stamina Drain per Second", typeof(float)),
                     new MhwMultiStructData.Entry("Kinsect Max Stamina", typeof(float)),
-                    new MhwMultiStructData.Entry($"Unk {unkIndex += 3}", typeof(float)),
+                    new MhwMultiStructData.Entry("Reaction Time on Kinsect Recall", typeof(float)),
                     new MhwMultiStructData.Entry("Kinsect Stamina on Recall", typeof(float)),
-                    new MhwMultiStructData.Entry($"Unk {unkIndex += 2}", typeof(float)),
-                    new MhwMultiStructData.Entry($"Unk {++unkIndex}", typeof(float)),
+                    new MhwMultiStructData.Entry("Kinsect Penetration Speed During Descending Thrust", typeof(float)),
+                    new MhwMultiStructData.Entry($"Unk {unkIndex += 6}", typeof(float)),
                     new MhwMultiStructData.Entry("Kinsect Dust Interval: Blast", typeof(float)),
                     new MhwMultiStructData.Entry("Kinsect Dust Interval: Heal", typeof(float)),
                     new MhwMultiStructData.Entry("Kinsect Dust Interval: Paralysis", typeof(float)),

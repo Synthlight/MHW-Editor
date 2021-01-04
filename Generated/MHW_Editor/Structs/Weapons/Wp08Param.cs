@@ -3617,41 +3617,41 @@ namespace MHW_Editor.Structs.Weapons {
             [DisplayName("Offset")]
             public long Unk_129_offset { get; private set; }
 
-            protected uint Unk_130_raw;
-            public const string Unk_130_displayName = "Unk 130";
-            public const int Unk_130_sortIndex = 1800;
-            [SortOrder(Unk_130_sortIndex)]
-            [DisplayName(Unk_130_displayName)]
-            public virtual uint Unk_130 {
-                get => Unk_130_raw;
+            protected uint Ear_Plug_4_raw;
+            public const string Ear_Plug_4_displayName = "Ear Plug 4";
+            public const int Ear_Plug_4_sortIndex = 1800;
+            [SortOrder(Ear_Plug_4_sortIndex)]
+            [DisplayName(Ear_Plug_4_displayName)]
+            public virtual uint Ear_Plug_4 {
+                get => Ear_Plug_4_raw;
                 set {
-                    if (Unk_130_raw == value) return;
-                    Unk_130_raw = value;
-                    ChangedItems.Add(nameof(Unk_130));
-                    OnPropertyChanged(nameof(Unk_130));
+                    if (Ear_Plug_4_raw == value) return;
+                    Ear_Plug_4_raw = value;
+                    ChangedItems.Add(nameof(Ear_Plug_4));
+                    OnPropertyChanged(nameof(Ear_Plug_4));
                 }
             }
 
             [DisplayName("Offset")]
-            public long Unk_130_offset { get; private set; }
+            public long Ear_Plug_4_offset { get; private set; }
 
-            protected float Unk_131_raw;
-            public const string Unk_131_displayName = "Unk 131";
-            public const int Unk_131_sortIndex = 1850;
-            [SortOrder(Unk_131_sortIndex)]
-            [DisplayName(Unk_131_displayName)]
-            public virtual float Unk_131 {
-                get => Unk_131_raw;
+            protected float Elemental_Discharge_Auto_Tick_Time__raw;
+            public const string Elemental_Discharge_Auto_Tick_Time__displayName = "Elemental Discharge Auto Tick Time?";
+            public const int Elemental_Discharge_Auto_Tick_Time__sortIndex = 1850;
+            [SortOrder(Elemental_Discharge_Auto_Tick_Time__sortIndex)]
+            [DisplayName(Elemental_Discharge_Auto_Tick_Time__displayName)]
+            public virtual float Elemental_Discharge_Auto_Tick_Time_ {
+                get => Elemental_Discharge_Auto_Tick_Time__raw;
                 set {
-                    if (Unk_131_raw == value) return;
-                    Unk_131_raw = value;
-                    ChangedItems.Add(nameof(Unk_131));
-                    OnPropertyChanged(nameof(Unk_131));
+                    if (Elemental_Discharge_Auto_Tick_Time__raw == value) return;
+                    Elemental_Discharge_Auto_Tick_Time__raw = value;
+                    ChangedItems.Add(nameof(Elemental_Discharge_Auto_Tick_Time_));
+                    OnPropertyChanged(nameof(Elemental_Discharge_Auto_Tick_Time_));
                 }
             }
 
             [DisplayName("Offset")]
-            public long Unk_131_offset { get; private set; }
+            public long Elemental_Discharge_Auto_Tick_Time__offset { get; private set; }
 
             protected float Unk_132_raw;
             public const string Unk_132_displayName = "Unk 132";
@@ -3935,10 +3935,10 @@ namespace MHW_Editor.Structs.Weapons {
                 data.Unk_128_raw = reader.ReadByte();
                 data.Unk_129_offset = reader.BaseStream.Position;
                 data.Unk_129_raw = reader.ReadByte();
-                data.Unk_130_offset = reader.BaseStream.Position;
-                data.Unk_130_raw = reader.ReadUInt32();
-                data.Unk_131_offset = reader.BaseStream.Position;
-                data.Unk_131_raw = reader.ReadSingle();
+                data.Ear_Plug_4_offset = reader.BaseStream.Position;
+                data.Ear_Plug_4_raw = reader.ReadUInt32();
+                data.Elemental_Discharge_Auto_Tick_Time__offset = reader.BaseStream.Position;
+                data.Elemental_Discharge_Auto_Tick_Time__raw = reader.ReadSingle();
                 data.Unk_132_offset = reader.BaseStream.Position;
                 data.Unk_132_raw = reader.ReadSingle();
                 data.Unk_133_offset = reader.BaseStream.Position;
@@ -4000,8 +4000,8 @@ namespace MHW_Editor.Structs.Weapons {
                 writer.Write(Unk_127_raw);
                 writer.Write(Unk_128_raw);
                 writer.Write(Unk_129_raw);
-                writer.Write(Unk_130_raw);
-                writer.Write(Unk_131_raw);
+                writer.Write(Ear_Plug_4_raw);
+                writer.Write(Elemental_Discharge_Auto_Tick_Time__raw);
                 writer.Write(Unk_132_raw);
                 writer.Write(Unk_133_raw);
                 writer.Write(Unk_134_raw);
@@ -4052,8 +4052,8 @@ namespace MHW_Editor.Structs.Weapons {
                     new MultiStructItemCustomView(this, "Unk 127", "Unk_127", "Unk_127_offset"),
                     new MultiStructItemCustomView(this, "Unk 128", "Unk_128", "Unk_128_offset"),
                     new MultiStructItemCustomView(this, "Unk 129", "Unk_129", "Unk_129_offset"),
-                    new MultiStructItemCustomView(this, "Unk 130", "Unk_130", "Unk_130_offset"),
-                    new MultiStructItemCustomView(this, "Unk 131", "Unk_131", "Unk_131_offset"),
+                    new MultiStructItemCustomView(this, "Ear Plug 4", "Ear_Plug_4", "Ear_Plug_4_offset"),
+                    new MultiStructItemCustomView(this, "Elemental Discharge Auto Tick Time?", "Elemental_Discharge_Auto_Tick_Time_", "Elemental_Discharge_Auto_Tick_Time__offset"),
                     new MultiStructItemCustomView(this, "Unk 132", "Unk_132", "Unk_132_offset"),
                     new MultiStructItemCustomView(this, "Unk 133", "Unk_133", "Unk_133_offset"),
                     new MultiStructItemCustomView(this, "Unk 134", "Unk_134", "Unk_134_offset"),

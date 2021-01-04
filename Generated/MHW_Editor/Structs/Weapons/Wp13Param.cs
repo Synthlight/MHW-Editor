@@ -4181,23 +4181,23 @@ namespace MHW_Editor.Structs.Weapons {
             [DisplayName("Offset")]
             public long Delay_Between_Shots_offset { get; private set; }
 
-            protected float Unk_170_raw;
-            public const string Unk_170_displayName = "Unk 170";
-            public const int Unk_170_sortIndex = 4000;
-            [SortOrder(Unk_170_sortIndex)]
-            [DisplayName(Unk_170_displayName)]
-            public virtual float Unk_170 {
-                get => Unk_170_raw;
+            protected float Wyvernheart_Ammo_Consumption_raw;
+            public const string Wyvernheart_Ammo_Consumption_displayName = "Wyvernheart Ammo Consumption";
+            public const int Wyvernheart_Ammo_Consumption_sortIndex = 4000;
+            [SortOrder(Wyvernheart_Ammo_Consumption_sortIndex)]
+            [DisplayName(Wyvernheart_Ammo_Consumption_displayName)]
+            public virtual float Wyvernheart_Ammo_Consumption {
+                get => Wyvernheart_Ammo_Consumption_raw;
                 set {
-                    if (Unk_170_raw == value) return;
-                    Unk_170_raw = value;
-                    ChangedItems.Add(nameof(Unk_170));
-                    OnPropertyChanged(nameof(Unk_170));
+                    if (Wyvernheart_Ammo_Consumption_raw == value) return;
+                    Wyvernheart_Ammo_Consumption_raw = value;
+                    ChangedItems.Add(nameof(Wyvernheart_Ammo_Consumption));
+                    OnPropertyChanged(nameof(Wyvernheart_Ammo_Consumption));
                 }
             }
 
             [DisplayName("Offset")]
-            public long Unk_170_offset { get; private set; }
+            public long Wyvernheart_Ammo_Consumption_offset { get; private set; }
 
             protected float Wyvernheart_Ammo_Recharge_raw;
             public const string Wyvernheart_Ammo_Recharge_displayName = "Wyvernheart Ammo Recharge";
@@ -4217,59 +4217,59 @@ namespace MHW_Editor.Structs.Weapons {
             [DisplayName("Offset")]
             public long Wyvernheart_Ammo_Recharge_offset { get; private set; }
 
-            protected float Unk_172_raw;
-            public const string Unk_172_displayName = "Unk 172";
-            public const int Unk_172_sortIndex = 4100;
-            [SortOrder(Unk_172_sortIndex)]
-            [DisplayName(Unk_172_displayName)]
-            public virtual float Unk_172 {
-                get => Unk_172_raw;
+            protected float Wyvernheart_Vertical_Deviation_raw;
+            public const string Wyvernheart_Vertical_Deviation_displayName = "Wyvernheart Vertical Deviation";
+            public const int Wyvernheart_Vertical_Deviation_sortIndex = 4100;
+            [SortOrder(Wyvernheart_Vertical_Deviation_sortIndex)]
+            [DisplayName(Wyvernheart_Vertical_Deviation_displayName)]
+            public virtual float Wyvernheart_Vertical_Deviation {
+                get => Wyvernheart_Vertical_Deviation_raw;
                 set {
-                    if (Unk_172_raw == value) return;
-                    Unk_172_raw = value;
-                    ChangedItems.Add(nameof(Unk_172));
-                    OnPropertyChanged(nameof(Unk_172));
+                    if (Wyvernheart_Vertical_Deviation_raw == value) return;
+                    Wyvernheart_Vertical_Deviation_raw = value;
+                    ChangedItems.Add(nameof(Wyvernheart_Vertical_Deviation));
+                    OnPropertyChanged(nameof(Wyvernheart_Vertical_Deviation));
                 }
             }
 
             [DisplayName("Offset")]
-            public long Unk_172_offset { get; private set; }
+            public long Wyvernheart_Vertical_Deviation_offset { get; private set; }
 
-            protected float Unk_173_raw;
-            public const string Unk_173_displayName = "Unk 173";
-            public const int Unk_173_sortIndex = 4150;
-            [SortOrder(Unk_173_sortIndex)]
-            [DisplayName(Unk_173_displayName)]
-            public virtual float Unk_173 {
-                get => Unk_173_raw;
+            protected float Wyvernheart_Horizontal_Deviation_raw;
+            public const string Wyvernheart_Horizontal_Deviation_displayName = "Wyvernheart Horizontal Deviation";
+            public const int Wyvernheart_Horizontal_Deviation_sortIndex = 4150;
+            [SortOrder(Wyvernheart_Horizontal_Deviation_sortIndex)]
+            [DisplayName(Wyvernheart_Horizontal_Deviation_displayName)]
+            public virtual float Wyvernheart_Horizontal_Deviation {
+                get => Wyvernheart_Horizontal_Deviation_raw;
                 set {
-                    if (Unk_173_raw == value) return;
-                    Unk_173_raw = value;
-                    ChangedItems.Add(nameof(Unk_173));
-                    OnPropertyChanged(nameof(Unk_173));
+                    if (Wyvernheart_Horizontal_Deviation_raw == value) return;
+                    Wyvernheart_Horizontal_Deviation_raw = value;
+                    ChangedItems.Add(nameof(Wyvernheart_Horizontal_Deviation));
+                    OnPropertyChanged(nameof(Wyvernheart_Horizontal_Deviation));
                 }
             }
 
             [DisplayName("Offset")]
-            public long Unk_173_offset { get; private set; }
+            public long Wyvernheart_Horizontal_Deviation_offset { get; private set; }
 
-            protected byte Unk_174_raw;
-            public const string Unk_174_displayName = "Unk 174";
-            public const int Unk_174_sortIndex = 4200;
-            [SortOrder(Unk_174_sortIndex)]
-            [DisplayName(Unk_174_displayName)]
-            public virtual byte Unk_174 {
-                get => Unk_174_raw;
+            protected byte Wyvernheart_Hit_Count_Per_Actual_Hit_raw;
+            public const string Wyvernheart_Hit_Count_Per_Actual_Hit_displayName = "Wyvernheart Hit Count Per Actual Hit";
+            public const int Wyvernheart_Hit_Count_Per_Actual_Hit_sortIndex = 4200;
+            [SortOrder(Wyvernheart_Hit_Count_Per_Actual_Hit_sortIndex)]
+            [DisplayName(Wyvernheart_Hit_Count_Per_Actual_Hit_displayName)]
+            public virtual byte Wyvernheart_Hit_Count_Per_Actual_Hit {
+                get => Wyvernheart_Hit_Count_Per_Actual_Hit_raw;
                 set {
-                    if (Unk_174_raw == value) return;
-                    Unk_174_raw = value;
-                    ChangedItems.Add(nameof(Unk_174));
-                    OnPropertyChanged(nameof(Unk_174));
+                    if (Wyvernheart_Hit_Count_Per_Actual_Hit_raw == value) return;
+                    Wyvernheart_Hit_Count_Per_Actual_Hit_raw = value;
+                    ChangedItems.Add(nameof(Wyvernheart_Hit_Count_Per_Actual_Hit));
+                    OnPropertyChanged(nameof(Wyvernheart_Hit_Count_Per_Actual_Hit));
                 }
             }
 
             [DisplayName("Offset")]
-            public long Unk_174_offset { get; private set; }
+            public long Wyvernheart_Hit_Count_Per_Actual_Hit_offset { get; private set; }
 
             protected byte Unk_175_raw;
             public const string Unk_175_displayName = "Unk 175";
@@ -4289,23 +4289,23 @@ namespace MHW_Editor.Structs.Weapons {
             [DisplayName("Offset")]
             public long Unk_175_offset { get; private set; }
 
-            protected byte Unk_176_raw;
-            public const string Unk_176_displayName = "Unk 176";
-            public const int Unk_176_sortIndex = 4300;
-            [SortOrder(Unk_176_sortIndex)]
-            [DisplayName(Unk_176_displayName)]
-            public virtual byte Unk_176 {
-                get => Unk_176_raw;
+            protected byte Wyvernheart_Hit_Count_Loss_Per_Every_Actual_Loss_Hit_raw;
+            public const string Wyvernheart_Hit_Count_Loss_Per_Every_Actual_Loss_Hit_displayName = "Wyvernheart Hit Count Loss Per Every Actual Loss Hit";
+            public const int Wyvernheart_Hit_Count_Loss_Per_Every_Actual_Loss_Hit_sortIndex = 4300;
+            [SortOrder(Wyvernheart_Hit_Count_Loss_Per_Every_Actual_Loss_Hit_sortIndex)]
+            [DisplayName(Wyvernheart_Hit_Count_Loss_Per_Every_Actual_Loss_Hit_displayName)]
+            public virtual byte Wyvernheart_Hit_Count_Loss_Per_Every_Actual_Loss_Hit {
+                get => Wyvernheart_Hit_Count_Loss_Per_Every_Actual_Loss_Hit_raw;
                 set {
-                    if (Unk_176_raw == value) return;
-                    Unk_176_raw = value;
-                    ChangedItems.Add(nameof(Unk_176));
-                    OnPropertyChanged(nameof(Unk_176));
+                    if (Wyvernheart_Hit_Count_Loss_Per_Every_Actual_Loss_Hit_raw == value) return;
+                    Wyvernheart_Hit_Count_Loss_Per_Every_Actual_Loss_Hit_raw = value;
+                    ChangedItems.Add(nameof(Wyvernheart_Hit_Count_Loss_Per_Every_Actual_Loss_Hit));
+                    OnPropertyChanged(nameof(Wyvernheart_Hit_Count_Loss_Per_Every_Actual_Loss_Hit));
                 }
             }
 
             [DisplayName("Offset")]
-            public long Unk_176_offset { get; private set; }
+            public long Wyvernheart_Hit_Count_Loss_Per_Every_Actual_Loss_Hit_offset { get; private set; }
 
             protected byte Wyvernheart_Hit_Count_for_Damage_Bonus_raw;
             public const string Wyvernheart_Hit_Count_for_Damage_Bonus_displayName = "Wyvernheart Hit Count for Damage Bonus";
@@ -4505,23 +4505,23 @@ namespace MHW_Editor.Structs.Weapons {
             [DisplayName("Offset")]
             public long _5th_Damage_Bonus_offset { get; private set; }
 
-            protected byte Unk_188_raw;
-            public const string Unk_188_displayName = "Unk 188";
-            public const int Unk_188_sortIndex = 4900;
-            [SortOrder(Unk_188_sortIndex)]
-            [DisplayName(Unk_188_displayName)]
-            public virtual byte Unk_188 {
-                get => Unk_188_raw;
+            protected byte Wyvernheart_Mod_Hit_Count_Per_Actual_Hit_raw;
+            public const string Wyvernheart_Mod_Hit_Count_Per_Actual_Hit_displayName = "Wyvernheart Mod Hit Count Per Actual Hit";
+            public const int Wyvernheart_Mod_Hit_Count_Per_Actual_Hit_sortIndex = 4900;
+            [SortOrder(Wyvernheart_Mod_Hit_Count_Per_Actual_Hit_sortIndex)]
+            [DisplayName(Wyvernheart_Mod_Hit_Count_Per_Actual_Hit_displayName)]
+            public virtual byte Wyvernheart_Mod_Hit_Count_Per_Actual_Hit {
+                get => Wyvernheart_Mod_Hit_Count_Per_Actual_Hit_raw;
                 set {
-                    if (Unk_188_raw == value) return;
-                    Unk_188_raw = value;
-                    ChangedItems.Add(nameof(Unk_188));
-                    OnPropertyChanged(nameof(Unk_188));
+                    if (Wyvernheart_Mod_Hit_Count_Per_Actual_Hit_raw == value) return;
+                    Wyvernheart_Mod_Hit_Count_Per_Actual_Hit_raw = value;
+                    ChangedItems.Add(nameof(Wyvernheart_Mod_Hit_Count_Per_Actual_Hit));
+                    OnPropertyChanged(nameof(Wyvernheart_Mod_Hit_Count_Per_Actual_Hit));
                 }
             }
 
             [DisplayName("Offset")]
-            public long Unk_188_offset { get; private set; }
+            public long Wyvernheart_Mod_Hit_Count_Per_Actual_Hit_offset { get; private set; }
 
             protected byte Unk_189_raw;
             public const string Unk_189_displayName = "Unk 189";
@@ -4541,23 +4541,23 @@ namespace MHW_Editor.Structs.Weapons {
             [DisplayName("Offset")]
             public long Unk_189_offset { get; private set; }
 
-            protected byte Unk_190_raw;
-            public const string Unk_190_displayName = "Unk 190";
-            public const int Unk_190_sortIndex = 5000;
-            [SortOrder(Unk_190_sortIndex)]
-            [DisplayName(Unk_190_displayName)]
-            public virtual byte Unk_190 {
-                get => Unk_190_raw;
+            protected byte Wyvernheart_Mod_Hit_Count_Loss_Per_Actual_Hit_Loss_raw;
+            public const string Wyvernheart_Mod_Hit_Count_Loss_Per_Actual_Hit_Loss_displayName = "Wyvernheart Mod Hit Count Loss Per Actual Hit Loss";
+            public const int Wyvernheart_Mod_Hit_Count_Loss_Per_Actual_Hit_Loss_sortIndex = 5000;
+            [SortOrder(Wyvernheart_Mod_Hit_Count_Loss_Per_Actual_Hit_Loss_sortIndex)]
+            [DisplayName(Wyvernheart_Mod_Hit_Count_Loss_Per_Actual_Hit_Loss_displayName)]
+            public virtual byte Wyvernheart_Mod_Hit_Count_Loss_Per_Actual_Hit_Loss {
+                get => Wyvernheart_Mod_Hit_Count_Loss_Per_Actual_Hit_Loss_raw;
                 set {
-                    if (Unk_190_raw == value) return;
-                    Unk_190_raw = value;
-                    ChangedItems.Add(nameof(Unk_190));
-                    OnPropertyChanged(nameof(Unk_190));
+                    if (Wyvernheart_Mod_Hit_Count_Loss_Per_Actual_Hit_Loss_raw == value) return;
+                    Wyvernheart_Mod_Hit_Count_Loss_Per_Actual_Hit_Loss_raw = value;
+                    ChangedItems.Add(nameof(Wyvernheart_Mod_Hit_Count_Loss_Per_Actual_Hit_Loss));
+                    OnPropertyChanged(nameof(Wyvernheart_Mod_Hit_Count_Loss_Per_Actual_Hit_Loss));
                 }
             }
 
             [DisplayName("Offset")]
-            public long Unk_190_offset { get; private set; }
+            public long Wyvernheart_Mod_Hit_Count_Loss_Per_Actual_Hit_Loss_offset { get; private set; }
 
             protected byte Wyvernheart_Mod_Hit_Count_for_Damage_Bonus_raw;
             public const string Wyvernheart_Mod_Hit_Count_for_Damage_Bonus_displayName = "Wyvernheart Mod Hit Count for Damage Bonus";
@@ -4937,511 +4937,7 @@ namespace MHW_Editor.Structs.Weapons {
             [DisplayName("Offset")]
             public long _Mod_10th_Damage_Bonus_offset { get; private set; }
 
-            protected byte Unk_212_raw;
-            public const string Unk_212_displayName = "Unk 212";
-            public const int Unk_212_sortIndex = 6100;
-            [SortOrder(Unk_212_sortIndex)]
-            [DisplayName(Unk_212_displayName)]
-            public virtual byte Unk_212 {
-                get => Unk_212_raw;
-                set {
-                    if (Unk_212_raw == value) return;
-                    Unk_212_raw = value;
-                    ChangedItems.Add(nameof(Unk_212));
-                    OnPropertyChanged(nameof(Unk_212));
-                }
-            }
-
-            [DisplayName("Offset")]
-            public long Unk_212_offset { get; private set; }
-
-            protected ushort Unk_213_raw;
-            public const string Unk_213_displayName = "Unk 213";
-            public const int Unk_213_sortIndex = 6150;
-            [SortOrder(Unk_213_sortIndex)]
-            [DisplayName(Unk_213_displayName)]
-            public virtual ushort Unk_213 {
-                get => Unk_213_raw;
-                set {
-                    if (Unk_213_raw == value) return;
-                    Unk_213_raw = value;
-                    ChangedItems.Add(nameof(Unk_213));
-                    OnPropertyChanged(nameof(Unk_213));
-                }
-            }
-
-            [DisplayName("Offset")]
-            public long Unk_213_offset { get; private set; }
-
-            protected ushort Unk_214_raw;
-            public const string Unk_214_displayName = "Unk 214";
-            public const int Unk_214_sortIndex = 6200;
-            [SortOrder(Unk_214_sortIndex)]
-            [DisplayName(Unk_214_displayName)]
-            public virtual ushort Unk_214 {
-                get => Unk_214_raw;
-                set {
-                    if (Unk_214_raw == value) return;
-                    Unk_214_raw = value;
-                    ChangedItems.Add(nameof(Unk_214));
-                    OnPropertyChanged(nameof(Unk_214));
-                }
-            }
-
-            [DisplayName("Offset")]
-            public long Unk_214_offset { get; private set; }
-
-            protected float Unk_215_raw;
-            public const string Unk_215_displayName = "Unk 215";
-            public const int Unk_215_sortIndex = 6250;
-            [SortOrder(Unk_215_sortIndex)]
-            [DisplayName(Unk_215_displayName)]
-            public virtual float Unk_215 {
-                get => Unk_215_raw;
-                set {
-                    if (Unk_215_raw == value) return;
-                    Unk_215_raw = value;
-                    ChangedItems.Add(nameof(Unk_215));
-                    OnPropertyChanged(nameof(Unk_215));
-                }
-            }
-
-            [DisplayName("Offset")]
-            public long Unk_215_offset { get; private set; }
-
-            protected ushort Unk_216_raw;
-            public const string Unk_216_displayName = "Unk 216";
-            public const int Unk_216_sortIndex = 6300;
-            [SortOrder(Unk_216_sortIndex)]
-            [DisplayName(Unk_216_displayName)]
-            public virtual ushort Unk_216 {
-                get => Unk_216_raw;
-                set {
-                    if (Unk_216_raw == value) return;
-                    Unk_216_raw = value;
-                    ChangedItems.Add(nameof(Unk_216));
-                    OnPropertyChanged(nameof(Unk_216));
-                }
-            }
-
-            [DisplayName("Offset")]
-            public long Unk_216_offset { get; private set; }
-
-            protected float Unk_217_raw;
-            public const string Unk_217_displayName = "Unk 217";
-            public const int Unk_217_sortIndex = 6350;
-            [SortOrder(Unk_217_sortIndex)]
-            [DisplayName(Unk_217_displayName)]
-            public virtual float Unk_217 {
-                get => Unk_217_raw;
-                set {
-                    if (Unk_217_raw == value) return;
-                    Unk_217_raw = value;
-                    ChangedItems.Add(nameof(Unk_217));
-                    OnPropertyChanged(nameof(Unk_217));
-                }
-            }
-
-            [DisplayName("Offset")]
-            public long Unk_217_offset { get; private set; }
-
-            protected float Unk_218_raw;
-            public const string Unk_218_displayName = "Unk 218";
-            public const int Unk_218_sortIndex = 6400;
-            [SortOrder(Unk_218_sortIndex)]
-            [DisplayName(Unk_218_displayName)]
-            public virtual float Unk_218 {
-                get => Unk_218_raw;
-                set {
-                    if (Unk_218_raw == value) return;
-                    Unk_218_raw = value;
-                    ChangedItems.Add(nameof(Unk_218));
-                    OnPropertyChanged(nameof(Unk_218));
-                }
-            }
-
-            [DisplayName("Offset")]
-            public long Unk_218_offset { get; private set; }
-
-            protected float Unk_219_raw;
-            public const string Unk_219_displayName = "Unk 219";
-            public const int Unk_219_sortIndex = 6450;
-            [SortOrder(Unk_219_sortIndex)]
-            [DisplayName(Unk_219_displayName)]
-            public virtual float Unk_219 {
-                get => Unk_219_raw;
-                set {
-                    if (Unk_219_raw == value) return;
-                    Unk_219_raw = value;
-                    ChangedItems.Add(nameof(Unk_219));
-                    OnPropertyChanged(nameof(Unk_219));
-                }
-            }
-
-            [DisplayName("Offset")]
-            public long Unk_219_offset { get; private set; }
-
-            protected float Unk_220_raw;
-            public const string Unk_220_displayName = "Unk 220";
-            public const int Unk_220_sortIndex = 6500;
-            [SortOrder(Unk_220_sortIndex)]
-            [DisplayName(Unk_220_displayName)]
-            public virtual float Unk_220 {
-                get => Unk_220_raw;
-                set {
-                    if (Unk_220_raw == value) return;
-                    Unk_220_raw = value;
-                    ChangedItems.Add(nameof(Unk_220));
-                    OnPropertyChanged(nameof(Unk_220));
-                }
-            }
-
-            [DisplayName("Offset")]
-            public long Unk_220_offset { get; private set; }
-
-            protected float Unk_221_raw;
-            public const string Unk_221_displayName = "Unk 221";
-            public const int Unk_221_sortIndex = 6550;
-            [SortOrder(Unk_221_sortIndex)]
-            [DisplayName(Unk_221_displayName)]
-            public virtual float Unk_221 {
-                get => Unk_221_raw;
-                set {
-                    if (Unk_221_raw == value) return;
-                    Unk_221_raw = value;
-                    ChangedItems.Add(nameof(Unk_221));
-                    OnPropertyChanged(nameof(Unk_221));
-                }
-            }
-
-            [DisplayName("Offset")]
-            public long Unk_221_offset { get; private set; }
-
-            protected float Unk_222_raw;
-            public const string Unk_222_displayName = "Unk 222";
-            public const int Unk_222_sortIndex = 6600;
-            [SortOrder(Unk_222_sortIndex)]
-            [DisplayName(Unk_222_displayName)]
-            public virtual float Unk_222 {
-                get => Unk_222_raw;
-                set {
-                    if (Unk_222_raw == value) return;
-                    Unk_222_raw = value;
-                    ChangedItems.Add(nameof(Unk_222));
-                    OnPropertyChanged(nameof(Unk_222));
-                }
-            }
-
-            [DisplayName("Offset")]
-            public long Unk_222_offset { get; private set; }
-
-            protected float Unk_223_raw;
-            public const string Unk_223_displayName = "Unk 223";
-            public const int Unk_223_sortIndex = 6650;
-            [SortOrder(Unk_223_sortIndex)]
-            [DisplayName(Unk_223_displayName)]
-            public virtual float Unk_223 {
-                get => Unk_223_raw;
-                set {
-                    if (Unk_223_raw == value) return;
-                    Unk_223_raw = value;
-                    ChangedItems.Add(nameof(Unk_223));
-                    OnPropertyChanged(nameof(Unk_223));
-                }
-            }
-
-            [DisplayName("Offset")]
-            public long Unk_223_offset { get; private set; }
-
-            protected float Unk_224_raw;
-            public const string Unk_224_displayName = "Unk 224";
-            public const int Unk_224_sortIndex = 6700;
-            [SortOrder(Unk_224_sortIndex)]
-            [DisplayName(Unk_224_displayName)]
-            public virtual float Unk_224 {
-                get => Unk_224_raw;
-                set {
-                    if (Unk_224_raw == value) return;
-                    Unk_224_raw = value;
-                    ChangedItems.Add(nameof(Unk_224));
-                    OnPropertyChanged(nameof(Unk_224));
-                }
-            }
-
-            [DisplayName("Offset")]
-            public long Unk_224_offset { get; private set; }
-
-            protected float Unk_225_raw;
-            public const string Unk_225_displayName = "Unk 225";
-            public const int Unk_225_sortIndex = 6750;
-            [SortOrder(Unk_225_sortIndex)]
-            [DisplayName(Unk_225_displayName)]
-            public virtual float Unk_225 {
-                get => Unk_225_raw;
-                set {
-                    if (Unk_225_raw == value) return;
-                    Unk_225_raw = value;
-                    ChangedItems.Add(nameof(Unk_225));
-                    OnPropertyChanged(nameof(Unk_225));
-                }
-            }
-
-            [DisplayName("Offset")]
-            public long Unk_225_offset { get; private set; }
-
-            protected float Unk_226_raw;
-            public const string Unk_226_displayName = "Unk 226";
-            public const int Unk_226_sortIndex = 6800;
-            [SortOrder(Unk_226_sortIndex)]
-            [DisplayName(Unk_226_displayName)]
-            public virtual float Unk_226 {
-                get => Unk_226_raw;
-                set {
-                    if (Unk_226_raw == value) return;
-                    Unk_226_raw = value;
-                    ChangedItems.Add(nameof(Unk_226));
-                    OnPropertyChanged(nameof(Unk_226));
-                }
-            }
-
-            [DisplayName("Offset")]
-            public long Unk_226_offset { get; private set; }
-
-            protected float Unk_227_raw;
-            public const string Unk_227_displayName = "Unk 227";
-            public const int Unk_227_sortIndex = 6850;
-            [SortOrder(Unk_227_sortIndex)]
-            [DisplayName(Unk_227_displayName)]
-            public virtual float Unk_227 {
-                get => Unk_227_raw;
-                set {
-                    if (Unk_227_raw == value) return;
-                    Unk_227_raw = value;
-                    ChangedItems.Add(nameof(Unk_227));
-                    OnPropertyChanged(nameof(Unk_227));
-                }
-            }
-
-            [DisplayName("Offset")]
-            public long Unk_227_offset { get; private set; }
-
-            protected float Unk_228_raw;
-            public const string Unk_228_displayName = "Unk 228";
-            public const int Unk_228_sortIndex = 6900;
-            [SortOrder(Unk_228_sortIndex)]
-            [DisplayName(Unk_228_displayName)]
-            public virtual float Unk_228 {
-                get => Unk_228_raw;
-                set {
-                    if (Unk_228_raw == value) return;
-                    Unk_228_raw = value;
-                    ChangedItems.Add(nameof(Unk_228));
-                    OnPropertyChanged(nameof(Unk_228));
-                }
-            }
-
-            [DisplayName("Offset")]
-            public long Unk_228_offset { get; private set; }
-
-            protected float Unk_229_raw;
-            public const string Unk_229_displayName = "Unk 229";
-            public const int Unk_229_sortIndex = 6950;
-            [SortOrder(Unk_229_sortIndex)]
-            [DisplayName(Unk_229_displayName)]
-            public virtual float Unk_229 {
-                get => Unk_229_raw;
-                set {
-                    if (Unk_229_raw == value) return;
-                    Unk_229_raw = value;
-                    ChangedItems.Add(nameof(Unk_229));
-                    OnPropertyChanged(nameof(Unk_229));
-                }
-            }
-
-            [DisplayName("Offset")]
-            public long Unk_229_offset { get; private set; }
-
-            protected float Unk_230_raw;
-            public const string Unk_230_displayName = "Unk 230";
-            public const int Unk_230_sortIndex = 7000;
-            [SortOrder(Unk_230_sortIndex)]
-            [DisplayName(Unk_230_displayName)]
-            public virtual float Unk_230 {
-                get => Unk_230_raw;
-                set {
-                    if (Unk_230_raw == value) return;
-                    Unk_230_raw = value;
-                    ChangedItems.Add(nameof(Unk_230));
-                    OnPropertyChanged(nameof(Unk_230));
-                }
-            }
-
-            [DisplayName("Offset")]
-            public long Unk_230_offset { get; private set; }
-
-            protected byte Unk_231_raw;
-            public const string Unk_231_displayName = "Unk 231";
-            public const int Unk_231_sortIndex = 7050;
-            [SortOrder(Unk_231_sortIndex)]
-            [DisplayName(Unk_231_displayName)]
-            public virtual byte Unk_231 {
-                get => Unk_231_raw;
-                set {
-                    if (Unk_231_raw == value) return;
-                    Unk_231_raw = value;
-                    ChangedItems.Add(nameof(Unk_231));
-                    OnPropertyChanged(nameof(Unk_231));
-                }
-            }
-
-            [DisplayName("Offset")]
-            public long Unk_231_offset { get; private set; }
-
-            protected float Wyrmsnipe_Cooldown_raw;
-            public const string Wyrmsnipe_Cooldown_displayName = "Wyrmsnipe Cooldown";
-            public const int Wyrmsnipe_Cooldown_sortIndex = 7100;
-            [SortOrder(Wyrmsnipe_Cooldown_sortIndex)]
-            [DisplayName(Wyrmsnipe_Cooldown_displayName)]
-            public virtual float Wyrmsnipe_Cooldown {
-                get => Wyrmsnipe_Cooldown_raw;
-                set {
-                    if (Wyrmsnipe_Cooldown_raw == value) return;
-                    Wyrmsnipe_Cooldown_raw = value;
-                    ChangedItems.Add(nameof(Wyrmsnipe_Cooldown));
-                    OnPropertyChanged(nameof(Wyrmsnipe_Cooldown));
-                }
-            }
-
-            [DisplayName("Offset")]
-            public long Wyrmsnipe_Cooldown_offset { get; private set; }
-
-            protected byte Unk_233_raw;
-            public const string Unk_233_displayName = "Unk 233";
-            public const int Unk_233_sortIndex = 7150;
-            [SortOrder(Unk_233_sortIndex)]
-            [DisplayName(Unk_233_displayName)]
-            public virtual byte Unk_233 {
-                get => Unk_233_raw;
-                set {
-                    if (Unk_233_raw == value) return;
-                    Unk_233_raw = value;
-                    ChangedItems.Add(nameof(Unk_233));
-                    OnPropertyChanged(nameof(Unk_233));
-                }
-            }
-
-            [DisplayName("Offset")]
-            public long Unk_233_offset { get; private set; }
-
-            protected byte Unk_234_raw;
-            public const string Unk_234_displayName = "Unk 234";
-            public const int Unk_234_sortIndex = 7200;
-            [SortOrder(Unk_234_sortIndex)]
-            [DisplayName(Unk_234_displayName)]
-            public virtual byte Unk_234 {
-                get => Unk_234_raw;
-                set {
-                    if (Unk_234_raw == value) return;
-                    Unk_234_raw = value;
-                    ChangedItems.Add(nameof(Unk_234));
-                    OnPropertyChanged(nameof(Unk_234));
-                }
-            }
-
-            [DisplayName("Offset")]
-            public long Unk_234_offset { get; private set; }
-
-            protected byte Unk_235_raw;
-            public const string Unk_235_displayName = "Unk 235";
-            public const int Unk_235_sortIndex = 7250;
-            [SortOrder(Unk_235_sortIndex)]
-            [DisplayName(Unk_235_displayName)]
-            public virtual byte Unk_235 {
-                get => Unk_235_raw;
-                set {
-                    if (Unk_235_raw == value) return;
-                    Unk_235_raw = value;
-                    ChangedItems.Add(nameof(Unk_235));
-                    OnPropertyChanged(nameof(Unk_235));
-                }
-            }
-
-            [DisplayName("Offset")]
-            public long Unk_235_offset { get; private set; }
-
-            protected float Unk_236_raw;
-            public const string Unk_236_displayName = "Unk 236";
-            public const int Unk_236_sortIndex = 7300;
-            [SortOrder(Unk_236_sortIndex)]
-            [DisplayName(Unk_236_displayName)]
-            public virtual float Unk_236 {
-                get => Unk_236_raw;
-                set {
-                    if (Unk_236_raw == value) return;
-                    Unk_236_raw = value;
-                    ChangedItems.Add(nameof(Unk_236));
-                    OnPropertyChanged(nameof(Unk_236));
-                }
-            }
-
-            [DisplayName("Offset")]
-            public long Unk_236_offset { get; private set; }
-
-            protected float Unk_237_raw;
-            public const string Unk_237_displayName = "Unk 237";
-            public const int Unk_237_sortIndex = 7350;
-            [SortOrder(Unk_237_sortIndex)]
-            [DisplayName(Unk_237_displayName)]
-            public virtual float Unk_237 {
-                get => Unk_237_raw;
-                set {
-                    if (Unk_237_raw == value) return;
-                    Unk_237_raw = value;
-                    ChangedItems.Add(nameof(Unk_237));
-                    OnPropertyChanged(nameof(Unk_237));
-                }
-            }
-
-            [DisplayName("Offset")]
-            public long Unk_237_offset { get; private set; }
-
-            protected uint Unk_238_raw;
-            public const string Unk_238_displayName = "Unk 238";
-            public const int Unk_238_sortIndex = 7400;
-            [SortOrder(Unk_238_sortIndex)]
-            [DisplayName(Unk_238_displayName)]
-            public virtual uint Unk_238 {
-                get => Unk_238_raw;
-                set {
-                    if (Unk_238_raw == value) return;
-                    Unk_238_raw = value;
-                    ChangedItems.Add(nameof(Unk_238));
-                    OnPropertyChanged(nameof(Unk_238));
-                }
-            }
-
-            [DisplayName("Offset")]
-            public long Unk_238_offset { get; private set; }
-
-            protected short Unk_239_raw;
-            public const string Unk_239_displayName = "Unk 239";
-            public const int Unk_239_sortIndex = 7450;
-            [SortOrder(Unk_239_sortIndex)]
-            [DisplayName(Unk_239_displayName)]
-            public virtual short Unk_239 {
-                get => Unk_239_raw;
-                set {
-                    if (Unk_239_raw == value) return;
-                    Unk_239_raw = value;
-                    ChangedItems.Add(nameof(Unk_239));
-                    OnPropertyChanged(nameof(Unk_239));
-                }
-            }
-
-            [DisplayName("Offset")]
-            public long Unk_239_offset { get; private set; }
-
-            public const int lastSortIndex = 7500;
+            public const int lastSortIndex = 6100;
 
             public static ObservableMhwStructCollection<W13p_Params_5_> LoadData(BinaryReader reader) {
                 var list = new ObservableMhwStructCollection<W13p_Params_5_>();
@@ -5613,20 +5109,20 @@ namespace MHW_Editor.Structs.Weapons {
                 data.Wyvernheart_Ammo_Cap_raw = reader.ReadSingle();
                 data.Delay_Between_Shots_offset = reader.BaseStream.Position;
                 data.Delay_Between_Shots_raw = reader.ReadSingle();
-                data.Unk_170_offset = reader.BaseStream.Position;
-                data.Unk_170_raw = reader.ReadSingle();
+                data.Wyvernheart_Ammo_Consumption_offset = reader.BaseStream.Position;
+                data.Wyvernheart_Ammo_Consumption_raw = reader.ReadSingle();
                 data.Wyvernheart_Ammo_Recharge_offset = reader.BaseStream.Position;
                 data.Wyvernheart_Ammo_Recharge_raw = reader.ReadSingle();
-                data.Unk_172_offset = reader.BaseStream.Position;
-                data.Unk_172_raw = reader.ReadSingle();
-                data.Unk_173_offset = reader.BaseStream.Position;
-                data.Unk_173_raw = reader.ReadSingle();
-                data.Unk_174_offset = reader.BaseStream.Position;
-                data.Unk_174_raw = reader.ReadByte();
+                data.Wyvernheart_Vertical_Deviation_offset = reader.BaseStream.Position;
+                data.Wyvernheart_Vertical_Deviation_raw = reader.ReadSingle();
+                data.Wyvernheart_Horizontal_Deviation_offset = reader.BaseStream.Position;
+                data.Wyvernheart_Horizontal_Deviation_raw = reader.ReadSingle();
+                data.Wyvernheart_Hit_Count_Per_Actual_Hit_offset = reader.BaseStream.Position;
+                data.Wyvernheart_Hit_Count_Per_Actual_Hit_raw = reader.ReadByte();
                 data.Unk_175_offset = reader.BaseStream.Position;
                 data.Unk_175_raw = reader.ReadByte();
-                data.Unk_176_offset = reader.BaseStream.Position;
-                data.Unk_176_raw = reader.ReadByte();
+                data.Wyvernheart_Hit_Count_Loss_Per_Every_Actual_Loss_Hit_offset = reader.BaseStream.Position;
+                data.Wyvernheart_Hit_Count_Loss_Per_Every_Actual_Loss_Hit_raw = reader.ReadByte();
                 data.Wyvernheart_Hit_Count_for_Damage_Bonus_offset = reader.BaseStream.Position;
                 data.Wyvernheart_Hit_Count_for_Damage_Bonus_raw = reader.ReadByte();
                 data.Hit_for_1st_Damage_Bonus_offset = reader.BaseStream.Position;
@@ -5649,12 +5145,12 @@ namespace MHW_Editor.Structs.Weapons {
                 data.Hit_for_5th_Damage_Bonus_raw = reader.ReadUInt16();
                 data._5th_Damage_Bonus_offset = reader.BaseStream.Position;
                 data._5th_Damage_Bonus_raw = reader.ReadUInt16();
-                data.Unk_188_offset = reader.BaseStream.Position;
-                data.Unk_188_raw = reader.ReadByte();
+                data.Wyvernheart_Mod_Hit_Count_Per_Actual_Hit_offset = reader.BaseStream.Position;
+                data.Wyvernheart_Mod_Hit_Count_Per_Actual_Hit_raw = reader.ReadByte();
                 data.Unk_189_offset = reader.BaseStream.Position;
                 data.Unk_189_raw = reader.ReadByte();
-                data.Unk_190_offset = reader.BaseStream.Position;
-                data.Unk_190_raw = reader.ReadByte();
+                data.Wyvernheart_Mod_Hit_Count_Loss_Per_Actual_Hit_Loss_offset = reader.BaseStream.Position;
+                data.Wyvernheart_Mod_Hit_Count_Loss_Per_Actual_Hit_Loss_raw = reader.ReadByte();
                 data.Wyvernheart_Mod_Hit_Count_for_Damage_Bonus_offset = reader.BaseStream.Position;
                 data.Wyvernheart_Mod_Hit_Count_for_Damage_Bonus_raw = reader.ReadByte();
                 data._Mod_Hit_for_1st_Damage_Bonus_offset = reader.BaseStream.Position;
@@ -5697,62 +5193,6 @@ namespace MHW_Editor.Structs.Weapons {
                 data._Mod_Hit_for_10th_Damage_Bonus_raw = reader.ReadUInt16();
                 data._Mod_10th_Damage_Bonus_offset = reader.BaseStream.Position;
                 data._Mod_10th_Damage_Bonus_raw = reader.ReadUInt16();
-                data.Unk_212_offset = reader.BaseStream.Position;
-                data.Unk_212_raw = reader.ReadByte();
-                data.Unk_213_offset = reader.BaseStream.Position;
-                data.Unk_213_raw = reader.ReadUInt16();
-                data.Unk_214_offset = reader.BaseStream.Position;
-                data.Unk_214_raw = reader.ReadUInt16();
-                data.Unk_215_offset = reader.BaseStream.Position;
-                data.Unk_215_raw = reader.ReadSingle();
-                data.Unk_216_offset = reader.BaseStream.Position;
-                data.Unk_216_raw = reader.ReadUInt16();
-                data.Unk_217_offset = reader.BaseStream.Position;
-                data.Unk_217_raw = reader.ReadSingle();
-                data.Unk_218_offset = reader.BaseStream.Position;
-                data.Unk_218_raw = reader.ReadSingle();
-                data.Unk_219_offset = reader.BaseStream.Position;
-                data.Unk_219_raw = reader.ReadSingle();
-                data.Unk_220_offset = reader.BaseStream.Position;
-                data.Unk_220_raw = reader.ReadSingle();
-                data.Unk_221_offset = reader.BaseStream.Position;
-                data.Unk_221_raw = reader.ReadSingle();
-                data.Unk_222_offset = reader.BaseStream.Position;
-                data.Unk_222_raw = reader.ReadSingle();
-                data.Unk_223_offset = reader.BaseStream.Position;
-                data.Unk_223_raw = reader.ReadSingle();
-                data.Unk_224_offset = reader.BaseStream.Position;
-                data.Unk_224_raw = reader.ReadSingle();
-                data.Unk_225_offset = reader.BaseStream.Position;
-                data.Unk_225_raw = reader.ReadSingle();
-                data.Unk_226_offset = reader.BaseStream.Position;
-                data.Unk_226_raw = reader.ReadSingle();
-                data.Unk_227_offset = reader.BaseStream.Position;
-                data.Unk_227_raw = reader.ReadSingle();
-                data.Unk_228_offset = reader.BaseStream.Position;
-                data.Unk_228_raw = reader.ReadSingle();
-                data.Unk_229_offset = reader.BaseStream.Position;
-                data.Unk_229_raw = reader.ReadSingle();
-                data.Unk_230_offset = reader.BaseStream.Position;
-                data.Unk_230_raw = reader.ReadSingle();
-                data.Unk_231_offset = reader.BaseStream.Position;
-                data.Unk_231_raw = reader.ReadByte();
-                data.Wyrmsnipe_Cooldown_offset = reader.BaseStream.Position;
-                data.Wyrmsnipe_Cooldown_raw = reader.ReadSingle();
-                data.Unk_233_offset = reader.BaseStream.Position;
-                data.Unk_233_raw = reader.ReadByte();
-                data.Unk_234_offset = reader.BaseStream.Position;
-                data.Unk_234_raw = reader.ReadByte();
-                data.Unk_235_offset = reader.BaseStream.Position;
-                data.Unk_235_raw = reader.ReadByte();
-                data.Unk_236_offset = reader.BaseStream.Position;
-                data.Unk_236_raw = reader.ReadSingle();
-                data.Unk_237_offset = reader.BaseStream.Position;
-                data.Unk_237_raw = reader.ReadSingle();
-                data.Unk_238_offset = reader.BaseStream.Position;
-                data.Unk_238_raw = reader.ReadUInt32();
-                data.Unk_239_offset = reader.BaseStream.Position;
-                data.Unk_239_raw = reader.ReadInt16();
                 return data;
             }
 
@@ -5836,13 +5276,13 @@ namespace MHW_Editor.Structs.Weapons {
                 writer.Write(Unk_167_raw);
                 writer.Write(Wyvernheart_Ammo_Cap_raw);
                 writer.Write(Delay_Between_Shots_raw);
-                writer.Write(Unk_170_raw);
+                writer.Write(Wyvernheart_Ammo_Consumption_raw);
                 writer.Write(Wyvernheart_Ammo_Recharge_raw);
-                writer.Write(Unk_172_raw);
-                writer.Write(Unk_173_raw);
-                writer.Write(Unk_174_raw);
+                writer.Write(Wyvernheart_Vertical_Deviation_raw);
+                writer.Write(Wyvernheart_Horizontal_Deviation_raw);
+                writer.Write(Wyvernheart_Hit_Count_Per_Actual_Hit_raw);
                 writer.Write(Unk_175_raw);
-                writer.Write(Unk_176_raw);
+                writer.Write(Wyvernheart_Hit_Count_Loss_Per_Every_Actual_Loss_Hit_raw);
                 writer.Write(Wyvernheart_Hit_Count_for_Damage_Bonus_raw);
                 writer.Write(Hit_for_1st_Damage_Bonus_raw);
                 writer.Write(_1st_Damage_Bonus_raw);
@@ -5854,9 +5294,9 @@ namespace MHW_Editor.Structs.Weapons {
                 writer.Write(_4th_Damage_Bonus_raw);
                 writer.Write(Hit_for_5th_Damage_Bonus_raw);
                 writer.Write(_5th_Damage_Bonus_raw);
-                writer.Write(Unk_188_raw);
+                writer.Write(Wyvernheart_Mod_Hit_Count_Per_Actual_Hit_raw);
                 writer.Write(Unk_189_raw);
-                writer.Write(Unk_190_raw);
+                writer.Write(Wyvernheart_Mod_Hit_Count_Loss_Per_Actual_Hit_Loss_raw);
                 writer.Write(Wyvernheart_Mod_Hit_Count_for_Damage_Bonus_raw);
                 writer.Write(_Mod_Hit_for_1st_Damage_Bonus_raw);
                 writer.Write(_Mod_1st_Damage_Bonus_raw);
@@ -5878,34 +5318,6 @@ namespace MHW_Editor.Structs.Weapons {
                 writer.Write(_Mod_9th_Damage_Bonus_raw);
                 writer.Write(_Mod_Hit_for_10th_Damage_Bonus_raw);
                 writer.Write(_Mod_10th_Damage_Bonus_raw);
-                writer.Write(Unk_212_raw);
-                writer.Write(Unk_213_raw);
-                writer.Write(Unk_214_raw);
-                writer.Write(Unk_215_raw);
-                writer.Write(Unk_216_raw);
-                writer.Write(Unk_217_raw);
-                writer.Write(Unk_218_raw);
-                writer.Write(Unk_219_raw);
-                writer.Write(Unk_220_raw);
-                writer.Write(Unk_221_raw);
-                writer.Write(Unk_222_raw);
-                writer.Write(Unk_223_raw);
-                writer.Write(Unk_224_raw);
-                writer.Write(Unk_225_raw);
-                writer.Write(Unk_226_raw);
-                writer.Write(Unk_227_raw);
-                writer.Write(Unk_228_raw);
-                writer.Write(Unk_229_raw);
-                writer.Write(Unk_230_raw);
-                writer.Write(Unk_231_raw);
-                writer.Write(Wyrmsnipe_Cooldown_raw);
-                writer.Write(Unk_233_raw);
-                writer.Write(Unk_234_raw);
-                writer.Write(Unk_235_raw);
-                writer.Write(Unk_236_raw);
-                writer.Write(Unk_237_raw);
-                writer.Write(Unk_238_raw);
-                writer.Write(Unk_239_raw);
             }
 
             public ObservableCollection<MultiStructItemCustomView> GetCustomView() {
@@ -5989,13 +5401,13 @@ namespace MHW_Editor.Structs.Weapons {
                     new MultiStructItemCustomView(this, "Unk 167", "Unk_167", "Unk_167_offset"),
                     new MultiStructItemCustomView(this, "Wyvernheart Ammo Cap", "Wyvernheart_Ammo_Cap", "Wyvernheart_Ammo_Cap_offset"),
                     new MultiStructItemCustomView(this, "Delay Between Shots", "Delay_Between_Shots", "Delay_Between_Shots_offset"),
-                    new MultiStructItemCustomView(this, "Unk 170", "Unk_170", "Unk_170_offset"),
+                    new MultiStructItemCustomView(this, "Wyvernheart Ammo Consumption", "Wyvernheart_Ammo_Consumption", "Wyvernheart_Ammo_Consumption_offset"),
                     new MultiStructItemCustomView(this, "Wyvernheart Ammo Recharge", "Wyvernheart_Ammo_Recharge", "Wyvernheart_Ammo_Recharge_offset"),
-                    new MultiStructItemCustomView(this, "Unk 172", "Unk_172", "Unk_172_offset"),
-                    new MultiStructItemCustomView(this, "Unk 173", "Unk_173", "Unk_173_offset"),
-                    new MultiStructItemCustomView(this, "Unk 174", "Unk_174", "Unk_174_offset"),
+                    new MultiStructItemCustomView(this, "Wyvernheart Vertical Deviation", "Wyvernheart_Vertical_Deviation", "Wyvernheart_Vertical_Deviation_offset"),
+                    new MultiStructItemCustomView(this, "Wyvernheart Horizontal Deviation", "Wyvernheart_Horizontal_Deviation", "Wyvernheart_Horizontal_Deviation_offset"),
+                    new MultiStructItemCustomView(this, "Wyvernheart Hit Count Per Actual Hit", "Wyvernheart_Hit_Count_Per_Actual_Hit", "Wyvernheart_Hit_Count_Per_Actual_Hit_offset"),
                     new MultiStructItemCustomView(this, "Unk 175", "Unk_175", "Unk_175_offset"),
-                    new MultiStructItemCustomView(this, "Unk 176", "Unk_176", "Unk_176_offset"),
+                    new MultiStructItemCustomView(this, "Wyvernheart Hit Count Loss Per Every Actual Loss Hit", "Wyvernheart_Hit_Count_Loss_Per_Every_Actual_Loss_Hit", "Wyvernheart_Hit_Count_Loss_Per_Every_Actual_Loss_Hit_offset"),
                     new MultiStructItemCustomView(this, "Wyvernheart Hit Count for Damage Bonus", "Wyvernheart_Hit_Count_for_Damage_Bonus", "Wyvernheart_Hit_Count_for_Damage_Bonus_offset"),
                     new MultiStructItemCustomView(this, "Hit for 1st Damage Bonus", "Hit_for_1st_Damage_Bonus", "Hit_for_1st_Damage_Bonus_offset"),
                     new MultiStructItemCustomView(this, "(1st) Damage Bonus", "_1st_Damage_Bonus", "_1st_Damage_Bonus_offset"),
@@ -6007,9 +5419,9 @@ namespace MHW_Editor.Structs.Weapons {
                     new MultiStructItemCustomView(this, "(4th) Damage Bonus", "_4th_Damage_Bonus", "_4th_Damage_Bonus_offset"),
                     new MultiStructItemCustomView(this, "Hit for 5th Damage Bonus", "Hit_for_5th_Damage_Bonus", "Hit_for_5th_Damage_Bonus_offset"),
                     new MultiStructItemCustomView(this, "(5th) Damage Bonus", "_5th_Damage_Bonus", "_5th_Damage_Bonus_offset"),
-                    new MultiStructItemCustomView(this, "Unk 188", "Unk_188", "Unk_188_offset"),
+                    new MultiStructItemCustomView(this, "Wyvernheart Mod Hit Count Per Actual Hit", "Wyvernheart_Mod_Hit_Count_Per_Actual_Hit", "Wyvernheart_Mod_Hit_Count_Per_Actual_Hit_offset"),
                     new MultiStructItemCustomView(this, "Unk 189", "Unk_189", "Unk_189_offset"),
-                    new MultiStructItemCustomView(this, "Unk 190", "Unk_190", "Unk_190_offset"),
+                    new MultiStructItemCustomView(this, "Wyvernheart Mod Hit Count Loss Per Actual Hit Loss", "Wyvernheart_Mod_Hit_Count_Loss_Per_Actual_Hit_Loss", "Wyvernheart_Mod_Hit_Count_Loss_Per_Actual_Hit_Loss_offset"),
                     new MultiStructItemCustomView(this, "Wyvernheart Mod Hit Count for Damage Bonus", "Wyvernheart_Mod_Hit_Count_for_Damage_Bonus", "Wyvernheart_Mod_Hit_Count_for_Damage_Bonus_offset"),
                     new MultiStructItemCustomView(this, "(Mod) Hit for 1st Damage Bonus", "_Mod_Hit_for_1st_Damage_Bonus", "_Mod_Hit_for_1st_Damage_Bonus_offset"),
                     new MultiStructItemCustomView(this, "(Mod, 1st) Damage Bonus", "_Mod_1st_Damage_Bonus", "_Mod_1st_Damage_Bonus_offset"),
@@ -6031,30 +5443,648 @@ namespace MHW_Editor.Structs.Weapons {
                     new MultiStructItemCustomView(this, "(Mod, 9th) Damage Bonus", "_Mod_9th_Damage_Bonus", "_Mod_9th_Damage_Bonus_offset"),
                     new MultiStructItemCustomView(this, "(Mod) Hit for 10th Damage Bonus", "_Mod_Hit_for_10th_Damage_Bonus", "_Mod_Hit_for_10th_Damage_Bonus_offset"),
                     new MultiStructItemCustomView(this, "(Mod, 10th) Damage Bonus", "_Mod_10th_Damage_Bonus", "_Mod_10th_Damage_Bonus_offset"),
-                    new MultiStructItemCustomView(this, "Unk 212", "Unk_212", "Unk_212_offset"),
-                    new MultiStructItemCustomView(this, "Unk 213", "Unk_213", "Unk_213_offset"),
-                    new MultiStructItemCustomView(this, "Unk 214", "Unk_214", "Unk_214_offset"),
-                    new MultiStructItemCustomView(this, "Unk 215", "Unk_215", "Unk_215_offset"),
-                    new MultiStructItemCustomView(this, "Unk 216", "Unk_216", "Unk_216_offset"),
-                    new MultiStructItemCustomView(this, "Unk 217", "Unk_217", "Unk_217_offset"),
-                    new MultiStructItemCustomView(this, "Unk 218", "Unk_218", "Unk_218_offset"),
-                    new MultiStructItemCustomView(this, "Unk 219", "Unk_219", "Unk_219_offset"),
-                    new MultiStructItemCustomView(this, "Unk 220", "Unk_220", "Unk_220_offset"),
-                    new MultiStructItemCustomView(this, "Unk 221", "Unk_221", "Unk_221_offset"),
-                    new MultiStructItemCustomView(this, "Unk 222", "Unk_222", "Unk_222_offset"),
-                    new MultiStructItemCustomView(this, "Unk 223", "Unk_223", "Unk_223_offset"),
-                    new MultiStructItemCustomView(this, "Unk 224", "Unk_224", "Unk_224_offset"),
-                    new MultiStructItemCustomView(this, "Unk 225", "Unk_225", "Unk_225_offset"),
-                    new MultiStructItemCustomView(this, "Unk 226", "Unk_226", "Unk_226_offset"),
-                    new MultiStructItemCustomView(this, "Unk 227", "Unk_227", "Unk_227_offset"),
-                    new MultiStructItemCustomView(this, "Unk 228", "Unk_228", "Unk_228_offset"),
-                    new MultiStructItemCustomView(this, "Unk 229", "Unk_229", "Unk_229_offset"),
-                    new MultiStructItemCustomView(this, "Unk 230", "Unk_230", "Unk_230_offset"),
-                    new MultiStructItemCustomView(this, "Unk 231", "Unk_231", "Unk_231_offset"),
+                };
+            }
+        }
+
+        public partial class Event_Pad_Vib : MhwStructItem, IWriteData {
+            public const ulong FixedSizeCount = 1;
+            public const string GridName = "Event Pad Vib";
+
+            protected byte B_raw;
+            public const string B_displayName = "B";
+            public const int B_sortIndex = 50;
+            [SortOrder(B_sortIndex)]
+            [DisplayName(B_displayName)]
+            public virtual byte B {
+                get => B_raw;
+                set {
+                    if (B_raw == value) return;
+                    B_raw = value;
+                    ChangedItems.Add(nameof(B));
+                    OnPropertyChanged(nameof(B));
+                }
+            }
+
+            protected ushort X_raw;
+            public const string X_displayName = "X";
+            public const int X_sortIndex = 100;
+            [SortOrder(X_sortIndex)]
+            [DisplayName(X_displayName)]
+            public virtual ushort X {
+                get => X_raw;
+                set {
+                    if (X_raw == value) return;
+                    X_raw = value;
+                    ChangedItems.Add(nameof(X));
+                    OnPropertyChanged(nameof(X));
+                }
+            }
+
+            protected ushort Y_raw;
+            public const string Y_displayName = "Y";
+            public const int Y_sortIndex = 150;
+            [SortOrder(Y_sortIndex)]
+            [DisplayName(Y_displayName)]
+            public virtual ushort Y {
+                get => Y_raw;
+                set {
+                    if (Y_raw == value) return;
+                    Y_raw = value;
+                    ChangedItems.Add(nameof(Y));
+                    OnPropertyChanged(nameof(Y));
+                }
+            }
+
+            protected float Time_raw;
+            public const string Time_displayName = "Time";
+            public const int Time_sortIndex = 200;
+            [SortOrder(Time_sortIndex)]
+            [DisplayName(Time_displayName)]
+            public virtual float Time {
+                get => Time_raw;
+                set {
+                    if (Time_raw == value) return;
+                    Time_raw = value;
+                    ChangedItems.Add(nameof(Time));
+                    OnPropertyChanged(nameof(Time));
+                }
+            }
+
+            protected ushort P_raw;
+            public const string P_displayName = "P";
+            public const int P_sortIndex = 250;
+            [SortOrder(P_sortIndex)]
+            [DisplayName(P_displayName)]
+            public virtual ushort P {
+                get => P_raw;
+                set {
+                    if (P_raw == value) return;
+                    P_raw = value;
+                    ChangedItems.Add(nameof(P));
+                    OnPropertyChanged(nameof(P));
+                }
+            }
+
+            public const int lastSortIndex = 300;
+
+            public static ObservableMhwStructCollection<Event_Pad_Vib> LoadData(BinaryReader reader) {
+                var list = new ObservableMhwStructCollection<Event_Pad_Vib>();
+                const ulong count = 1UL;
+                for (ulong i = 0; i < count; i++) {
+                    list.Add(LoadData(reader, i));
+                }
+                return list;
+            }
+
+            public static Event_Pad_Vib LoadData(BinaryReader reader, ulong i) {
+                var data = new Event_Pad_Vib();
+                data.Index = i;
+                data.B_raw = reader.ReadByte();
+                data.X_raw = reader.ReadUInt16();
+                data.Y_raw = reader.ReadUInt16();
+                data.Time_raw = reader.ReadSingle();
+                data.P_raw = reader.ReadUInt16();
+                return data;
+            }
+
+            public void WriteData(BinaryWriter writer) {
+                writer.Write(B_raw);
+                writer.Write(X_raw);
+                writer.Write(Y_raw);
+                writer.Write(Time_raw);
+                writer.Write(P_raw);
+            }
+        }
+
+        public partial class W13p_Params_5_1_ : MhwStructItem, IHasCustomView<MultiStructItemCustomView>, IWriteData {
+            public const ulong FixedSizeCount = 1;
+            public const string GridName = "W13p Params (5.1)";
+
+            protected float Wyvernsnipe_Prone_Movement_Params_1_raw;
+            public const string Wyvernsnipe_Prone_Movement_Params_1_displayName = "Wyvernsnipe Prone Movement Params 1";
+            public const int Wyvernsnipe_Prone_Movement_Params_1_sortIndex = 50;
+            [SortOrder(Wyvernsnipe_Prone_Movement_Params_1_sortIndex)]
+            [DisplayName(Wyvernsnipe_Prone_Movement_Params_1_displayName)]
+            public virtual float Wyvernsnipe_Prone_Movement_Params_1 {
+                get => Wyvernsnipe_Prone_Movement_Params_1_raw;
+                set {
+                    if (Wyvernsnipe_Prone_Movement_Params_1_raw == value) return;
+                    Wyvernsnipe_Prone_Movement_Params_1_raw = value;
+                    ChangedItems.Add(nameof(Wyvernsnipe_Prone_Movement_Params_1));
+                    OnPropertyChanged(nameof(Wyvernsnipe_Prone_Movement_Params_1));
+                }
+            }
+
+            [DisplayName("Offset")]
+            public long Wyvernsnipe_Prone_Movement_Params_1_offset { get; private set; }
+
+            protected float Wyvernsnipe_Prone_Movement_Params_2_raw;
+            public const string Wyvernsnipe_Prone_Movement_Params_2_displayName = "Wyvernsnipe Prone Movement Params 2";
+            public const int Wyvernsnipe_Prone_Movement_Params_2_sortIndex = 100;
+            [SortOrder(Wyvernsnipe_Prone_Movement_Params_2_sortIndex)]
+            [DisplayName(Wyvernsnipe_Prone_Movement_Params_2_displayName)]
+            public virtual float Wyvernsnipe_Prone_Movement_Params_2 {
+                get => Wyvernsnipe_Prone_Movement_Params_2_raw;
+                set {
+                    if (Wyvernsnipe_Prone_Movement_Params_2_raw == value) return;
+                    Wyvernsnipe_Prone_Movement_Params_2_raw = value;
+                    ChangedItems.Add(nameof(Wyvernsnipe_Prone_Movement_Params_2));
+                    OnPropertyChanged(nameof(Wyvernsnipe_Prone_Movement_Params_2));
+                }
+            }
+
+            [DisplayName("Offset")]
+            public long Wyvernsnipe_Prone_Movement_Params_2_offset { get; private set; }
+
+            protected float Wyvernsnipe_Prone_Movement_Params_3_raw;
+            public const string Wyvernsnipe_Prone_Movement_Params_3_displayName = "Wyvernsnipe Prone Movement Params 3";
+            public const int Wyvernsnipe_Prone_Movement_Params_3_sortIndex = 150;
+            [SortOrder(Wyvernsnipe_Prone_Movement_Params_3_sortIndex)]
+            [DisplayName(Wyvernsnipe_Prone_Movement_Params_3_displayName)]
+            public virtual float Wyvernsnipe_Prone_Movement_Params_3 {
+                get => Wyvernsnipe_Prone_Movement_Params_3_raw;
+                set {
+                    if (Wyvernsnipe_Prone_Movement_Params_3_raw == value) return;
+                    Wyvernsnipe_Prone_Movement_Params_3_raw = value;
+                    ChangedItems.Add(nameof(Wyvernsnipe_Prone_Movement_Params_3));
+                    OnPropertyChanged(nameof(Wyvernsnipe_Prone_Movement_Params_3));
+                }
+            }
+
+            [DisplayName("Offset")]
+            public long Wyvernsnipe_Prone_Movement_Params_3_offset { get; private set; }
+
+            protected float Wyvernsnipe_Prone_Movement_Params_4_raw;
+            public const string Wyvernsnipe_Prone_Movement_Params_4_displayName = "Wyvernsnipe Prone Movement Params 4";
+            public const int Wyvernsnipe_Prone_Movement_Params_4_sortIndex = 200;
+            [SortOrder(Wyvernsnipe_Prone_Movement_Params_4_sortIndex)]
+            [DisplayName(Wyvernsnipe_Prone_Movement_Params_4_displayName)]
+            public virtual float Wyvernsnipe_Prone_Movement_Params_4 {
+                get => Wyvernsnipe_Prone_Movement_Params_4_raw;
+                set {
+                    if (Wyvernsnipe_Prone_Movement_Params_4_raw == value) return;
+                    Wyvernsnipe_Prone_Movement_Params_4_raw = value;
+                    ChangedItems.Add(nameof(Wyvernsnipe_Prone_Movement_Params_4));
+                    OnPropertyChanged(nameof(Wyvernsnipe_Prone_Movement_Params_4));
+                }
+            }
+
+            [DisplayName("Offset")]
+            public long Wyvernsnipe_Prone_Movement_Params_4_offset { get; private set; }
+
+            protected float Wyvernsnipe_Prone_Movement_Params_5_raw;
+            public const string Wyvernsnipe_Prone_Movement_Params_5_displayName = "Wyvernsnipe Prone Movement Params 5";
+            public const int Wyvernsnipe_Prone_Movement_Params_5_sortIndex = 250;
+            [SortOrder(Wyvernsnipe_Prone_Movement_Params_5_sortIndex)]
+            [DisplayName(Wyvernsnipe_Prone_Movement_Params_5_displayName)]
+            public virtual float Wyvernsnipe_Prone_Movement_Params_5 {
+                get => Wyvernsnipe_Prone_Movement_Params_5_raw;
+                set {
+                    if (Wyvernsnipe_Prone_Movement_Params_5_raw == value) return;
+                    Wyvernsnipe_Prone_Movement_Params_5_raw = value;
+                    ChangedItems.Add(nameof(Wyvernsnipe_Prone_Movement_Params_5));
+                    OnPropertyChanged(nameof(Wyvernsnipe_Prone_Movement_Params_5));
+                }
+            }
+
+            [DisplayName("Offset")]
+            public long Wyvernsnipe_Prone_Movement_Params_5_offset { get; private set; }
+
+            protected float Wyvernsnipe_Prone_Movement_Params_6_raw;
+            public const string Wyvernsnipe_Prone_Movement_Params_6_displayName = "Wyvernsnipe Prone Movement Params 6";
+            public const int Wyvernsnipe_Prone_Movement_Params_6_sortIndex = 300;
+            [SortOrder(Wyvernsnipe_Prone_Movement_Params_6_sortIndex)]
+            [DisplayName(Wyvernsnipe_Prone_Movement_Params_6_displayName)]
+            public virtual float Wyvernsnipe_Prone_Movement_Params_6 {
+                get => Wyvernsnipe_Prone_Movement_Params_6_raw;
+                set {
+                    if (Wyvernsnipe_Prone_Movement_Params_6_raw == value) return;
+                    Wyvernsnipe_Prone_Movement_Params_6_raw = value;
+                    ChangedItems.Add(nameof(Wyvernsnipe_Prone_Movement_Params_6));
+                    OnPropertyChanged(nameof(Wyvernsnipe_Prone_Movement_Params_6));
+                }
+            }
+
+            [DisplayName("Offset")]
+            public long Wyvernsnipe_Prone_Movement_Params_6_offset { get; private set; }
+
+            protected float Wyvernsnipe_Prone_Movement_Params_7_raw;
+            public const string Wyvernsnipe_Prone_Movement_Params_7_displayName = "Wyvernsnipe Prone Movement Params 7";
+            public const int Wyvernsnipe_Prone_Movement_Params_7_sortIndex = 350;
+            [SortOrder(Wyvernsnipe_Prone_Movement_Params_7_sortIndex)]
+            [DisplayName(Wyvernsnipe_Prone_Movement_Params_7_displayName)]
+            public virtual float Wyvernsnipe_Prone_Movement_Params_7 {
+                get => Wyvernsnipe_Prone_Movement_Params_7_raw;
+                set {
+                    if (Wyvernsnipe_Prone_Movement_Params_7_raw == value) return;
+                    Wyvernsnipe_Prone_Movement_Params_7_raw = value;
+                    ChangedItems.Add(nameof(Wyvernsnipe_Prone_Movement_Params_7));
+                    OnPropertyChanged(nameof(Wyvernsnipe_Prone_Movement_Params_7));
+                }
+            }
+
+            [DisplayName("Offset")]
+            public long Wyvernsnipe_Prone_Movement_Params_7_offset { get; private set; }
+
+            protected float Wyvernsnipe_Prone_Movement_Params_8_raw;
+            public const string Wyvernsnipe_Prone_Movement_Params_8_displayName = "Wyvernsnipe Prone Movement Params 8";
+            public const int Wyvernsnipe_Prone_Movement_Params_8_sortIndex = 400;
+            [SortOrder(Wyvernsnipe_Prone_Movement_Params_8_sortIndex)]
+            [DisplayName(Wyvernsnipe_Prone_Movement_Params_8_displayName)]
+            public virtual float Wyvernsnipe_Prone_Movement_Params_8 {
+                get => Wyvernsnipe_Prone_Movement_Params_8_raw;
+                set {
+                    if (Wyvernsnipe_Prone_Movement_Params_8_raw == value) return;
+                    Wyvernsnipe_Prone_Movement_Params_8_raw = value;
+                    ChangedItems.Add(nameof(Wyvernsnipe_Prone_Movement_Params_8));
+                    OnPropertyChanged(nameof(Wyvernsnipe_Prone_Movement_Params_8));
+                }
+            }
+
+            [DisplayName("Offset")]
+            public long Wyvernsnipe_Prone_Movement_Params_8_offset { get; private set; }
+
+            protected float Wyvernsnipe_Prone_Movement_Params_9_raw;
+            public const string Wyvernsnipe_Prone_Movement_Params_9_displayName = "Wyvernsnipe Prone Movement Params 9";
+            public const int Wyvernsnipe_Prone_Movement_Params_9_sortIndex = 450;
+            [SortOrder(Wyvernsnipe_Prone_Movement_Params_9_sortIndex)]
+            [DisplayName(Wyvernsnipe_Prone_Movement_Params_9_displayName)]
+            public virtual float Wyvernsnipe_Prone_Movement_Params_9 {
+                get => Wyvernsnipe_Prone_Movement_Params_9_raw;
+                set {
+                    if (Wyvernsnipe_Prone_Movement_Params_9_raw == value) return;
+                    Wyvernsnipe_Prone_Movement_Params_9_raw = value;
+                    ChangedItems.Add(nameof(Wyvernsnipe_Prone_Movement_Params_9));
+                    OnPropertyChanged(nameof(Wyvernsnipe_Prone_Movement_Params_9));
+                }
+            }
+
+            [DisplayName("Offset")]
+            public long Wyvernsnipe_Prone_Movement_Params_9_offset { get; private set; }
+
+            protected float Wyvernsnipe_Prone_Movement_Params_10_raw;
+            public const string Wyvernsnipe_Prone_Movement_Params_10_displayName = "Wyvernsnipe Prone Movement Params 10";
+            public const int Wyvernsnipe_Prone_Movement_Params_10_sortIndex = 500;
+            [SortOrder(Wyvernsnipe_Prone_Movement_Params_10_sortIndex)]
+            [DisplayName(Wyvernsnipe_Prone_Movement_Params_10_displayName)]
+            public virtual float Wyvernsnipe_Prone_Movement_Params_10 {
+                get => Wyvernsnipe_Prone_Movement_Params_10_raw;
+                set {
+                    if (Wyvernsnipe_Prone_Movement_Params_10_raw == value) return;
+                    Wyvernsnipe_Prone_Movement_Params_10_raw = value;
+                    ChangedItems.Add(nameof(Wyvernsnipe_Prone_Movement_Params_10));
+                    OnPropertyChanged(nameof(Wyvernsnipe_Prone_Movement_Params_10));
+                }
+            }
+
+            [DisplayName("Offset")]
+            public long Wyvernsnipe_Prone_Movement_Params_10_offset { get; private set; }
+
+            protected float Wyvernsnipe_Prone_Movement_Params_11_raw;
+            public const string Wyvernsnipe_Prone_Movement_Params_11_displayName = "Wyvernsnipe Prone Movement Params 11";
+            public const int Wyvernsnipe_Prone_Movement_Params_11_sortIndex = 550;
+            [SortOrder(Wyvernsnipe_Prone_Movement_Params_11_sortIndex)]
+            [DisplayName(Wyvernsnipe_Prone_Movement_Params_11_displayName)]
+            public virtual float Wyvernsnipe_Prone_Movement_Params_11 {
+                get => Wyvernsnipe_Prone_Movement_Params_11_raw;
+                set {
+                    if (Wyvernsnipe_Prone_Movement_Params_11_raw == value) return;
+                    Wyvernsnipe_Prone_Movement_Params_11_raw = value;
+                    ChangedItems.Add(nameof(Wyvernsnipe_Prone_Movement_Params_11));
+                    OnPropertyChanged(nameof(Wyvernsnipe_Prone_Movement_Params_11));
+                }
+            }
+
+            [DisplayName("Offset")]
+            public long Wyvernsnipe_Prone_Movement_Params_11_offset { get; private set; }
+
+            protected float Wyvernsnipe_Prone_Movement_Params_12_raw;
+            public const string Wyvernsnipe_Prone_Movement_Params_12_displayName = "Wyvernsnipe Prone Movement Params 12";
+            public const int Wyvernsnipe_Prone_Movement_Params_12_sortIndex = 600;
+            [SortOrder(Wyvernsnipe_Prone_Movement_Params_12_sortIndex)]
+            [DisplayName(Wyvernsnipe_Prone_Movement_Params_12_displayName)]
+            public virtual float Wyvernsnipe_Prone_Movement_Params_12 {
+                get => Wyvernsnipe_Prone_Movement_Params_12_raw;
+                set {
+                    if (Wyvernsnipe_Prone_Movement_Params_12_raw == value) return;
+                    Wyvernsnipe_Prone_Movement_Params_12_raw = value;
+                    ChangedItems.Add(nameof(Wyvernsnipe_Prone_Movement_Params_12));
+                    OnPropertyChanged(nameof(Wyvernsnipe_Prone_Movement_Params_12));
+                }
+            }
+
+            [DisplayName("Offset")]
+            public long Wyvernsnipe_Prone_Movement_Params_12_offset { get; private set; }
+
+            protected float Wyvernsnipe_Prone_Movement_Params_13_raw;
+            public const string Wyvernsnipe_Prone_Movement_Params_13_displayName = "Wyvernsnipe Prone Movement Params 13";
+            public const int Wyvernsnipe_Prone_Movement_Params_13_sortIndex = 650;
+            [SortOrder(Wyvernsnipe_Prone_Movement_Params_13_sortIndex)]
+            [DisplayName(Wyvernsnipe_Prone_Movement_Params_13_displayName)]
+            public virtual float Wyvernsnipe_Prone_Movement_Params_13 {
+                get => Wyvernsnipe_Prone_Movement_Params_13_raw;
+                set {
+                    if (Wyvernsnipe_Prone_Movement_Params_13_raw == value) return;
+                    Wyvernsnipe_Prone_Movement_Params_13_raw = value;
+                    ChangedItems.Add(nameof(Wyvernsnipe_Prone_Movement_Params_13));
+                    OnPropertyChanged(nameof(Wyvernsnipe_Prone_Movement_Params_13));
+                }
+            }
+
+            [DisplayName("Offset")]
+            public long Wyvernsnipe_Prone_Movement_Params_13_offset { get; private set; }
+
+            protected float Wyvernsnipe_Prone_Movement_Params_14_raw;
+            public const string Wyvernsnipe_Prone_Movement_Params_14_displayName = "Wyvernsnipe Prone Movement Params 14";
+            public const int Wyvernsnipe_Prone_Movement_Params_14_sortIndex = 700;
+            [SortOrder(Wyvernsnipe_Prone_Movement_Params_14_sortIndex)]
+            [DisplayName(Wyvernsnipe_Prone_Movement_Params_14_displayName)]
+            public virtual float Wyvernsnipe_Prone_Movement_Params_14 {
+                get => Wyvernsnipe_Prone_Movement_Params_14_raw;
+                set {
+                    if (Wyvernsnipe_Prone_Movement_Params_14_raw == value) return;
+                    Wyvernsnipe_Prone_Movement_Params_14_raw = value;
+                    ChangedItems.Add(nameof(Wyvernsnipe_Prone_Movement_Params_14));
+                    OnPropertyChanged(nameof(Wyvernsnipe_Prone_Movement_Params_14));
+                }
+            }
+
+            [DisplayName("Offset")]
+            public long Wyvernsnipe_Prone_Movement_Params_14_offset { get; private set; }
+
+            protected byte Wyrmsnipe_Capacity_raw;
+            public const string Wyrmsnipe_Capacity_displayName = "Wyrmsnipe Capacity";
+            public const int Wyrmsnipe_Capacity_sortIndex = 750;
+            [SortOrder(Wyrmsnipe_Capacity_sortIndex)]
+            [DisplayName(Wyrmsnipe_Capacity_displayName)]
+            public virtual byte Wyrmsnipe_Capacity {
+                get => Wyrmsnipe_Capacity_raw;
+                set {
+                    if (Wyrmsnipe_Capacity_raw == value) return;
+                    Wyrmsnipe_Capacity_raw = value;
+                    ChangedItems.Add(nameof(Wyrmsnipe_Capacity));
+                    OnPropertyChanged(nameof(Wyrmsnipe_Capacity));
+                }
+            }
+
+            [DisplayName("Offset")]
+            public long Wyrmsnipe_Capacity_offset { get; private set; }
+
+            protected float Wyrmsnipe_Cooldown_raw;
+            public const string Wyrmsnipe_Cooldown_displayName = "Wyrmsnipe Cooldown";
+            public const int Wyrmsnipe_Cooldown_sortIndex = 800;
+            [SortOrder(Wyrmsnipe_Cooldown_sortIndex)]
+            [DisplayName(Wyrmsnipe_Cooldown_displayName)]
+            public virtual float Wyrmsnipe_Cooldown {
+                get => Wyrmsnipe_Cooldown_raw;
+                set {
+                    if (Wyrmsnipe_Cooldown_raw == value) return;
+                    Wyrmsnipe_Cooldown_raw = value;
+                    ChangedItems.Add(nameof(Wyrmsnipe_Cooldown));
+                    OnPropertyChanged(nameof(Wyrmsnipe_Cooldown));
+                }
+            }
+
+            [DisplayName("Offset")]
+            public long Wyrmsnipe_Cooldown_offset { get; private set; }
+
+            protected byte Wyvernsnipe_Number_of_Medium_Explosions__raw;
+            public const string Wyvernsnipe_Number_of_Medium_Explosions__displayName = "Wyvernsnipe Number of Medium Explosions?";
+            public const int Wyvernsnipe_Number_of_Medium_Explosions__sortIndex = 850;
+            [SortOrder(Wyvernsnipe_Number_of_Medium_Explosions__sortIndex)]
+            [DisplayName(Wyvernsnipe_Number_of_Medium_Explosions__displayName)]
+            public virtual byte Wyvernsnipe_Number_of_Medium_Explosions_ {
+                get => Wyvernsnipe_Number_of_Medium_Explosions__raw;
+                set {
+                    if (Wyvernsnipe_Number_of_Medium_Explosions__raw == value) return;
+                    Wyvernsnipe_Number_of_Medium_Explosions__raw = value;
+                    ChangedItems.Add(nameof(Wyvernsnipe_Number_of_Medium_Explosions_));
+                    OnPropertyChanged(nameof(Wyvernsnipe_Number_of_Medium_Explosions_));
+                }
+            }
+
+            [DisplayName("Offset")]
+            public long Wyvernsnipe_Number_of_Medium_Explosions__offset { get; private set; }
+
+            protected byte Wyvernsnipe_Number_of_Larger_Explosions__raw;
+            public const string Wyvernsnipe_Number_of_Larger_Explosions__displayName = "Wyvernsnipe Number of Larger Explosions?";
+            public const int Wyvernsnipe_Number_of_Larger_Explosions__sortIndex = 900;
+            [SortOrder(Wyvernsnipe_Number_of_Larger_Explosions__sortIndex)]
+            [DisplayName(Wyvernsnipe_Number_of_Larger_Explosions__displayName)]
+            public virtual byte Wyvernsnipe_Number_of_Larger_Explosions_ {
+                get => Wyvernsnipe_Number_of_Larger_Explosions__raw;
+                set {
+                    if (Wyvernsnipe_Number_of_Larger_Explosions__raw == value) return;
+                    Wyvernsnipe_Number_of_Larger_Explosions__raw = value;
+                    ChangedItems.Add(nameof(Wyvernsnipe_Number_of_Larger_Explosions_));
+                    OnPropertyChanged(nameof(Wyvernsnipe_Number_of_Larger_Explosions_));
+                }
+            }
+
+            [DisplayName("Offset")]
+            public long Wyvernsnipe_Number_of_Larger_Explosions__offset { get; private set; }
+
+            protected byte Wyvernsnipe_Number_of_End_Explosions__raw;
+            public const string Wyvernsnipe_Number_of_End_Explosions__displayName = "Wyvernsnipe Number of End Explosions?";
+            public const int Wyvernsnipe_Number_of_End_Explosions__sortIndex = 950;
+            [SortOrder(Wyvernsnipe_Number_of_End_Explosions__sortIndex)]
+            [DisplayName(Wyvernsnipe_Number_of_End_Explosions__displayName)]
+            public virtual byte Wyvernsnipe_Number_of_End_Explosions_ {
+                get => Wyvernsnipe_Number_of_End_Explosions__raw;
+                set {
+                    if (Wyvernsnipe_Number_of_End_Explosions__raw == value) return;
+                    Wyvernsnipe_Number_of_End_Explosions__raw = value;
+                    ChangedItems.Add(nameof(Wyvernsnipe_Number_of_End_Explosions_));
+                    OnPropertyChanged(nameof(Wyvernsnipe_Number_of_End_Explosions_));
+                }
+            }
+
+            [DisplayName("Offset")]
+            public long Wyvernsnipe_Number_of_End_Explosions__offset { get; private set; }
+
+            protected float Unk_236_raw;
+            public const string Unk_236_displayName = "Unk 236";
+            public const int Unk_236_sortIndex = 1000;
+            [SortOrder(Unk_236_sortIndex)]
+            [DisplayName(Unk_236_displayName)]
+            public virtual float Unk_236 {
+                get => Unk_236_raw;
+                set {
+                    if (Unk_236_raw == value) return;
+                    Unk_236_raw = value;
+                    ChangedItems.Add(nameof(Unk_236));
+                    OnPropertyChanged(nameof(Unk_236));
+                }
+            }
+
+            [DisplayName("Offset")]
+            public long Unk_236_offset { get; private set; }
+
+            protected float Unk_237_raw;
+            public const string Unk_237_displayName = "Unk 237";
+            public const int Unk_237_sortIndex = 1050;
+            [SortOrder(Unk_237_sortIndex)]
+            [DisplayName(Unk_237_displayName)]
+            public virtual float Unk_237 {
+                get => Unk_237_raw;
+                set {
+                    if (Unk_237_raw == value) return;
+                    Unk_237_raw = value;
+                    ChangedItems.Add(nameof(Unk_237));
+                    OnPropertyChanged(nameof(Unk_237));
+                }
+            }
+
+            [DisplayName("Offset")]
+            public long Unk_237_offset { get; private set; }
+
+            protected uint Unk_238_raw;
+            public const string Unk_238_displayName = "Unk 238";
+            public const int Unk_238_sortIndex = 1100;
+            [SortOrder(Unk_238_sortIndex)]
+            [DisplayName(Unk_238_displayName)]
+            public virtual uint Unk_238 {
+                get => Unk_238_raw;
+                set {
+                    if (Unk_238_raw == value) return;
+                    Unk_238_raw = value;
+                    ChangedItems.Add(nameof(Unk_238));
+                    OnPropertyChanged(nameof(Unk_238));
+                }
+            }
+
+            [DisplayName("Offset")]
+            public long Unk_238_offset { get; private set; }
+
+            protected short Unk_239_raw;
+            public const string Unk_239_displayName = "Unk 239";
+            public const int Unk_239_sortIndex = 1150;
+            [SortOrder(Unk_239_sortIndex)]
+            [DisplayName(Unk_239_displayName)]
+            public virtual short Unk_239 {
+                get => Unk_239_raw;
+                set {
+                    if (Unk_239_raw == value) return;
+                    Unk_239_raw = value;
+                    ChangedItems.Add(nameof(Unk_239));
+                    OnPropertyChanged(nameof(Unk_239));
+                }
+            }
+
+            [DisplayName("Offset")]
+            public long Unk_239_offset { get; private set; }
+
+            public const int lastSortIndex = 1200;
+
+            public static ObservableMhwStructCollection<W13p_Params_5_1_> LoadData(BinaryReader reader) {
+                var list = new ObservableMhwStructCollection<W13p_Params_5_1_>();
+                const ulong count = 1UL;
+                for (ulong i = 0; i < count; i++) {
+                    list.Add(LoadData(reader, i));
+                }
+                return list;
+            }
+
+            public static W13p_Params_5_1_ LoadData(BinaryReader reader, ulong i) {
+                var data = new W13p_Params_5_1_();
+                data.Index = i;
+                data.Wyvernsnipe_Prone_Movement_Params_1_offset = reader.BaseStream.Position;
+                data.Wyvernsnipe_Prone_Movement_Params_1_raw = reader.ReadSingle();
+                data.Wyvernsnipe_Prone_Movement_Params_2_offset = reader.BaseStream.Position;
+                data.Wyvernsnipe_Prone_Movement_Params_2_raw = reader.ReadSingle();
+                data.Wyvernsnipe_Prone_Movement_Params_3_offset = reader.BaseStream.Position;
+                data.Wyvernsnipe_Prone_Movement_Params_3_raw = reader.ReadSingle();
+                data.Wyvernsnipe_Prone_Movement_Params_4_offset = reader.BaseStream.Position;
+                data.Wyvernsnipe_Prone_Movement_Params_4_raw = reader.ReadSingle();
+                data.Wyvernsnipe_Prone_Movement_Params_5_offset = reader.BaseStream.Position;
+                data.Wyvernsnipe_Prone_Movement_Params_5_raw = reader.ReadSingle();
+                data.Wyvernsnipe_Prone_Movement_Params_6_offset = reader.BaseStream.Position;
+                data.Wyvernsnipe_Prone_Movement_Params_6_raw = reader.ReadSingle();
+                data.Wyvernsnipe_Prone_Movement_Params_7_offset = reader.BaseStream.Position;
+                data.Wyvernsnipe_Prone_Movement_Params_7_raw = reader.ReadSingle();
+                data.Wyvernsnipe_Prone_Movement_Params_8_offset = reader.BaseStream.Position;
+                data.Wyvernsnipe_Prone_Movement_Params_8_raw = reader.ReadSingle();
+                data.Wyvernsnipe_Prone_Movement_Params_9_offset = reader.BaseStream.Position;
+                data.Wyvernsnipe_Prone_Movement_Params_9_raw = reader.ReadSingle();
+                data.Wyvernsnipe_Prone_Movement_Params_10_offset = reader.BaseStream.Position;
+                data.Wyvernsnipe_Prone_Movement_Params_10_raw = reader.ReadSingle();
+                data.Wyvernsnipe_Prone_Movement_Params_11_offset = reader.BaseStream.Position;
+                data.Wyvernsnipe_Prone_Movement_Params_11_raw = reader.ReadSingle();
+                data.Wyvernsnipe_Prone_Movement_Params_12_offset = reader.BaseStream.Position;
+                data.Wyvernsnipe_Prone_Movement_Params_12_raw = reader.ReadSingle();
+                data.Wyvernsnipe_Prone_Movement_Params_13_offset = reader.BaseStream.Position;
+                data.Wyvernsnipe_Prone_Movement_Params_13_raw = reader.ReadSingle();
+                data.Wyvernsnipe_Prone_Movement_Params_14_offset = reader.BaseStream.Position;
+                data.Wyvernsnipe_Prone_Movement_Params_14_raw = reader.ReadSingle();
+                data.Wyrmsnipe_Capacity_offset = reader.BaseStream.Position;
+                data.Wyrmsnipe_Capacity_raw = reader.ReadByte();
+                data.Wyrmsnipe_Cooldown_offset = reader.BaseStream.Position;
+                data.Wyrmsnipe_Cooldown_raw = reader.ReadSingle();
+                data.Wyvernsnipe_Number_of_Medium_Explosions__offset = reader.BaseStream.Position;
+                data.Wyvernsnipe_Number_of_Medium_Explosions__raw = reader.ReadByte();
+                data.Wyvernsnipe_Number_of_Larger_Explosions__offset = reader.BaseStream.Position;
+                data.Wyvernsnipe_Number_of_Larger_Explosions__raw = reader.ReadByte();
+                data.Wyvernsnipe_Number_of_End_Explosions__offset = reader.BaseStream.Position;
+                data.Wyvernsnipe_Number_of_End_Explosions__raw = reader.ReadByte();
+                data.Unk_236_offset = reader.BaseStream.Position;
+                data.Unk_236_raw = reader.ReadSingle();
+                data.Unk_237_offset = reader.BaseStream.Position;
+                data.Unk_237_raw = reader.ReadSingle();
+                data.Unk_238_offset = reader.BaseStream.Position;
+                data.Unk_238_raw = reader.ReadUInt32();
+                data.Unk_239_offset = reader.BaseStream.Position;
+                data.Unk_239_raw = reader.ReadInt16();
+                return data;
+            }
+
+            public void WriteData(BinaryWriter writer) {
+                writer.Write(Wyvernsnipe_Prone_Movement_Params_1_raw);
+                writer.Write(Wyvernsnipe_Prone_Movement_Params_2_raw);
+                writer.Write(Wyvernsnipe_Prone_Movement_Params_3_raw);
+                writer.Write(Wyvernsnipe_Prone_Movement_Params_4_raw);
+                writer.Write(Wyvernsnipe_Prone_Movement_Params_5_raw);
+                writer.Write(Wyvernsnipe_Prone_Movement_Params_6_raw);
+                writer.Write(Wyvernsnipe_Prone_Movement_Params_7_raw);
+                writer.Write(Wyvernsnipe_Prone_Movement_Params_8_raw);
+                writer.Write(Wyvernsnipe_Prone_Movement_Params_9_raw);
+                writer.Write(Wyvernsnipe_Prone_Movement_Params_10_raw);
+                writer.Write(Wyvernsnipe_Prone_Movement_Params_11_raw);
+                writer.Write(Wyvernsnipe_Prone_Movement_Params_12_raw);
+                writer.Write(Wyvernsnipe_Prone_Movement_Params_13_raw);
+                writer.Write(Wyvernsnipe_Prone_Movement_Params_14_raw);
+                writer.Write(Wyrmsnipe_Capacity_raw);
+                writer.Write(Wyrmsnipe_Cooldown_raw);
+                writer.Write(Wyvernsnipe_Number_of_Medium_Explosions__raw);
+                writer.Write(Wyvernsnipe_Number_of_Larger_Explosions__raw);
+                writer.Write(Wyvernsnipe_Number_of_End_Explosions__raw);
+                writer.Write(Unk_236_raw);
+                writer.Write(Unk_237_raw);
+                writer.Write(Unk_238_raw);
+                writer.Write(Unk_239_raw);
+            }
+
+            public ObservableCollection<MultiStructItemCustomView> GetCustomView() {
+                return new ObservableCollection<MultiStructItemCustomView> {
+                    new MultiStructItemCustomView(this, "Wyvernsnipe Prone Movement Params 1", "Wyvernsnipe_Prone_Movement_Params_1", "Wyvernsnipe_Prone_Movement_Params_1_offset"),
+                    new MultiStructItemCustomView(this, "Wyvernsnipe Prone Movement Params 2", "Wyvernsnipe_Prone_Movement_Params_2", "Wyvernsnipe_Prone_Movement_Params_2_offset"),
+                    new MultiStructItemCustomView(this, "Wyvernsnipe Prone Movement Params 3", "Wyvernsnipe_Prone_Movement_Params_3", "Wyvernsnipe_Prone_Movement_Params_3_offset"),
+                    new MultiStructItemCustomView(this, "Wyvernsnipe Prone Movement Params 4", "Wyvernsnipe_Prone_Movement_Params_4", "Wyvernsnipe_Prone_Movement_Params_4_offset"),
+                    new MultiStructItemCustomView(this, "Wyvernsnipe Prone Movement Params 5", "Wyvernsnipe_Prone_Movement_Params_5", "Wyvernsnipe_Prone_Movement_Params_5_offset"),
+                    new MultiStructItemCustomView(this, "Wyvernsnipe Prone Movement Params 6", "Wyvernsnipe_Prone_Movement_Params_6", "Wyvernsnipe_Prone_Movement_Params_6_offset"),
+                    new MultiStructItemCustomView(this, "Wyvernsnipe Prone Movement Params 7", "Wyvernsnipe_Prone_Movement_Params_7", "Wyvernsnipe_Prone_Movement_Params_7_offset"),
+                    new MultiStructItemCustomView(this, "Wyvernsnipe Prone Movement Params 8", "Wyvernsnipe_Prone_Movement_Params_8", "Wyvernsnipe_Prone_Movement_Params_8_offset"),
+                    new MultiStructItemCustomView(this, "Wyvernsnipe Prone Movement Params 9", "Wyvernsnipe_Prone_Movement_Params_9", "Wyvernsnipe_Prone_Movement_Params_9_offset"),
+                    new MultiStructItemCustomView(this, "Wyvernsnipe Prone Movement Params 10", "Wyvernsnipe_Prone_Movement_Params_10", "Wyvernsnipe_Prone_Movement_Params_10_offset"),
+                    new MultiStructItemCustomView(this, "Wyvernsnipe Prone Movement Params 11", "Wyvernsnipe_Prone_Movement_Params_11", "Wyvernsnipe_Prone_Movement_Params_11_offset"),
+                    new MultiStructItemCustomView(this, "Wyvernsnipe Prone Movement Params 12", "Wyvernsnipe_Prone_Movement_Params_12", "Wyvernsnipe_Prone_Movement_Params_12_offset"),
+                    new MultiStructItemCustomView(this, "Wyvernsnipe Prone Movement Params 13", "Wyvernsnipe_Prone_Movement_Params_13", "Wyvernsnipe_Prone_Movement_Params_13_offset"),
+                    new MultiStructItemCustomView(this, "Wyvernsnipe Prone Movement Params 14", "Wyvernsnipe_Prone_Movement_Params_14", "Wyvernsnipe_Prone_Movement_Params_14_offset"),
+                    new MultiStructItemCustomView(this, "Wyrmsnipe Capacity", "Wyrmsnipe_Capacity", "Wyrmsnipe_Capacity_offset"),
                     new MultiStructItemCustomView(this, "Wyrmsnipe Cooldown", "Wyrmsnipe_Cooldown", "Wyrmsnipe_Cooldown_offset"),
-                    new MultiStructItemCustomView(this, "Unk 233", "Unk_233", "Unk_233_offset"),
-                    new MultiStructItemCustomView(this, "Unk 234", "Unk_234", "Unk_234_offset"),
-                    new MultiStructItemCustomView(this, "Unk 235", "Unk_235", "Unk_235_offset"),
+                    new MultiStructItemCustomView(this, "Wyvernsnipe Number of Medium Explosions?", "Wyvernsnipe_Number_of_Medium_Explosions_", "Wyvernsnipe_Number_of_Medium_Explosions__offset"),
+                    new MultiStructItemCustomView(this, "Wyvernsnipe Number of Larger Explosions?", "Wyvernsnipe_Number_of_Larger_Explosions_", "Wyvernsnipe_Number_of_Larger_Explosions__offset"),
+                    new MultiStructItemCustomView(this, "Wyvernsnipe Number of End Explosions?", "Wyvernsnipe_Number_of_End_Explosions_", "Wyvernsnipe_Number_of_End_Explosions__offset"),
                     new MultiStructItemCustomView(this, "Unk 236", "Unk_236", "Unk_236_offset"),
                     new MultiStructItemCustomView(this, "Unk 237", "Unk_237", "Unk_237_offset"),
                     new MultiStructItemCustomView(this, "Unk 238", "Unk_238", "Unk_238_offset"),
@@ -6173,9 +6203,9 @@ namespace MHW_Editor.Structs.Weapons {
             }
         }
 
-        public partial class Unk_Arr_4 : MhwStructItem, IWriteData {
+        public partial class Bowgun_Deviation_Last_One_Maybe_High_Plus_Felyne_Meal_ : MhwStructItem, IWriteData {
             public const ulong FixedSizeCount = 4;
-            public const string GridName = "Unk Arr 4";
+            public const string GridName = "Bowgun Deviation (Last One Maybe High + Felyne Meal)";
 
             protected float Unk_1_raw;
             public const string Unk_1_displayName = "Unk 1";
@@ -6269,8 +6299,8 @@ namespace MHW_Editor.Structs.Weapons {
 
             public const int lastSortIndex = 350;
 
-            public static ObservableMhwStructCollection<Unk_Arr_4> LoadData(BinaryReader reader) {
-                var list = new ObservableMhwStructCollection<Unk_Arr_4>();
+            public static ObservableMhwStructCollection<Bowgun_Deviation_Last_One_Maybe_High_Plus_Felyne_Meal_> LoadData(BinaryReader reader) {
+                var list = new ObservableMhwStructCollection<Bowgun_Deviation_Last_One_Maybe_High_Plus_Felyne_Meal_>();
                 const ulong count = 4UL;
                 for (ulong i = 0; i < count; i++) {
                     list.Add(LoadData(reader, i));
@@ -6278,8 +6308,8 @@ namespace MHW_Editor.Structs.Weapons {
                 return list;
             }
 
-            public static Unk_Arr_4 LoadData(BinaryReader reader, ulong i) {
-                var data = new Unk_Arr_4();
+            public static Bowgun_Deviation_Last_One_Maybe_High_Plus_Felyne_Meal_ LoadData(BinaryReader reader, ulong i) {
+                var data = new Bowgun_Deviation_Last_One_Maybe_High_Plus_Felyne_Meal_();
                 data.Index = i;
                 data.Unk_1_raw = reader.ReadSingle();
                 data.Unk_2_raw = reader.ReadUInt32();
@@ -6300,625 +6330,72 @@ namespace MHW_Editor.Structs.Weapons {
             }
         }
 
+        public partial class Ammo_Shifting : MhwStructItem, IWriteData {
+            public const ulong FixedSizeCount = 17;
+            public const string GridName = "Ammo Shifting";
+
+            protected float Vertical_raw;
+            public const string Vertical_displayName = "Vertical";
+            public const int Vertical_sortIndex = 50;
+            [SortOrder(Vertical_sortIndex)]
+            [DisplayName(Vertical_displayName)]
+            public virtual float Vertical {
+                get => Vertical_raw;
+                set {
+                    if (Vertical_raw == value) return;
+                    Vertical_raw = value;
+                    ChangedItems.Add(nameof(Vertical));
+                    OnPropertyChanged(nameof(Vertical));
+                }
+            }
+
+            protected float Horizontal_raw;
+            public const string Horizontal_displayName = "Horizontal";
+            public const int Horizontal_sortIndex = 100;
+            [SortOrder(Horizontal_sortIndex)]
+            [DisplayName(Horizontal_displayName)]
+            public virtual float Horizontal {
+                get => Horizontal_raw;
+                set {
+                    if (Horizontal_raw == value) return;
+                    Horizontal_raw = value;
+                    ChangedItems.Add(nameof(Horizontal));
+                    OnPropertyChanged(nameof(Horizontal));
+                }
+            }
+
+            public const int lastSortIndex = 150;
+
+            public static ObservableMhwStructCollection<Ammo_Shifting> LoadData(BinaryReader reader) {
+                var list = new ObservableMhwStructCollection<Ammo_Shifting>();
+                const ulong count = 17UL;
+                for (ulong i = 0; i < count; i++) {
+                    list.Add(LoadData(reader, i));
+                }
+                return list;
+            }
+
+            public static Ammo_Shifting LoadData(BinaryReader reader, ulong i) {
+                var data = new Ammo_Shifting();
+                data.Index = i;
+                data.Vertical_raw = reader.ReadSingle();
+                data.Horizontal_raw = reader.ReadSingle();
+                return data;
+            }
+
+            public void WriteData(BinaryWriter writer) {
+                writer.Write(Vertical_raw);
+                writer.Write(Horizontal_raw);
+            }
+        }
+
         public partial class W13p_Params_6_ : MhwStructItem, IHasCustomView<MultiStructItemCustomView>, IWriteData {
             public const ulong FixedSizeCount = 1;
             public const string GridName = "W13p Params (6)";
 
-            protected float Unk_240_raw;
-            public const string Unk_240_displayName = "Unk 240";
-            public const int Unk_240_sortIndex = 50;
-            [SortOrder(Unk_240_sortIndex)]
-            [DisplayName(Unk_240_displayName)]
-            public virtual float Unk_240 {
-                get => Unk_240_raw;
-                set {
-                    if (Unk_240_raw == value) return;
-                    Unk_240_raw = value;
-                    ChangedItems.Add(nameof(Unk_240));
-                    OnPropertyChanged(nameof(Unk_240));
-                }
-            }
-
-            [DisplayName("Offset")]
-            public long Unk_240_offset { get; private set; }
-
-            protected float Unk_241_raw;
-            public const string Unk_241_displayName = "Unk 241";
-            public const int Unk_241_sortIndex = 100;
-            [SortOrder(Unk_241_sortIndex)]
-            [DisplayName(Unk_241_displayName)]
-            public virtual float Unk_241 {
-                get => Unk_241_raw;
-                set {
-                    if (Unk_241_raw == value) return;
-                    Unk_241_raw = value;
-                    ChangedItems.Add(nameof(Unk_241));
-                    OnPropertyChanged(nameof(Unk_241));
-                }
-            }
-
-            [DisplayName("Offset")]
-            public long Unk_241_offset { get; private set; }
-
-            protected float Unk_242_raw;
-            public const string Unk_242_displayName = "Unk 242";
-            public const int Unk_242_sortIndex = 150;
-            [SortOrder(Unk_242_sortIndex)]
-            [DisplayName(Unk_242_displayName)]
-            public virtual float Unk_242 {
-                get => Unk_242_raw;
-                set {
-                    if (Unk_242_raw == value) return;
-                    Unk_242_raw = value;
-                    ChangedItems.Add(nameof(Unk_242));
-                    OnPropertyChanged(nameof(Unk_242));
-                }
-            }
-
-            [DisplayName("Offset")]
-            public long Unk_242_offset { get; private set; }
-
-            protected float Unk_243_raw;
-            public const string Unk_243_displayName = "Unk 243";
-            public const int Unk_243_sortIndex = 200;
-            [SortOrder(Unk_243_sortIndex)]
-            [DisplayName(Unk_243_displayName)]
-            public virtual float Unk_243 {
-                get => Unk_243_raw;
-                set {
-                    if (Unk_243_raw == value) return;
-                    Unk_243_raw = value;
-                    ChangedItems.Add(nameof(Unk_243));
-                    OnPropertyChanged(nameof(Unk_243));
-                }
-            }
-
-            [DisplayName("Offset")]
-            public long Unk_243_offset { get; private set; }
-
-            protected float Unk_244_raw;
-            public const string Unk_244_displayName = "Unk 244";
-            public const int Unk_244_sortIndex = 250;
-            [SortOrder(Unk_244_sortIndex)]
-            [DisplayName(Unk_244_displayName)]
-            public virtual float Unk_244 {
-                get => Unk_244_raw;
-                set {
-                    if (Unk_244_raw == value) return;
-                    Unk_244_raw = value;
-                    ChangedItems.Add(nameof(Unk_244));
-                    OnPropertyChanged(nameof(Unk_244));
-                }
-            }
-
-            [DisplayName("Offset")]
-            public long Unk_244_offset { get; private set; }
-
-            protected float Unk_245_raw;
-            public const string Unk_245_displayName = "Unk 245";
-            public const int Unk_245_sortIndex = 300;
-            [SortOrder(Unk_245_sortIndex)]
-            [DisplayName(Unk_245_displayName)]
-            public virtual float Unk_245 {
-                get => Unk_245_raw;
-                set {
-                    if (Unk_245_raw == value) return;
-                    Unk_245_raw = value;
-                    ChangedItems.Add(nameof(Unk_245));
-                    OnPropertyChanged(nameof(Unk_245));
-                }
-            }
-
-            [DisplayName("Offset")]
-            public long Unk_245_offset { get; private set; }
-
-            protected float Unk_246_raw;
-            public const string Unk_246_displayName = "Unk 246";
-            public const int Unk_246_sortIndex = 350;
-            [SortOrder(Unk_246_sortIndex)]
-            [DisplayName(Unk_246_displayName)]
-            public virtual float Unk_246 {
-                get => Unk_246_raw;
-                set {
-                    if (Unk_246_raw == value) return;
-                    Unk_246_raw = value;
-                    ChangedItems.Add(nameof(Unk_246));
-                    OnPropertyChanged(nameof(Unk_246));
-                }
-            }
-
-            [DisplayName("Offset")]
-            public long Unk_246_offset { get; private set; }
-
-            protected float Unk_247_raw;
-            public const string Unk_247_displayName = "Unk 247";
-            public const int Unk_247_sortIndex = 400;
-            [SortOrder(Unk_247_sortIndex)]
-            [DisplayName(Unk_247_displayName)]
-            public virtual float Unk_247 {
-                get => Unk_247_raw;
-                set {
-                    if (Unk_247_raw == value) return;
-                    Unk_247_raw = value;
-                    ChangedItems.Add(nameof(Unk_247));
-                    OnPropertyChanged(nameof(Unk_247));
-                }
-            }
-
-            [DisplayName("Offset")]
-            public long Unk_247_offset { get; private set; }
-
-            protected float Unk_248_raw;
-            public const string Unk_248_displayName = "Unk 248";
-            public const int Unk_248_sortIndex = 450;
-            [SortOrder(Unk_248_sortIndex)]
-            [DisplayName(Unk_248_displayName)]
-            public virtual float Unk_248 {
-                get => Unk_248_raw;
-                set {
-                    if (Unk_248_raw == value) return;
-                    Unk_248_raw = value;
-                    ChangedItems.Add(nameof(Unk_248));
-                    OnPropertyChanged(nameof(Unk_248));
-                }
-            }
-
-            [DisplayName("Offset")]
-            public long Unk_248_offset { get; private set; }
-
-            protected float Unk_249_raw;
-            public const string Unk_249_displayName = "Unk 249";
-            public const int Unk_249_sortIndex = 500;
-            [SortOrder(Unk_249_sortIndex)]
-            [DisplayName(Unk_249_displayName)]
-            public virtual float Unk_249 {
-                get => Unk_249_raw;
-                set {
-                    if (Unk_249_raw == value) return;
-                    Unk_249_raw = value;
-                    ChangedItems.Add(nameof(Unk_249));
-                    OnPropertyChanged(nameof(Unk_249));
-                }
-            }
-
-            [DisplayName("Offset")]
-            public long Unk_249_offset { get; private set; }
-
-            protected float Unk_250_raw;
-            public const string Unk_250_displayName = "Unk 250";
-            public const int Unk_250_sortIndex = 550;
-            [SortOrder(Unk_250_sortIndex)]
-            [DisplayName(Unk_250_displayName)]
-            public virtual float Unk_250 {
-                get => Unk_250_raw;
-                set {
-                    if (Unk_250_raw == value) return;
-                    Unk_250_raw = value;
-                    ChangedItems.Add(nameof(Unk_250));
-                    OnPropertyChanged(nameof(Unk_250));
-                }
-            }
-
-            [DisplayName("Offset")]
-            public long Unk_250_offset { get; private set; }
-
-            protected float Unk_251_raw;
-            public const string Unk_251_displayName = "Unk 251";
-            public const int Unk_251_sortIndex = 600;
-            [SortOrder(Unk_251_sortIndex)]
-            [DisplayName(Unk_251_displayName)]
-            public virtual float Unk_251 {
-                get => Unk_251_raw;
-                set {
-                    if (Unk_251_raw == value) return;
-                    Unk_251_raw = value;
-                    ChangedItems.Add(nameof(Unk_251));
-                    OnPropertyChanged(nameof(Unk_251));
-                }
-            }
-
-            [DisplayName("Offset")]
-            public long Unk_251_offset { get; private set; }
-
-            protected float Unk_252_raw;
-            public const string Unk_252_displayName = "Unk 252";
-            public const int Unk_252_sortIndex = 650;
-            [SortOrder(Unk_252_sortIndex)]
-            [DisplayName(Unk_252_displayName)]
-            public virtual float Unk_252 {
-                get => Unk_252_raw;
-                set {
-                    if (Unk_252_raw == value) return;
-                    Unk_252_raw = value;
-                    ChangedItems.Add(nameof(Unk_252));
-                    OnPropertyChanged(nameof(Unk_252));
-                }
-            }
-
-            [DisplayName("Offset")]
-            public long Unk_252_offset { get; private set; }
-
-            protected float Unk_253_raw;
-            public const string Unk_253_displayName = "Unk 253";
-            public const int Unk_253_sortIndex = 700;
-            [SortOrder(Unk_253_sortIndex)]
-            [DisplayName(Unk_253_displayName)]
-            public virtual float Unk_253 {
-                get => Unk_253_raw;
-                set {
-                    if (Unk_253_raw == value) return;
-                    Unk_253_raw = value;
-                    ChangedItems.Add(nameof(Unk_253));
-                    OnPropertyChanged(nameof(Unk_253));
-                }
-            }
-
-            [DisplayName("Offset")]
-            public long Unk_253_offset { get; private set; }
-
-            protected float Unk_254_raw;
-            public const string Unk_254_displayName = "Unk 254";
-            public const int Unk_254_sortIndex = 750;
-            [SortOrder(Unk_254_sortIndex)]
-            [DisplayName(Unk_254_displayName)]
-            public virtual float Unk_254 {
-                get => Unk_254_raw;
-                set {
-                    if (Unk_254_raw == value) return;
-                    Unk_254_raw = value;
-                    ChangedItems.Add(nameof(Unk_254));
-                    OnPropertyChanged(nameof(Unk_254));
-                }
-            }
-
-            [DisplayName("Offset")]
-            public long Unk_254_offset { get; private set; }
-
-            protected float Unk_255_raw;
-            public const string Unk_255_displayName = "Unk 255";
-            public const int Unk_255_sortIndex = 800;
-            [SortOrder(Unk_255_sortIndex)]
-            [DisplayName(Unk_255_displayName)]
-            public virtual float Unk_255 {
-                get => Unk_255_raw;
-                set {
-                    if (Unk_255_raw == value) return;
-                    Unk_255_raw = value;
-                    ChangedItems.Add(nameof(Unk_255));
-                    OnPropertyChanged(nameof(Unk_255));
-                }
-            }
-
-            [DisplayName("Offset")]
-            public long Unk_255_offset { get; private set; }
-
-            protected float Unk_256_raw;
-            public const string Unk_256_displayName = "Unk 256";
-            public const int Unk_256_sortIndex = 850;
-            [SortOrder(Unk_256_sortIndex)]
-            [DisplayName(Unk_256_displayName)]
-            public virtual float Unk_256 {
-                get => Unk_256_raw;
-                set {
-                    if (Unk_256_raw == value) return;
-                    Unk_256_raw = value;
-                    ChangedItems.Add(nameof(Unk_256));
-                    OnPropertyChanged(nameof(Unk_256));
-                }
-            }
-
-            [DisplayName("Offset")]
-            public long Unk_256_offset { get; private set; }
-
-            protected float Unk_257_raw;
-            public const string Unk_257_displayName = "Unk 257";
-            public const int Unk_257_sortIndex = 900;
-            [SortOrder(Unk_257_sortIndex)]
-            [DisplayName(Unk_257_displayName)]
-            public virtual float Unk_257 {
-                get => Unk_257_raw;
-                set {
-                    if (Unk_257_raw == value) return;
-                    Unk_257_raw = value;
-                    ChangedItems.Add(nameof(Unk_257));
-                    OnPropertyChanged(nameof(Unk_257));
-                }
-            }
-
-            [DisplayName("Offset")]
-            public long Unk_257_offset { get; private set; }
-
-            protected float Unk_258_raw;
-            public const string Unk_258_displayName = "Unk 258";
-            public const int Unk_258_sortIndex = 950;
-            [SortOrder(Unk_258_sortIndex)]
-            [DisplayName(Unk_258_displayName)]
-            public virtual float Unk_258 {
-                get => Unk_258_raw;
-                set {
-                    if (Unk_258_raw == value) return;
-                    Unk_258_raw = value;
-                    ChangedItems.Add(nameof(Unk_258));
-                    OnPropertyChanged(nameof(Unk_258));
-                }
-            }
-
-            [DisplayName("Offset")]
-            public long Unk_258_offset { get; private set; }
-
-            protected float Unk_259_raw;
-            public const string Unk_259_displayName = "Unk 259";
-            public const int Unk_259_sortIndex = 1000;
-            [SortOrder(Unk_259_sortIndex)]
-            [DisplayName(Unk_259_displayName)]
-            public virtual float Unk_259 {
-                get => Unk_259_raw;
-                set {
-                    if (Unk_259_raw == value) return;
-                    Unk_259_raw = value;
-                    ChangedItems.Add(nameof(Unk_259));
-                    OnPropertyChanged(nameof(Unk_259));
-                }
-            }
-
-            [DisplayName("Offset")]
-            public long Unk_259_offset { get; private set; }
-
-            protected float Unk_260_raw;
-            public const string Unk_260_displayName = "Unk 260";
-            public const int Unk_260_sortIndex = 1050;
-            [SortOrder(Unk_260_sortIndex)]
-            [DisplayName(Unk_260_displayName)]
-            public virtual float Unk_260 {
-                get => Unk_260_raw;
-                set {
-                    if (Unk_260_raw == value) return;
-                    Unk_260_raw = value;
-                    ChangedItems.Add(nameof(Unk_260));
-                    OnPropertyChanged(nameof(Unk_260));
-                }
-            }
-
-            [DisplayName("Offset")]
-            public long Unk_260_offset { get; private set; }
-
-            protected float Unk_261_raw;
-            public const string Unk_261_displayName = "Unk 261";
-            public const int Unk_261_sortIndex = 1100;
-            [SortOrder(Unk_261_sortIndex)]
-            [DisplayName(Unk_261_displayName)]
-            public virtual float Unk_261 {
-                get => Unk_261_raw;
-                set {
-                    if (Unk_261_raw == value) return;
-                    Unk_261_raw = value;
-                    ChangedItems.Add(nameof(Unk_261));
-                    OnPropertyChanged(nameof(Unk_261));
-                }
-            }
-
-            [DisplayName("Offset")]
-            public long Unk_261_offset { get; private set; }
-
-            protected float Unk_262_raw;
-            public const string Unk_262_displayName = "Unk 262";
-            public const int Unk_262_sortIndex = 1150;
-            [SortOrder(Unk_262_sortIndex)]
-            [DisplayName(Unk_262_displayName)]
-            public virtual float Unk_262 {
-                get => Unk_262_raw;
-                set {
-                    if (Unk_262_raw == value) return;
-                    Unk_262_raw = value;
-                    ChangedItems.Add(nameof(Unk_262));
-                    OnPropertyChanged(nameof(Unk_262));
-                }
-            }
-
-            [DisplayName("Offset")]
-            public long Unk_262_offset { get; private set; }
-
-            protected float Unk_263_raw;
-            public const string Unk_263_displayName = "Unk 263";
-            public const int Unk_263_sortIndex = 1200;
-            [SortOrder(Unk_263_sortIndex)]
-            [DisplayName(Unk_263_displayName)]
-            public virtual float Unk_263 {
-                get => Unk_263_raw;
-                set {
-                    if (Unk_263_raw == value) return;
-                    Unk_263_raw = value;
-                    ChangedItems.Add(nameof(Unk_263));
-                    OnPropertyChanged(nameof(Unk_263));
-                }
-            }
-
-            [DisplayName("Offset")]
-            public long Unk_263_offset { get; private set; }
-
-            protected float Unk_264_raw;
-            public const string Unk_264_displayName = "Unk 264";
-            public const int Unk_264_sortIndex = 1250;
-            [SortOrder(Unk_264_sortIndex)]
-            [DisplayName(Unk_264_displayName)]
-            public virtual float Unk_264 {
-                get => Unk_264_raw;
-                set {
-                    if (Unk_264_raw == value) return;
-                    Unk_264_raw = value;
-                    ChangedItems.Add(nameof(Unk_264));
-                    OnPropertyChanged(nameof(Unk_264));
-                }
-            }
-
-            [DisplayName("Offset")]
-            public long Unk_264_offset { get; private set; }
-
-            protected float Unk_265_raw;
-            public const string Unk_265_displayName = "Unk 265";
-            public const int Unk_265_sortIndex = 1300;
-            [SortOrder(Unk_265_sortIndex)]
-            [DisplayName(Unk_265_displayName)]
-            public virtual float Unk_265 {
-                get => Unk_265_raw;
-                set {
-                    if (Unk_265_raw == value) return;
-                    Unk_265_raw = value;
-                    ChangedItems.Add(nameof(Unk_265));
-                    OnPropertyChanged(nameof(Unk_265));
-                }
-            }
-
-            [DisplayName("Offset")]
-            public long Unk_265_offset { get; private set; }
-
-            protected float Unk_266_raw;
-            public const string Unk_266_displayName = "Unk 266";
-            public const int Unk_266_sortIndex = 1350;
-            [SortOrder(Unk_266_sortIndex)]
-            [DisplayName(Unk_266_displayName)]
-            public virtual float Unk_266 {
-                get => Unk_266_raw;
-                set {
-                    if (Unk_266_raw == value) return;
-                    Unk_266_raw = value;
-                    ChangedItems.Add(nameof(Unk_266));
-                    OnPropertyChanged(nameof(Unk_266));
-                }
-            }
-
-            [DisplayName("Offset")]
-            public long Unk_266_offset { get; private set; }
-
-            protected float Unk_267_raw;
-            public const string Unk_267_displayName = "Unk 267";
-            public const int Unk_267_sortIndex = 1400;
-            [SortOrder(Unk_267_sortIndex)]
-            [DisplayName(Unk_267_displayName)]
-            public virtual float Unk_267 {
-                get => Unk_267_raw;
-                set {
-                    if (Unk_267_raw == value) return;
-                    Unk_267_raw = value;
-                    ChangedItems.Add(nameof(Unk_267));
-                    OnPropertyChanged(nameof(Unk_267));
-                }
-            }
-
-            [DisplayName("Offset")]
-            public long Unk_267_offset { get; private set; }
-
-            protected float Unk_268_raw;
-            public const string Unk_268_displayName = "Unk 268";
-            public const int Unk_268_sortIndex = 1450;
-            [SortOrder(Unk_268_sortIndex)]
-            [DisplayName(Unk_268_displayName)]
-            public virtual float Unk_268 {
-                get => Unk_268_raw;
-                set {
-                    if (Unk_268_raw == value) return;
-                    Unk_268_raw = value;
-                    ChangedItems.Add(nameof(Unk_268));
-                    OnPropertyChanged(nameof(Unk_268));
-                }
-            }
-
-            [DisplayName("Offset")]
-            public long Unk_268_offset { get; private set; }
-
-            protected float Unk_269_raw;
-            public const string Unk_269_displayName = "Unk 269";
-            public const int Unk_269_sortIndex = 1500;
-            [SortOrder(Unk_269_sortIndex)]
-            [DisplayName(Unk_269_displayName)]
-            public virtual float Unk_269 {
-                get => Unk_269_raw;
-                set {
-                    if (Unk_269_raw == value) return;
-                    Unk_269_raw = value;
-                    ChangedItems.Add(nameof(Unk_269));
-                    OnPropertyChanged(nameof(Unk_269));
-                }
-            }
-
-            [DisplayName("Offset")]
-            public long Unk_269_offset { get; private set; }
-
-            protected float Unk_270_raw;
-            public const string Unk_270_displayName = "Unk 270";
-            public const int Unk_270_sortIndex = 1550;
-            [SortOrder(Unk_270_sortIndex)]
-            [DisplayName(Unk_270_displayName)]
-            public virtual float Unk_270 {
-                get => Unk_270_raw;
-                set {
-                    if (Unk_270_raw == value) return;
-                    Unk_270_raw = value;
-                    ChangedItems.Add(nameof(Unk_270));
-                    OnPropertyChanged(nameof(Unk_270));
-                }
-            }
-
-            [DisplayName("Offset")]
-            public long Unk_270_offset { get; private set; }
-
-            protected float Unk_271_raw;
-            public const string Unk_271_displayName = "Unk 271";
-            public const int Unk_271_sortIndex = 1600;
-            [SortOrder(Unk_271_sortIndex)]
-            [DisplayName(Unk_271_displayName)]
-            public virtual float Unk_271 {
-                get => Unk_271_raw;
-                set {
-                    if (Unk_271_raw == value) return;
-                    Unk_271_raw = value;
-                    ChangedItems.Add(nameof(Unk_271));
-                    OnPropertyChanged(nameof(Unk_271));
-                }
-            }
-
-            [DisplayName("Offset")]
-            public long Unk_271_offset { get; private set; }
-
-            protected float Unk_272_raw;
-            public const string Unk_272_displayName = "Unk 272";
-            public const int Unk_272_sortIndex = 1650;
-            [SortOrder(Unk_272_sortIndex)]
-            [DisplayName(Unk_272_displayName)]
-            public virtual float Unk_272 {
-                get => Unk_272_raw;
-                set {
-                    if (Unk_272_raw == value) return;
-                    Unk_272_raw = value;
-                    ChangedItems.Add(nameof(Unk_272));
-                    OnPropertyChanged(nameof(Unk_272));
-                }
-            }
-
-            [DisplayName("Offset")]
-            public long Unk_272_offset { get; private set; }
-
-            protected float Unk_273_raw;
-            public const string Unk_273_displayName = "Unk 273";
-            public const int Unk_273_sortIndex = 1700;
-            [SortOrder(Unk_273_sortIndex)]
-            [DisplayName(Unk_273_displayName)]
-            public virtual float Unk_273 {
-                get => Unk_273_raw;
-                set {
-                    if (Unk_273_raw == value) return;
-                    Unk_273_raw = value;
-                    ChangedItems.Add(nameof(Unk_273));
-                    OnPropertyChanged(nameof(Unk_273));
-                }
-            }
-
-            [DisplayName("Offset")]
-            public long Unk_273_offset { get; private set; }
-
             protected float Close_range_Up_active_range_1_raw;
             public const string Close_range_Up_active_range_1_displayName = "Close range Up active range 1";
-            public const int Close_range_Up_active_range_1_sortIndex = 1750;
+            public const int Close_range_Up_active_range_1_sortIndex = 50;
             [SortOrder(Close_range_Up_active_range_1_sortIndex)]
             [DisplayName(Close_range_Up_active_range_1_displayName)]
             public virtual float Close_range_Up_active_range_1 {
@@ -6936,7 +6413,7 @@ namespace MHW_Editor.Structs.Weapons {
 
             protected float Close_range_Up_active_range_2_raw;
             public const string Close_range_Up_active_range_2_displayName = "Close range Up active range 2";
-            public const int Close_range_Up_active_range_2_sortIndex = 1800;
+            public const int Close_range_Up_active_range_2_sortIndex = 100;
             [SortOrder(Close_range_Up_active_range_2_sortIndex)]
             [DisplayName(Close_range_Up_active_range_2_displayName)]
             public virtual float Close_range_Up_active_range_2 {
@@ -6954,7 +6431,7 @@ namespace MHW_Editor.Structs.Weapons {
 
             protected float Close_range_Up_active_range_3_raw;
             public const string Close_range_Up_active_range_3_displayName = "Close range Up active range 3";
-            public const int Close_range_Up_active_range_3_sortIndex = 1850;
+            public const int Close_range_Up_active_range_3_sortIndex = 150;
             [SortOrder(Close_range_Up_active_range_3_sortIndex)]
             [DisplayName(Close_range_Up_active_range_3_displayName)]
             public virtual float Close_range_Up_active_range_3 {
@@ -6972,7 +6449,7 @@ namespace MHW_Editor.Structs.Weapons {
 
             protected float Close_range_Up_active_range_4_raw;
             public const string Close_range_Up_active_range_4_displayName = "Close range Up active range 4";
-            public const int Close_range_Up_active_range_4_sortIndex = 1900;
+            public const int Close_range_Up_active_range_4_sortIndex = 200;
             [SortOrder(Close_range_Up_active_range_4_sortIndex)]
             [DisplayName(Close_range_Up_active_range_4_displayName)]
             public virtual float Close_range_Up_active_range_4 {
@@ -6990,7 +6467,7 @@ namespace MHW_Editor.Structs.Weapons {
 
             protected float Close_range_Up_Modifier_1_raw;
             public const string Close_range_Up_Modifier_1_displayName = "Close range Up Modifier 1";
-            public const int Close_range_Up_Modifier_1_sortIndex = 1950;
+            public const int Close_range_Up_Modifier_1_sortIndex = 250;
             [SortOrder(Close_range_Up_Modifier_1_sortIndex)]
             [DisplayName(Close_range_Up_Modifier_1_displayName)]
             public virtual float Close_range_Up_Modifier_1 {
@@ -7008,7 +6485,7 @@ namespace MHW_Editor.Structs.Weapons {
 
             protected float Close_range_Up_Modifier_2_raw;
             public const string Close_range_Up_Modifier_2_displayName = "Close range Up Modifier 2";
-            public const int Close_range_Up_Modifier_2_sortIndex = 2000;
+            public const int Close_range_Up_Modifier_2_sortIndex = 300;
             [SortOrder(Close_range_Up_Modifier_2_sortIndex)]
             [DisplayName(Close_range_Up_Modifier_2_displayName)]
             public virtual float Close_range_Up_Modifier_2 {
@@ -7026,7 +6503,7 @@ namespace MHW_Editor.Structs.Weapons {
 
             protected float Close_range_Up_Modifier_3_raw;
             public const string Close_range_Up_Modifier_3_displayName = "Close range Up Modifier 3";
-            public const int Close_range_Up_Modifier_3_sortIndex = 2050;
+            public const int Close_range_Up_Modifier_3_sortIndex = 350;
             [SortOrder(Close_range_Up_Modifier_3_sortIndex)]
             [DisplayName(Close_range_Up_Modifier_3_displayName)]
             public virtual float Close_range_Up_Modifier_3 {
@@ -7044,7 +6521,7 @@ namespace MHW_Editor.Structs.Weapons {
 
             protected float Close_range_Up_Modifier_4_raw;
             public const string Close_range_Up_Modifier_4_displayName = "Close range Up Modifier 4";
-            public const int Close_range_Up_Modifier_4_sortIndex = 2100;
+            public const int Close_range_Up_Modifier_4_sortIndex = 400;
             [SortOrder(Close_range_Up_Modifier_4_sortIndex)]
             [DisplayName(Close_range_Up_Modifier_4_displayName)]
             public virtual float Close_range_Up_Modifier_4 {
@@ -7060,81 +6537,81 @@ namespace MHW_Editor.Structs.Weapons {
             [DisplayName("Offset")]
             public long Close_range_Up_Modifier_4_offset { get; private set; }
 
-            protected float Ranged_Attack_Up_active_distance_1_raw;
-            public const string Ranged_Attack_Up_active_distance_1_displayName = "Ranged Attack Up active distance 1";
-            public const int Ranged_Attack_Up_active_distance_1_sortIndex = 2150;
-            [SortOrder(Ranged_Attack_Up_active_distance_1_sortIndex)]
-            [DisplayName(Ranged_Attack_Up_active_distance_1_displayName)]
-            public virtual float Ranged_Attack_Up_active_distance_1 {
-                get => Ranged_Attack_Up_active_distance_1_raw;
+            protected float Ranged_Attack_Up_Active_Distance_1_raw;
+            public const string Ranged_Attack_Up_Active_Distance_1_displayName = "Ranged Attack Up Active Distance 1";
+            public const int Ranged_Attack_Up_Active_Distance_1_sortIndex = 450;
+            [SortOrder(Ranged_Attack_Up_Active_Distance_1_sortIndex)]
+            [DisplayName(Ranged_Attack_Up_Active_Distance_1_displayName)]
+            public virtual float Ranged_Attack_Up_Active_Distance_1 {
+                get => Ranged_Attack_Up_Active_Distance_1_raw;
                 set {
-                    if (Ranged_Attack_Up_active_distance_1_raw == value) return;
-                    Ranged_Attack_Up_active_distance_1_raw = value;
-                    ChangedItems.Add(nameof(Ranged_Attack_Up_active_distance_1));
-                    OnPropertyChanged(nameof(Ranged_Attack_Up_active_distance_1));
+                    if (Ranged_Attack_Up_Active_Distance_1_raw == value) return;
+                    Ranged_Attack_Up_Active_Distance_1_raw = value;
+                    ChangedItems.Add(nameof(Ranged_Attack_Up_Active_Distance_1));
+                    OnPropertyChanged(nameof(Ranged_Attack_Up_Active_Distance_1));
                 }
             }
 
             [DisplayName("Offset")]
-            public long Ranged_Attack_Up_active_distance_1_offset { get; private set; }
+            public long Ranged_Attack_Up_Active_Distance_1_offset { get; private set; }
 
-            protected float Ranged_Attack_Up_active_distance_2_raw;
-            public const string Ranged_Attack_Up_active_distance_2_displayName = "Ranged Attack Up active distance 2";
-            public const int Ranged_Attack_Up_active_distance_2_sortIndex = 2200;
-            [SortOrder(Ranged_Attack_Up_active_distance_2_sortIndex)]
-            [DisplayName(Ranged_Attack_Up_active_distance_2_displayName)]
-            public virtual float Ranged_Attack_Up_active_distance_2 {
-                get => Ranged_Attack_Up_active_distance_2_raw;
+            protected float Ranged_Attack_Up_Active_Distance_2_raw;
+            public const string Ranged_Attack_Up_Active_Distance_2_displayName = "Ranged Attack Up Active Distance 2";
+            public const int Ranged_Attack_Up_Active_Distance_2_sortIndex = 500;
+            [SortOrder(Ranged_Attack_Up_Active_Distance_2_sortIndex)]
+            [DisplayName(Ranged_Attack_Up_Active_Distance_2_displayName)]
+            public virtual float Ranged_Attack_Up_Active_Distance_2 {
+                get => Ranged_Attack_Up_Active_Distance_2_raw;
                 set {
-                    if (Ranged_Attack_Up_active_distance_2_raw == value) return;
-                    Ranged_Attack_Up_active_distance_2_raw = value;
-                    ChangedItems.Add(nameof(Ranged_Attack_Up_active_distance_2));
-                    OnPropertyChanged(nameof(Ranged_Attack_Up_active_distance_2));
+                    if (Ranged_Attack_Up_Active_Distance_2_raw == value) return;
+                    Ranged_Attack_Up_Active_Distance_2_raw = value;
+                    ChangedItems.Add(nameof(Ranged_Attack_Up_Active_Distance_2));
+                    OnPropertyChanged(nameof(Ranged_Attack_Up_Active_Distance_2));
                 }
             }
 
             [DisplayName("Offset")]
-            public long Ranged_Attack_Up_active_distance_2_offset { get; private set; }
+            public long Ranged_Attack_Up_Active_Distance_2_offset { get; private set; }
 
-            protected float Ranged_Attack_Up_active_distance_3_raw;
-            public const string Ranged_Attack_Up_active_distance_3_displayName = "Ranged Attack Up active distance 3";
-            public const int Ranged_Attack_Up_active_distance_3_sortIndex = 2250;
-            [SortOrder(Ranged_Attack_Up_active_distance_3_sortIndex)]
-            [DisplayName(Ranged_Attack_Up_active_distance_3_displayName)]
-            public virtual float Ranged_Attack_Up_active_distance_3 {
-                get => Ranged_Attack_Up_active_distance_3_raw;
+            protected float Ranged_Attack_Up_Active_Distance_3_raw;
+            public const string Ranged_Attack_Up_Active_Distance_3_displayName = "Ranged Attack Up Active Distance 3";
+            public const int Ranged_Attack_Up_Active_Distance_3_sortIndex = 550;
+            [SortOrder(Ranged_Attack_Up_Active_Distance_3_sortIndex)]
+            [DisplayName(Ranged_Attack_Up_Active_Distance_3_displayName)]
+            public virtual float Ranged_Attack_Up_Active_Distance_3 {
+                get => Ranged_Attack_Up_Active_Distance_3_raw;
                 set {
-                    if (Ranged_Attack_Up_active_distance_3_raw == value) return;
-                    Ranged_Attack_Up_active_distance_3_raw = value;
-                    ChangedItems.Add(nameof(Ranged_Attack_Up_active_distance_3));
-                    OnPropertyChanged(nameof(Ranged_Attack_Up_active_distance_3));
+                    if (Ranged_Attack_Up_Active_Distance_3_raw == value) return;
+                    Ranged_Attack_Up_Active_Distance_3_raw = value;
+                    ChangedItems.Add(nameof(Ranged_Attack_Up_Active_Distance_3));
+                    OnPropertyChanged(nameof(Ranged_Attack_Up_Active_Distance_3));
                 }
             }
 
             [DisplayName("Offset")]
-            public long Ranged_Attack_Up_active_distance_3_offset { get; private set; }
+            public long Ranged_Attack_Up_Active_Distance_3_offset { get; private set; }
 
-            protected float Ranged_Attack_Up_active_distance_4_raw;
-            public const string Ranged_Attack_Up_active_distance_4_displayName = "Ranged Attack Up active distance 4";
-            public const int Ranged_Attack_Up_active_distance_4_sortIndex = 2300;
-            [SortOrder(Ranged_Attack_Up_active_distance_4_sortIndex)]
-            [DisplayName(Ranged_Attack_Up_active_distance_4_displayName)]
-            public virtual float Ranged_Attack_Up_active_distance_4 {
-                get => Ranged_Attack_Up_active_distance_4_raw;
+            protected float Ranged_Attack_Up_Active_Distance_4_raw;
+            public const string Ranged_Attack_Up_Active_Distance_4_displayName = "Ranged Attack Up Active Distance 4";
+            public const int Ranged_Attack_Up_Active_Distance_4_sortIndex = 600;
+            [SortOrder(Ranged_Attack_Up_Active_Distance_4_sortIndex)]
+            [DisplayName(Ranged_Attack_Up_Active_Distance_4_displayName)]
+            public virtual float Ranged_Attack_Up_Active_Distance_4 {
+                get => Ranged_Attack_Up_Active_Distance_4_raw;
                 set {
-                    if (Ranged_Attack_Up_active_distance_4_raw == value) return;
-                    Ranged_Attack_Up_active_distance_4_raw = value;
-                    ChangedItems.Add(nameof(Ranged_Attack_Up_active_distance_4));
-                    OnPropertyChanged(nameof(Ranged_Attack_Up_active_distance_4));
+                    if (Ranged_Attack_Up_Active_Distance_4_raw == value) return;
+                    Ranged_Attack_Up_Active_Distance_4_raw = value;
+                    ChangedItems.Add(nameof(Ranged_Attack_Up_Active_Distance_4));
+                    OnPropertyChanged(nameof(Ranged_Attack_Up_Active_Distance_4));
                 }
             }
 
             [DisplayName("Offset")]
-            public long Ranged_Attack_Up_active_distance_4_offset { get; private set; }
+            public long Ranged_Attack_Up_Active_Distance_4_offset { get; private set; }
 
             protected float Ranged_Attack_Up_Modifier_1_raw;
             public const string Ranged_Attack_Up_Modifier_1_displayName = "Ranged Attack Up Modifier 1";
-            public const int Ranged_Attack_Up_Modifier_1_sortIndex = 2350;
+            public const int Ranged_Attack_Up_Modifier_1_sortIndex = 650;
             [SortOrder(Ranged_Attack_Up_Modifier_1_sortIndex)]
             [DisplayName(Ranged_Attack_Up_Modifier_1_displayName)]
             public virtual float Ranged_Attack_Up_Modifier_1 {
@@ -7152,7 +6629,7 @@ namespace MHW_Editor.Structs.Weapons {
 
             protected float Ranged_Attack_Up_Modifier_2_raw;
             public const string Ranged_Attack_Up_Modifier_2_displayName = "Ranged Attack Up Modifier 2";
-            public const int Ranged_Attack_Up_Modifier_2_sortIndex = 2400;
+            public const int Ranged_Attack_Up_Modifier_2_sortIndex = 700;
             [SortOrder(Ranged_Attack_Up_Modifier_2_sortIndex)]
             [DisplayName(Ranged_Attack_Up_Modifier_2_displayName)]
             public virtual float Ranged_Attack_Up_Modifier_2 {
@@ -7170,7 +6647,7 @@ namespace MHW_Editor.Structs.Weapons {
 
             protected float Ranged_Attack_Up_Modifier_3_raw;
             public const string Ranged_Attack_Up_Modifier_3_displayName = "Ranged Attack Up Modifier 3";
-            public const int Ranged_Attack_Up_Modifier_3_sortIndex = 2450;
+            public const int Ranged_Attack_Up_Modifier_3_sortIndex = 750;
             [SortOrder(Ranged_Attack_Up_Modifier_3_sortIndex)]
             [DisplayName(Ranged_Attack_Up_Modifier_3_displayName)]
             public virtual float Ranged_Attack_Up_Modifier_3 {
@@ -7188,7 +6665,7 @@ namespace MHW_Editor.Structs.Weapons {
 
             protected float Ranged_Attack_Up_Modifier_4_raw;
             public const string Ranged_Attack_Up_Modifier_4_displayName = "Ranged Attack Up Modifier 4";
-            public const int Ranged_Attack_Up_Modifier_4_sortIndex = 2500;
+            public const int Ranged_Attack_Up_Modifier_4_sortIndex = 800;
             [SortOrder(Ranged_Attack_Up_Modifier_4_sortIndex)]
             [DisplayName(Ranged_Attack_Up_Modifier_4_displayName)]
             public virtual float Ranged_Attack_Up_Modifier_4 {
@@ -7206,7 +6683,7 @@ namespace MHW_Editor.Structs.Weapons {
 
             protected float Guard_Angle_Both_Sides__raw;
             public const string Guard_Angle_Both_Sides__displayName = "Guard Angle (Both Sides)";
-            public const int Guard_Angle_Both_Sides__sortIndex = 2550;
+            public const int Guard_Angle_Both_Sides__sortIndex = 850;
             [SortOrder(Guard_Angle_Both_Sides__sortIndex)]
             [DisplayName(Guard_Angle_Both_Sides__displayName)]
             public virtual float Guard_Angle_Both_Sides_ {
@@ -7222,7 +6699,7 @@ namespace MHW_Editor.Structs.Weapons {
             [DisplayName("Offset")]
             public long Guard_Angle_Both_Sides__offset { get; private set; }
 
-            public const int lastSortIndex = 2600;
+            public const int lastSortIndex = 900;
 
             public static ObservableMhwStructCollection<W13p_Params_6_> LoadData(BinaryReader reader) {
                 var list = new ObservableMhwStructCollection<W13p_Params_6_>();
@@ -7236,74 +6713,6 @@ namespace MHW_Editor.Structs.Weapons {
             public static W13p_Params_6_ LoadData(BinaryReader reader, ulong i) {
                 var data = new W13p_Params_6_();
                 data.Index = i;
-                data.Unk_240_offset = reader.BaseStream.Position;
-                data.Unk_240_raw = reader.ReadSingle();
-                data.Unk_241_offset = reader.BaseStream.Position;
-                data.Unk_241_raw = reader.ReadSingle();
-                data.Unk_242_offset = reader.BaseStream.Position;
-                data.Unk_242_raw = reader.ReadSingle();
-                data.Unk_243_offset = reader.BaseStream.Position;
-                data.Unk_243_raw = reader.ReadSingle();
-                data.Unk_244_offset = reader.BaseStream.Position;
-                data.Unk_244_raw = reader.ReadSingle();
-                data.Unk_245_offset = reader.BaseStream.Position;
-                data.Unk_245_raw = reader.ReadSingle();
-                data.Unk_246_offset = reader.BaseStream.Position;
-                data.Unk_246_raw = reader.ReadSingle();
-                data.Unk_247_offset = reader.BaseStream.Position;
-                data.Unk_247_raw = reader.ReadSingle();
-                data.Unk_248_offset = reader.BaseStream.Position;
-                data.Unk_248_raw = reader.ReadSingle();
-                data.Unk_249_offset = reader.BaseStream.Position;
-                data.Unk_249_raw = reader.ReadSingle();
-                data.Unk_250_offset = reader.BaseStream.Position;
-                data.Unk_250_raw = reader.ReadSingle();
-                data.Unk_251_offset = reader.BaseStream.Position;
-                data.Unk_251_raw = reader.ReadSingle();
-                data.Unk_252_offset = reader.BaseStream.Position;
-                data.Unk_252_raw = reader.ReadSingle();
-                data.Unk_253_offset = reader.BaseStream.Position;
-                data.Unk_253_raw = reader.ReadSingle();
-                data.Unk_254_offset = reader.BaseStream.Position;
-                data.Unk_254_raw = reader.ReadSingle();
-                data.Unk_255_offset = reader.BaseStream.Position;
-                data.Unk_255_raw = reader.ReadSingle();
-                data.Unk_256_offset = reader.BaseStream.Position;
-                data.Unk_256_raw = reader.ReadSingle();
-                data.Unk_257_offset = reader.BaseStream.Position;
-                data.Unk_257_raw = reader.ReadSingle();
-                data.Unk_258_offset = reader.BaseStream.Position;
-                data.Unk_258_raw = reader.ReadSingle();
-                data.Unk_259_offset = reader.BaseStream.Position;
-                data.Unk_259_raw = reader.ReadSingle();
-                data.Unk_260_offset = reader.BaseStream.Position;
-                data.Unk_260_raw = reader.ReadSingle();
-                data.Unk_261_offset = reader.BaseStream.Position;
-                data.Unk_261_raw = reader.ReadSingle();
-                data.Unk_262_offset = reader.BaseStream.Position;
-                data.Unk_262_raw = reader.ReadSingle();
-                data.Unk_263_offset = reader.BaseStream.Position;
-                data.Unk_263_raw = reader.ReadSingle();
-                data.Unk_264_offset = reader.BaseStream.Position;
-                data.Unk_264_raw = reader.ReadSingle();
-                data.Unk_265_offset = reader.BaseStream.Position;
-                data.Unk_265_raw = reader.ReadSingle();
-                data.Unk_266_offset = reader.BaseStream.Position;
-                data.Unk_266_raw = reader.ReadSingle();
-                data.Unk_267_offset = reader.BaseStream.Position;
-                data.Unk_267_raw = reader.ReadSingle();
-                data.Unk_268_offset = reader.BaseStream.Position;
-                data.Unk_268_raw = reader.ReadSingle();
-                data.Unk_269_offset = reader.BaseStream.Position;
-                data.Unk_269_raw = reader.ReadSingle();
-                data.Unk_270_offset = reader.BaseStream.Position;
-                data.Unk_270_raw = reader.ReadSingle();
-                data.Unk_271_offset = reader.BaseStream.Position;
-                data.Unk_271_raw = reader.ReadSingle();
-                data.Unk_272_offset = reader.BaseStream.Position;
-                data.Unk_272_raw = reader.ReadSingle();
-                data.Unk_273_offset = reader.BaseStream.Position;
-                data.Unk_273_raw = reader.ReadSingle();
                 data.Close_range_Up_active_range_1_offset = reader.BaseStream.Position;
                 data.Close_range_Up_active_range_1_raw = reader.ReadSingle();
                 data.Close_range_Up_active_range_2_offset = reader.BaseStream.Position;
@@ -7320,14 +6729,14 @@ namespace MHW_Editor.Structs.Weapons {
                 data.Close_range_Up_Modifier_3_raw = reader.ReadSingle();
                 data.Close_range_Up_Modifier_4_offset = reader.BaseStream.Position;
                 data.Close_range_Up_Modifier_4_raw = reader.ReadSingle();
-                data.Ranged_Attack_Up_active_distance_1_offset = reader.BaseStream.Position;
-                data.Ranged_Attack_Up_active_distance_1_raw = reader.ReadSingle();
-                data.Ranged_Attack_Up_active_distance_2_offset = reader.BaseStream.Position;
-                data.Ranged_Attack_Up_active_distance_2_raw = reader.ReadSingle();
-                data.Ranged_Attack_Up_active_distance_3_offset = reader.BaseStream.Position;
-                data.Ranged_Attack_Up_active_distance_3_raw = reader.ReadSingle();
-                data.Ranged_Attack_Up_active_distance_4_offset = reader.BaseStream.Position;
-                data.Ranged_Attack_Up_active_distance_4_raw = reader.ReadSingle();
+                data.Ranged_Attack_Up_Active_Distance_1_offset = reader.BaseStream.Position;
+                data.Ranged_Attack_Up_Active_Distance_1_raw = reader.ReadSingle();
+                data.Ranged_Attack_Up_Active_Distance_2_offset = reader.BaseStream.Position;
+                data.Ranged_Attack_Up_Active_Distance_2_raw = reader.ReadSingle();
+                data.Ranged_Attack_Up_Active_Distance_3_offset = reader.BaseStream.Position;
+                data.Ranged_Attack_Up_Active_Distance_3_raw = reader.ReadSingle();
+                data.Ranged_Attack_Up_Active_Distance_4_offset = reader.BaseStream.Position;
+                data.Ranged_Attack_Up_Active_Distance_4_raw = reader.ReadSingle();
                 data.Ranged_Attack_Up_Modifier_1_offset = reader.BaseStream.Position;
                 data.Ranged_Attack_Up_Modifier_1_raw = reader.ReadSingle();
                 data.Ranged_Attack_Up_Modifier_2_offset = reader.BaseStream.Position;
@@ -7342,40 +6751,6 @@ namespace MHW_Editor.Structs.Weapons {
             }
 
             public void WriteData(BinaryWriter writer) {
-                writer.Write(Unk_240_raw);
-                writer.Write(Unk_241_raw);
-                writer.Write(Unk_242_raw);
-                writer.Write(Unk_243_raw);
-                writer.Write(Unk_244_raw);
-                writer.Write(Unk_245_raw);
-                writer.Write(Unk_246_raw);
-                writer.Write(Unk_247_raw);
-                writer.Write(Unk_248_raw);
-                writer.Write(Unk_249_raw);
-                writer.Write(Unk_250_raw);
-                writer.Write(Unk_251_raw);
-                writer.Write(Unk_252_raw);
-                writer.Write(Unk_253_raw);
-                writer.Write(Unk_254_raw);
-                writer.Write(Unk_255_raw);
-                writer.Write(Unk_256_raw);
-                writer.Write(Unk_257_raw);
-                writer.Write(Unk_258_raw);
-                writer.Write(Unk_259_raw);
-                writer.Write(Unk_260_raw);
-                writer.Write(Unk_261_raw);
-                writer.Write(Unk_262_raw);
-                writer.Write(Unk_263_raw);
-                writer.Write(Unk_264_raw);
-                writer.Write(Unk_265_raw);
-                writer.Write(Unk_266_raw);
-                writer.Write(Unk_267_raw);
-                writer.Write(Unk_268_raw);
-                writer.Write(Unk_269_raw);
-                writer.Write(Unk_270_raw);
-                writer.Write(Unk_271_raw);
-                writer.Write(Unk_272_raw);
-                writer.Write(Unk_273_raw);
                 writer.Write(Close_range_Up_active_range_1_raw);
                 writer.Write(Close_range_Up_active_range_2_raw);
                 writer.Write(Close_range_Up_active_range_3_raw);
@@ -7384,10 +6759,10 @@ namespace MHW_Editor.Structs.Weapons {
                 writer.Write(Close_range_Up_Modifier_2_raw);
                 writer.Write(Close_range_Up_Modifier_3_raw);
                 writer.Write(Close_range_Up_Modifier_4_raw);
-                writer.Write(Ranged_Attack_Up_active_distance_1_raw);
-                writer.Write(Ranged_Attack_Up_active_distance_2_raw);
-                writer.Write(Ranged_Attack_Up_active_distance_3_raw);
-                writer.Write(Ranged_Attack_Up_active_distance_4_raw);
+                writer.Write(Ranged_Attack_Up_Active_Distance_1_raw);
+                writer.Write(Ranged_Attack_Up_Active_Distance_2_raw);
+                writer.Write(Ranged_Attack_Up_Active_Distance_3_raw);
+                writer.Write(Ranged_Attack_Up_Active_Distance_4_raw);
                 writer.Write(Ranged_Attack_Up_Modifier_1_raw);
                 writer.Write(Ranged_Attack_Up_Modifier_2_raw);
                 writer.Write(Ranged_Attack_Up_Modifier_3_raw);
@@ -7397,40 +6772,6 @@ namespace MHW_Editor.Structs.Weapons {
 
             public ObservableCollection<MultiStructItemCustomView> GetCustomView() {
                 return new ObservableCollection<MultiStructItemCustomView> {
-                    new MultiStructItemCustomView(this, "Unk 240", "Unk_240", "Unk_240_offset"),
-                    new MultiStructItemCustomView(this, "Unk 241", "Unk_241", "Unk_241_offset"),
-                    new MultiStructItemCustomView(this, "Unk 242", "Unk_242", "Unk_242_offset"),
-                    new MultiStructItemCustomView(this, "Unk 243", "Unk_243", "Unk_243_offset"),
-                    new MultiStructItemCustomView(this, "Unk 244", "Unk_244", "Unk_244_offset"),
-                    new MultiStructItemCustomView(this, "Unk 245", "Unk_245", "Unk_245_offset"),
-                    new MultiStructItemCustomView(this, "Unk 246", "Unk_246", "Unk_246_offset"),
-                    new MultiStructItemCustomView(this, "Unk 247", "Unk_247", "Unk_247_offset"),
-                    new MultiStructItemCustomView(this, "Unk 248", "Unk_248", "Unk_248_offset"),
-                    new MultiStructItemCustomView(this, "Unk 249", "Unk_249", "Unk_249_offset"),
-                    new MultiStructItemCustomView(this, "Unk 250", "Unk_250", "Unk_250_offset"),
-                    new MultiStructItemCustomView(this, "Unk 251", "Unk_251", "Unk_251_offset"),
-                    new MultiStructItemCustomView(this, "Unk 252", "Unk_252", "Unk_252_offset"),
-                    new MultiStructItemCustomView(this, "Unk 253", "Unk_253", "Unk_253_offset"),
-                    new MultiStructItemCustomView(this, "Unk 254", "Unk_254", "Unk_254_offset"),
-                    new MultiStructItemCustomView(this, "Unk 255", "Unk_255", "Unk_255_offset"),
-                    new MultiStructItemCustomView(this, "Unk 256", "Unk_256", "Unk_256_offset"),
-                    new MultiStructItemCustomView(this, "Unk 257", "Unk_257", "Unk_257_offset"),
-                    new MultiStructItemCustomView(this, "Unk 258", "Unk_258", "Unk_258_offset"),
-                    new MultiStructItemCustomView(this, "Unk 259", "Unk_259", "Unk_259_offset"),
-                    new MultiStructItemCustomView(this, "Unk 260", "Unk_260", "Unk_260_offset"),
-                    new MultiStructItemCustomView(this, "Unk 261", "Unk_261", "Unk_261_offset"),
-                    new MultiStructItemCustomView(this, "Unk 262", "Unk_262", "Unk_262_offset"),
-                    new MultiStructItemCustomView(this, "Unk 263", "Unk_263", "Unk_263_offset"),
-                    new MultiStructItemCustomView(this, "Unk 264", "Unk_264", "Unk_264_offset"),
-                    new MultiStructItemCustomView(this, "Unk 265", "Unk_265", "Unk_265_offset"),
-                    new MultiStructItemCustomView(this, "Unk 266", "Unk_266", "Unk_266_offset"),
-                    new MultiStructItemCustomView(this, "Unk 267", "Unk_267", "Unk_267_offset"),
-                    new MultiStructItemCustomView(this, "Unk 268", "Unk_268", "Unk_268_offset"),
-                    new MultiStructItemCustomView(this, "Unk 269", "Unk_269", "Unk_269_offset"),
-                    new MultiStructItemCustomView(this, "Unk 270", "Unk_270", "Unk_270_offset"),
-                    new MultiStructItemCustomView(this, "Unk 271", "Unk_271", "Unk_271_offset"),
-                    new MultiStructItemCustomView(this, "Unk 272", "Unk_272", "Unk_272_offset"),
-                    new MultiStructItemCustomView(this, "Unk 273", "Unk_273", "Unk_273_offset"),
                     new MultiStructItemCustomView(this, "Close range Up active range 1", "Close_range_Up_active_range_1", "Close_range_Up_active_range_1_offset"),
                     new MultiStructItemCustomView(this, "Close range Up active range 2", "Close_range_Up_active_range_2", "Close_range_Up_active_range_2_offset"),
                     new MultiStructItemCustomView(this, "Close range Up active range 3", "Close_range_Up_active_range_3", "Close_range_Up_active_range_3_offset"),
@@ -7439,10 +6780,10 @@ namespace MHW_Editor.Structs.Weapons {
                     new MultiStructItemCustomView(this, "Close range Up Modifier 2", "Close_range_Up_Modifier_2", "Close_range_Up_Modifier_2_offset"),
                     new MultiStructItemCustomView(this, "Close range Up Modifier 3", "Close_range_Up_Modifier_3", "Close_range_Up_Modifier_3_offset"),
                     new MultiStructItemCustomView(this, "Close range Up Modifier 4", "Close_range_Up_Modifier_4", "Close_range_Up_Modifier_4_offset"),
-                    new MultiStructItemCustomView(this, "Ranged Attack Up active distance 1", "Ranged_Attack_Up_active_distance_1", "Ranged_Attack_Up_active_distance_1_offset"),
-                    new MultiStructItemCustomView(this, "Ranged Attack Up active distance 2", "Ranged_Attack_Up_active_distance_2", "Ranged_Attack_Up_active_distance_2_offset"),
-                    new MultiStructItemCustomView(this, "Ranged Attack Up active distance 3", "Ranged_Attack_Up_active_distance_3", "Ranged_Attack_Up_active_distance_3_offset"),
-                    new MultiStructItemCustomView(this, "Ranged Attack Up active distance 4", "Ranged_Attack_Up_active_distance_4", "Ranged_Attack_Up_active_distance_4_offset"),
+                    new MultiStructItemCustomView(this, "Ranged Attack Up Active Distance 1", "Ranged_Attack_Up_Active_Distance_1", "Ranged_Attack_Up_Active_Distance_1_offset"),
+                    new MultiStructItemCustomView(this, "Ranged Attack Up Active Distance 2", "Ranged_Attack_Up_Active_Distance_2", "Ranged_Attack_Up_Active_Distance_2_offset"),
+                    new MultiStructItemCustomView(this, "Ranged Attack Up Active Distance 3", "Ranged_Attack_Up_Active_Distance_3", "Ranged_Attack_Up_Active_Distance_3_offset"),
+                    new MultiStructItemCustomView(this, "Ranged Attack Up Active Distance 4", "Ranged_Attack_Up_Active_Distance_4", "Ranged_Attack_Up_Active_Distance_4_offset"),
                     new MultiStructItemCustomView(this, "Ranged Attack Up Modifier 1", "Ranged_Attack_Up_Modifier_1", "Ranged_Attack_Up_Modifier_1_offset"),
                     new MultiStructItemCustomView(this, "Ranged Attack Up Modifier 2", "Ranged_Attack_Up_Modifier_2", "Ranged_Attack_Up_Modifier_2_offset"),
                     new MultiStructItemCustomView(this, "Ranged Attack Up Modifier 3", "Ranged_Attack_Up_Modifier_3", "Ranged_Attack_Up_Modifier_3_offset"),
@@ -7828,96 +7169,164 @@ namespace MHW_Editor.Structs.Weapons {
             }
         }
 
-        public partial class Unk_Arr_5 : MhwStructItem, IWriteData {
-            public const ulong FixedSizeCount = 50;
-            public const string GridName = "Unk Arr 5";
+        public partial class Power_Long_Mod_Params : MhwStructItem, IWriteData {
+            public const ulong FixedSizeCount = 25;
+            public const string GridName = "Power/Long Mod Params";
 
-            protected float Unk_1_raw;
-            public const string Unk_1_displayName = "Unk 1";
-            public const int Unk_1_sortIndex = 50;
-            [SortOrder(Unk_1_sortIndex)]
-            [DisplayName(Unk_1_displayName)]
-            public virtual float Unk_1 {
-                get => Unk_1_raw;
+            protected float Power_Mod_Unk_1_raw;
+            public const string Power_Mod_Unk_1_displayName = "Power Mod: Unk 1";
+            public const int Power_Mod_Unk_1_sortIndex = 50;
+            [SortOrder(Power_Mod_Unk_1_sortIndex)]
+            [DisplayName(Power_Mod_Unk_1_displayName)]
+            public virtual float Power_Mod_Unk_1 {
+                get => Power_Mod_Unk_1_raw;
                 set {
-                    if (Unk_1_raw == value) return;
-                    Unk_1_raw = value;
-                    ChangedItems.Add(nameof(Unk_1));
-                    OnPropertyChanged(nameof(Unk_1));
+                    if (Power_Mod_Unk_1_raw == value) return;
+                    Power_Mod_Unk_1_raw = value;
+                    ChangedItems.Add(nameof(Power_Mod_Unk_1));
+                    OnPropertyChanged(nameof(Power_Mod_Unk_1));
                 }
             }
 
-            protected float Unk_2_raw;
-            public const string Unk_2_displayName = "Unk 2";
-            public const int Unk_2_sortIndex = 100;
-            [SortOrder(Unk_2_sortIndex)]
-            [DisplayName(Unk_2_displayName)]
-            public virtual float Unk_2 {
-                get => Unk_2_raw;
+            protected float Power_Mod_Unk_2_raw;
+            public const string Power_Mod_Unk_2_displayName = "Power Mod: Unk 2";
+            public const int Power_Mod_Unk_2_sortIndex = 100;
+            [SortOrder(Power_Mod_Unk_2_sortIndex)]
+            [DisplayName(Power_Mod_Unk_2_displayName)]
+            public virtual float Power_Mod_Unk_2 {
+                get => Power_Mod_Unk_2_raw;
                 set {
-                    if (Unk_2_raw == value) return;
-                    Unk_2_raw = value;
-                    ChangedItems.Add(nameof(Unk_2));
-                    OnPropertyChanged(nameof(Unk_2));
+                    if (Power_Mod_Unk_2_raw == value) return;
+                    Power_Mod_Unk_2_raw = value;
+                    ChangedItems.Add(nameof(Power_Mod_Unk_2));
+                    OnPropertyChanged(nameof(Power_Mod_Unk_2));
                 }
             }
 
-            protected float Unk_3_raw;
-            public const string Unk_3_displayName = "Unk 3";
-            public const int Unk_3_sortIndex = 150;
-            [SortOrder(Unk_3_sortIndex)]
-            [DisplayName(Unk_3_displayName)]
-            public virtual float Unk_3 {
-                get => Unk_3_raw;
+            protected float Power_Mod_Unk_3_raw;
+            public const string Power_Mod_Unk_3_displayName = "Power Mod: Unk 3";
+            public const int Power_Mod_Unk_3_sortIndex = 150;
+            [SortOrder(Power_Mod_Unk_3_sortIndex)]
+            [DisplayName(Power_Mod_Unk_3_displayName)]
+            public virtual float Power_Mod_Unk_3 {
+                get => Power_Mod_Unk_3_raw;
                 set {
-                    if (Unk_3_raw == value) return;
-                    Unk_3_raw = value;
-                    ChangedItems.Add(nameof(Unk_3));
-                    OnPropertyChanged(nameof(Unk_3));
+                    if (Power_Mod_Unk_3_raw == value) return;
+                    Power_Mod_Unk_3_raw = value;
+                    ChangedItems.Add(nameof(Power_Mod_Unk_3));
+                    OnPropertyChanged(nameof(Power_Mod_Unk_3));
                 }
             }
 
-            protected float Unk_4_raw;
-            public const string Unk_4_displayName = "Unk 4";
-            public const int Unk_4_sortIndex = 200;
-            [SortOrder(Unk_4_sortIndex)]
-            [DisplayName(Unk_4_displayName)]
-            public virtual float Unk_4 {
-                get => Unk_4_raw;
+            protected float Power_Mod_Unk_4_raw;
+            public const string Power_Mod_Unk_4_displayName = "Power Mod: Unk 4";
+            public const int Power_Mod_Unk_4_sortIndex = 200;
+            [SortOrder(Power_Mod_Unk_4_sortIndex)]
+            [DisplayName(Power_Mod_Unk_4_displayName)]
+            public virtual float Power_Mod_Unk_4 {
+                get => Power_Mod_Unk_4_raw;
                 set {
-                    if (Unk_4_raw == value) return;
-                    Unk_4_raw = value;
-                    ChangedItems.Add(nameof(Unk_4));
-                    OnPropertyChanged(nameof(Unk_4));
+                    if (Power_Mod_Unk_4_raw == value) return;
+                    Power_Mod_Unk_4_raw = value;
+                    ChangedItems.Add(nameof(Power_Mod_Unk_4));
+                    OnPropertyChanged(nameof(Power_Mod_Unk_4));
                 }
             }
 
-            public const int lastSortIndex = 250;
+            protected float Long_Mod_Unk_1_raw;
+            public const string Long_Mod_Unk_1_displayName = "Long Mod: Unk 1";
+            public const int Long_Mod_Unk_1_sortIndex = 250;
+            [SortOrder(Long_Mod_Unk_1_sortIndex)]
+            [DisplayName(Long_Mod_Unk_1_displayName)]
+            public virtual float Long_Mod_Unk_1 {
+                get => Long_Mod_Unk_1_raw;
+                set {
+                    if (Long_Mod_Unk_1_raw == value) return;
+                    Long_Mod_Unk_1_raw = value;
+                    ChangedItems.Add(nameof(Long_Mod_Unk_1));
+                    OnPropertyChanged(nameof(Long_Mod_Unk_1));
+                }
+            }
 
-            public static ObservableMhwStructCollection<Unk_Arr_5> LoadData(BinaryReader reader) {
-                var list = new ObservableMhwStructCollection<Unk_Arr_5>();
-                const ulong count = 50UL;
+            protected float Long_Mod_Unk_2_raw;
+            public const string Long_Mod_Unk_2_displayName = "Long Mod: Unk 2";
+            public const int Long_Mod_Unk_2_sortIndex = 300;
+            [SortOrder(Long_Mod_Unk_2_sortIndex)]
+            [DisplayName(Long_Mod_Unk_2_displayName)]
+            public virtual float Long_Mod_Unk_2 {
+                get => Long_Mod_Unk_2_raw;
+                set {
+                    if (Long_Mod_Unk_2_raw == value) return;
+                    Long_Mod_Unk_2_raw = value;
+                    ChangedItems.Add(nameof(Long_Mod_Unk_2));
+                    OnPropertyChanged(nameof(Long_Mod_Unk_2));
+                }
+            }
+
+            protected float Long_Mod_Unk_3_raw;
+            public const string Long_Mod_Unk_3_displayName = "Long Mod: Unk 3";
+            public const int Long_Mod_Unk_3_sortIndex = 350;
+            [SortOrder(Long_Mod_Unk_3_sortIndex)]
+            [DisplayName(Long_Mod_Unk_3_displayName)]
+            public virtual float Long_Mod_Unk_3 {
+                get => Long_Mod_Unk_3_raw;
+                set {
+                    if (Long_Mod_Unk_3_raw == value) return;
+                    Long_Mod_Unk_3_raw = value;
+                    ChangedItems.Add(nameof(Long_Mod_Unk_3));
+                    OnPropertyChanged(nameof(Long_Mod_Unk_3));
+                }
+            }
+
+            protected float Long_Mod_Unk_4_raw;
+            public const string Long_Mod_Unk_4_displayName = "Long Mod: Unk 4";
+            public const int Long_Mod_Unk_4_sortIndex = 400;
+            [SortOrder(Long_Mod_Unk_4_sortIndex)]
+            [DisplayName(Long_Mod_Unk_4_displayName)]
+            public virtual float Long_Mod_Unk_4 {
+                get => Long_Mod_Unk_4_raw;
+                set {
+                    if (Long_Mod_Unk_4_raw == value) return;
+                    Long_Mod_Unk_4_raw = value;
+                    ChangedItems.Add(nameof(Long_Mod_Unk_4));
+                    OnPropertyChanged(nameof(Long_Mod_Unk_4));
+                }
+            }
+
+            public const int lastSortIndex = 450;
+
+            public static ObservableMhwStructCollection<Power_Long_Mod_Params> LoadData(BinaryReader reader) {
+                var list = new ObservableMhwStructCollection<Power_Long_Mod_Params>();
+                const ulong count = 25UL;
                 for (ulong i = 0; i < count; i++) {
                     list.Add(LoadData(reader, i));
                 }
                 return list;
             }
 
-            public static Unk_Arr_5 LoadData(BinaryReader reader, ulong i) {
-                var data = new Unk_Arr_5();
+            public static Power_Long_Mod_Params LoadData(BinaryReader reader, ulong i) {
+                var data = new Power_Long_Mod_Params();
                 data.Index = i;
-                data.Unk_1_raw = reader.ReadSingle();
-                data.Unk_2_raw = reader.ReadSingle();
-                data.Unk_3_raw = reader.ReadSingle();
-                data.Unk_4_raw = reader.ReadSingle();
+                data.Power_Mod_Unk_1_raw = reader.ReadSingle();
+                data.Power_Mod_Unk_2_raw = reader.ReadSingle();
+                data.Power_Mod_Unk_3_raw = reader.ReadSingle();
+                data.Power_Mod_Unk_4_raw = reader.ReadSingle();
+                data.Long_Mod_Unk_1_raw = reader.ReadSingle();
+                data.Long_Mod_Unk_2_raw = reader.ReadSingle();
+                data.Long_Mod_Unk_3_raw = reader.ReadSingle();
+                data.Long_Mod_Unk_4_raw = reader.ReadSingle();
                 return data;
             }
 
             public void WriteData(BinaryWriter writer) {
-                writer.Write(Unk_1_raw);
-                writer.Write(Unk_2_raw);
-                writer.Write(Unk_3_raw);
-                writer.Write(Unk_4_raw);
+                writer.Write(Power_Mod_Unk_1_raw);
+                writer.Write(Power_Mod_Unk_2_raw);
+                writer.Write(Power_Mod_Unk_3_raw);
+                writer.Write(Power_Mod_Unk_4_raw);
+                writer.Write(Long_Mod_Unk_1_raw);
+                writer.Write(Long_Mod_Unk_2_raw);
+                writer.Write(Long_Mod_Unk_3_raw);
+                writer.Write(Long_Mod_Unk_4_raw);
             }
         }
 
@@ -8645,41 +8054,41 @@ namespace MHW_Editor.Structs.Weapons {
             [DisplayName("Offset")]
             public long Wyvernblast_Cooldown_offset { get; private set; }
 
-            protected byte Unk_324_raw;
-            public const string Unk_324_displayName = "Unk 324";
-            public const int Unk_324_sortIndex = 2050;
-            [SortOrder(Unk_324_sortIndex)]
-            [DisplayName(Unk_324_displayName)]
-            public virtual byte Unk_324 {
-                get => Unk_324_raw;
+            protected byte Wyvernblast_Capacity_raw;
+            public const string Wyvernblast_Capacity_displayName = "Wyvernblast Capacity";
+            public const int Wyvernblast_Capacity_sortIndex = 2050;
+            [SortOrder(Wyvernblast_Capacity_sortIndex)]
+            [DisplayName(Wyvernblast_Capacity_displayName)]
+            public virtual byte Wyvernblast_Capacity {
+                get => Wyvernblast_Capacity_raw;
                 set {
-                    if (Unk_324_raw == value) return;
-                    Unk_324_raw = value;
-                    ChangedItems.Add(nameof(Unk_324));
-                    OnPropertyChanged(nameof(Unk_324));
+                    if (Wyvernblast_Capacity_raw == value) return;
+                    Wyvernblast_Capacity_raw = value;
+                    ChangedItems.Add(nameof(Wyvernblast_Capacity));
+                    OnPropertyChanged(nameof(Wyvernblast_Capacity));
                 }
             }
 
             [DisplayName("Offset")]
-            public long Unk_324_offset { get; private set; }
+            public long Wyvernblast_Capacity_offset { get; private set; }
 
-            protected byte Unk_325_raw;
-            public const string Unk_325_displayName = "Unk 325";
-            public const int Unk_325_sortIndex = 2100;
-            [SortOrder(Unk_325_sortIndex)]
-            [DisplayName(Unk_325_displayName)]
-            public virtual byte Unk_325 {
-                get => Unk_325_raw;
+            protected byte Wyvernblast_Initial_Charges_raw;
+            public const string Wyvernblast_Initial_Charges_displayName = "Wyvernblast Initial Charges";
+            public const int Wyvernblast_Initial_Charges_sortIndex = 2100;
+            [SortOrder(Wyvernblast_Initial_Charges_sortIndex)]
+            [DisplayName(Wyvernblast_Initial_Charges_displayName)]
+            public virtual byte Wyvernblast_Initial_Charges {
+                get => Wyvernblast_Initial_Charges_raw;
                 set {
-                    if (Unk_325_raw == value) return;
-                    Unk_325_raw = value;
-                    ChangedItems.Add(nameof(Unk_325));
-                    OnPropertyChanged(nameof(Unk_325));
+                    if (Wyvernblast_Initial_Charges_raw == value) return;
+                    Wyvernblast_Initial_Charges_raw = value;
+                    ChangedItems.Add(nameof(Wyvernblast_Initial_Charges));
+                    OnPropertyChanged(nameof(Wyvernblast_Initial_Charges));
                 }
             }
 
             [DisplayName("Offset")]
-            public long Unk_325_offset { get; private set; }
+            public long Wyvernblast_Initial_Charges_offset { get; private set; }
 
             protected byte Unk_326_raw;
             public const string Unk_326_displayName = "Unk 326";
@@ -8699,23 +8108,23 @@ namespace MHW_Editor.Structs.Weapons {
             [DisplayName("Offset")]
             public long Unk_326_offset { get; private set; }
 
-            protected byte Unk_327_raw;
-            public const string Unk_327_displayName = "Unk 327";
-            public const int Unk_327_sortIndex = 2200;
-            [SortOrder(Unk_327_sortIndex)]
-            [DisplayName(Unk_327_displayName)]
-            public virtual byte Unk_327 {
-                get => Unk_327_raw;
+            protected byte Wyvernblast_Lifespan_raw;
+            public const string Wyvernblast_Lifespan_displayName = "Wyvernblast Lifespan";
+            public const int Wyvernblast_Lifespan_sortIndex = 2200;
+            [SortOrder(Wyvernblast_Lifespan_sortIndex)]
+            [DisplayName(Wyvernblast_Lifespan_displayName)]
+            public virtual byte Wyvernblast_Lifespan {
+                get => Wyvernblast_Lifespan_raw;
                 set {
-                    if (Unk_327_raw == value) return;
-                    Unk_327_raw = value;
-                    ChangedItems.Add(nameof(Unk_327));
-                    OnPropertyChanged(nameof(Unk_327));
+                    if (Wyvernblast_Lifespan_raw == value) return;
+                    Wyvernblast_Lifespan_raw = value;
+                    ChangedItems.Add(nameof(Wyvernblast_Lifespan));
+                    OnPropertyChanged(nameof(Wyvernblast_Lifespan));
                 }
             }
 
             [DisplayName("Offset")]
-            public long Unk_327_offset { get; private set; }
+            public long Wyvernblast_Lifespan_offset { get; private set; }
 
             protected byte Unk_328_raw;
             public const string Unk_328_displayName = "Unk 328";
@@ -8735,23 +8144,23 @@ namespace MHW_Editor.Structs.Weapons {
             [DisplayName("Offset")]
             public long Unk_328_offset { get; private set; }
 
-            protected ushort Unk_329_raw;
-            public const string Unk_329_displayName = "Unk 329";
-            public const int Unk_329_sortIndex = 2300;
-            [SortOrder(Unk_329_sortIndex)]
-            [DisplayName(Unk_329_displayName)]
-            public virtual ushort Unk_329 {
-                get => Unk_329_raw;
+            protected ushort Wyvernblast_Counter_Explosion_Lifespan__raw;
+            public const string Wyvernblast_Counter_Explosion_Lifespan__displayName = "Wyvernblast Counter Explosion Lifespan?";
+            public const int Wyvernblast_Counter_Explosion_Lifespan__sortIndex = 2300;
+            [SortOrder(Wyvernblast_Counter_Explosion_Lifespan__sortIndex)]
+            [DisplayName(Wyvernblast_Counter_Explosion_Lifespan__displayName)]
+            public virtual ushort Wyvernblast_Counter_Explosion_Lifespan_ {
+                get => Wyvernblast_Counter_Explosion_Lifespan__raw;
                 set {
-                    if (Unk_329_raw == value) return;
-                    Unk_329_raw = value;
-                    ChangedItems.Add(nameof(Unk_329));
-                    OnPropertyChanged(nameof(Unk_329));
+                    if (Wyvernblast_Counter_Explosion_Lifespan__raw == value) return;
+                    Wyvernblast_Counter_Explosion_Lifespan__raw = value;
+                    ChangedItems.Add(nameof(Wyvernblast_Counter_Explosion_Lifespan_));
+                    OnPropertyChanged(nameof(Wyvernblast_Counter_Explosion_Lifespan_));
                 }
             }
 
             [DisplayName("Offset")]
-            public long Unk_329_offset { get; private set; }
+            public long Wyvernblast_Counter_Explosion_Lifespan__offset { get; private set; }
 
             protected float Unk_330_raw;
             public const string Unk_330_displayName = "Unk 330";
@@ -8789,97 +8198,7 @@ namespace MHW_Editor.Structs.Weapons {
             [DisplayName("Offset")]
             public long Unk_331_offset { get; private set; }
 
-            protected float Unk_332_raw;
-            public const string Unk_332_displayName = "Unk 332";
-            public const int Unk_332_sortIndex = 2450;
-            [SortOrder(Unk_332_sortIndex)]
-            [DisplayName(Unk_332_displayName)]
-            public virtual float Unk_332 {
-                get => Unk_332_raw;
-                set {
-                    if (Unk_332_raw == value) return;
-                    Unk_332_raw = value;
-                    ChangedItems.Add(nameof(Unk_332));
-                    OnPropertyChanged(nameof(Unk_332));
-                }
-            }
-
-            [DisplayName("Offset")]
-            public long Unk_332_offset { get; private set; }
-
-            protected float Unk_333_raw;
-            public const string Unk_333_displayName = "Unk 333";
-            public const int Unk_333_sortIndex = 2500;
-            [SortOrder(Unk_333_sortIndex)]
-            [DisplayName(Unk_333_displayName)]
-            public virtual float Unk_333 {
-                get => Unk_333_raw;
-                set {
-                    if (Unk_333_raw == value) return;
-                    Unk_333_raw = value;
-                    ChangedItems.Add(nameof(Unk_333));
-                    OnPropertyChanged(nameof(Unk_333));
-                }
-            }
-
-            [DisplayName("Offset")]
-            public long Unk_333_offset { get; private set; }
-
-            protected float Unk_334_raw;
-            public const string Unk_334_displayName = "Unk 334";
-            public const int Unk_334_sortIndex = 2550;
-            [SortOrder(Unk_334_sortIndex)]
-            [DisplayName(Unk_334_displayName)]
-            public virtual float Unk_334 {
-                get => Unk_334_raw;
-                set {
-                    if (Unk_334_raw == value) return;
-                    Unk_334_raw = value;
-                    ChangedItems.Add(nameof(Unk_334));
-                    OnPropertyChanged(nameof(Unk_334));
-                }
-            }
-
-            [DisplayName("Offset")]
-            public long Unk_334_offset { get; private set; }
-
-            protected float Unk_335_raw;
-            public const string Unk_335_displayName = "Unk 335";
-            public const int Unk_335_sortIndex = 2600;
-            [SortOrder(Unk_335_sortIndex)]
-            [DisplayName(Unk_335_displayName)]
-            public virtual float Unk_335 {
-                get => Unk_335_raw;
-                set {
-                    if (Unk_335_raw == value) return;
-                    Unk_335_raw = value;
-                    ChangedItems.Add(nameof(Unk_335));
-                    OnPropertyChanged(nameof(Unk_335));
-                }
-            }
-
-            [DisplayName("Offset")]
-            public long Unk_335_offset { get; private set; }
-
-            protected float Unk_336_raw;
-            public const string Unk_336_displayName = "Unk 336";
-            public const int Unk_336_sortIndex = 2650;
-            [SortOrder(Unk_336_sortIndex)]
-            [DisplayName(Unk_336_displayName)]
-            public virtual float Unk_336 {
-                get => Unk_336_raw;
-                set {
-                    if (Unk_336_raw == value) return;
-                    Unk_336_raw = value;
-                    ChangedItems.Add(nameof(Unk_336));
-                    OnPropertyChanged(nameof(Unk_336));
-                }
-            }
-
-            [DisplayName("Offset")]
-            public long Unk_336_offset { get; private set; }
-
-            public const int lastSortIndex = 2700;
+            public const int lastSortIndex = 2450;
 
             public static ObservableMhwStructCollection<W13p_Params_7_> LoadData(BinaryReader reader) {
                 var list = new ObservableMhwStructCollection<W13p_Params_7_>();
@@ -8973,32 +8292,22 @@ namespace MHW_Editor.Structs.Weapons {
                 data.Unk_322_raw = reader.ReadSingle();
                 data.Wyvernblast_Cooldown_offset = reader.BaseStream.Position;
                 data.Wyvernblast_Cooldown_raw = reader.ReadSingle();
-                data.Unk_324_offset = reader.BaseStream.Position;
-                data.Unk_324_raw = reader.ReadByte();
-                data.Unk_325_offset = reader.BaseStream.Position;
-                data.Unk_325_raw = reader.ReadByte();
+                data.Wyvernblast_Capacity_offset = reader.BaseStream.Position;
+                data.Wyvernblast_Capacity_raw = reader.ReadByte();
+                data.Wyvernblast_Initial_Charges_offset = reader.BaseStream.Position;
+                data.Wyvernblast_Initial_Charges_raw = reader.ReadByte();
                 data.Unk_326_offset = reader.BaseStream.Position;
                 data.Unk_326_raw = reader.ReadByte();
-                data.Unk_327_offset = reader.BaseStream.Position;
-                data.Unk_327_raw = reader.ReadByte();
+                data.Wyvernblast_Lifespan_offset = reader.BaseStream.Position;
+                data.Wyvernblast_Lifespan_raw = reader.ReadByte();
                 data.Unk_328_offset = reader.BaseStream.Position;
                 data.Unk_328_raw = reader.ReadByte();
-                data.Unk_329_offset = reader.BaseStream.Position;
-                data.Unk_329_raw = reader.ReadUInt16();
+                data.Wyvernblast_Counter_Explosion_Lifespan__offset = reader.BaseStream.Position;
+                data.Wyvernblast_Counter_Explosion_Lifespan__raw = reader.ReadUInt16();
                 data.Unk_330_offset = reader.BaseStream.Position;
                 data.Unk_330_raw = reader.ReadSingle();
                 data.Unk_331_offset = reader.BaseStream.Position;
                 data.Unk_331_raw = reader.ReadByte();
-                data.Unk_332_offset = reader.BaseStream.Position;
-                data.Unk_332_raw = reader.ReadSingle();
-                data.Unk_333_offset = reader.BaseStream.Position;
-                data.Unk_333_raw = reader.ReadSingle();
-                data.Unk_334_offset = reader.BaseStream.Position;
-                data.Unk_334_raw = reader.ReadSingle();
-                data.Unk_335_offset = reader.BaseStream.Position;
-                data.Unk_335_raw = reader.ReadSingle();
-                data.Unk_336_offset = reader.BaseStream.Position;
-                data.Unk_336_raw = reader.ReadSingle();
                 return data;
             }
 
@@ -9043,19 +8352,14 @@ namespace MHW_Editor.Structs.Weapons {
                 writer.Write(Unk_321_raw);
                 writer.Write(Unk_322_raw);
                 writer.Write(Wyvernblast_Cooldown_raw);
-                writer.Write(Unk_324_raw);
-                writer.Write(Unk_325_raw);
+                writer.Write(Wyvernblast_Capacity_raw);
+                writer.Write(Wyvernblast_Initial_Charges_raw);
                 writer.Write(Unk_326_raw);
-                writer.Write(Unk_327_raw);
+                writer.Write(Wyvernblast_Lifespan_raw);
                 writer.Write(Unk_328_raw);
-                writer.Write(Unk_329_raw);
+                writer.Write(Wyvernblast_Counter_Explosion_Lifespan__raw);
                 writer.Write(Unk_330_raw);
                 writer.Write(Unk_331_raw);
-                writer.Write(Unk_332_raw);
-                writer.Write(Unk_333_raw);
-                writer.Write(Unk_334_raw);
-                writer.Write(Unk_335_raw);
-                writer.Write(Unk_336_raw);
             }
 
             public ObservableCollection<MultiStructItemCustomView> GetCustomView() {
@@ -9100,20 +8404,125 @@ namespace MHW_Editor.Structs.Weapons {
                     new MultiStructItemCustomView(this, "Unk 321", "Unk_321", "Unk_321_offset"),
                     new MultiStructItemCustomView(this, "Unk 322", "Unk_322", "Unk_322_offset"),
                     new MultiStructItemCustomView(this, "Wyvernblast Cooldown", "Wyvernblast_Cooldown", "Wyvernblast_Cooldown_offset"),
-                    new MultiStructItemCustomView(this, "Unk 324", "Unk_324", "Unk_324_offset"),
-                    new MultiStructItemCustomView(this, "Unk 325", "Unk_325", "Unk_325_offset"),
+                    new MultiStructItemCustomView(this, "Wyvernblast Capacity", "Wyvernblast_Capacity", "Wyvernblast_Capacity_offset"),
+                    new MultiStructItemCustomView(this, "Wyvernblast Initial Charges", "Wyvernblast_Initial_Charges", "Wyvernblast_Initial_Charges_offset"),
                     new MultiStructItemCustomView(this, "Unk 326", "Unk_326", "Unk_326_offset"),
-                    new MultiStructItemCustomView(this, "Unk 327", "Unk_327", "Unk_327_offset"),
+                    new MultiStructItemCustomView(this, "Wyvernblast Lifespan", "Wyvernblast_Lifespan", "Wyvernblast_Lifespan_offset"),
                     new MultiStructItemCustomView(this, "Unk 328", "Unk_328", "Unk_328_offset"),
-                    new MultiStructItemCustomView(this, "Unk 329", "Unk_329", "Unk_329_offset"),
+                    new MultiStructItemCustomView(this, "Wyvernblast Counter Explosion Lifespan?", "Wyvernblast_Counter_Explosion_Lifespan_", "Wyvernblast_Counter_Explosion_Lifespan__offset"),
                     new MultiStructItemCustomView(this, "Unk 330", "Unk_330", "Unk_330_offset"),
                     new MultiStructItemCustomView(this, "Unk 331", "Unk_331", "Unk_331_offset"),
-                    new MultiStructItemCustomView(this, "Unk 332", "Unk_332", "Unk_332_offset"),
-                    new MultiStructItemCustomView(this, "Unk 333", "Unk_333", "Unk_333_offset"),
-                    new MultiStructItemCustomView(this, "Unk 334", "Unk_334", "Unk_334_offset"),
-                    new MultiStructItemCustomView(this, "Unk 335", "Unk_335", "Unk_335_offset"),
-                    new MultiStructItemCustomView(this, "Unk 336", "Unk_336", "Unk_336_offset"),
                 };
+            }
+        }
+
+        public partial class Action_Param_1 : MhwStructItem, IWriteData {
+            public const ulong FixedSizeCount = 1;
+            public const string GridName = "Action Param 1";
+
+            protected float Gravity_raw;
+            public const string Gravity_displayName = "Gravity";
+            public const int Gravity_sortIndex = 50;
+            [SortOrder(Gravity_sortIndex)]
+            [DisplayName(Gravity_displayName)]
+            public virtual float Gravity {
+                get => Gravity_raw;
+                set {
+                    if (Gravity_raw == value) return;
+                    Gravity_raw = value;
+                    ChangedItems.Add(nameof(Gravity));
+                    OnPropertyChanged(nameof(Gravity));
+                }
+            }
+
+            protected float Speed_Rate_raw;
+            public const string Speed_Rate_displayName = "Speed Rate";
+            public const int Speed_Rate_sortIndex = 100;
+            [SortOrder(Speed_Rate_sortIndex)]
+            [DisplayName(Speed_Rate_displayName)]
+            public virtual float Speed_Rate {
+                get => Speed_Rate_raw;
+                set {
+                    if (Speed_Rate_raw == value) return;
+                    Speed_Rate_raw = value;
+                    ChangedItems.Add(nameof(Speed_Rate));
+                    OnPropertyChanged(nameof(Speed_Rate));
+                }
+            }
+
+            protected float X_Offset_raw;
+            public const string X_Offset_displayName = "X Offset";
+            public const int X_Offset_sortIndex = 150;
+            [SortOrder(X_Offset_sortIndex)]
+            [DisplayName(X_Offset_displayName)]
+            public virtual float X_Offset {
+                get => X_Offset_raw;
+                set {
+                    if (X_Offset_raw == value) return;
+                    X_Offset_raw = value;
+                    ChangedItems.Add(nameof(X_Offset));
+                    OnPropertyChanged(nameof(X_Offset));
+                }
+            }
+
+            protected float Y_Offset_raw;
+            public const string Y_Offset_displayName = "Y Offset";
+            public const int Y_Offset_sortIndex = 200;
+            [SortOrder(Y_Offset_sortIndex)]
+            [DisplayName(Y_Offset_displayName)]
+            public virtual float Y_Offset {
+                get => Y_Offset_raw;
+                set {
+                    if (Y_Offset_raw == value) return;
+                    Y_Offset_raw = value;
+                    ChangedItems.Add(nameof(Y_Offset));
+                    OnPropertyChanged(nameof(Y_Offset));
+                }
+            }
+
+            protected float Z_Offset_raw;
+            public const string Z_Offset_displayName = "Z Offset";
+            public const int Z_Offset_sortIndex = 250;
+            [SortOrder(Z_Offset_sortIndex)]
+            [DisplayName(Z_Offset_displayName)]
+            public virtual float Z_Offset {
+                get => Z_Offset_raw;
+                set {
+                    if (Z_Offset_raw == value) return;
+                    Z_Offset_raw = value;
+                    ChangedItems.Add(nameof(Z_Offset));
+                    OnPropertyChanged(nameof(Z_Offset));
+                }
+            }
+
+            public const int lastSortIndex = 300;
+
+            public static ObservableMhwStructCollection<Action_Param_1> LoadData(BinaryReader reader) {
+                var list = new ObservableMhwStructCollection<Action_Param_1>();
+                const ulong count = 1UL;
+                for (ulong i = 0; i < count; i++) {
+                    list.Add(LoadData(reader, i));
+                }
+                return list;
+            }
+
+            public static Action_Param_1 LoadData(BinaryReader reader, ulong i) {
+                var data = new Action_Param_1();
+                data.Index = i;
+                data.Gravity_raw = reader.ReadSingle();
+                data.Speed_Rate_raw = reader.ReadSingle();
+                data.X_Offset_raw = reader.ReadSingle();
+                data.Y_Offset_raw = reader.ReadSingle();
+                data.Z_Offset_raw = reader.ReadSingle();
+                return data;
+            }
+
+            public void WriteData(BinaryWriter writer) {
+                writer.Write(Gravity_raw);
+                writer.Write(Speed_Rate_raw);
+                writer.Write(X_Offset_raw);
+                writer.Write(Y_Offset_raw);
+                writer.Write(Z_Offset_raw);
             }
         }
 
@@ -9297,10 +8706,16 @@ namespace MHW_Editor.Structs.Weapons {
             data.AddLast(W13p_Params_4_Shared__);
             var W13p_Params_5__ = new MhwStructDataContainer<W13p_Params_5_>(W13p_Params_5_.LoadData(reader), typeof(W13p_Params_5_));
             data.AddLast(W13p_Params_5__);
+            var Event_Pad_Vib_ = new MhwStructDataContainer<Event_Pad_Vib>(Event_Pad_Vib.LoadData(reader), typeof(Event_Pad_Vib));
+            data.AddLast(Event_Pad_Vib_);
+            var W13p_Params_5_1__ = new MhwStructDataContainer<W13p_Params_5_1_>(W13p_Params_5_1_.LoadData(reader), typeof(W13p_Params_5_1_));
+            data.AddLast(W13p_Params_5_1__);
             var Unk_Arr_3_ = new MhwStructDataContainer<Unk_Arr_3>(Unk_Arr_3.LoadData(reader), typeof(Unk_Arr_3));
             data.AddLast(Unk_Arr_3_);
-            var Unk_Arr_4_ = new MhwStructDataContainer<Unk_Arr_4>(Unk_Arr_4.LoadData(reader), typeof(Unk_Arr_4));
-            data.AddLast(Unk_Arr_4_);
+            var Bowgun_Deviation_Last_One_Maybe_High_Plus_Felyne_Meal__ = new MhwStructDataContainer<Bowgun_Deviation_Last_One_Maybe_High_Plus_Felyne_Meal_>(Bowgun_Deviation_Last_One_Maybe_High_Plus_Felyne_Meal_.LoadData(reader), typeof(Bowgun_Deviation_Last_One_Maybe_High_Plus_Felyne_Meal_));
+            data.AddLast(Bowgun_Deviation_Last_One_Maybe_High_Plus_Felyne_Meal__);
+            var Ammo_Shifting_ = new MhwStructDataContainer<Ammo_Shifting>(Ammo_Shifting.LoadData(reader), typeof(Ammo_Shifting));
+            data.AddLast(Ammo_Shifting_);
             var W13p_Params_6__ = new MhwStructDataContainer<W13p_Params_6_>(W13p_Params_6_.LoadData(reader), typeof(W13p_Params_6_));
             data.AddLast(W13p_Params_6__);
             var Number_of_Shield_Mods_Struct_ = new MhwStructDataContainer<Number_of_Shield_Mods_Struct>(Number_of_Shield_Mods_Struct.LoadData(reader), typeof(Number_of_Shield_Mods_Struct));
@@ -9310,10 +8725,12 @@ namespace MHW_Editor.Structs.Weapons {
             data.AddLast(Shield_Mods_);
             var W13p_Params_Special_Scope_Params__ = new MhwStructDataContainer<W13p_Params_Special_Scope_Params_>(W13p_Params_Special_Scope_Params_.LoadData(reader), typeof(W13p_Params_Special_Scope_Params_));
             data.AddLast(W13p_Params_Special_Scope_Params__);
-            var Unk_Arr_5_ = new MhwStructDataContainer<Unk_Arr_5>(Unk_Arr_5.LoadData(reader), typeof(Unk_Arr_5));
-            data.AddLast(Unk_Arr_5_);
+            var Power_Long_Mod_Params_ = new MhwStructDataContainer<Power_Long_Mod_Params>(Power_Long_Mod_Params.LoadData(reader), typeof(Power_Long_Mod_Params));
+            data.AddLast(Power_Long_Mod_Params_);
             var W13p_Params_7__ = new MhwStructDataContainer<W13p_Params_7_>(W13p_Params_7_.LoadData(reader), typeof(W13p_Params_7_));
             data.AddLast(W13p_Params_7__);
+            var Action_Param_1_ = new MhwStructDataContainer<Action_Param_1>(Action_Param_1.LoadData(reader), typeof(Action_Param_1));
+            data.AddLast(Action_Param_1_);
             var HZD_Ammo_Gauge_Levels_ = new MhwStructDataContainer<HZD_Ammo_Gauge_Levels>(HZD_Ammo_Gauge_Levels.LoadData(reader), typeof(HZD_Ammo_Gauge_Levels));
             data.AddLast(HZD_Ammo_Gauge_Levels_);
         }

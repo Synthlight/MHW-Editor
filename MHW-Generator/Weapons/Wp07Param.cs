@@ -8,16 +8,6 @@ namespace MHW_Generator.Weapons {
         private const string N = "07";
 
         public MultiStruct Generate() { // .w07p
-            var shellParams = new List<MhwMultiStructData.Entry> {
-                new MhwMultiStructData.Entry("1", typeof(float)),
-                new MhwMultiStructData.Entry("2", typeof(float)),
-                new MhwMultiStructData.Entry("3", typeof(float)),
-                new MhwMultiStructData.Entry("4", typeof(float)),
-                new MhwMultiStructData.Entry("5", typeof(float)),
-                new MhwMultiStructData.Entry("6", typeof(float)),
-                new MhwMultiStructData.Entry("7", typeof(float))
-            };
-
             var structs = new List<MhwMultiStructData.StructData>();
             structs.AddRange(CreateBase(N));
 

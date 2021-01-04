@@ -20,12 +20,12 @@ namespace MHW_Generator.Weapons {
                 }, 5),
 
                 new MhwMultiStructData.StructData($"W{N}p Params ({++paramIndex})", new List<MhwMultiStructData.Entry> {
-                    new MhwMultiStructData.Entry($"Unk {++unkIndex}", typeof(float)),
-                    new MhwMultiStructData.Entry($"Unk {++unkIndex}", typeof(float)),
-                    new MhwMultiStructData.Entry($"Unk {++unkIndex}", typeof(float)),
-                    new MhwMultiStructData.Entry($"Unk {++unkIndex}", typeof(float)),
-                    new MhwMultiStructData.Entry($"Unk {++unkIndex}", typeof(float)),
-                    new MhwMultiStructData.Entry($"Unk {++unkIndex}", typeof(byte)),
+                    new MhwMultiStructData.Entry("Over Charge Timing: Charge Slash", typeof(float)), // 91
+                    new MhwMultiStructData.Entry("Over Charge Timing: Strong Charge Slash", typeof(float)),
+                    new MhwMultiStructData.Entry("Over Charge Timing: True Charge Slash", typeof(float)),
+                    new MhwMultiStructData.Entry("Over Charge Timing: Rising Charge Slash", typeof(float)),
+                    new MhwMultiStructData.Entry("Over Charge Timing: Midair Charge Slash", typeof(float)),
+                    new MhwMultiStructData.Entry($"Unk {unkIndex += 6}", typeof(byte)),
                     new MhwMultiStructData.Entry($"Unk {++unkIndex}", typeof(byte)),
                     new MhwMultiStructData.Entry($"Unk {++unkIndex}", typeof(byte)),
                     new MhwMultiStructData.Entry($"Unk {++unkIndex}", typeof(byte)),
