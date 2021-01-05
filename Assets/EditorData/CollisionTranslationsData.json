@@ -1759,16 +1759,16 @@
       "description": ""
     },
     "2": {
-      "name": "",
-      "description": "guess dummy"
+      "name": "Jumping Spirit Blade",
+      "description": "(no gauge)"
     },
     "3": {
       "name": "Jumping Spirit Blade II",
       "description": "(1st Hit)"
     },
     "4": {
-      "name": "",
-      "description": "guess dummy"
+      "name": "Jumping Spirit Blade II",
+      "description": "(1st Hit) (no gauge)"
     },
     "5": {
       "name": "",
@@ -1779,8 +1779,8 @@
       "description": ""
     },
     "7": {
-      "name": "",
-      "description": "guess dummy"
+      "name": "Spirit Jumping Slash",
+      "description": "(no gauge)"
     },
     "8": {
       "name": "Step Slash",
@@ -1815,8 +1815,8 @@
       "description": ""
     },
     "16": {
-      "name": "",
-      "description": "guess dummy"
+      "name": "Spirit Blade I",
+      "description": "(no gauge)"
     },
     "17": {
       "name": "Spirit Blade II",
@@ -1835,8 +1835,8 @@
       "description": "(2nd Hit)"
     },
     "21": {
-      "name": "",
-      "description": "guess dummy"
+      "name": "Jumping Spirit Blade II",
+      "description": "(2nd Hit) (no gauge)"
     },
     "23": {
       "name": "Spirit Blade III",
