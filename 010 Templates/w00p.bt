@@ -219,7 +219,7 @@ Action_Param_1 Action_Param_1_[2]<optimize=false, name="Action Param 1">;
 float Unk_108<name="Unk 108 (float)">;
 float Unk_109<name="Unk 109 (float)">;
 float Unk_110<name="Unk 110 (float)">;
-float Unk_111<name="Unk 111 (float)">;
+float Turn_Speed_While_Charging_the_Sword_Higher_is_Faster_<name="Turn Speed While Charging the Sword (Higher is Faster) (float)">;
 float Unk_112<name="Unk 112 (float)">;
 float Unk_113<name="Unk 113 (float)">;
 float Unk_114<name="Unk 114 (float)">;

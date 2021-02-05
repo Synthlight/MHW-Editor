@@ -3653,23 +3653,23 @@ namespace MHW_Editor.Structs.Weapons {
             [DisplayName("Offset")]
             public long Unk_110_offset { get; private set; }
 
-            protected float Unk_111_raw;
-            public const string Unk_111_displayName = "Unk 111";
-            public const int Unk_111_sortIndex = 200;
-            [SortOrder(Unk_111_sortIndex)]
-            [DisplayName(Unk_111_displayName)]
-            public virtual float Unk_111 {
-                get => Unk_111_raw;
+            protected float Turn_Speed_While_Charging_the_Sword_Higher_is_Faster__raw;
+            public const string Turn_Speed_While_Charging_the_Sword_Higher_is_Faster__displayName = "Turn Speed While Charging the Sword (Higher is Faster)";
+            public const int Turn_Speed_While_Charging_the_Sword_Higher_is_Faster__sortIndex = 200;
+            [SortOrder(Turn_Speed_While_Charging_the_Sword_Higher_is_Faster__sortIndex)]
+            [DisplayName(Turn_Speed_While_Charging_the_Sword_Higher_is_Faster__displayName)]
+            public virtual float Turn_Speed_While_Charging_the_Sword_Higher_is_Faster_ {
+                get => Turn_Speed_While_Charging_the_Sword_Higher_is_Faster__raw;
                 set {
-                    if (Unk_111_raw == value) return;
-                    Unk_111_raw = value;
-                    ChangedItems.Add(nameof(Unk_111));
-                    OnPropertyChanged(nameof(Unk_111));
+                    if (Turn_Speed_While_Charging_the_Sword_Higher_is_Faster__raw == value) return;
+                    Turn_Speed_While_Charging_the_Sword_Higher_is_Faster__raw = value;
+                    ChangedItems.Add(nameof(Turn_Speed_While_Charging_the_Sword_Higher_is_Faster_));
+                    OnPropertyChanged(nameof(Turn_Speed_While_Charging_the_Sword_Higher_is_Faster_));
                 }
             }
 
             [DisplayName("Offset")]
-            public long Unk_111_offset { get; private set; }
+            public long Turn_Speed_While_Charging_the_Sword_Higher_is_Faster__offset { get; private set; }
 
             protected float Unk_112_raw;
             public const string Unk_112_displayName = "Unk 112";
@@ -3961,8 +3961,8 @@ namespace MHW_Editor.Structs.Weapons {
                 data.Unk_109_raw = reader.ReadSingle();
                 data.Unk_110_offset = reader.BaseStream.Position;
                 data.Unk_110_raw = reader.ReadSingle();
-                data.Unk_111_offset = reader.BaseStream.Position;
-                data.Unk_111_raw = reader.ReadSingle();
+                data.Turn_Speed_While_Charging_the_Sword_Higher_is_Faster__offset = reader.BaseStream.Position;
+                data.Turn_Speed_While_Charging_the_Sword_Higher_is_Faster__raw = reader.ReadSingle();
                 data.Unk_112_offset = reader.BaseStream.Position;
                 data.Unk_112_raw = reader.ReadSingle();
                 data.Unk_113_offset = reader.BaseStream.Position;
@@ -4000,7 +4000,7 @@ namespace MHW_Editor.Structs.Weapons {
                 writer.Write(Unk_108_raw);
                 writer.Write(Unk_109_raw);
                 writer.Write(Unk_110_raw);
-                writer.Write(Unk_111_raw);
+                writer.Write(Turn_Speed_While_Charging_the_Sword_Higher_is_Faster__raw);
                 writer.Write(Unk_112_raw);
                 writer.Write(Unk_113_raw);
                 writer.Write(Unk_114_raw);
@@ -4023,7 +4023,7 @@ namespace MHW_Editor.Structs.Weapons {
                     new MultiStructItemCustomView(this, "Unk 108", "Unk_108", "Unk_108_offset"),
                     new MultiStructItemCustomView(this, "Unk 109", "Unk_109", "Unk_109_offset"),
                     new MultiStructItemCustomView(this, "Unk 110", "Unk_110", "Unk_110_offset"),
-                    new MultiStructItemCustomView(this, "Unk 111", "Unk_111", "Unk_111_offset"),
+                    new MultiStructItemCustomView(this, "Turn Speed While Charging the Sword (Higher is Faster)", "Turn_Speed_While_Charging_the_Sword_Higher_is_Faster_", "Turn_Speed_While_Charging_the_Sword_Higher_is_Faster__offset"),
                     new MultiStructItemCustomView(this, "Unk 112", "Unk_112", "Unk_112_offset"),
                     new MultiStructItemCustomView(this, "Unk 113", "Unk_113", "Unk_113_offset"),
                     new MultiStructItemCustomView(this, "Unk 114", "Unk_114", "Unk_114_offset"),
