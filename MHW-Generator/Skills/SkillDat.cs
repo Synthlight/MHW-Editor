@@ -10,7 +10,7 @@ namespace MHW_Generator.Skills {
                 CreateSingleStructBase(out var header, out var itemCount),
 
                 new MhwMultiStructData.StructData("Entries", new List<MhwMultiStructData.Entry> {
-                    new MhwMultiStructData.Entry("Id", typeof(ushort), true),
+                    new MhwMultiStructData.Entry("Id", typeof(ushort), true, dataSourceType: DataSourceType.Skills),
                     new MhwMultiStructData.Entry("Level", typeof(byte), true),
                     new MhwMultiStructData.Entry("Unlock Skill 1", typeof(uint), dataSourceType: DataSourceType.SkillDat),
                     new MhwMultiStructData.Entry("Unlock Skill 2", typeof(uint), dataSourceType: DataSourceType.SkillDat),
@@ -22,7 +22,7 @@ namespace MHW_Generator.Skills {
                     new MhwMultiStructData.Entry("Param 6", typeof(ushort)),
                     new MhwMultiStructData.Entry("Param 7", typeof(ushort)),
                     new MhwMultiStructData.Entry("Param 8", typeof(ushort))
-                }, _010Link: new MhwMultiStructData.ArrayLink(header, itemCount), uniqueIdFormula: "{Id}|{Level}")
+                }, canAddRows: true, _010Link: new MhwMultiStructData.ArrayLink(header, itemCount), uniqueIdFormula: "{Id}|{Level}")
             };
 
             return new MultiStruct("Skills", "SkillDat", new MhwMultiStructData(structs, "skl_dat"));

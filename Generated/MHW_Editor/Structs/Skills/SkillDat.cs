@@ -100,12 +100,19 @@ namespace MHW_Editor.Structs.Skills {
             public const ulong FixedSizeCount = 0;
             public const string GridName = "Entries";
             public override string UniqueId => $"{Id}|{Level}";
+            public const bool IsAddingAllowed = true;
+
+            [SortOrder(-1)]
+            [IsReadOnly]
+            [DisplayName("X")]
+            public string Delete => "X";
 
             protected ushort Id_raw;
             public const string Id_displayName = "Id";
             public const int Id_sortIndex = 50;
             [SortOrder(Id_sortIndex)]
             [DisplayName(Id_displayName)]
+            [DataSource(DataSourceType.Skills)]
             [IsReadOnly]
             public virtual ushort Id {
                 get => Id_raw;
@@ -114,8 +121,14 @@ namespace MHW_Editor.Structs.Skills {
                     Id_raw = value;
                     ChangedItems.Add(nameof(Id));
                     OnPropertyChanged(nameof(Id));
+                    OnPropertyChanged(nameof(Id_button));
                 }
             }
+
+            [SortOrder(Id_sortIndex)]
+            [DisplayName(Id_displayName)]
+            [CustomSorter(typeof(ButtonSorter))]
+            public string Id_button => DataHelper.skillNames[MainWindow.locale].TryGet(Id).ToStringWithId(Id);
 
             protected byte Level_raw;
             public const string Level_displayName = "Level";

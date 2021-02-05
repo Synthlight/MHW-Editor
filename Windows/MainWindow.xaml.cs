@@ -62,7 +62,6 @@ namespace MHW_Editor.Windows {
                 foreach (var item in fileData.GetAllEnumerableOfType<IOnPropertyChanged>()) {
                     item.OnPropertyChanged("Name",
                                            nameof(SkillDat.Entries.Description),
-                                           nameof(SkillDat.Entries.Name_And_Id),
                                            nameof(MusicSkill.Entries.Song_And_Id),
                                            nameof(Opst.Entries.ArmorBodyName),
                                            nameof(Opst.Entries.ArmorHeadName));
@@ -89,8 +88,7 @@ namespace MHW_Editor.Windows {
             set {
                 showIdBeforeName = value;
                 foreach (var item in fileData.GetAllEnumerableOfType<IOnPropertyChanged>()) {
-                    item.OnPropertyChanged(nameof(SkillDat.Entries.Name_And_Id),
-                                           nameof(MusicSkill.Entries.Song_And_Id));
+                    item.OnPropertyChanged(nameof(MusicSkill.Entries.Song_And_Id));
 
                     item.OnPropertyChanged(ButtonTypeInfo.BUTTON_NAMES);
                 }

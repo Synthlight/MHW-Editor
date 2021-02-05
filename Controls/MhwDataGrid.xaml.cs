@@ -20,7 +20,6 @@ using MHW_Editor.Models;
 using MHW_Editor.Structs.Armors;
 using MHW_Editor.Structs.Gems;
 using MHW_Editor.Structs.Items;
-using MHW_Editor.Structs.Skills;
 using MHW_Editor.Structs.Weapons;
 using MHW_Editor.Windows;
 using MHW_Template;
@@ -140,9 +139,6 @@ namespace MHW_Editor.Controls {
                 case nameof(Melee.Entries.GMD_Name_Index):
                 case nameof(Melee.Entries.GMD_Description_Index):
                     e.Cancel = true; // Internal.
-                    break;
-                case nameof(SkillDat.Entries.Id):
-                    e.Cancel = mainWindow.targetFileType.Is(typeof(SkillDat));
                     break;
                 case "Index":
                     e.Cancel = mainWindow.targetFileType.Is(typeof(AwakenedExp),
@@ -455,7 +451,7 @@ namespace MHW_Editor.Controls {
             var dataSourceType = ((DataSourceAttribute) property.GetCustomAttribute(typeof(DataSourceAttribute), true))?.dataType;
             var isReadOnly     = (IsReadOnlyAttribute) property.GetCustomAttribute(typeof(IsReadOnlyAttribute), true) != null;
 
-            if (isReadOnly) return false;
+            if (isReadOnly && !mainWindow.unlockFields) return false;
 
             dynamic dataSource = dataSourceType switch {
                 DataSourceType.Items => DataHelper.itemNames[MainWindow.locale],

@@ -348,6 +348,7 @@ namespace MHW_Editor {
                 "Tranq_Rel_Spd",
             }},
             {typeof(MHW_Editor.Structs.Skills.SkillDat.Entries), new List<string> {
+                "Id",
                 "Unlock_Skill_1",
                 "Unlock_Skill_2",
                 "Unlock_Skill_3",
