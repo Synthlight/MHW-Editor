@@ -3486,18 +3486,18 @@ namespace MHW_Editor.Structs.Weapons {
                     }
                 }
 
-                protected float Unk_5_raw;
-                public const string Unk_5_displayName = "Unk 5";
-                public const int Unk_5_sortIndex = 650;
-                [SortOrder(Unk_5_sortIndex)]
-                [DisplayName(Unk_5_displayName)]
-                public virtual float Unk_5 {
-                    get => Unk_5_raw;
+                protected float Standard_Poison_raw;
+                public const string Standard_Poison_displayName = "Standard Poison";
+                public const int Standard_Poison_sortIndex = 650;
+                [SortOrder(Standard_Poison_sortIndex)]
+                [DisplayName(Standard_Poison_displayName)]
+                public virtual float Standard_Poison {
+                    get => Standard_Poison_raw;
                     set {
-                        if (Unk_5_raw == value) return;
-                        Unk_5_raw = value;
-                        ChangedItems.Add(nameof(Unk_5));
-                        OnPropertyChanged(nameof(Unk_5));
+                        if (Standard_Poison_raw == value) return;
+                        Standard_Poison_raw = value;
+                        ChangedItems.Add(nameof(Standard_Poison));
+                        OnPropertyChanged(nameof(Standard_Poison));
                     }
                 }
 
@@ -4037,7 +4037,7 @@ namespace MHW_Editor.Structs.Weapons {
                     data.Element_Id_raw = reader.ReadUInt32();
                     data.Unk_4_raw = reader.ReadUInt32();
                     data.Element_Dmg_raw = reader.ReadSingle();
-                    data.Unk_5_raw = reader.ReadSingle();
+                    data.Standard_Poison_raw = reader.ReadSingle();
                     data.Deadly_Poison_raw = reader.ReadSingle();
                     data.Paralysis_raw = reader.ReadSingle();
                     data.Sleep_raw = reader.ReadSingle();
@@ -4088,7 +4088,7 @@ namespace MHW_Editor.Structs.Weapons {
                     writer.Write(Element_Id_raw);
                     writer.Write(Unk_4_raw);
                     writer.Write(Element_Dmg_raw);
-                    writer.Write(Unk_5_raw);
+                    writer.Write(Standard_Poison_raw);
                     writer.Write(Deadly_Poison_raw);
                     writer.Write(Paralysis_raw);
                     writer.Write(Sleep_raw);

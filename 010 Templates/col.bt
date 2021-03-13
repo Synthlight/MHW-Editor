@@ -243,7 +243,7 @@ typedef struct {
         uint Element_Id<name="Element Id (uint)">;
         uint Unk_4<name="Unk 4 (uint)">;
         float Element_Dmg<name="Element Dmg (float)">;
-        float Unk_5<name="Unk 5 (float)">;
+        float Standard_Poison<name="Standard Poison (float)">;
         float Deadly_Poison<name="Deadly Poison (float)">;
         float Paralysis<name="Paralysis (float)">;
         float Sleep<name="Sleep (float)">;
