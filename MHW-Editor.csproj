@@ -509,6 +509,7 @@
     <None Include="Assets\EditorData\FileSizeMap.json" />
     <None Include="Assets\EditorData\GemItemIds.json" />
     <None Include="Assets\EditorData\GoodChunkMap.json" />
+    <None Include="Assets\EditorData\ItemRarityById.json" />
     <None Include="Assets\EditorData\PalicoArmorBodyLookupByModelId.json" />
     <None Include="Assets\EditorData\PalicoArmorHeadLookupByModelId.json" />
     <None Include="Assets\EditorData\Translations.json" />

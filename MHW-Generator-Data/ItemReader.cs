@@ -16,5 +16,20 @@ namespace MHW_Generator_Data {
                 }
             }
         }
+
+        public static Dictionary<uint, byte> GetItemRarityByIds() {
+            // ReSharper disable once StringLiteralTypo
+            const string targetFile = @"V:\MHW\IB\chunk_combined\common\item\itemData.itm";
+
+            var values = new Dictionary<uint, byte>();
+
+            foreach (var item in Item.LoadData(targetFile).GetSingleStructList()) {
+                var itemId = item.Id;
+                var rarity = item.Rarity;
+                values[itemId] = rarity;
+            }
+
+            return values;
+        }
     }
 }

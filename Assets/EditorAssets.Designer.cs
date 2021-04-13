@@ -153,6 +153,16 @@ namespace MHW_Editor.Assets {
         /// <summary>
         ///   Looks up a localized resource of type System.Byte[].
         /// </summary>
+        internal static byte[] ItemRarityById {
+            get {
+                object obj = ResourceManager.GetObject("ItemRarityById", resourceCulture);
+                return ((byte[])(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Byte[].
+        /// </summary>
         internal static byte[] PalicoArmorBodyLookupByModelId {
             get {
                 object obj = ResourceManager.GetObject("PalicoArmorBodyLookupByModelId", resourceCulture);

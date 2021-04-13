@@ -55,6 +55,7 @@ namespace MHW_Editor.Assets {
         public static readonly LangMap                            palicoArmorHeadLookupByModelId;
         public static readonly Dictionary<EquipmentType, LangMap> equipmentIdNameLookup = new Dictionary<EquipmentType, LangMap>();
         public static readonly List<uint>                         gemItemIds;
+        public static readonly Dictionary<uint, byte>             itemRarityById;
 
         public static readonly Dictionary<string, Dictionary<string, List<string>>> BAD_FILE_HASH_MAP;
         public static readonly Dictionary<string, string>                           GOOD_CHUNK_MAP;
@@ -81,7 +82,8 @@ namespace MHW_Editor.Assets {
 
             MergeEquipmentIdLookups();
 
-            gemItemIds = LoadList<uint>(EditorAssets.GemItemIds);
+            gemItemIds     = LoadList<uint>(EditorAssets.GemItemIds);
+            itemRarityById = LoadDict<uint, byte>(EditorAssets.ItemRarityById);
 
             foreach (var lang in Global.LANGUAGES) {
                 armorFileIndexNegNameLookup[lang][-1] = "None";
