@@ -1,8 +1,8 @@
 ﻿namespace MHW_Template.Armors {
     public enum ArmorSetType {
         Regular = 0,
-        Unknown = 1,
+        Full_Set = 1,
         Layered,
-        Full_Set
+        Full_Set_Layered
     }
 }
