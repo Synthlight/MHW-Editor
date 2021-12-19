@@ -56,7 +56,7 @@ namespace MHW_Generator.Weapons {
                     new MhwMultiStructData.Entry("Foresight Slash Super Armor Time on Successful Evasion", typeof(float)),
                     new MhwMultiStructData.Entry($"Unk {unkIndex += 2}", typeof(float)),
                     new MhwMultiStructData.Entry("Iai Move Speed (Higher Value Make Skill Faster)", typeof(float)),
-                    new MhwMultiStructData.Entry("Iai Sheathe Time", typeof(float)),
+                    new MhwMultiStructData.Entry("Iai Sheathed Time", typeof(float)),
                     new MhwMultiStructData.Entry("Iai Super Armor on Successful Counter", typeof(float)),
                     new MhwMultiStructData.Entry("Iai Spirit Slash Second Hit Part Damage on Successful Counter", typeof(float)),
                     new MhwMultiStructData.Entry("Iai Spirit Slash Second Hit Time Delay", typeof(float))

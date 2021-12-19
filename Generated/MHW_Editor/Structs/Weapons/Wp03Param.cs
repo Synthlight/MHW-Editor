@@ -3533,23 +3533,23 @@ namespace MHW_Editor.Structs.Weapons {
             [DisplayName("Offset")]
             public long Iai_Move_Speed_Higher_Value_Make_Skill_Faster__offset { get; private set; }
 
-            protected float Iai_Sheathe_Time_raw;
-            public const string Iai_Sheathe_Time_displayName = "Iai Sheathe Time";
-            public const int Iai_Sheathe_Time_sortIndex = 2200;
-            [SortOrder(Iai_Sheathe_Time_sortIndex)]
-            [DisplayName(Iai_Sheathe_Time_displayName)]
-            public virtual float Iai_Sheathe_Time {
-                get => Iai_Sheathe_Time_raw;
+            protected float Iai_Sheathed_Time_raw;
+            public const string Iai_Sheathed_Time_displayName = "Iai Sheathed Time";
+            public const int Iai_Sheathed_Time_sortIndex = 2200;
+            [SortOrder(Iai_Sheathed_Time_sortIndex)]
+            [DisplayName(Iai_Sheathed_Time_displayName)]
+            public virtual float Iai_Sheathed_Time {
+                get => Iai_Sheathed_Time_raw;
                 set {
-                    if (Iai_Sheathe_Time_raw == value) return;
-                    Iai_Sheathe_Time_raw = value;
-                    ChangedItems.Add(nameof(Iai_Sheathe_Time));
-                    OnPropertyChanged(nameof(Iai_Sheathe_Time));
+                    if (Iai_Sheathed_Time_raw == value) return;
+                    Iai_Sheathed_Time_raw = value;
+                    ChangedItems.Add(nameof(Iai_Sheathed_Time));
+                    OnPropertyChanged(nameof(Iai_Sheathed_Time));
                 }
             }
 
             [DisplayName("Offset")]
-            public long Iai_Sheathe_Time_offset { get; private set; }
+            public long Iai_Sheathed_Time_offset { get; private set; }
 
             protected float Iai_Super_Armor_on_Successful_Counter_raw;
             public const string Iai_Super_Armor_on_Successful_Counter_displayName = "Iai Super Armor on Successful Counter";
@@ -3705,8 +3705,8 @@ namespace MHW_Editor.Structs.Weapons {
                 data.Unk_132_raw = reader.ReadSingle();
                 data.Iai_Move_Speed_Higher_Value_Make_Skill_Faster__offset = reader.BaseStream.Position;
                 data.Iai_Move_Speed_Higher_Value_Make_Skill_Faster__raw = reader.ReadSingle();
-                data.Iai_Sheathe_Time_offset = reader.BaseStream.Position;
-                data.Iai_Sheathe_Time_raw = reader.ReadSingle();
+                data.Iai_Sheathed_Time_offset = reader.BaseStream.Position;
+                data.Iai_Sheathed_Time_raw = reader.ReadSingle();
                 data.Iai_Super_Armor_on_Successful_Counter_offset = reader.BaseStream.Position;
                 data.Iai_Super_Armor_on_Successful_Counter_raw = reader.ReadSingle();
                 data.Iai_Spirit_Slash_Second_Hit_Part_Damage_on_Successful_Counter_offset = reader.BaseStream.Position;
@@ -3760,7 +3760,7 @@ namespace MHW_Editor.Structs.Weapons {
                 writer.Write(Foresight_Slash_Super_Armor_Time_on_Successful_Evasion_raw);
                 writer.Write(Unk_132_raw);
                 writer.Write(Iai_Move_Speed_Higher_Value_Make_Skill_Faster__raw);
-                writer.Write(Iai_Sheathe_Time_raw);
+                writer.Write(Iai_Sheathed_Time_raw);
                 writer.Write(Iai_Super_Armor_on_Successful_Counter_raw);
                 writer.Write(Iai_Spirit_Slash_Second_Hit_Part_Damage_on_Successful_Counter_raw);
                 writer.Write(Iai_Spirit_Slash_Second_Hit_Time_Delay_raw);
@@ -3811,7 +3811,7 @@ namespace MHW_Editor.Structs.Weapons {
                     new MultiStructItemCustomView(this, "Foresight Slash Super Armor Time on Successful Evasion", "Foresight_Slash_Super_Armor_Time_on_Successful_Evasion", "Foresight_Slash_Super_Armor_Time_on_Successful_Evasion_offset"),
                     new MultiStructItemCustomView(this, "Unk 132", "Unk_132", "Unk_132_offset"),
                     new MultiStructItemCustomView(this, "Iai Move Speed (Higher Value Make Skill Faster)", "Iai_Move_Speed_Higher_Value_Make_Skill_Faster_", "Iai_Move_Speed_Higher_Value_Make_Skill_Faster__offset"),
-                    new MultiStructItemCustomView(this, "Iai Sheathe Time", "Iai_Sheathe_Time", "Iai_Sheathe_Time_offset"),
+                    new MultiStructItemCustomView(this, "Iai Sheathed Time", "Iai_Sheathed_Time", "Iai_Sheathed_Time_offset"),
                     new MultiStructItemCustomView(this, "Iai Super Armor on Successful Counter", "Iai_Super_Armor_on_Successful_Counter", "Iai_Super_Armor_on_Successful_Counter_offset"),
                     new MultiStructItemCustomView(this, "Iai Spirit Slash Second Hit Part Damage on Successful Counter", "Iai_Spirit_Slash_Second_Hit_Part_Damage_on_Successful_Counter", "Iai_Spirit_Slash_Second_Hit_Part_Damage_on_Successful_Counter_offset"),
                     new MultiStructItemCustomView(this, "Iai Spirit Slash Second Hit Time Delay", "Iai_Spirit_Slash_Second_Hit_Time_Delay", "Iai_Spirit_Slash_Second_Hit_Time_Delay_offset"),
