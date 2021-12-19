@@ -99,6 +99,12 @@ namespace MHW_Editor.Structs.Items {
         public partial class Entries : MhwStructItem, IWriteData {
             public const ulong FixedSizeCount = 0;
             public const string GridName = "Entries";
+            public const bool IsAddingAllowed = true;
+
+            [SortOrder(-1)]
+            [IsReadOnly]
+            [DisplayName("X")]
+            public string Delete => "X";
 
             protected int Type_raw;
             public const string Type_displayName = "Type";

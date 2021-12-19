@@ -16,7 +16,7 @@ namespace MHW_Generator.Items {
                     new MhwMultiStructData.Entry("Quantity", typeof(uint)),
                     new MhwMultiStructData.Entry("Chance %", typeof(ulong)),
                     new MhwMultiStructData.Entry("Rarity", typeof(uint), enumReturn: typeof(SteamRarity))
-                }, _010Link: new MhwMultiStructData.ArrayLink(header, itemCount))
+                }, canAddRows: true, _010Link: new MhwMultiStructData.ArrayLink(header, itemCount))
             };
 
             return new MultiStruct("Items", "SteamRewardList", new MhwMultiStructData(structs, "srl"));
