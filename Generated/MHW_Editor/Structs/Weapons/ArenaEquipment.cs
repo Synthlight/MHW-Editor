@@ -364,18 +364,33 @@ namespace MHW_Editor.Structs.Weapons {
             [DisplayName(Armor_Level_displayName)]
             public virtual ObservableCollection<Armor_Level> Armor_Level_raw { get; protected set; }
 
-            protected ushort Unk_1_raw;
-            public const string Unk_1_displayName = "Unk 1";
-            public const int Unk_1_sortIndex = 400;
-            [SortOrder(Unk_1_sortIndex)]
-            [DisplayName(Unk_1_displayName)]
-            public virtual ushort Unk_1 {
-                get => Unk_1_raw;
+            protected byte Mantle_1_Upgraded__raw;
+            public const string Mantle_1_Upgraded__displayName = "Mantle 1 Upgraded?";
+            public const int Mantle_1_Upgraded__sortIndex = 400;
+            [SortOrder(Mantle_1_Upgraded__sortIndex)]
+            [DisplayName(Mantle_1_Upgraded__displayName)]
+            public virtual MHW_Template.Items.MantleUpgrades Mantle_1_Upgraded_ {
+                get => (MHW_Template.Items.MantleUpgrades) Mantle_1_Upgraded__raw;
                 set {
-                    if (Unk_1_raw == value) return;
-                    Unk_1_raw = value;
-                    ChangedItems.Add(nameof(Unk_1));
-                    OnPropertyChanged(nameof(Unk_1));
+                    if ((MHW_Template.Items.MantleUpgrades) Mantle_1_Upgraded__raw == value) return;
+                    Mantle_1_Upgraded__raw = (byte) value;
+                    ChangedItems.Add(nameof(Mantle_1_Upgraded_));
+                    OnPropertyChanged(nameof(Mantle_1_Upgraded_));
+                }
+            }
+
+            protected byte Mantle_2_Upgraded__raw;
+            public const string Mantle_2_Upgraded__displayName = "Mantle 2 Upgraded?";
+            public const int Mantle_2_Upgraded__sortIndex = 450;
+            [SortOrder(Mantle_2_Upgraded__sortIndex)]
+            [DisplayName(Mantle_2_Upgraded__displayName)]
+            public virtual MHW_Template.Items.MantleUpgrades Mantle_2_Upgraded_ {
+                get => (MHW_Template.Items.MantleUpgrades) Mantle_2_Upgraded__raw;
+                set {
+                    if ((MHW_Template.Items.MantleUpgrades) Mantle_2_Upgraded__raw == value) return;
+                    Mantle_2_Upgraded__raw = (byte) value;
+                    ChangedItems.Add(nameof(Mantle_2_Upgraded_));
+                    OnPropertyChanged(nameof(Mantle_2_Upgraded_));
                 }
             }
 
@@ -477,44 +492,44 @@ namespace MHW_Editor.Structs.Weapons {
             }
 
             public const string Decorations_displayName = "Decorations";
-            public const int Decorations_sortIndex = 450;
+            public const int Decorations_sortIndex = 500;
             [SortOrder(Decorations_sortIndex)]
             [DisplayName(Decorations_displayName)]
             public virtual ObservableCollection<Decorations> Decorations_raw { get; protected set; }
 
-            protected uint Unk_2_raw;
-            public const string Unk_2_displayName = "Unk 2";
-            public const int Unk_2_sortIndex = 500;
-            [SortOrder(Unk_2_sortIndex)]
-            [DisplayName(Unk_2_displayName)]
-            public virtual uint Unk_2 {
-                get => Unk_2_raw;
+            protected uint Kinsect_Id_for_IG_raw;
+            public const string Kinsect_Id_for_IG_displayName = "Kinsect Id for IG";
+            public const int Kinsect_Id_for_IG_sortIndex = 550;
+            [SortOrder(Kinsect_Id_for_IG_sortIndex)]
+            [DisplayName(Kinsect_Id_for_IG_displayName)]
+            public virtual uint Kinsect_Id_for_IG {
+                get => Kinsect_Id_for_IG_raw;
                 set {
-                    if (Unk_2_raw == value) return;
-                    Unk_2_raw = value;
-                    ChangedItems.Add(nameof(Unk_2));
-                    OnPropertyChanged(nameof(Unk_2));
+                    if (Kinsect_Id_for_IG_raw == value) return;
+                    Kinsect_Id_for_IG_raw = value;
+                    ChangedItems.Add(nameof(Kinsect_Id_for_IG));
+                    OnPropertyChanged(nameof(Kinsect_Id_for_IG));
                 }
             }
 
-            protected uint Unk_3_raw;
-            public const string Unk_3_displayName = "Unk 3";
-            public const int Unk_3_sortIndex = 550;
-            [SortOrder(Unk_3_sortIndex)]
-            [DisplayName(Unk_3_displayName)]
-            public virtual uint Unk_3 {
-                get => Unk_3_raw;
+            protected uint Kinsect_Lvl_for_IG_raw;
+            public const string Kinsect_Lvl_for_IG_displayName = "Kinsect Lvl for IG";
+            public const int Kinsect_Lvl_for_IG_sortIndex = 600;
+            [SortOrder(Kinsect_Lvl_for_IG_sortIndex)]
+            [DisplayName(Kinsect_Lvl_for_IG_displayName)]
+            public virtual uint Kinsect_Lvl_for_IG {
+                get => Kinsect_Lvl_for_IG_raw;
                 set {
-                    if (Unk_3_raw == value) return;
-                    Unk_3_raw = value;
-                    ChangedItems.Add(nameof(Unk_3));
-                    OnPropertyChanged(nameof(Unk_3));
+                    if (Kinsect_Lvl_for_IG_raw == value) return;
+                    Kinsect_Lvl_for_IG_raw = value;
+                    ChangedItems.Add(nameof(Kinsect_Lvl_for_IG));
+                    OnPropertyChanged(nameof(Kinsect_Lvl_for_IG));
                 }
             }
 
             protected uint Unk_4_raw;
             public const string Unk_4_displayName = "Unk 4";
-            public const int Unk_4_sortIndex = 600;
+            public const int Unk_4_sortIndex = 650;
             [SortOrder(Unk_4_sortIndex)]
             [DisplayName(Unk_4_displayName)]
             public virtual uint Unk_4 {
@@ -529,7 +544,7 @@ namespace MHW_Editor.Structs.Weapons {
 
             protected uint Unk_5_raw;
             public const string Unk_5_displayName = "Unk 5";
-            public const int Unk_5_sortIndex = 650;
+            public const int Unk_5_sortIndex = 700;
             [SortOrder(Unk_5_sortIndex)]
             [DisplayName(Unk_5_displayName)]
             public virtual uint Unk_5 {
@@ -544,7 +559,7 @@ namespace MHW_Editor.Structs.Weapons {
 
             protected uint Unk_6_raw;
             public const string Unk_6_displayName = "Unk 6";
-            public const int Unk_6_sortIndex = 700;
+            public const int Unk_6_sortIndex = 750;
             [SortOrder(Unk_6_sortIndex)]
             [DisplayName(Unk_6_displayName)]
             public virtual uint Unk_6 {
@@ -557,33 +572,123 @@ namespace MHW_Editor.Structs.Weapons {
                 }
             }
 
-            protected uint Unk_7_raw;
-            public const string Unk_7_displayName = "Unk 7";
-            public const int Unk_7_sortIndex = 750;
-            [SortOrder(Unk_7_sortIndex)]
-            [DisplayName(Unk_7_displayName)]
-            public virtual uint Unk_7 {
-                get => Unk_7_raw;
+            protected byte Augment_Augment_Slot_raw;
+            public const string Augment_Augment_Slot_displayName = "Augment: Augment Slot";
+            public const int Augment_Augment_Slot_sortIndex = 800;
+            [SortOrder(Augment_Augment_Slot_sortIndex)]
+            [DisplayName(Augment_Augment_Slot_displayName)]
+            public virtual MHW_Template.Items.AugmentSlotAugment Augment_Augment_Slot {
+                get => (MHW_Template.Items.AugmentSlotAugment) Augment_Augment_Slot_raw;
                 set {
-                    if (Unk_7_raw == value) return;
-                    Unk_7_raw = value;
-                    ChangedItems.Add(nameof(Unk_7));
-                    OnPropertyChanged(nameof(Unk_7));
+                    if ((MHW_Template.Items.AugmentSlotAugment) Augment_Augment_Slot_raw == value) return;
+                    Augment_Augment_Slot_raw = (byte) value;
+                    ChangedItems.Add(nameof(Augment_Augment_Slot));
+                    OnPropertyChanged(nameof(Augment_Augment_Slot));
                 }
             }
 
-            protected uint Unk_8_raw;
-            public const string Unk_8_displayName = "Unk 8";
-            public const int Unk_8_sortIndex = 800;
-            [SortOrder(Unk_8_sortIndex)]
-            [DisplayName(Unk_8_displayName)]
-            public virtual uint Unk_8 {
-                get => Unk_8_raw;
+            protected byte Augment_Attack_raw;
+            public const string Augment_Attack_displayName = "Augment: Attack";
+            public const int Augment_Attack_sortIndex = 850;
+            [SortOrder(Augment_Attack_sortIndex)]
+            [DisplayName(Augment_Attack_displayName)]
+            public virtual MHW_Template.Items.AttackAugment Augment_Attack {
+                get => (MHW_Template.Items.AttackAugment) Augment_Attack_raw;
                 set {
-                    if (Unk_8_raw == value) return;
-                    Unk_8_raw = value;
-                    ChangedItems.Add(nameof(Unk_8));
-                    OnPropertyChanged(nameof(Unk_8));
+                    if ((MHW_Template.Items.AttackAugment) Augment_Attack_raw == value) return;
+                    Augment_Attack_raw = (byte) value;
+                    ChangedItems.Add(nameof(Augment_Attack));
+                    OnPropertyChanged(nameof(Augment_Attack));
+                }
+            }
+
+            protected byte Augment_Affinity_raw;
+            public const string Augment_Affinity_displayName = "Augment: Affinity";
+            public const int Augment_Affinity_sortIndex = 900;
+            [SortOrder(Augment_Affinity_sortIndex)]
+            [DisplayName(Augment_Affinity_displayName)]
+            public virtual MHW_Template.Items.AffinityAugment Augment_Affinity {
+                get => (MHW_Template.Items.AffinityAugment) Augment_Affinity_raw;
+                set {
+                    if ((MHW_Template.Items.AffinityAugment) Augment_Affinity_raw == value) return;
+                    Augment_Affinity_raw = (byte) value;
+                    ChangedItems.Add(nameof(Augment_Affinity));
+                    OnPropertyChanged(nameof(Augment_Affinity));
+                }
+            }
+
+            protected byte Augment_Defense_raw;
+            public const string Augment_Defense_displayName = "Augment: Defense";
+            public const int Augment_Defense_sortIndex = 950;
+            [SortOrder(Augment_Defense_sortIndex)]
+            [DisplayName(Augment_Defense_displayName)]
+            public virtual MHW_Template.Items.DefenseAugment Augment_Defense {
+                get => (MHW_Template.Items.DefenseAugment) Augment_Defense_raw;
+                set {
+                    if ((MHW_Template.Items.DefenseAugment) Augment_Defense_raw == value) return;
+                    Augment_Defense_raw = (byte) value;
+                    ChangedItems.Add(nameof(Augment_Defense));
+                    OnPropertyChanged(nameof(Augment_Defense));
+                }
+            }
+
+            protected byte Augment_Deco_Slot_raw;
+            public const string Augment_Deco_Slot_displayName = "Augment: Deco Slot";
+            public const int Augment_Deco_Slot_sortIndex = 1000;
+            [SortOrder(Augment_Deco_Slot_sortIndex)]
+            [DisplayName(Augment_Deco_Slot_displayName)]
+            public virtual MHW_Template.Items.DecoSlotAugment Augment_Deco_Slot {
+                get => (MHW_Template.Items.DecoSlotAugment) Augment_Deco_Slot_raw;
+                set {
+                    if ((MHW_Template.Items.DecoSlotAugment) Augment_Deco_Slot_raw == value) return;
+                    Augment_Deco_Slot_raw = (byte) value;
+                    ChangedItems.Add(nameof(Augment_Deco_Slot));
+                    OnPropertyChanged(nameof(Augment_Deco_Slot));
+                }
+            }
+
+            protected byte Augment_Health_raw;
+            public const string Augment_Health_displayName = "Augment: Health";
+            public const int Augment_Health_sortIndex = 1050;
+            [SortOrder(Augment_Health_sortIndex)]
+            [DisplayName(Augment_Health_displayName)]
+            public virtual MHW_Template.Items.HealthAugment Augment_Health {
+                get => (MHW_Template.Items.HealthAugment) Augment_Health_raw;
+                set {
+                    if ((MHW_Template.Items.HealthAugment) Augment_Health_raw == value) return;
+                    Augment_Health_raw = (byte) value;
+                    ChangedItems.Add(nameof(Augment_Health));
+                    OnPropertyChanged(nameof(Augment_Health));
+                }
+            }
+
+            protected byte Augment_Element_Status_raw;
+            public const string Augment_Element_Status_displayName = "Augment: Element/Status";
+            public const int Augment_Element_Status_sortIndex = 1100;
+            [SortOrder(Augment_Element_Status_sortIndex)]
+            [DisplayName(Augment_Element_Status_displayName)]
+            public virtual MHW_Template.Items.ElementAugment Augment_Element_Status {
+                get => (MHW_Template.Items.ElementAugment) Augment_Element_Status_raw;
+                set {
+                    if ((MHW_Template.Items.ElementAugment) Augment_Element_Status_raw == value) return;
+                    Augment_Element_Status_raw = (byte) value;
+                    ChangedItems.Add(nameof(Augment_Element_Status));
+                    OnPropertyChanged(nameof(Augment_Element_Status));
+                }
+            }
+
+            protected byte Unk_raw;
+            public const string Unk_displayName = "Unk";
+            public const int Unk_sortIndex = 1150;
+            [SortOrder(Unk_sortIndex)]
+            [DisplayName(Unk_displayName)]
+            public virtual byte Unk {
+                get => Unk_raw;
+                set {
+                    if (Unk_raw == value) return;
+                    Unk_raw = value;
+                    ChangedItems.Add(nameof(Unk));
+                    OnPropertyChanged(nameof(Unk));
                 }
             }
 
@@ -654,7 +759,7 @@ namespace MHW_Editor.Structs.Weapons {
             }
 
             public const string Items_displayName = "Items";
-            public const int Items_sortIndex = 850;
+            public const int Items_sortIndex = 1200;
             [SortOrder(Items_sortIndex)]
             [DisplayName(Items_displayName)]
             public virtual ObservableCollection<Items> Items_raw { get; protected set; }
@@ -726,12 +831,12 @@ namespace MHW_Editor.Structs.Weapons {
             }
 
             public const string Ammo_displayName = "Ammo";
-            public const int Ammo_sortIndex = 900;
+            public const int Ammo_sortIndex = 1250;
             [SortOrder(Ammo_sortIndex)]
             [DisplayName(Ammo_displayName)]
             public virtual ObservableCollection<Ammo> Ammo_raw { get; protected set; }
 
-            public const int lastSortIndex = 950;
+            public const int lastSortIndex = 1300;
 
             public IEnumerable<F> GetAllEnumerableChildrenOfType<F>() {
                 if (typeof(Custom_Mods).Is(typeof(F)) || typeof(Custom_Mods).IsGeneric(typeof(F))) {
@@ -791,15 +896,22 @@ namespace MHW_Editor.Structs.Weapons {
                 data.Armors_raw = Armors.LoadData(reader, data);
                 data.Mantles_raw = Mantles.LoadData(reader, data);
                 data.Armor_Level_raw = Armor_Level.LoadData(reader, data);
-                data.Unk_1_raw = reader.ReadUInt16();
+                data.Mantle_1_Upgraded__raw = reader.ReadByte();
+                data.Mantle_2_Upgraded__raw = reader.ReadByte();
                 data.Decorations_raw = Decorations.LoadData(reader, data);
-                data.Unk_2_raw = reader.ReadUInt32();
-                data.Unk_3_raw = reader.ReadUInt32();
+                data.Kinsect_Id_for_IG_raw = reader.ReadUInt32();
+                data.Kinsect_Lvl_for_IG_raw = reader.ReadUInt32();
                 data.Unk_4_raw = reader.ReadUInt32();
                 data.Unk_5_raw = reader.ReadUInt32();
                 data.Unk_6_raw = reader.ReadUInt32();
-                data.Unk_7_raw = reader.ReadUInt32();
-                data.Unk_8_raw = reader.ReadUInt32();
+                data.Augment_Augment_Slot_raw = reader.ReadByte();
+                data.Augment_Attack_raw = reader.ReadByte();
+                data.Augment_Affinity_raw = reader.ReadByte();
+                data.Augment_Defense_raw = reader.ReadByte();
+                data.Augment_Deco_Slot_raw = reader.ReadByte();
+                data.Augment_Health_raw = reader.ReadByte();
+                data.Augment_Element_Status_raw = reader.ReadByte();
+                data.Unk_raw = reader.ReadByte();
                 data.Items_raw = Items.LoadData(reader, data);
                 data.Ammo_raw = Ammo.LoadData(reader, data);
                 return data;
@@ -821,17 +933,24 @@ namespace MHW_Editor.Structs.Weapons {
                 foreach (var obj in Armor_Level_raw) {
                     obj.WriteData(writer, this);
                 }
-                writer.Write(Unk_1_raw);
+                writer.Write(Mantle_1_Upgraded__raw);
+                writer.Write(Mantle_2_Upgraded__raw);
                 foreach (var obj in Decorations_raw) {
                     obj.WriteData(writer, this);
                 }
-                writer.Write(Unk_2_raw);
-                writer.Write(Unk_3_raw);
+                writer.Write(Kinsect_Id_for_IG_raw);
+                writer.Write(Kinsect_Lvl_for_IG_raw);
                 writer.Write(Unk_4_raw);
                 writer.Write(Unk_5_raw);
                 writer.Write(Unk_6_raw);
-                writer.Write(Unk_7_raw);
-                writer.Write(Unk_8_raw);
+                writer.Write(Augment_Augment_Slot_raw);
+                writer.Write(Augment_Attack_raw);
+                writer.Write(Augment_Affinity_raw);
+                writer.Write(Augment_Defense_raw);
+                writer.Write(Augment_Deco_Slot_raw);
+                writer.Write(Augment_Health_raw);
+                writer.Write(Augment_Element_Status_raw);
+                writer.Write(Unk_raw);
                 foreach (var obj in Items_raw) {
                     obj.WriteData(writer, this);
                 }

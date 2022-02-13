@@ -1,6 +1,7 @@
 ﻿using System.Collections.Generic;
 using MHW_Generator.Models;
 using MHW_Template;
+using MHW_Template.Items;
 using MHW_Template.Models;
 using MHW_Template.Struct_Generation;
 using MHW_Template.Weapons;
@@ -36,7 +37,8 @@ namespace MHW_Generator.Weapons {
                         new MhwMultiStructData.Entry("Armor Lvl", typeof(uint))
                     }, 5)),
 
-                    new MhwMultiStructData.Entry("Unk 1", typeof(ushort)),
+                    new MhwMultiStructData.Entry("Mantle 1 Upgraded?", typeof(byte), enumReturn: typeof(MantleUpgrades)),
+                    new MhwMultiStructData.Entry("Mantle 2 Upgraded?", typeof(byte), enumReturn: typeof(MantleUpgrades)),
 
                     new MhwMultiStructData.Entry("Decorations", typeof(void), subStruct: new MhwMultiStructData.StructData("Decorations", new List<MhwMultiStructData.Entry> {
                         new MhwMultiStructData.Entry("Deco 1", typeof(uint), dataSourceType: DataSourceType.Items),
@@ -44,13 +46,19 @@ namespace MHW_Generator.Weapons {
                         new MhwMultiStructData.Entry("Deco 3", typeof(uint), dataSourceType: DataSourceType.Items)
                     }, 9)),
 
-                    new MhwMultiStructData.Entry("Unk 2", typeof(uint)), // Kinsect Id for IG.
-                    new MhwMultiStructData.Entry("Unk 3", typeof(uint)), // Kinsect Lvl for IG.
+                    new MhwMultiStructData.Entry("Kinsect Id for IG", typeof(uint)),
+                    new MhwMultiStructData.Entry("Kinsect Lvl for IG", typeof(uint)),
                     new MhwMultiStructData.Entry("Unk 4", typeof(uint)),
                     new MhwMultiStructData.Entry("Unk 5", typeof(uint)),
                     new MhwMultiStructData.Entry("Unk 6", typeof(uint)),
-                    new MhwMultiStructData.Entry("Unk 7", typeof(uint)),
-                    new MhwMultiStructData.Entry("Unk 8", typeof(uint)),
+                    new MhwMultiStructData.Entry("Augment: Augment Slot", typeof(byte), enumReturn: typeof(AugmentSlotAugment)),
+                    new MhwMultiStructData.Entry("Augment: Attack", typeof(byte), enumReturn: typeof(AttackAugment)),
+                    new MhwMultiStructData.Entry("Augment: Affinity", typeof(byte), enumReturn: typeof(AffinityAugment)),
+                    new MhwMultiStructData.Entry("Augment: Defense", typeof(byte), enumReturn: typeof(DefenseAugment)),
+                    new MhwMultiStructData.Entry("Augment: Deco Slot", typeof(byte), enumReturn: typeof(DecoSlotAugment)),
+                    new MhwMultiStructData.Entry("Augment: Health", typeof(byte), enumReturn: typeof(HealthAugment)),
+                    new MhwMultiStructData.Entry("Augment: Element/Status", typeof(byte), enumReturn: typeof(ElementAugment)),
+                    new MhwMultiStructData.Entry("Unk", typeof(byte)),
 
                     new MhwMultiStructData.Entry("Items", typeof(void), subStruct: new MhwMultiStructData.StructData("Items", new List<MhwMultiStructData.Entry> {
                         new MhwMultiStructData.Entry("Item Id", typeof(uint), dataSourceType: DataSourceType.Items),

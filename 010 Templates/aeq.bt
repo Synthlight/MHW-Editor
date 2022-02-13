@@ -47,7 +47,8 @@ typedef struct {
     } Armor_Level;
 
     Armor_Level Armor_Level_[5]<optimize=false, name="Armor Level">;
-    ushort Unk_1<name="Unk 1 (ushort)">;
+    ubyte Mantle_1_Upgraded_<name="Mantle 1 Upgraded? (ubyte)">;
+    ubyte Mantle_2_Upgraded_<name="Mantle 2 Upgraded? (ubyte)">;
 
     // Decorations
     typedef struct {
@@ -57,13 +58,19 @@ typedef struct {
     } Decorations;
 
     Decorations Decorations_[9]<optimize=false, name="Decorations">;
-    uint Unk_2<name="Unk 2 (uint)">;
-    uint Unk_3<name="Unk 3 (uint)">;
+    uint Kinsect_Id_for_IG<name="Kinsect Id for IG (uint)">;
+    uint Kinsect_Lvl_for_IG<name="Kinsect Lvl for IG (uint)">;
     uint Unk_4<name="Unk 4 (uint)">;
     uint Unk_5<name="Unk 5 (uint)">;
     uint Unk_6<name="Unk 6 (uint)">;
-    uint Unk_7<name="Unk 7 (uint)">;
-    uint Unk_8<name="Unk 8 (uint)">;
+    ubyte Augment_Augment_Slot<name="Augment: Augment Slot (ubyte)">;
+    ubyte Augment_Attack<name="Augment: Attack (ubyte)">;
+    ubyte Augment_Affinity<name="Augment: Affinity (ubyte)">;
+    ubyte Augment_Defense<name="Augment: Defense (ubyte)">;
+    ubyte Augment_Deco_Slot<name="Augment: Deco Slot (ubyte)">;
+    ubyte Augment_Health<name="Augment: Health (ubyte)">;
+    ubyte Augment_Element_Status<name="Augment: Element/Status (ubyte)">;
+    ubyte Unk<name="Unk (ubyte)">;
 
     // Items
     typedef struct {
