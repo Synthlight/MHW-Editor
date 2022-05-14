@@ -18,7 +18,7 @@ Header Header_<name="Header">;
 typedef struct {
     uint Entry_Index<name="Entry Index (uint)">;
     uint Recipe_ID<name="Recipe ID (uint)">;
-    int Internal_ID<name="Internal ID (int)">;
+    int Series_Name<name="Series Name (int)">;
     uint Unk4<name="Unk4 (uint)">;
     int Weapon_ID<name="Weapon ID (int)">;
     int Parts_Base<name="Parts Base (int)">;

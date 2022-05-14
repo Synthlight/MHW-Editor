@@ -130,18 +130,18 @@ namespace MHW_Editor.Structs.Weapons {
                 }
             }
 
-            protected int Internal_ID_raw;
-            public const string Internal_ID_displayName = "Internal ID";
-            public const int Internal_ID_sortIndex = 150;
-            [SortOrder(Internal_ID_sortIndex)]
-            [DisplayName(Internal_ID_displayName)]
-            public virtual int Internal_ID {
-                get => Internal_ID_raw;
+            protected int Series_Name_raw;
+            public const string Series_Name_displayName = "Series Name";
+            public const int Series_Name_sortIndex = 150;
+            [SortOrder(Series_Name_sortIndex)]
+            [DisplayName(Series_Name_displayName)]
+            public virtual int Series_Name {
+                get => Series_Name_raw;
                 set {
-                    if (Internal_ID_raw == value) return;
-                    Internal_ID_raw = value;
-                    ChangedItems.Add(nameof(Internal_ID));
-                    OnPropertyChanged(nameof(Internal_ID));
+                    if (Series_Name_raw == value) return;
+                    Series_Name_raw = value;
+                    ChangedItems.Add(nameof(Series_Name));
+                    OnPropertyChanged(nameof(Series_Name));
                 }
             }
 
@@ -282,7 +282,7 @@ namespace MHW_Editor.Structs.Weapons {
                 data.Index = i;
                 data.Entry_Index_raw = reader.ReadUInt32();
                 data.Recipe_ID_raw = reader.ReadUInt32();
-                data.Internal_ID_raw = reader.ReadInt32();
+                data.Series_Name_raw = reader.ReadInt32();
                 data.Unk4_raw = reader.ReadUInt32();
                 data.Weapon_ID_raw = reader.ReadInt32();
                 data.Parts_Base_raw = reader.ReadInt32();
@@ -297,7 +297,7 @@ namespace MHW_Editor.Structs.Weapons {
             public void WriteData(BinaryWriter writer) {
                 writer.Write(Entry_Index_raw);
                 writer.Write(Recipe_ID_raw);
-                writer.Write(Internal_ID_raw);
+                writer.Write(Series_Name_raw);
                 writer.Write(Unk4_raw);
                 writer.Write(Weapon_ID_raw);
                 writer.Write(Parts_Base_raw);

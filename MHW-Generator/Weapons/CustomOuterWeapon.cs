@@ -12,7 +12,7 @@ namespace MHW_Generator.Weapons {
                 new MhwMultiStructData.StructData("Entries", new List<MhwMultiStructData.Entry> {
                     new MhwMultiStructData.Entry("Entry Index", typeof(uint)),
                     new MhwMultiStructData.Entry("Recipe ID", typeof(uint)),
-                    new MhwMultiStructData.Entry("Internal ID", typeof(int)),
+                    new MhwMultiStructData.Entry("Series Name", typeof(int)),
                     new MhwMultiStructData.Entry("Unk4", typeof(uint)),
                     new MhwMultiStructData.Entry("Weapon ID", typeof(int)),
                     new MhwMultiStructData.Entry("Parts Base", typeof(int)),
