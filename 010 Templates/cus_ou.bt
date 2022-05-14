@@ -16,16 +16,15 @@ Header Header_<name="Header">;
 
 // Entries
 typedef struct {
-    uint Unk1<name="Unk1 (uint)">;
-    uint Unk2<name="Unk2 (uint)">;
-    int Unk3<name="Unk3 (int)">;
+    uint Entry_Index<name="Entry Index (uint)">;
+    uint Recipe_ID<name="Recipe ID (uint)">;
+    int Internal_ID<name="Internal ID (int)">;
     uint Unk4<name="Unk4 (uint)">;
-    int Unk5<name="Unk5 (int)">;
-    int Unk6<name="Unk6 (int)">;
-    int Unk7<name="Unk7 (int)">;
-    short Unk8<name="Unk8 (short)">;
-    short Unk9<name="Unk9 (short)">;
-    short Unk10<name="Unk10 (short)">;
+    int Weapon_ID<name="Weapon ID (int)">;
+    int Parts_Base<name="Parts Base (int)">;
+    int Parts_Decoration<name="Parts Decoration (int)">;
+    int Unique_Model<name="Unique Model (int)">;
+    short Bowgun_Data_Flag<name="Bowgun Data Flag (short)">;
     uint Unk11<name="Unk11 (uint)">;
     ubyte Unk12<name="Unk12 (ubyte)">;
 } Entries;

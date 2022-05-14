@@ -100,48 +100,48 @@ namespace MHW_Editor.Structs.Weapons {
             public const ulong FixedSizeCount = 0;
             public const string GridName = "Entries";
 
-            protected uint Unk1_raw;
-            public const string Unk1_displayName = "Unk1";
-            public const int Unk1_sortIndex = 50;
-            [SortOrder(Unk1_sortIndex)]
-            [DisplayName(Unk1_displayName)]
-            public virtual uint Unk1 {
-                get => Unk1_raw;
+            protected uint Entry_Index_raw;
+            public const string Entry_Index_displayName = "Entry Index";
+            public const int Entry_Index_sortIndex = 50;
+            [SortOrder(Entry_Index_sortIndex)]
+            [DisplayName(Entry_Index_displayName)]
+            public virtual uint Entry_Index {
+                get => Entry_Index_raw;
                 set {
-                    if (Unk1_raw == value) return;
-                    Unk1_raw = value;
-                    ChangedItems.Add(nameof(Unk1));
-                    OnPropertyChanged(nameof(Unk1));
+                    if (Entry_Index_raw == value) return;
+                    Entry_Index_raw = value;
+                    ChangedItems.Add(nameof(Entry_Index));
+                    OnPropertyChanged(nameof(Entry_Index));
                 }
             }
 
-            protected uint Unk2_raw;
-            public const string Unk2_displayName = "Unk2";
-            public const int Unk2_sortIndex = 100;
-            [SortOrder(Unk2_sortIndex)]
-            [DisplayName(Unk2_displayName)]
-            public virtual uint Unk2 {
-                get => Unk2_raw;
+            protected uint Recipe_ID_raw;
+            public const string Recipe_ID_displayName = "Recipe ID";
+            public const int Recipe_ID_sortIndex = 100;
+            [SortOrder(Recipe_ID_sortIndex)]
+            [DisplayName(Recipe_ID_displayName)]
+            public virtual uint Recipe_ID {
+                get => Recipe_ID_raw;
                 set {
-                    if (Unk2_raw == value) return;
-                    Unk2_raw = value;
-                    ChangedItems.Add(nameof(Unk2));
-                    OnPropertyChanged(nameof(Unk2));
+                    if (Recipe_ID_raw == value) return;
+                    Recipe_ID_raw = value;
+                    ChangedItems.Add(nameof(Recipe_ID));
+                    OnPropertyChanged(nameof(Recipe_ID));
                 }
             }
 
-            protected int Unk3_raw;
-            public const string Unk3_displayName = "Unk3";
-            public const int Unk3_sortIndex = 150;
-            [SortOrder(Unk3_sortIndex)]
-            [DisplayName(Unk3_displayName)]
-            public virtual int Unk3 {
-                get => Unk3_raw;
+            protected int Internal_ID_raw;
+            public const string Internal_ID_displayName = "Internal ID";
+            public const int Internal_ID_sortIndex = 150;
+            [SortOrder(Internal_ID_sortIndex)]
+            [DisplayName(Internal_ID_displayName)]
+            public virtual int Internal_ID {
+                get => Internal_ID_raw;
                 set {
-                    if (Unk3_raw == value) return;
-                    Unk3_raw = value;
-                    ChangedItems.Add(nameof(Unk3));
-                    OnPropertyChanged(nameof(Unk3));
+                    if (Internal_ID_raw == value) return;
+                    Internal_ID_raw = value;
+                    ChangedItems.Add(nameof(Internal_ID));
+                    OnPropertyChanged(nameof(Internal_ID));
                 }
             }
 
@@ -160,99 +160,84 @@ namespace MHW_Editor.Structs.Weapons {
                 }
             }
 
-            protected int Unk5_raw;
-            public const string Unk5_displayName = "Unk5";
-            public const int Unk5_sortIndex = 250;
-            [SortOrder(Unk5_sortIndex)]
-            [DisplayName(Unk5_displayName)]
-            public virtual int Unk5 {
-                get => Unk5_raw;
+            protected int Weapon_ID_raw;
+            public const string Weapon_ID_displayName = "Weapon ID";
+            public const int Weapon_ID_sortIndex = 250;
+            [SortOrder(Weapon_ID_sortIndex)]
+            [DisplayName(Weapon_ID_displayName)]
+            public virtual int Weapon_ID {
+                get => Weapon_ID_raw;
                 set {
-                    if (Unk5_raw == value) return;
-                    Unk5_raw = value;
-                    ChangedItems.Add(nameof(Unk5));
-                    OnPropertyChanged(nameof(Unk5));
+                    if (Weapon_ID_raw == value) return;
+                    Weapon_ID_raw = value;
+                    ChangedItems.Add(nameof(Weapon_ID));
+                    OnPropertyChanged(nameof(Weapon_ID));
                 }
             }
 
-            protected int Unk6_raw;
-            public const string Unk6_displayName = "Unk6";
-            public const int Unk6_sortIndex = 300;
-            [SortOrder(Unk6_sortIndex)]
-            [DisplayName(Unk6_displayName)]
-            public virtual int Unk6 {
-                get => Unk6_raw;
+            protected int Parts_Base_raw;
+            public const string Parts_Base_displayName = "Parts Base";
+            public const int Parts_Base_sortIndex = 300;
+            [SortOrder(Parts_Base_sortIndex)]
+            [DisplayName(Parts_Base_displayName)]
+            public virtual int Parts_Base {
+                get => Parts_Base_raw;
                 set {
-                    if (Unk6_raw == value) return;
-                    Unk6_raw = value;
-                    ChangedItems.Add(nameof(Unk6));
-                    OnPropertyChanged(nameof(Unk6));
+                    if (Parts_Base_raw == value) return;
+                    Parts_Base_raw = value;
+                    ChangedItems.Add(nameof(Parts_Base));
+                    OnPropertyChanged(nameof(Parts_Base));
                 }
             }
 
-            protected int Unk7_raw;
-            public const string Unk7_displayName = "Unk7";
-            public const int Unk7_sortIndex = 350;
-            [SortOrder(Unk7_sortIndex)]
-            [DisplayName(Unk7_displayName)]
-            public virtual int Unk7 {
-                get => Unk7_raw;
+            protected int Parts_Decoration_raw;
+            public const string Parts_Decoration_displayName = "Parts Decoration";
+            public const int Parts_Decoration_sortIndex = 350;
+            [SortOrder(Parts_Decoration_sortIndex)]
+            [DisplayName(Parts_Decoration_displayName)]
+            public virtual int Parts_Decoration {
+                get => Parts_Decoration_raw;
                 set {
-                    if (Unk7_raw == value) return;
-                    Unk7_raw = value;
-                    ChangedItems.Add(nameof(Unk7));
-                    OnPropertyChanged(nameof(Unk7));
+                    if (Parts_Decoration_raw == value) return;
+                    Parts_Decoration_raw = value;
+                    ChangedItems.Add(nameof(Parts_Decoration));
+                    OnPropertyChanged(nameof(Parts_Decoration));
                 }
             }
 
-            protected short Unk8_raw;
-            public const string Unk8_displayName = "Unk8";
-            public const int Unk8_sortIndex = 400;
-            [SortOrder(Unk8_sortIndex)]
-            [DisplayName(Unk8_displayName)]
-            public virtual short Unk8 {
-                get => Unk8_raw;
+            protected int Unique_Model_raw;
+            public const string Unique_Model_displayName = "Unique Model";
+            public const int Unique_Model_sortIndex = 400;
+            [SortOrder(Unique_Model_sortIndex)]
+            [DisplayName(Unique_Model_displayName)]
+            public virtual int Unique_Model {
+                get => Unique_Model_raw;
                 set {
-                    if (Unk8_raw == value) return;
-                    Unk8_raw = value;
-                    ChangedItems.Add(nameof(Unk8));
-                    OnPropertyChanged(nameof(Unk8));
+                    if (Unique_Model_raw == value) return;
+                    Unique_Model_raw = value;
+                    ChangedItems.Add(nameof(Unique_Model));
+                    OnPropertyChanged(nameof(Unique_Model));
                 }
             }
 
-            protected short Unk9_raw;
-            public const string Unk9_displayName = "Unk9";
-            public const int Unk9_sortIndex = 450;
-            [SortOrder(Unk9_sortIndex)]
-            [DisplayName(Unk9_displayName)]
-            public virtual short Unk9 {
-                get => Unk9_raw;
+            protected short Bowgun_Data_Flag_raw;
+            public const string Bowgun_Data_Flag_displayName = "Bowgun Data Flag";
+            public const int Bowgun_Data_Flag_sortIndex = 450;
+            [SortOrder(Bowgun_Data_Flag_sortIndex)]
+            [DisplayName(Bowgun_Data_Flag_displayName)]
+            public virtual short Bowgun_Data_Flag {
+                get => Bowgun_Data_Flag_raw;
                 set {
-                    if (Unk9_raw == value) return;
-                    Unk9_raw = value;
-                    ChangedItems.Add(nameof(Unk9));
-                    OnPropertyChanged(nameof(Unk9));
-                }
-            }
-
-            protected short Unk10_raw;
-            public const string Unk10_displayName = "Unk10";
-            public const int Unk10_sortIndex = 500;
-            [SortOrder(Unk10_sortIndex)]
-            [DisplayName(Unk10_displayName)]
-            public virtual short Unk10 {
-                get => Unk10_raw;
-                set {
-                    if (Unk10_raw == value) return;
-                    Unk10_raw = value;
-                    ChangedItems.Add(nameof(Unk10));
-                    OnPropertyChanged(nameof(Unk10));
+                    if (Bowgun_Data_Flag_raw == value) return;
+                    Bowgun_Data_Flag_raw = value;
+                    ChangedItems.Add(nameof(Bowgun_Data_Flag));
+                    OnPropertyChanged(nameof(Bowgun_Data_Flag));
                 }
             }
 
             protected uint Unk11_raw;
             public const string Unk11_displayName = "Unk11";
-            public const int Unk11_sortIndex = 550;
+            public const int Unk11_sortIndex = 500;
             [SortOrder(Unk11_sortIndex)]
             [DisplayName(Unk11_displayName)]
             public virtual uint Unk11 {
@@ -267,7 +252,7 @@ namespace MHW_Editor.Structs.Weapons {
 
             protected byte Unk12_raw;
             public const string Unk12_displayName = "Unk12";
-            public const int Unk12_sortIndex = 600;
+            public const int Unk12_sortIndex = 550;
             [SortOrder(Unk12_sortIndex)]
             [DisplayName(Unk12_displayName)]
             public virtual byte Unk12 {
@@ -280,7 +265,7 @@ namespace MHW_Editor.Structs.Weapons {
                 }
             }
 
-            public const int lastSortIndex = 650;
+            public const int lastSortIndex = 600;
 
             public static ObservableMhwStructCollection<Entries> LoadData(BinaryReader reader, ObservableMhwStructCollection<Header> lastStruct) {
                 var list = new ObservableMhwStructCollection<Entries>();
@@ -295,32 +280,30 @@ namespace MHW_Editor.Structs.Weapons {
             public static Entries LoadData(BinaryReader reader, ulong i) {
                 var data = new Entries();
                 data.Index = i;
-                data.Unk1_raw = reader.ReadUInt32();
-                data.Unk2_raw = reader.ReadUInt32();
-                data.Unk3_raw = reader.ReadInt32();
+                data.Entry_Index_raw = reader.ReadUInt32();
+                data.Recipe_ID_raw = reader.ReadUInt32();
+                data.Internal_ID_raw = reader.ReadInt32();
                 data.Unk4_raw = reader.ReadUInt32();
-                data.Unk5_raw = reader.ReadInt32();
-                data.Unk6_raw = reader.ReadInt32();
-                data.Unk7_raw = reader.ReadInt32();
-                data.Unk8_raw = reader.ReadInt16();
-                data.Unk9_raw = reader.ReadInt16();
-                data.Unk10_raw = reader.ReadInt16();
+                data.Weapon_ID_raw = reader.ReadInt32();
+                data.Parts_Base_raw = reader.ReadInt32();
+                data.Parts_Decoration_raw = reader.ReadInt32();
+                data.Unique_Model_raw = reader.ReadInt32();
+                data.Bowgun_Data_Flag_raw = reader.ReadInt16();
                 data.Unk11_raw = reader.ReadUInt32();
                 data.Unk12_raw = reader.ReadByte();
                 return data;
             }
 
             public void WriteData(BinaryWriter writer) {
-                writer.Write(Unk1_raw);
-                writer.Write(Unk2_raw);
-                writer.Write(Unk3_raw);
+                writer.Write(Entry_Index_raw);
+                writer.Write(Recipe_ID_raw);
+                writer.Write(Internal_ID_raw);
                 writer.Write(Unk4_raw);
-                writer.Write(Unk5_raw);
-                writer.Write(Unk6_raw);
-                writer.Write(Unk7_raw);
-                writer.Write(Unk8_raw);
-                writer.Write(Unk9_raw);
-                writer.Write(Unk10_raw);
+                writer.Write(Weapon_ID_raw);
+                writer.Write(Parts_Base_raw);
+                writer.Write(Parts_Decoration_raw);
+                writer.Write(Unique_Model_raw);
+                writer.Write(Bowgun_Data_Flag_raw);
                 writer.Write(Unk11_raw);
                 writer.Write(Unk12_raw);
             }
