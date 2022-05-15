@@ -259,20 +259,8 @@ namespace MHW_Editor.Windows {
             fileData = (IMhwMultiStructFile) loadData.Invoke(null, new object[] {targetFile});
 
             switch (fileData) {
-                case Collision col:
-                    col.Init(targetFile);
-                    break;
-                case GcData gcData:
-                    gcData.Init(targetFile);
-                    break;
-                case Melee melee:
-                    melee.Init(targetFile);
-                    break;
-                case Ranged ranged:
-                    ranged.Init(targetFile);
-                    break;
-                case ItemLottery itemLottery:
-                    itemLottery.Init(targetFile);
+                case ITargetFile obj:
+                    obj.Init(targetFile);
                     break;
                 case SkillDat skillDat:
                     FillSkillDatDictionary(skillDat.GetSingleStructList());

@@ -8,7 +8,7 @@ using MHW_Template;
 using MHW_Template.Weapons;
 
 namespace MHW_Editor.Structs.Weapons {
-    public partial class Ranged : MhwSingleStructFile<Ranged, Ranged.Entries> {
+    public partial class Ranged : MhwSingleStructFile<Ranged, Ranged.Entries>, ITargetFile {
         public void Init(string targetFile) {
             var target = Path.GetFileNameWithoutExtension(targetFile);
             foreach (var entry in GetSingleStructList()) {

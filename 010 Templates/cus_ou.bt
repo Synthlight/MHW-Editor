@@ -16,9 +16,9 @@ Header Header_<name="Header">;
 
 // Entries
 typedef struct {
-    uint Entry_Index<name="Entry Index (uint)">;
+    uint Unused<name="Unused (uint)">;
     uint Recipe_ID<name="Recipe ID (uint)">;
-    int Series_Name<name="Series Name (int)">;
+    int Sort_Order<name="Sort Order (int)">;
     uint Unk4<name="Unk4 (uint)">;
     int Weapon_ID<name="Weapon ID (int)">;
     int Parts_Base<name="Parts Base (int)">;
@@ -26,7 +26,7 @@ typedef struct {
     int Unique_Model<name="Unique Model (int)">;
     short Bowgun_Data_Flag<name="Bowgun Data Flag (short)">;
     uint Unk11<name="Unk11 (uint)">;
-    ubyte Unk12<name="Unk12 (ubyte)">;
+    ubyte Padding<name="Padding (ubyte)">;
 } Entries;
 
 Entries Entries_[Header_.Entry_Count]<optimize=false, name="Entries">;

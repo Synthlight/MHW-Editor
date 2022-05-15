@@ -41,6 +41,7 @@ namespace MHW_Editor.Assets {
         public static readonly LangMap                     skillDescriptions             = new LangMap();
         public static readonly Dictionary<uint, string>    songNames                     = new Dictionary<uint, string>(); // Has no lang.
         public static readonly Dictionary<string, LangMap> weaponData                    = new Dictionary<string, LangMap>(); // Has wp file name too. Uses GMD reference.
+        public static readonly Dictionary<string, LangMap> weaponOuData                  = new Dictionary<string, LangMap>();
 
         public static readonly Dictionary<string, Dictionary<int, NameDescPair>> collisionTranslationsData;
         public static readonly Dictionary<string, Dictionary<string, string>>    translations;
@@ -110,6 +111,11 @@ namespace MHW_Editor.Assets {
                 weaponData[lang] = new LangMap();
                 foreach (var weapon in Global.WEAPONS) {
                     weaponData[lang][weapon] = LoadDict<uint, string>(GetAsset($"{lang}_{weapon}"));
+                }
+
+                weaponOuData[lang] = new LangMap();
+                foreach (var weapon in Global.WEAPONS) {
+                    weaponOuData[lang][weapon] = LoadDict<uint, string>(GetAsset($"ou_{lang}_{weapon}"));
                 }
 
                 gcBackgroundsGmd[lang] = LoadDict<uint, string>(GetAsset($"{lang}_backgroundData"));

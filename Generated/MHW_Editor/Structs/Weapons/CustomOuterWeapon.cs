@@ -99,19 +99,25 @@ namespace MHW_Editor.Structs.Weapons {
         public partial class Entries : MhwStructItem, IWriteData {
             public const ulong FixedSizeCount = 0;
             public const string GridName = "Entries";
+            public const bool IsAddingAllowed = true;
 
-            protected uint Entry_Index_raw;
-            public const string Entry_Index_displayName = "Entry Index";
-            public const int Entry_Index_sortIndex = 50;
-            [SortOrder(Entry_Index_sortIndex)]
-            [DisplayName(Entry_Index_displayName)]
-            public virtual uint Entry_Index {
-                get => Entry_Index_raw;
+            [SortOrder(-1)]
+            [IsReadOnly]
+            [DisplayName("X")]
+            public string Delete => "X";
+
+            protected uint Unused_raw;
+            public const string Unused_displayName = "Unused";
+            public const int Unused_sortIndex = 50;
+            [SortOrder(Unused_sortIndex)]
+            [DisplayName(Unused_displayName)]
+            public virtual uint Unused {
+                get => Unused_raw;
                 set {
-                    if (Entry_Index_raw == value) return;
-                    Entry_Index_raw = value;
-                    ChangedItems.Add(nameof(Entry_Index));
-                    OnPropertyChanged(nameof(Entry_Index));
+                    if (Unused_raw == value) return;
+                    Unused_raw = value;
+                    ChangedItems.Add(nameof(Unused));
+                    OnPropertyChanged(nameof(Unused));
                 }
             }
 
@@ -130,18 +136,18 @@ namespace MHW_Editor.Structs.Weapons {
                 }
             }
 
-            protected int Series_Name_raw;
-            public const string Series_Name_displayName = "Series Name";
-            public const int Series_Name_sortIndex = 150;
-            [SortOrder(Series_Name_sortIndex)]
-            [DisplayName(Series_Name_displayName)]
-            public virtual int Series_Name {
-                get => Series_Name_raw;
+            protected int Sort_Order_raw;
+            public const string Sort_Order_displayName = "Sort Order";
+            public const int Sort_Order_sortIndex = 150;
+            [SortOrder(Sort_Order_sortIndex)]
+            [DisplayName(Sort_Order_displayName)]
+            public virtual int Sort_Order {
+                get => Sort_Order_raw;
                 set {
-                    if (Series_Name_raw == value) return;
-                    Series_Name_raw = value;
-                    ChangedItems.Add(nameof(Series_Name));
-                    OnPropertyChanged(nameof(Series_Name));
+                    if (Sort_Order_raw == value) return;
+                    Sort_Order_raw = value;
+                    ChangedItems.Add(nameof(Sort_Order));
+                    OnPropertyChanged(nameof(Sort_Order));
                 }
             }
 
@@ -165,11 +171,11 @@ namespace MHW_Editor.Structs.Weapons {
             public const int Weapon_ID_sortIndex = 250;
             [SortOrder(Weapon_ID_sortIndex)]
             [DisplayName(Weapon_ID_displayName)]
-            public virtual int Weapon_ID {
-                get => Weapon_ID_raw;
+            public virtual MHW_Template.Weapons.WeaponType Weapon_ID {
+                get => (MHW_Template.Weapons.WeaponType) Weapon_ID_raw;
                 set {
-                    if (Weapon_ID_raw == value) return;
-                    Weapon_ID_raw = value;
+                    if ((MHW_Template.Weapons.WeaponType) Weapon_ID_raw == value) return;
+                    Weapon_ID_raw = (int) value;
                     ChangedItems.Add(nameof(Weapon_ID));
                     OnPropertyChanged(nameof(Weapon_ID));
                 }
@@ -250,18 +256,18 @@ namespace MHW_Editor.Structs.Weapons {
                 }
             }
 
-            protected byte Unk12_raw;
-            public const string Unk12_displayName = "Unk12";
-            public const int Unk12_sortIndex = 550;
-            [SortOrder(Unk12_sortIndex)]
-            [DisplayName(Unk12_displayName)]
-            public virtual byte Unk12 {
-                get => Unk12_raw;
+            protected byte Padding_raw;
+            public const string Padding_displayName = "Padding";
+            public const int Padding_sortIndex = 550;
+            [SortOrder(Padding_sortIndex)]
+            [DisplayName(Padding_displayName)]
+            public virtual byte Padding {
+                get => Padding_raw;
                 set {
-                    if (Unk12_raw == value) return;
-                    Unk12_raw = value;
-                    ChangedItems.Add(nameof(Unk12));
-                    OnPropertyChanged(nameof(Unk12));
+                    if (Padding_raw == value) return;
+                    Padding_raw = value;
+                    ChangedItems.Add(nameof(Padding));
+                    OnPropertyChanged(nameof(Padding));
                 }
             }
 
@@ -280,9 +286,9 @@ namespace MHW_Editor.Structs.Weapons {
             public static Entries LoadData(BinaryReader reader, ulong i) {
                 var data = new Entries();
                 data.Index = i;
-                data.Entry_Index_raw = reader.ReadUInt32();
+                data.Unused_raw = reader.ReadUInt32();
                 data.Recipe_ID_raw = reader.ReadUInt32();
-                data.Series_Name_raw = reader.ReadInt32();
+                data.Sort_Order_raw = reader.ReadInt32();
                 data.Unk4_raw = reader.ReadUInt32();
                 data.Weapon_ID_raw = reader.ReadInt32();
                 data.Parts_Base_raw = reader.ReadInt32();
@@ -290,14 +296,14 @@ namespace MHW_Editor.Structs.Weapons {
                 data.Unique_Model_raw = reader.ReadInt32();
                 data.Bowgun_Data_Flag_raw = reader.ReadInt16();
                 data.Unk11_raw = reader.ReadUInt32();
-                data.Unk12_raw = reader.ReadByte();
+                data.Padding_raw = reader.ReadByte();
                 return data;
             }
 
             public void WriteData(BinaryWriter writer) {
-                writer.Write(Entry_Index_raw);
+                writer.Write(Unused_raw);
                 writer.Write(Recipe_ID_raw);
-                writer.Write(Series_Name_raw);
+                writer.Write(Sort_Order_raw);
                 writer.Write(Unk4_raw);
                 writer.Write(Weapon_ID_raw);
                 writer.Write(Parts_Base_raw);
@@ -305,7 +311,7 @@ namespace MHW_Editor.Structs.Weapons {
                 writer.Write(Unique_Model_raw);
                 writer.Write(Bowgun_Data_Flag_raw);
                 writer.Write(Unk11_raw);
-                writer.Write(Unk12_raw);
+                writer.Write(Padding_raw);
             }
         }
 

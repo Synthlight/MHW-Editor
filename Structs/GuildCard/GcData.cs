@@ -6,7 +6,7 @@ using MHW_Editor.Windows;
 using MHW_Template;
 
 namespace MHW_Editor.Structs.GuildCard {
-    public partial class GcData : MhwSingleStructFile<GcData, GcData.Entries> {
+    public partial class GcData : MhwSingleStructFile<GcData, GcData.Entries>, ITargetFile {
         public void Init(string targetFile) {
             var target = Path.GetFileNameWithoutExtension(targetFile);
             foreach (var entry in GetSingleStructList()) {

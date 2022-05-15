@@ -8,7 +8,7 @@ using MHW_Editor.Models;
 using MHW_Template;
 
 namespace MHW_Editor.Structs.Weapons {
-    public partial class Collision : MhwMultiStructFile<Collision> {
+    public partial class Collision : MhwMultiStructFile<Collision>, ITargetFile {
         public void Init(string targetFile) {
             var nameList = GetStructList<Names>();
             foreach (var name in nameList) {

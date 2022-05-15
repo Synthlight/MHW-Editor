@@ -13,7 +13,7 @@ using MHW_Template.Items;
 using MHW_Template.Models;
 
 namespace MHW_Editor.Structs.Items {
-    public partial class ItemLottery : MhwMultiStructFile<ItemLottery> {
+    public partial class ItemLottery : MhwMultiStructFile<ItemLottery>, ITargetFile {
         public  ObservableCollection<ItemPools> mainEntries { get; private set; }
         private string                          targetFile;
 
