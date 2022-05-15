@@ -177,18 +177,18 @@ namespace MHW_Editor.Structs.Items {
                 }
             }
 
-            protected sbyte Unknown_sint8__raw;
-            public const string Unknown_sint8__displayName = "Unknown (sint8)";
-            public const int Unknown_sint8__sortIndex = 300;
-            [SortOrder(Unknown_sint8__sortIndex)]
-            [DisplayName(Unknown_sint8__displayName)]
-            public virtual sbyte Unknown_sint8_ {
-                get => Unknown_sint8__raw;
+            protected sbyte Carry_Limit_Non_IB__raw;
+            public const string Carry_Limit_Non_IB__displayName = "Carry Limit (Non-IB)";
+            public const int Carry_Limit_Non_IB__sortIndex = 300;
+            [SortOrder(Carry_Limit_Non_IB__sortIndex)]
+            [DisplayName(Carry_Limit_Non_IB__displayName)]
+            public virtual sbyte Carry_Limit_Non_IB_ {
+                get => Carry_Limit_Non_IB__raw;
                 set {
-                    if (Unknown_sint8__raw == value) return;
-                    Unknown_sint8__raw = value;
-                    ChangedItems.Add(nameof(Unknown_sint8_));
-                    OnPropertyChanged(nameof(Unknown_sint8_));
+                    if (Carry_Limit_Non_IB__raw == value) return;
+                    Carry_Limit_Non_IB__raw = value;
+                    ChangedItems.Add(nameof(Carry_Limit_Non_IB_));
+                    OnPropertyChanged(nameof(Carry_Limit_Non_IB_));
                 }
             }
 
@@ -302,7 +302,7 @@ namespace MHW_Editor.Structs.Items {
                 data.Type_raw = reader.ReadUInt32();
                 data.Rarity_raw = reader.ReadByte();
                 data.Carry_Limit_raw = reader.ReadSByte();
-                data.Unknown_sint8__raw = reader.ReadSByte();
+                data.Carry_Limit_Non_IB__raw = reader.ReadSByte();
                 data.Sort_Order_raw = reader.ReadUInt16();
                 data.Flags_Raw_raw = reader.ReadUInt32();
                 data.Icon_Id_raw = reader.ReadUInt32();
@@ -318,7 +318,7 @@ namespace MHW_Editor.Structs.Items {
                 writer.Write(Type_raw);
                 writer.Write(Rarity_raw);
                 writer.Write(Carry_Limit_raw);
-                writer.Write(Unknown_sint8__raw);
+                writer.Write(Carry_Limit_Non_IB__raw);
                 writer.Write(Sort_Order_raw);
                 writer.Write(Flags_Raw_raw);
                 writer.Write(Icon_Id_raw);
