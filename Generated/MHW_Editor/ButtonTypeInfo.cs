@@ -13,6 +13,7 @@ namespace MHW_Editor {
             "AwakenedLimitBreak",
             "Bounty",
             "CustomOuterRecipe",
+            "CustomOuterWeapon",
             "CustomPartsR",
             "DecoGradeLottery",
             "DecoLottery",
@@ -229,6 +230,9 @@ namespace MHW_Editor {
                 "Mat_2_Id",
                 "Mat_3_Id",
                 "Mat_4_Id",
+            }},
+            {typeof(MHW_Editor.Structs.Weapons.CustomOuterWeapon.Entries), new List<string> {
+                "Weapon_Id",
             }},
             {typeof(MHW_Editor.Structs.Weapons.CustomPartsR.Entries), new List<string> {
                 "Needed_Item_Id_to_Unlock",

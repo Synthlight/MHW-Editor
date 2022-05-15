@@ -4,6 +4,7 @@ using MHW_Editor.Assets;
 using MHW_Editor.Models;
 using MHW_Editor.Windows;
 using MHW_Template;
+using MHW_Template.Weapons;
 
 namespace MHW_Editor.Structs.Weapons {
     public partial class CustomOuterWeapon : MhwSingleStructFile<CustomOuterWeapon, CustomOuterWeapon.Entries>, ITargetFile {
@@ -14,7 +15,7 @@ namespace MHW_Editor.Structs.Weapons {
             }
         }
 
-        public partial class Entries {
+        public partial class Entries : IHasWeaponType {
             private string targetType;
 
             [SuppressMessage("ReSharper", "ParameterHidesMember")]
@@ -39,6 +40,10 @@ namespace MHW_Editor.Structs.Weapons {
             }
 
             public string Name => DataHelper.weaponOuData[MainWindow.locale][targetType].TryGet((uint) Index);
+
+            public WeaponType GetWeaponType() {
+                return Weapon_Type;
+            }
         }
     }
 }

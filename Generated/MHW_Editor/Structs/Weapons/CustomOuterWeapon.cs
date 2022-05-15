@@ -151,33 +151,41 @@ namespace MHW_Editor.Structs.Weapons {
                 }
             }
 
-            protected uint Unk4_raw;
-            public const string Unk4_displayName = "Unk4";
-            public const int Unk4_sortIndex = 200;
-            [SortOrder(Unk4_sortIndex)]
-            [DisplayName(Unk4_displayName)]
-            public virtual uint Unk4 {
-                get => Unk4_raw;
+            protected uint Weapon_Id_raw;
+            public const string Weapon_Id_displayName = "Weapon Id";
+            public const int Weapon_Id_sortIndex = 200;
+            [SortOrder(Weapon_Id_sortIndex)]
+            [DisplayName(Weapon_Id_displayName)]
+            [DataSource(DataSourceType.WeaponsById)]
+            public virtual uint Weapon_Id {
+                get => Weapon_Id_raw;
                 set {
-                    if (Unk4_raw == value) return;
-                    Unk4_raw = value;
-                    ChangedItems.Add(nameof(Unk4));
-                    OnPropertyChanged(nameof(Unk4));
+                    if (Weapon_Id_raw == value) return;
+                    Weapon_Id_raw = value;
+                    ChangedItems.Add(nameof(Weapon_Id));
+                    OnPropertyChanged(nameof(Weapon_Id));
+                    OnPropertyChanged(nameof(Weapon_Id_button));
                 }
             }
 
-            protected int Weapon_ID_raw;
-            public const string Weapon_ID_displayName = "Weapon ID";
-            public const int Weapon_ID_sortIndex = 250;
-            [SortOrder(Weapon_ID_sortIndex)]
-            [DisplayName(Weapon_ID_displayName)]
-            public virtual MHW_Template.Weapons.WeaponType Weapon_ID {
-                get => (MHW_Template.Weapons.WeaponType) Weapon_ID_raw;
+            [SortOrder(Weapon_Id_sortIndex)]
+            [DisplayName(Weapon_Id_displayName)]
+            [CustomSorter(typeof(ButtonSorter))]
+            public string Weapon_Id_button => DataHelper.weaponIdNameLookup[GetWeaponType()][MainWindow.locale].TryGet(Weapon_Id).ToStringWithId(Weapon_Id);
+
+            protected int Weapon_Type_raw;
+            public const string Weapon_Type_displayName = "Weapon Type";
+            public const int Weapon_Type_sortIndex = 250;
+            [SortOrder(Weapon_Type_sortIndex)]
+            [DisplayName(Weapon_Type_displayName)]
+            public virtual MHW_Template.Weapons.WeaponType Weapon_Type {
+                get => (MHW_Template.Weapons.WeaponType) Weapon_Type_raw;
                 set {
-                    if ((MHW_Template.Weapons.WeaponType) Weapon_ID_raw == value) return;
-                    Weapon_ID_raw = (int) value;
-                    ChangedItems.Add(nameof(Weapon_ID));
-                    OnPropertyChanged(nameof(Weapon_ID));
+                    if ((MHW_Template.Weapons.WeaponType) Weapon_Type_raw == value) return;
+                    Weapon_Type_raw = (int) value;
+                    ChangedItems.Add(nameof(Weapon_Type));
+                    OnPropertyChanged(nameof(Weapon_Type));
+                    OnPropertyChanged(nameof(Weapon_Id_button));
                 }
             }
 
@@ -241,18 +249,18 @@ namespace MHW_Editor.Structs.Weapons {
                 }
             }
 
-            protected uint Unk11_raw;
-            public const string Unk11_displayName = "Unk11";
-            public const int Unk11_sortIndex = 500;
-            [SortOrder(Unk11_sortIndex)]
-            [DisplayName(Unk11_displayName)]
-            public virtual uint Unk11 {
-                get => Unk11_raw;
+            protected uint Color_Id_raw;
+            public const string Color_Id_displayName = "Color Id";
+            public const int Color_Id_sortIndex = 500;
+            [SortOrder(Color_Id_sortIndex)]
+            [DisplayName(Color_Id_displayName)]
+            public virtual uint Color_Id {
+                get => Color_Id_raw;
                 set {
-                    if (Unk11_raw == value) return;
-                    Unk11_raw = value;
-                    ChangedItems.Add(nameof(Unk11));
-                    OnPropertyChanged(nameof(Unk11));
+                    if (Color_Id_raw == value) return;
+                    Color_Id_raw = value;
+                    ChangedItems.Add(nameof(Color_Id));
+                    OnPropertyChanged(nameof(Color_Id));
                 }
             }
 
@@ -289,13 +297,13 @@ namespace MHW_Editor.Structs.Weapons {
                 data.Unused_raw = reader.ReadUInt32();
                 data.Recipe_ID_raw = reader.ReadUInt32();
                 data.Sort_Order_raw = reader.ReadInt32();
-                data.Unk4_raw = reader.ReadUInt32();
-                data.Weapon_ID_raw = reader.ReadInt32();
+                data.Weapon_Id_raw = reader.ReadUInt32();
+                data.Weapon_Type_raw = reader.ReadInt32();
                 data.Parts_Base_raw = reader.ReadInt32();
                 data.Parts_Decoration_raw = reader.ReadInt32();
                 data.Unique_Model_raw = reader.ReadInt32();
                 data.Bowgun_Data_Flag_raw = reader.ReadInt16();
-                data.Unk11_raw = reader.ReadUInt32();
+                data.Color_Id_raw = reader.ReadUInt32();
                 data.Padding_raw = reader.ReadByte();
                 return data;
             }
@@ -304,13 +312,13 @@ namespace MHW_Editor.Structs.Weapons {
                 writer.Write(Unused_raw);
                 writer.Write(Recipe_ID_raw);
                 writer.Write(Sort_Order_raw);
-                writer.Write(Unk4_raw);
-                writer.Write(Weapon_ID_raw);
+                writer.Write(Weapon_Id_raw);
+                writer.Write(Weapon_Type_raw);
                 writer.Write(Parts_Base_raw);
                 writer.Write(Parts_Decoration_raw);
                 writer.Write(Unique_Model_raw);
                 writer.Write(Bowgun_Data_Flag_raw);
-                writer.Write(Unk11_raw);
+                writer.Write(Color_Id_raw);
                 writer.Write(Padding_raw);
             }
         }

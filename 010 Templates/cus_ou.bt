@@ -19,13 +19,13 @@ typedef struct {
     uint Unused<name="Unused (uint)">;
     uint Recipe_ID<name="Recipe ID (uint)">;
     int Sort_Order<name="Sort Order (int)">;
-    uint Unk4<name="Unk4 (uint)">;
-    int Weapon_ID<name="Weapon ID (int)">;
+    uint Weapon_Id<name="Weapon Id (uint)">;
+    int Weapon_Type<name="Weapon Type (int)">;
     int Parts_Base<name="Parts Base (int)">;
     int Parts_Decoration<name="Parts Decoration (int)">;
     int Unique_Model<name="Unique Model (int)">;
     short Bowgun_Data_Flag<name="Bowgun Data Flag (short)">;
-    uint Unk11<name="Unk11 (uint)">;
+    uint Color_Id<name="Color Id (uint)">;
     ubyte Padding<name="Padding (ubyte)">;
 } Entries;
 
