@@ -28,6 +28,7 @@ namespace MHW_Template.Models {
         GunnerRecoil,
         GunnerReload,
         MantleByIdNeg,
-        KinsectById
+        KinsectById,
+        ColorById
     }
 }

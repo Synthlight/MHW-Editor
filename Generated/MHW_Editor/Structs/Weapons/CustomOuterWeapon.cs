@@ -254,6 +254,7 @@ namespace MHW_Editor.Structs.Weapons {
             public const int Color_Id_sortIndex = 500;
             [SortOrder(Color_Id_sortIndex)]
             [DisplayName(Color_Id_displayName)]
+            [DataSource(DataSourceType.ColorById)]
             public virtual uint Color_Id {
                 get => Color_Id_raw;
                 set {
@@ -261,8 +262,14 @@ namespace MHW_Editor.Structs.Weapons {
                     Color_Id_raw = value;
                     ChangedItems.Add(nameof(Color_Id));
                     OnPropertyChanged(nameof(Color_Id));
+                    OnPropertyChanged(nameof(Color_Id_button));
                 }
             }
+
+            [SortOrder(Color_Id_sortIndex)]
+            [DisplayName(Color_Id_displayName)]
+            [CustomSorter(typeof(ButtonSorter))]
+            public string Color_Id_button => DataHelper.colorData.TryGet(Color_Id).ToStringWithId(Color_Id);
 
             protected byte Padding_raw;
             public const string Padding_displayName = "Padding";

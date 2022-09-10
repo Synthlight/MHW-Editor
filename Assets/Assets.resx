@@ -397,6 +397,9 @@
   <data name="chT_w_sword" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>weapondata\cht_w_sword.json;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
+  <data name="ColorLookup" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>editordata\colorlookup.json;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
   <data name="eng_armorData" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>armordata\eng_armordata.json;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>

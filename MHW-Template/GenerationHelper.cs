@@ -24,6 +24,7 @@ namespace MHW_Template {
                 DataSourceType.GunnerReload => "GunnerReload.reloadLookup",
                 DataSourceType.MantleByIdNeg => "DataHelper.mantleNamesNeg[MainWindow.locale]",
                 DataSourceType.KinsectById => "DataHelper.kinsectNames[MainWindow.locale]",
+                DataSourceType.ColorById => "DataHelper.colorData",
                 _ => throw new ArgumentOutOfRangeException()
             };
         }

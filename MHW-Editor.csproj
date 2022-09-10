@@ -488,6 +488,7 @@
     <None Include="Assets\BountyData\ptB_bountyData.json" />
     <None Include="Assets\BountyData\rus_bountyData.json" />
     <None Include="Assets\BountyData\spa_bountyData.json" />
+    <None Include="Assets\EditorData\ColorLookup.json" />
     <None Include="Assets\EditorData\CollisionTranslationsData.json" />
     <None Include="Assets\CustomPartsData\ara_customPartsData.json" />
     <None Include="Assets\CustomPartsData\chS_customPartsData.json" />

@@ -88,6 +88,7 @@ namespace MHW_Editor {
             "Cluster_2_Rel_Spd_button",
             "Cluster_3_Rec_Amnt_button",
             "Cluster_3_Rel_Spd_button",
+            "Color_Id_button",
             "Deco_1_button",
             "Deco_2_button",
             "Deco_3_button",
@@ -233,6 +234,7 @@ namespace MHW_Editor {
             }},
             {typeof(MHW_Editor.Structs.Weapons.CustomOuterWeapon.Entries), new List<string> {
                 "Weapon_Id",
+                "Color_Id",
             }},
             {typeof(MHW_Editor.Structs.Weapons.CustomPartsR.Entries), new List<string> {
                 "Needed_Item_Id_to_Unlock",

@@ -21,7 +21,7 @@ namespace MHW_Generator.Weapons {
                     new MhwMultiStructData.Entry("Parts Decoration", typeof(int)),
                     new MhwMultiStructData.Entry("Unique Model", typeof(int)),
                     new MhwMultiStructData.Entry("Bowgun Data Flag", typeof(short)),
-                    new MhwMultiStructData.Entry("Color Id", typeof(uint)),
+                    new MhwMultiStructData.Entry("Color Id", typeof(uint), dataSourceType: DataSourceType.ColorById),
                     new MhwMultiStructData.Entry("Padding", typeof(byte))
                 }, canAddRows: true, _010Link: new MhwMultiStructData.ArrayLink(header, itemCount))
             };

@@ -15,6 +15,7 @@ namespace MHW_Editor.Assets {
         public static readonly LangMap                     awakeningDescriptions         = new LangMap();
         public static readonly LangMap                     bountyNames                   = new LangMap();
         public static readonly LangMap                     bountyDescriptions            = new LangMap();
+        public static readonly Dictionary<uint, string>    colorData                     = new Dictionary<uint, string>();
         public static readonly LangMap                     customPartsNames              = new LangMap();
         public static readonly LangMap                     customPartsDescriptions       = new LangMap();
         public static readonly LangMap                     customPartsRecipeNames        = new LangMap();
@@ -85,6 +86,7 @@ namespace MHW_Editor.Assets {
 
             gemItemIds     = LoadList<uint>(EditorAssets.GemItemIds);
             itemRarityById = LoadDict<uint, byte>(EditorAssets.ItemRarityById);
+            colorData      = LoadDict<uint, string>(Assets.ColorLookup);
 
             foreach (var lang in Global.LANGUAGES) {
                 armorFileIndexNegNameLookup[lang][-1] = "None";
