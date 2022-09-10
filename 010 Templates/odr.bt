@@ -19,8 +19,8 @@ typedef struct {
     uint Id<name="Id (uint)">;
     uint Unk1<name="Unk1 (uint)">;
     ubyte Unk2<name="Unk2 (ubyte)">;
-    uint Unk3<name="Unk3 (uint)">;
-    uint Unk4<name="Unk4 (uint)">;
+    uint Unlock_Flag_1<name="Unlock Flag 1 (uint)">;
+    uint Unlock_Flag_2<name="Unlock Flag 2 (uint)">;
     int Unk5<name="Unk5 (int)">;
     uint Rank<name="Rank (uint)">;
     uint Type<name="Type (uint)">;

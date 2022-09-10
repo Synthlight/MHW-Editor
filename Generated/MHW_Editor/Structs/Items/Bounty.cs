@@ -147,33 +147,33 @@ namespace MHW_Editor.Structs.Items {
                 }
             }
 
-            protected uint Unk3_raw;
-            public const string Unk3_displayName = "Unk3";
-            public const int Unk3_sortIndex = 200;
-            [SortOrder(Unk3_sortIndex)]
-            [DisplayName(Unk3_displayName)]
-            public virtual uint Unk3 {
-                get => Unk3_raw;
+            protected uint Unlock_Flag_1_raw;
+            public const string Unlock_Flag_1_displayName = "Unlock Flag 1";
+            public const int Unlock_Flag_1_sortIndex = 200;
+            [SortOrder(Unlock_Flag_1_sortIndex)]
+            [DisplayName(Unlock_Flag_1_displayName)]
+            public virtual uint Unlock_Flag_1 {
+                get => Unlock_Flag_1_raw;
                 set {
-                    if (Unk3_raw == value) return;
-                    Unk3_raw = value;
-                    ChangedItems.Add(nameof(Unk3));
-                    OnPropertyChanged(nameof(Unk3));
+                    if (Unlock_Flag_1_raw == value) return;
+                    Unlock_Flag_1_raw = value;
+                    ChangedItems.Add(nameof(Unlock_Flag_1));
+                    OnPropertyChanged(nameof(Unlock_Flag_1));
                 }
             }
 
-            protected uint Unk4_raw;
-            public const string Unk4_displayName = "Unk4";
-            public const int Unk4_sortIndex = 250;
-            [SortOrder(Unk4_sortIndex)]
-            [DisplayName(Unk4_displayName)]
-            public virtual uint Unk4 {
-                get => Unk4_raw;
+            protected uint Unlock_Flag_2_raw;
+            public const string Unlock_Flag_2_displayName = "Unlock Flag 2";
+            public const int Unlock_Flag_2_sortIndex = 250;
+            [SortOrder(Unlock_Flag_2_sortIndex)]
+            [DisplayName(Unlock_Flag_2_displayName)]
+            public virtual uint Unlock_Flag_2 {
+                get => Unlock_Flag_2_raw;
                 set {
-                    if (Unk4_raw == value) return;
-                    Unk4_raw = value;
-                    ChangedItems.Add(nameof(Unk4));
-                    OnPropertyChanged(nameof(Unk4));
+                    if (Unlock_Flag_2_raw == value) return;
+                    Unlock_Flag_2_raw = value;
+                    ChangedItems.Add(nameof(Unlock_Flag_2));
+                    OnPropertyChanged(nameof(Unlock_Flag_2));
                 }
             }
 
@@ -441,8 +441,8 @@ namespace MHW_Editor.Structs.Items {
                 data.Id_raw = reader.ReadUInt32();
                 data.Unk1_raw = reader.ReadUInt32();
                 data.Unk2_raw = reader.ReadByte();
-                data.Unk3_raw = reader.ReadUInt32();
-                data.Unk4_raw = reader.ReadUInt32();
+                data.Unlock_Flag_1_raw = reader.ReadUInt32();
+                data.Unlock_Flag_2_raw = reader.ReadUInt32();
                 data.Unk5_raw = reader.ReadInt32();
                 data.Rank_raw = reader.ReadUInt32();
                 data.Type_raw = reader.ReadUInt32();
@@ -465,8 +465,8 @@ namespace MHW_Editor.Structs.Items {
                 writer.Write(Id_raw);
                 writer.Write(Unk1_raw);
                 writer.Write(Unk2_raw);
-                writer.Write(Unk3_raw);
-                writer.Write(Unk4_raw);
+                writer.Write(Unlock_Flag_1_raw);
+                writer.Write(Unlock_Flag_2_raw);
                 writer.Write(Unk5_raw);
                 writer.Write(Rank_raw);
                 writer.Write(Type_raw);
