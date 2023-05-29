@@ -214,9 +214,9 @@ namespace MHW_Generator.PlData {
                 new MhwMultiStructData.Entry("Hasten Recovery: Combo Duration", typeof(float)),
                 new MhwMultiStructData.Entry("Hasten Recovery: Combo Ignore Time", typeof(float)),
 
-                new MhwMultiStructData.Entry($"Unk{++i}", typeof(byte)),
-                new MhwMultiStructData.Entry($"Unk{++i}", typeof(float)),
-                new MhwMultiStructData.Entry($"Unk{++i}", typeof(float))
+                new MhwMultiStructData.Entry($"(True) Element Acceleration: Success Combo #", typeof(byte)),
+                new MhwMultiStructData.Entry($"(True) Element Acceleration: Combo Duration", typeof(float)),
+                new MhwMultiStructData.Entry($"(True) Element Acceleration: Combo Ignore Time)", typeof(float))
             });
 
             structs.AddRange(new List<MhwMultiStructData.StructData> {
