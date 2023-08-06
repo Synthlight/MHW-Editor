@@ -136,9 +136,11 @@ namespace MHW_Editor.Controls {
             switch (e.PropertyName) {
                 case nameof(IJsonItem.UniqueId):
                 case nameof(IJsonItem.ChangedItems):
+                    e.Cancel = true; // Internal.
+                    break;
                 case nameof(Melee.Entries.GMD_Name_Index):
                 case nameof(Melee.Entries.GMD_Description_Index):
-                    e.Cancel = true; // Internal.
+                    e.Cancel = !mainWindow.showHiddenFields; // Internal.
                     break;
                 case "Index":
                     e.Cancel = mainWindow.targetFileType.Is(typeof(AwakenedExp),

@@ -52,7 +52,8 @@ namespace MHW_Editor.Windows {
         private static ulong               targetFileLength;
         private        IMhwMultiStructFile fileData;
 
-        public bool unlockFields { get; }
+        public bool unlockFields     { get; }
+        public bool showHiddenFields { get; }
 
         public static string locale = "eng";
         public string Locale {
@@ -106,6 +107,12 @@ namespace MHW_Editor.Windows {
                 }
             }
 
+            if (args.Length >= 2) {
+                if (args.ContainsIgnoreCase("-showHiddenFields")) {
+                    showHiddenFields = true;
+                }
+            }
+
             if (args.Length >= 4) {
                 try {
                     if (args.ContainsIgnoreCase("-decrypt") || args.ContainsIgnoreCase("-encrypt")) {
@@ -130,13 +137,13 @@ namespace MHW_Editor.Windows {
                                 EncryptionHelper.Encrypt(key, inFile, outFile);
                                 break;
                         }
+
+                        Close();
+                        return;
                     }
                 } catch (Exception e) {
                     ShowError(e, "Error");
                 }
-
-                Close();
-                return;
             }
 
             InitializeComponent();
