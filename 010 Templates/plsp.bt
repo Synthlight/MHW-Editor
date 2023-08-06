@@ -241,9 +241,9 @@ ubyte Hasten_Recovery_LBG_Recovery_Health<name="Hasten Recovery: (LBG) Recovery 
 ubyte Hasten_Recovery_Success_Combo_<name="Hasten Recovery: Success Combo # (ubyte)">;
 float Hasten_Recovery_Combo_Duration<name="Hasten Recovery: Combo Duration (float)">;
 float Hasten_Recovery_Combo_Ignore_Time<name="Hasten Recovery: Combo Ignore Time (float)">;
-ubyte Unk19<name="Unk19 (ubyte)">;
-float Unk20<name="Unk20 (float)">;
-float Unk21<name="Unk21 (float)">;
+ubyte _True_Element_Acceleration_Success_Combo_<name="(True) Element Acceleration: Success Combo # (ubyte)">;
+float _True_Element_Acceleration_Combo_Duration<name="(True) Element Acceleration: Combo Duration (float)">;
+float _True_Element_Acceleration_Combo_Ignore_Time_<name="(True) Element Acceleration: Combo Ignore Time) (float)">;
 
 // Slinger Up
 typedef struct {
@@ -274,6 +274,9 @@ float Elemental_Airborne_Insect_Glaive_Rate<name="Elemental Airborne: (Insect Gl
 float Elemental_Airborne_Bow_Rate<name="Elemental Airborne: (Bow) Rate (float)">;
 float Elemental_Airborne_HBG_Rate<name="Elemental Airborne: (HBG) Rate (float)">;
 float Elemental_Airborne_LBG_Rate<name="Elemental Airborne: (LBG) Rate (float)">;
+ubyte Unk19<name="Unk19 (ubyte)">;
+ubyte Unk20<name="Unk20 (ubyte)">;
+ubyte Unk21<name="Unk21 (ubyte)">;
 ubyte Unk22<name="Unk22 (ubyte)">;
 ubyte Unk23<name="Unk23 (ubyte)">;
 ubyte Unk24<name="Unk24 (ubyte)">;
@@ -281,10 +284,7 @@ ubyte Unk25<name="Unk25 (ubyte)">;
 ubyte Unk26<name="Unk26 (ubyte)">;
 ubyte Unk27<name="Unk27 (ubyte)">;
 ubyte Unk28<name="Unk28 (ubyte)">;
-ubyte Unk29<name="Unk29 (ubyte)">;
-ubyte Unk30<name="Unk30 (ubyte)">;
-ubyte Unk31<name="Unk31 (ubyte)">;
-float Unk32<name="Unk32 (float)">;
+float Unk29<name="Unk29 (float)">;
 
 // Frostcraft (1)
 typedef struct {
@@ -300,9 +300,9 @@ typedef struct {
 Frostcraft_1_ Frostcraft_1__[14]<optimize=false, name="Frostcraft (1)">;
 
 // Frostcraft (2)
-ubyte Unk33<name="Unk33 (ubyte)">;
-ubyte Unk34<name="Unk34 (ubyte)">;
-ubyte Unk35<name="Unk35 (ubyte)">;
+ubyte Unk30<name="Unk30 (ubyte)">;
+ubyte Unk31<name="Unk31 (ubyte)">;
+ubyte Unk32<name="Unk32 (ubyte)">;
 ubyte Frostcraft_Bow_Rapid_Shot_Clutch_Claw_Arrow_Consumption_per_Hit<name="Frostcraft: Bow: (Rapid Shot & Clutch Claw Arrow) Consumption per Hit (ubyte)">;
 ubyte Frostcraft_Bow_Power_Shot_Consumption_per_Hit<name="Frostcraft: Bow: (Power Shot) Consumption per Hit (ubyte)">;
 ubyte Frostcraft_Bow_Arc_Shot_Consumption_per_Hit<name="Frostcraft: Bow: (Arc Shot) Consumption per Hit (ubyte)">;
@@ -328,6 +328,9 @@ ubyte Frostcraft_LBG_Wyvernblast_Claw_Consumption_per_Hit<name="Frostcraft: LBG:
 
 // Skill Params (7)
 ubyte Unk_Safi_1<name="Unk Safi 1 (ubyte)">;
+float Unk33<name="Unk33 (float)">;
+float Unk34<name="Unk34 (float)">;
+float Unk35<name="Unk35 (float)">;
 float Unk36<name="Unk36 (float)">;
 float Unk37<name="Unk37 (float)">;
 float Unk38<name="Unk38 (float)">;
@@ -371,9 +374,6 @@ float Unk75<name="Unk75 (float)">;
 float Unk76<name="Unk76 (float)">;
 float Unk77<name="Unk77 (float)">;
 float Unk78<name="Unk78 (float)">;
-float Unk79<name="Unk79 (float)">;
-float Unk80<name="Unk80 (float)">;
-float Unk81<name="Unk81 (float)">;
 float Offensive_Guard<name="Offensive Guard (float)">;
 float Coalescence<name="Coalescence (float)">;
 float Unk_Safi_2<name="Unk Safi 2 (float)">;
@@ -552,14 +552,14 @@ uint Music_Skill_Hp_Up_1<name="Music Skill: Hp Up 1 (uint)">;
 float Music_Skill_Mantle_Duration<name="Music Skill: Mantle Duration (float)">;
 float Music_Skill_Mantle_Duration_Put<name="Music Skill: Mantle Duration Put (float)">;
 float Music_Skill_Stamina_Up_Rate<name="Music Skill: Stamina Up Rate (float)">;
-float Unk82<name="Unk82 (float)">;
+float Unk79<name="Unk79 (float)">;
+float Unk80<name="Unk80 (float)">;
+uint Unk81<name="Unk81 (uint)">;
+uint Unk82<name="Unk82 (uint)">;
 float Unk83<name="Unk83 (float)">;
-uint Unk84<name="Unk84 (uint)">;
-uint Unk85<name="Unk85 (uint)">;
-float Unk86<name="Unk86 (float)">;
-float Unk87<name="Unk87 (float)">;
+float Unk84<name="Unk84 (float)">;
+float Unk85<name="Unk85 (float)">;
+uint Unk86<name="Unk86 (uint)">;
+uint Unk87<name="Unk87 (uint)">;
 float Unk88<name="Unk88 (float)">;
-uint Unk89<name="Unk89 (uint)">;
-uint Unk90<name="Unk90 (uint)">;
-float Unk91<name="Unk91 (float)">;
-float Unk92<name="Unk92 (float)">;
+float Unk89<name="Unk89 (float)">;
