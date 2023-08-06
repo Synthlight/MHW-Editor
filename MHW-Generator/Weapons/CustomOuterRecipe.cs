@@ -28,7 +28,7 @@ namespace MHW_Generator.Weapons {
                     new MhwMultiStructData.Entry("Unk6", typeof(byte)),
                     new MhwMultiStructData.Entry("Unk7", typeof(byte)),
                     new MhwMultiStructData.Entry("Unk8", typeof(byte))
-                }, _010Link: new MhwMultiStructData.ArrayLink(header, itemCount))
+                }, canAddRows: true, _010Link: new MhwMultiStructData.ArrayLink(header, itemCount))
             };
 
             return new MultiStruct("Weapons", "CustomOuterRecipe", new MhwMultiStructData(structs, "cus_otr", EncryptionKeys.FILE_EXT_KEY_LOOKUP[".cus_otr"]));
