@@ -38,15 +38,15 @@
     <LangVersion>8</LangVersion>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="BouncyCastle.Crypto, Version=1.8.9.0, Culture=neutral, PublicKeyToken=0e99375e54769942">
-      <HintPath>packages\BouncyCastle.1.8.9\lib\BouncyCastle.Crypto.dll</HintPath>
+    <Reference Include="BouncyCastle.Cryptography, Version=2.0.0.0, Culture=neutral, PublicKeyToken=072edcf4a5328938, processorArchitecture=MSIL">
+      <HintPath>packages\BouncyCastle.Cryptography.2.2.1\lib\net461\BouncyCastle.Cryptography.dll</HintPath>
     </Reference>
     <Reference Include="JetBrains.Annotations, Version=7.1.3000.2254, Culture=neutral, PublicKeyToken=1010a0d8d6380325, processorArchitecture=MSIL">
-      <HintPath>packages\ReSharper.Annotations.7.1.3.130415\lib\net\JetBrains.Annotations.dll</HintPath>
+      <HintPath>packages\ReSharper.Annotations.7.1.3\lib\net\JetBrains.Annotations.dll</HintPath>
       <Private>True</Private>
     </Reference>
     <Reference Include="Newtonsoft.Json, Version=13.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
-      <HintPath>packages\Newtonsoft.Json.13.0.1\lib\net45\Newtonsoft.Json.dll</HintPath>
+      <HintPath>packages\Newtonsoft.Json.13.0.3\lib\net45\Newtonsoft.Json.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Data" />
@@ -64,20 +64,20 @@
     <Reference Include="WindowsBase" />
     <Reference Include="PresentationCore" />
     <Reference Include="PresentationFramework" />
-    <Reference Include="Xceed.Wpf.AvalonDock, Version=4.4.0.0, Culture=neutral, PublicKeyToken=3e4669d2f30244f4, processorArchitecture=MSIL">
-      <HintPath>packages\Extended.Wpf.Toolkit.4.4.0\lib\net40\Xceed.Wpf.AvalonDock.dll</HintPath>
+    <Reference Include="Xceed.Wpf.AvalonDock, Version=4.5.0.0, Culture=neutral, PublicKeyToken=3e4669d2f30244f4, processorArchitecture=MSIL">
+      <HintPath>packages\Extended.Wpf.Toolkit.4.5.1\lib\net40\Xceed.Wpf.AvalonDock.dll</HintPath>
     </Reference>
-    <Reference Include="Xceed.Wpf.AvalonDock.Themes.Aero, Version=4.4.0.0, Culture=neutral, PublicKeyToken=3e4669d2f30244f4, processorArchitecture=MSIL">
-      <HintPath>packages\Extended.Wpf.Toolkit.4.4.0\lib\net40\Xceed.Wpf.AvalonDock.Themes.Aero.dll</HintPath>
+    <Reference Include="Xceed.Wpf.AvalonDock.Themes.Aero, Version=4.5.0.0, Culture=neutral, PublicKeyToken=3e4669d2f30244f4, processorArchitecture=MSIL">
+      <HintPath>packages\Extended.Wpf.Toolkit.4.5.1\lib\net40\Xceed.Wpf.AvalonDock.Themes.Aero.dll</HintPath>
     </Reference>
-    <Reference Include="Xceed.Wpf.AvalonDock.Themes.Metro, Version=4.4.0.0, Culture=neutral, PublicKeyToken=3e4669d2f30244f4, processorArchitecture=MSIL">
-      <HintPath>packages\Extended.Wpf.Toolkit.4.4.0\lib\net40\Xceed.Wpf.AvalonDock.Themes.Metro.dll</HintPath>
+    <Reference Include="Xceed.Wpf.AvalonDock.Themes.Metro, Version=4.5.0.0, Culture=neutral, PublicKeyToken=3e4669d2f30244f4, processorArchitecture=MSIL">
+      <HintPath>packages\Extended.Wpf.Toolkit.4.5.1\lib\net40\Xceed.Wpf.AvalonDock.Themes.Metro.dll</HintPath>
     </Reference>
-    <Reference Include="Xceed.Wpf.AvalonDock.Themes.VS2010, Version=4.4.0.0, Culture=neutral, PublicKeyToken=3e4669d2f30244f4, processorArchitecture=MSIL">
-      <HintPath>packages\Extended.Wpf.Toolkit.4.4.0\lib\net40\Xceed.Wpf.AvalonDock.Themes.VS2010.dll</HintPath>
+    <Reference Include="Xceed.Wpf.AvalonDock.Themes.VS2010, Version=4.5.0.0, Culture=neutral, PublicKeyToken=3e4669d2f30244f4, processorArchitecture=MSIL">
+      <HintPath>packages\Extended.Wpf.Toolkit.4.5.1\lib\net40\Xceed.Wpf.AvalonDock.Themes.VS2010.dll</HintPath>
     </Reference>
-    <Reference Include="Xceed.Wpf.Toolkit, Version=4.4.0.0, Culture=neutral, PublicKeyToken=3e4669d2f30244f4, processorArchitecture=MSIL">
-      <HintPath>packages\Extended.Wpf.Toolkit.4.4.0\lib\net40\Xceed.Wpf.Toolkit.dll</HintPath>
+    <Reference Include="Xceed.Wpf.Toolkit, Version=4.5.0.0, Culture=neutral, PublicKeyToken=3e4669d2f30244f4, processorArchitecture=MSIL">
+      <HintPath>packages\Extended.Wpf.Toolkit.4.5.1\lib\net40\Xceed.Wpf.Toolkit.dll</HintPath>
     </Reference>
   </ItemGroup>
   <ItemGroup>
@@ -458,6 +458,7 @@
     <None Include="Assets\ArmorData\ptB_armorData.json" />
     <None Include="Assets\ArmorData\rus_armorData.json" />
     <None Include="Assets\ArmorData\spa_armorData.json" />
+    <None Include="Assets\ArmorData\spL_armorData.json" />
     <None Include="Assets\AwakeningData\ara_awakeningData.json" />
     <None Include="Assets\AwakeningData\chS_awakeningData.json" />
     <None Include="Assets\AwakeningData\chT_awakeningData.json" />
@@ -471,6 +472,7 @@
     <None Include="Assets\AwakeningData\ptB_awakeningData.json" />
     <None Include="Assets\AwakeningData\rus_awakeningData.json" />
     <None Include="Assets\AwakeningData\spa_awakeningData.json" />
+    <None Include="Assets\AwakeningData\spL_awakeningData.json" />
     <None Include="Assets\BountyData\ara_bountyData.json" />
     <None Include="Assets\BountyData\chS_bountyData.json" />
     <None Include="Assets\BountyData\chT_bountyData.json" />
@@ -484,6 +486,8 @@
     <None Include="Assets\BountyData\ptB_bountyData.json" />
     <None Include="Assets\BountyData\rus_bountyData.json" />
     <None Include="Assets\BountyData\spa_bountyData.json" />
+    <None Include="Assets\BountyData\spL_bountyData.json" />
+    <None Include="Assets\CustomPartsData\spL_customPartsData.json" />
     <None Include="Assets\EditorData\ColorLookup.json" />
     <None Include="Assets\EditorData\CollisionTranslationsData.json" />
     <None Include="Assets\CustomPartsData\ara_customPartsData.json" />
@@ -526,6 +530,7 @@
     <None Include="Assets\GuildCardData\Backgrounds\ptB_backgroundData.json" />
     <None Include="Assets\GuildCardData\Backgrounds\rus_backgroundData.json" />
     <None Include="Assets\GuildCardData\Backgrounds\spa_backgroundData.json" />
+    <None Include="Assets\GuildCardData\Backgrounds\spL_backgroundData.json" />
     <None Include="Assets\GuildCardData\Expressions\ara_expressionData.json" />
     <None Include="Assets\GuildCardData\Expressions\chS_expressionData.json" />
     <None Include="Assets\GuildCardData\Expressions\chT_expressionData.json" />
@@ -539,6 +544,7 @@
     <None Include="Assets\GuildCardData\Expressions\ptB_expressionData.json" />
     <None Include="Assets\GuildCardData\Expressions\rus_expressionData.json" />
     <None Include="Assets\GuildCardData\Expressions\spa_expressionData.json" />
+    <None Include="Assets\GuildCardData\Expressions\spL_expressionData.json" />
     <None Include="Assets\GuildCardData\Poses\ara_poseData.json" />
     <None Include="Assets\GuildCardData\Poses\chS_poseData.json" />
     <None Include="Assets\GuildCardData\Poses\chT_poseData.json" />
@@ -552,6 +558,7 @@
     <None Include="Assets\GuildCardData\Poses\ptB_poseData.json" />
     <None Include="Assets\GuildCardData\Poses\rus_poseData.json" />
     <None Include="Assets\GuildCardData\Poses\spa_poseData.json" />
+    <None Include="Assets\GuildCardData\Poses\spL_poseData.json" />
     <None Include="Assets\GuildCardData\Titles\ara_titles1Data.json" />
     <None Include="Assets\GuildCardData\Titles\ara_titles2Data.json" />
     <None Include="Assets\GuildCardData\Titles\chS_titles1Data.json" />
@@ -578,6 +585,8 @@
     <None Include="Assets\GuildCardData\Titles\rus_titles2Data.json" />
     <None Include="Assets\GuildCardData\Titles\spa_titles1Data.json" />
     <None Include="Assets\GuildCardData\Titles\spa_titles2Data.json" />
+    <None Include="Assets\GuildCardData\Titles\spL_titles1Data.json" />
+    <None Include="Assets\GuildCardData\Titles\spL_titles2Data.json" />
     <None Include="Assets\InsectData\ara_insectData.json" />
     <None Include="Assets\InsectData\chS_insectData.json" />
     <None Include="Assets\InsectData\chT_insectData.json" />
@@ -591,6 +600,7 @@
     <None Include="Assets\InsectData\ptB_insectData.json" />
     <None Include="Assets\InsectData\rus_insectData.json" />
     <None Include="Assets\InsectData\spa_insectData.json" />
+    <None Include="Assets\InsectData\spL_insectData.json" />
     <None Include="Assets\ItemData\ara_itemData.json" />
     <None Include="Assets\ItemData\chS_itemData.json" />
     <None Include="Assets\ItemData\chT_itemData.json" />
@@ -604,6 +614,7 @@
     <None Include="Assets\ItemData\ptB_itemData.json" />
     <None Include="Assets\ItemData\rus_itemData.json" />
     <None Include="Assets\ItemData\spa_itemData.json" />
+    <None Include="Assets\ItemData\spL_itemData.json" />
     <None Include="Assets\MantleData\ara_mantleData.json" />
     <None Include="Assets\MantleData\chS_mantleData.json" />
     <None Include="Assets\MantleData\chT_mantleData.json" />
@@ -617,6 +628,7 @@
     <None Include="Assets\MantleData\ptB_mantleData.json" />
     <None Include="Assets\MantleData\rus_mantleData.json" />
     <None Include="Assets\MantleData\spa_mantleData.json" />
+    <None Include="Assets\MantleData\spL_mantleData.json" />
     <None Include="Assets\MonsterData\ara_monsterData.json" />
     <None Include="Assets\MonsterData\chS_monsterData.json" />
     <None Include="Assets\MonsterData\chT_monsterData.json" />
@@ -630,6 +642,7 @@
     <None Include="Assets\MonsterData\ptB_monsterData.json" />
     <None Include="Assets\MonsterData\rus_monsterData.json" />
     <None Include="Assets\MonsterData\spa_monsterData.json" />
+    <None Include="Assets\MonsterData\spL_monsterData.json" />
     <None Include="Assets\MusicSkillData\songData.json" />
     <None Include="Assets\OtomoData\ara_otomo_armorData.json" />
     <None Include="Assets\OtomoData\ara_otomo_weaponData.json" />
@@ -657,6 +670,8 @@
     <None Include="Assets\OtomoData\rus_otomo_weaponData.json" />
     <None Include="Assets\OtomoData\spa_otomo_armorData.json" />
     <None Include="Assets\OtomoData\spa_otomo_weaponData.json" />
+    <None Include="Assets\OtomoData\spL_otomo_armorData.json" />
+    <None Include="Assets\OtomoData\spL_otomo_weaponData.json" />
     <None Include="Assets\PendantData\ara_pendantData.json" />
     <None Include="Assets\PendantData\chS_pendantData.json" />
     <None Include="Assets\PendantData\chT_pendantData.json" />
@@ -670,6 +685,7 @@
     <None Include="Assets\PendantData\ptB_pendantData.json" />
     <None Include="Assets\PendantData\rus_pendantData.json" />
     <None Include="Assets\PendantData\spa_pendantData.json" />
+    <None Include="Assets\PendantData\spL_pendantData.json" />
     <None Include="Assets\SkillData\ara_skillData.json" />
     <None Include="Assets\SkillData\chS_skillData.json" />
     <None Include="Assets\SkillData\chT_skillData.json" />
@@ -683,6 +699,7 @@
     <None Include="Assets\SkillData\ptB_skillData.json" />
     <None Include="Assets\SkillData\rus_skillData.json" />
     <None Include="Assets\SkillData\spa_skillData.json" />
+    <None Include="Assets\SkillData\spL_skillData.json" />
     <None Include="Assets\WeaponData\ara_bow.json" />
     <None Include="Assets\WeaponData\ara_c_axe.json" />
     <None Include="Assets\WeaponData\ara_g_lance.json" />
@@ -991,6 +1008,20 @@
     <None Include="Assets\WeaponData\ou_spa_tachi.json" />
     <None Include="Assets\WeaponData\ou_spa_whistle.json" />
     <None Include="Assets\WeaponData\ou_spa_w_sword.json" />
+    <None Include="Assets\WeaponData\ou_spL_bow.json" />
+    <None Include="Assets\WeaponData\ou_spL_c_axe.json" />
+    <None Include="Assets\WeaponData\ou_spL_g_lance.json" />
+    <None Include="Assets\WeaponData\ou_spL_hammer.json" />
+    <None Include="Assets\WeaponData\ou_spL_hbg.json" />
+    <None Include="Assets\WeaponData\ou_spL_lance.json" />
+    <None Include="Assets\WeaponData\ou_spL_lbg.json" />
+    <None Include="Assets\WeaponData\ou_spL_l_sword.json" />
+    <None Include="Assets\WeaponData\ou_spL_rod.json" />
+    <None Include="Assets\WeaponData\ou_spL_sword.json" />
+    <None Include="Assets\WeaponData\ou_spL_s_axe.json" />
+    <None Include="Assets\WeaponData\ou_spL_tachi.json" />
+    <None Include="Assets\WeaponData\ou_spL_whistle.json" />
+    <None Include="Assets\WeaponData\ou_spL_w_sword.json" />
     <None Include="Assets\WeaponData\pol_bow.json" />
     <None Include="Assets\WeaponData\pol_c_axe.json" />
     <None Include="Assets\WeaponData\pol_g_lance.json" />
@@ -1047,6 +1078,20 @@
     <None Include="Assets\WeaponData\spa_tachi.json" />
     <None Include="Assets\WeaponData\spa_whistle.json" />
     <None Include="Assets\WeaponData\spa_w_sword.json" />
+    <None Include="Assets\WeaponData\spL_bow.json" />
+    <None Include="Assets\WeaponData\spL_c_axe.json" />
+    <None Include="Assets\WeaponData\spL_g_lance.json" />
+    <None Include="Assets\WeaponData\spL_hammer.json" />
+    <None Include="Assets\WeaponData\spL_hbg.json" />
+    <None Include="Assets\WeaponData\spL_lance.json" />
+    <None Include="Assets\WeaponData\spL_lbg.json" />
+    <None Include="Assets\WeaponData\spL_l_sword.json" />
+    <None Include="Assets\WeaponData\spL_rod.json" />
+    <None Include="Assets\WeaponData\spL_sword.json" />
+    <None Include="Assets\WeaponData\spL_s_axe.json" />
+    <None Include="Assets\WeaponData\spL_tachi.json" />
+    <None Include="Assets\WeaponData\spL_whistle.json" />
+    <None Include="Assets\WeaponData\spL_w_sword.json" />
     <None Include="CollisionTranslations\README.md" />
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">

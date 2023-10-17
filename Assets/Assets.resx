@@ -1504,6 +1504,48 @@
   <data name="ou_spa_w_sword" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>weapondata\ou_spa_w_sword.json;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
+  <data name="ou_spL_bow" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>WeaponData\ou_spL_bow.json;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="ou_spL_c_axe" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>WeaponData\ou_spL_c_axe.json;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="ou_spL_g_lance" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>WeaponData\ou_spL_g_lance.json;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="ou_spL_hammer" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>WeaponData\ou_spL_hammer.json;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="ou_spL_hbg" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>WeaponData\ou_spL_hbg.json;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="ou_spL_lance" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>WeaponData\ou_spL_lance.json;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="ou_spL_lbg" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>WeaponData\ou_spL_lbg.json;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="ou_spL_l_sword" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>WeaponData\ou_spL_l_sword.json;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="ou_spL_rod" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>WeaponData\ou_spL_rod.json;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="ou_spL_sword" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>WeaponData\ou_spL_sword.json;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="ou_spL_s_axe" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>WeaponData\ou_spL_s_axe.json;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="ou_spL_tachi" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>WeaponData\ou_spL_tachi.json;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="ou_spL_whistle" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>WeaponData\ou_spL_whistle.json;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="ou_spL_w_sword" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>WeaponData\ou_spL_w_sword.json;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
   <data name="pol_armorData" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>armordata\pol_armordata.json;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
@@ -1878,5 +1920,98 @@
   </data>
   <data name="spa_w_sword" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>weapondata\spa_w_sword.json;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="spL_armorData" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>ArmorData\spL_armorData.json;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="spL_awakeningData" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>AwakeningData\spL_awakeningData.json;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="spL_backgroundData" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>GuildCardData\Backgrounds\spL_backgroundData.json;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="spL_bountyData" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>BountyData\spL_bountyData.json;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="spL_bow" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>WeaponData\spL_bow.json;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="spL_customPartsData" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>CustomPartsData\spL_customPartsData.json;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="spL_c_axe" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>WeaponData\spL_c_axe.json;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="spL_expressionData" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>GuildCardData\Expressions\spL_expressionData.json;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="spL_g_lance" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>WeaponData\spL_g_lance.json;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="spL_hammer" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>WeaponData\spL_hammer.json;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="spL_hbg" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>WeaponData\spL_hbg.json;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="spL_insectData" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>InsectData\spL_insectData.json;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="spL_itemData" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>ItemData\spL_itemData.json;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="spL_lance" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>WeaponData\spL_lance.json;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="spL_lbg" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>WeaponData\spL_lbg.json;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="spL_l_sword" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>WeaponData\spL_l_sword.json;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="spL_mantleData" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>MantleData\spL_mantleData.json;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="spL_monsterData" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>MonsterData\spL_monsterData.json;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="spL_otomo_armorData" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>OtomoData\spL_otomo_armorData.json;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="spL_otomo_weaponData" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>OtomoData\spL_otomo_weaponData.json;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="spL_pendantData" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>PendantData\spL_pendantData.json;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="spL_poseData" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>GuildCardData\Poses\spL_poseData.json;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="spL_rod" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>WeaponData\spL_rod.json;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="spL_skillData" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>SkillData\spL_skillData.json;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="spL_sword" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>WeaponData\spL_sword.json;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="spL_s_axe" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>WeaponData\spL_s_axe.json;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="spL_tachi" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>WeaponData\spL_tachi.json;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="spL_titles1Data" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>GuildCardData\Titles\spL_titles1Data.json;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="spL_titles2Data" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>GuildCardData\Titles\spL_titles2Data.json;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="spL_whistle" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>WeaponData\spL_whistle.json;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="spL_w_sword" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>WeaponData\spL_w_sword.json;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
 </root>

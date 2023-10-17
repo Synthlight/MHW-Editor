@@ -4683,6 +4683,146 @@ namespace MHW_Editor.Assets {
         /// <summary>
         ///   Looks up a localized resource of type System.Byte[].
         /// </summary>
+        internal static byte[] ou_spL_bow {
+            get {
+                object obj = ResourceManager.GetObject("ou_spL_bow", resourceCulture);
+                return ((byte[])(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Byte[].
+        /// </summary>
+        internal static byte[] ou_spL_c_axe {
+            get {
+                object obj = ResourceManager.GetObject("ou_spL_c_axe", resourceCulture);
+                return ((byte[])(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Byte[].
+        /// </summary>
+        internal static byte[] ou_spL_g_lance {
+            get {
+                object obj = ResourceManager.GetObject("ou_spL_g_lance", resourceCulture);
+                return ((byte[])(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Byte[].
+        /// </summary>
+        internal static byte[] ou_spL_hammer {
+            get {
+                object obj = ResourceManager.GetObject("ou_spL_hammer", resourceCulture);
+                return ((byte[])(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Byte[].
+        /// </summary>
+        internal static byte[] ou_spL_hbg {
+            get {
+                object obj = ResourceManager.GetObject("ou_spL_hbg", resourceCulture);
+                return ((byte[])(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Byte[].
+        /// </summary>
+        internal static byte[] ou_spL_l_sword {
+            get {
+                object obj = ResourceManager.GetObject("ou_spL_l_sword", resourceCulture);
+                return ((byte[])(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Byte[].
+        /// </summary>
+        internal static byte[] ou_spL_lance {
+            get {
+                object obj = ResourceManager.GetObject("ou_spL_lance", resourceCulture);
+                return ((byte[])(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Byte[].
+        /// </summary>
+        internal static byte[] ou_spL_lbg {
+            get {
+                object obj = ResourceManager.GetObject("ou_spL_lbg", resourceCulture);
+                return ((byte[])(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Byte[].
+        /// </summary>
+        internal static byte[] ou_spL_rod {
+            get {
+                object obj = ResourceManager.GetObject("ou_spL_rod", resourceCulture);
+                return ((byte[])(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Byte[].
+        /// </summary>
+        internal static byte[] ou_spL_s_axe {
+            get {
+                object obj = ResourceManager.GetObject("ou_spL_s_axe", resourceCulture);
+                return ((byte[])(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Byte[].
+        /// </summary>
+        internal static byte[] ou_spL_sword {
+            get {
+                object obj = ResourceManager.GetObject("ou_spL_sword", resourceCulture);
+                return ((byte[])(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Byte[].
+        /// </summary>
+        internal static byte[] ou_spL_tachi {
+            get {
+                object obj = ResourceManager.GetObject("ou_spL_tachi", resourceCulture);
+                return ((byte[])(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Byte[].
+        /// </summary>
+        internal static byte[] ou_spL_w_sword {
+            get {
+                object obj = ResourceManager.GetObject("ou_spL_w_sword", resourceCulture);
+                return ((byte[])(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Byte[].
+        /// </summary>
+        internal static byte[] ou_spL_whistle {
+            get {
+                object obj = ResourceManager.GetObject("ou_spL_whistle", resourceCulture);
+                return ((byte[])(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Byte[].
+        /// </summary>
         internal static byte[] pol_armorData {
             get {
                 object obj = ResourceManager.GetObject("pol_armorData", resourceCulture);
@@ -5926,6 +6066,316 @@ namespace MHW_Editor.Assets {
         internal static byte[] spa_whistle {
             get {
                 object obj = ResourceManager.GetObject("spa_whistle", resourceCulture);
+                return ((byte[])(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Byte[].
+        /// </summary>
+        internal static byte[] spL_armorData {
+            get {
+                object obj = ResourceManager.GetObject("spL_armorData", resourceCulture);
+                return ((byte[])(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Byte[].
+        /// </summary>
+        internal static byte[] spL_awakeningData {
+            get {
+                object obj = ResourceManager.GetObject("spL_awakeningData", resourceCulture);
+                return ((byte[])(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Byte[].
+        /// </summary>
+        internal static byte[] spL_backgroundData {
+            get {
+                object obj = ResourceManager.GetObject("spL_backgroundData", resourceCulture);
+                return ((byte[])(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Byte[].
+        /// </summary>
+        internal static byte[] spL_bountyData {
+            get {
+                object obj = ResourceManager.GetObject("spL_bountyData", resourceCulture);
+                return ((byte[])(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Byte[].
+        /// </summary>
+        internal static byte[] spL_bow {
+            get {
+                object obj = ResourceManager.GetObject("spL_bow", resourceCulture);
+                return ((byte[])(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Byte[].
+        /// </summary>
+        internal static byte[] spL_c_axe {
+            get {
+                object obj = ResourceManager.GetObject("spL_c_axe", resourceCulture);
+                return ((byte[])(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Byte[].
+        /// </summary>
+        internal static byte[] spL_customPartsData {
+            get {
+                object obj = ResourceManager.GetObject("spL_customPartsData", resourceCulture);
+                return ((byte[])(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Byte[].
+        /// </summary>
+        internal static byte[] spL_expressionData {
+            get {
+                object obj = ResourceManager.GetObject("spL_expressionData", resourceCulture);
+                return ((byte[])(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Byte[].
+        /// </summary>
+        internal static byte[] spL_g_lance {
+            get {
+                object obj = ResourceManager.GetObject("spL_g_lance", resourceCulture);
+                return ((byte[])(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Byte[].
+        /// </summary>
+        internal static byte[] spL_hammer {
+            get {
+                object obj = ResourceManager.GetObject("spL_hammer", resourceCulture);
+                return ((byte[])(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Byte[].
+        /// </summary>
+        internal static byte[] spL_hbg {
+            get {
+                object obj = ResourceManager.GetObject("spL_hbg", resourceCulture);
+                return ((byte[])(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Byte[].
+        /// </summary>
+        internal static byte[] spL_insectData {
+            get {
+                object obj = ResourceManager.GetObject("spL_insectData", resourceCulture);
+                return ((byte[])(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Byte[].
+        /// </summary>
+        internal static byte[] spL_itemData {
+            get {
+                object obj = ResourceManager.GetObject("spL_itemData", resourceCulture);
+                return ((byte[])(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Byte[].
+        /// </summary>
+        internal static byte[] spL_l_sword {
+            get {
+                object obj = ResourceManager.GetObject("spL_l_sword", resourceCulture);
+                return ((byte[])(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Byte[].
+        /// </summary>
+        internal static byte[] spL_lance {
+            get {
+                object obj = ResourceManager.GetObject("spL_lance", resourceCulture);
+                return ((byte[])(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Byte[].
+        /// </summary>
+        internal static byte[] spL_lbg {
+            get {
+                object obj = ResourceManager.GetObject("spL_lbg", resourceCulture);
+                return ((byte[])(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Byte[].
+        /// </summary>
+        internal static byte[] spL_mantleData {
+            get {
+                object obj = ResourceManager.GetObject("spL_mantleData", resourceCulture);
+                return ((byte[])(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Byte[].
+        /// </summary>
+        internal static byte[] spL_monsterData {
+            get {
+                object obj = ResourceManager.GetObject("spL_monsterData", resourceCulture);
+                return ((byte[])(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Byte[].
+        /// </summary>
+        internal static byte[] spL_otomo_armorData {
+            get {
+                object obj = ResourceManager.GetObject("spL_otomo_armorData", resourceCulture);
+                return ((byte[])(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Byte[].
+        /// </summary>
+        internal static byte[] spL_otomo_weaponData {
+            get {
+                object obj = ResourceManager.GetObject("spL_otomo_weaponData", resourceCulture);
+                return ((byte[])(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Byte[].
+        /// </summary>
+        internal static byte[] spL_pendantData {
+            get {
+                object obj = ResourceManager.GetObject("spL_pendantData", resourceCulture);
+                return ((byte[])(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Byte[].
+        /// </summary>
+        internal static byte[] spL_poseData {
+            get {
+                object obj = ResourceManager.GetObject("spL_poseData", resourceCulture);
+                return ((byte[])(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Byte[].
+        /// </summary>
+        internal static byte[] spL_rod {
+            get {
+                object obj = ResourceManager.GetObject("spL_rod", resourceCulture);
+                return ((byte[])(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Byte[].
+        /// </summary>
+        internal static byte[] spL_s_axe {
+            get {
+                object obj = ResourceManager.GetObject("spL_s_axe", resourceCulture);
+                return ((byte[])(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Byte[].
+        /// </summary>
+        internal static byte[] spL_skillData {
+            get {
+                object obj = ResourceManager.GetObject("spL_skillData", resourceCulture);
+                return ((byte[])(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Byte[].
+        /// </summary>
+        internal static byte[] spL_sword {
+            get {
+                object obj = ResourceManager.GetObject("spL_sword", resourceCulture);
+                return ((byte[])(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Byte[].
+        /// </summary>
+        internal static byte[] spL_tachi {
+            get {
+                object obj = ResourceManager.GetObject("spL_tachi", resourceCulture);
+                return ((byte[])(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Byte[].
+        /// </summary>
+        internal static byte[] spL_titles1Data {
+            get {
+                object obj = ResourceManager.GetObject("spL_titles1Data", resourceCulture);
+                return ((byte[])(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Byte[].
+        /// </summary>
+        internal static byte[] spL_titles2Data {
+            get {
+                object obj = ResourceManager.GetObject("spL_titles2Data", resourceCulture);
+                return ((byte[])(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Byte[].
+        /// </summary>
+        internal static byte[] spL_w_sword {
+            get {
+                object obj = ResourceManager.GetObject("spL_w_sword", resourceCulture);
+                return ((byte[])(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Byte[].
+        /// </summary>
+        internal static byte[] spL_whistle {
+            get {
+                object obj = ResourceManager.GetObject("spL_whistle", resourceCulture);
                 return ((byte[])(obj));
             }
         }
