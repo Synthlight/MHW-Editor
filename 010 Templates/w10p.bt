@@ -168,10 +168,10 @@ float Defense_Buff_Orange_Plus_White<name="Defense Buff: Orange + White (float)"
 // Action Param (Relate Vault)
 typedef struct {
     float Gravity<name="Gravity (float)">;
-    float Speed_Rate<name="Speed Rate (float)">;
-    float X_Offset<name="X Offset (float)">;
-    float Y_Offset<name="Y Offset (float)">;
-    float Z_Offset<name="Z Offset (float)">;
+    float Time_Rate<name="Time Rate (float)">;
+    float Initial_X_Velocity<name="Initial X Velocity (float)">;
+    float Initial_Y_Velocity<name="Initial Y Velocity (float)">;
+    float Initial_Z_Velocity<name="Initial Z Velocity (float)">;
 } Action_Param_Relate_Vault_;
 
 Action_Param_Relate_Vault_ Action_Param_Relate_Vault__[16]<optimize=false, name="Action Param (Relate Vault)">;
@@ -184,10 +184,10 @@ float Unk_100<name="Unk 100 (float)">;
 // Action Param (Relate Vault Dance)
 typedef struct {
     float Gravity<name="Gravity (float)">;
-    float Speed_Rate<name="Speed Rate (float)">;
-    float X_Offset<name="X Offset (float)">;
-    float Y_Offset<name="Y Offset (float)">;
-    float Z_Offset<name="Z Offset (float)">;
+    float Time_Rate<name="Time Rate (float)">;
+    float Initial_X_Velocity<name="Initial X Velocity (float)">;
+    float Initial_Y_Velocity<name="Initial Y Velocity (float)">;
+    float Initial_Z_Velocity<name="Initial Z Velocity (float)">;
 } Action_Param_Relate_Vault_Dance_;
 
 Action_Param_Relate_Vault_Dance_ Action_Param_Relate_Vault_Dance__<name="Action Param (Relate Vault Dance)">;
@@ -199,10 +199,10 @@ float Unk_102<name="Unk 102 (float)">;
 // Action Param (Relate Mid-air Evade)
 typedef struct {
     float Gravity<name="Gravity (float)">;
-    float Speed_Rate<name="Speed Rate (float)">;
-    float X_Offset<name="X Offset (float)">;
-    float Y_Offset<name="Y Offset (float)">;
-    float Z_Offset<name="Z Offset (float)">;
+    float Time_Rate<name="Time Rate (float)">;
+    float Initial_X_Velocity<name="Initial X Velocity (float)">;
+    float Initial_Y_Velocity<name="Initial Y Velocity (float)">;
+    float Initial_Z_Velocity<name="Initial Z Velocity (float)">;
 } Action_Param_Relate_Mid_air_Evade_;
 
 Action_Param_Relate_Mid_air_Evade_ Action_Param_Relate_Mid_air_Evade__[9]<optimize=false, name="Action Param (Relate Mid-air Evade)">;
@@ -214,10 +214,10 @@ float Unk_104<name="Unk 104 (float)">;
 // Action Param (Relate Jumping Attacks)
 typedef struct {
     float Gravity<name="Gravity (float)">;
-    float Speed_Rate<name="Speed Rate (float)">;
-    float X_Offset<name="X Offset (float)">;
-    float Y_Offset<name="Y Offset (float)">;
-    float Z_Offset<name="Z Offset (float)">;
+    float Time_Rate<name="Time Rate (float)">;
+    float Initial_X_Velocity<name="Initial X Velocity (float)">;
+    float Initial_Y_Velocity<name="Initial Y Velocity (float)">;
+    float Initial_Z_Velocity<name="Initial Z Velocity (float)">;
 } Action_Param_Relate_Jumping_Attacks_;
 
 Action_Param_Relate_Jumping_Attacks_ Action_Param_Relate_Jumping_Attacks__[22]<optimize=false, name="Action Param (Relate Jumping Attacks)">;
@@ -231,10 +231,10 @@ float Unk_108<name="Unk 108 (float)">;
 // Action Param (Relate Wall Vault, Wall Opposite Vault, White Extract or Not)
 typedef struct {
     float Gravity<name="Gravity (float)">;
-    float Speed_Rate<name="Speed Rate (float)">;
-    float X_Offset<name="X Offset (float)">;
-    float Y_Offset<name="Y Offset (float)">;
-    float Z_Offset<name="Z Offset (float)">;
+    float Time_Rate<name="Time Rate (float)">;
+    float Initial_X_Velocity<name="Initial X Velocity (float)">;
+    float Initial_Y_Velocity<name="Initial Y Velocity (float)">;
+    float Initial_Z_Velocity<name="Initial Z Velocity (float)">;
 } Action_Param_Relate_Wall_Vault_Wall_Opposite_Vault_White_Extract_or_Not_;
 
 Action_Param_Relate_Wall_Vault_Wall_Opposite_Vault_White_Extract_or_Not_ Action_Param_Relate_Wall_Vault_Wall_Opposite_Vault_White_Extract_or_Not__[4]<optimize=false, name="Action Param (Relate Wall Vault, Wall Opposite Vault, White Extract or Not)">;
@@ -382,10 +382,10 @@ float Descending_Thrust_Kinsect_Following_Coordinate_Z_Offset<name="Descending T
 // Action Param (Relate Clutch Attack Finish)
 typedef struct {
     float Gravity<name="Gravity (float)">;
-    float Speed_Rate<name="Speed Rate (float)">;
-    float X_Offset<name="X Offset (float)">;
-    float Y_Offset<name="Y Offset (float)">;
-    float Z_Offset<name="Z Offset (float)">;
+    float Time_Rate<name="Time Rate (float)">;
+    float Initial_X_Velocity<name="Initial X Velocity (float)">;
+    float Initial_Y_Velocity<name="Initial Y Velocity (float)">;
+    float Initial_Z_Velocity<name="Initial Z Velocity (float)">;
 } Action_Param_Relate_Clutch_Attack_Finish_;
 
 Action_Param_Relate_Clutch_Attack_Finish_ Action_Param_Relate_Clutch_Attack_Finish__<name="Action Param (Relate Clutch Attack Finish)">;

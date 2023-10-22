@@ -3046,63 +3046,63 @@ namespace MHW_Editor.Structs.Weapons {
                 }
             }
 
-            protected float Speed_Rate_raw;
-            public const string Speed_Rate_displayName = "Speed Rate";
-            public const int Speed_Rate_sortIndex = 100;
-            [SortOrder(Speed_Rate_sortIndex)]
-            [DisplayName(Speed_Rate_displayName)]
-            public virtual float Speed_Rate {
-                get => Speed_Rate_raw;
+            protected float Time_Rate_raw;
+            public const string Time_Rate_displayName = "Time Rate";
+            public const int Time_Rate_sortIndex = 100;
+            [SortOrder(Time_Rate_sortIndex)]
+            [DisplayName(Time_Rate_displayName)]
+            public virtual float Time_Rate {
+                get => Time_Rate_raw;
                 set {
-                    if (Speed_Rate_raw == value) return;
-                    Speed_Rate_raw = value;
-                    ChangedItems.Add(nameof(Speed_Rate));
-                    OnPropertyChanged(nameof(Speed_Rate));
+                    if (Time_Rate_raw == value) return;
+                    Time_Rate_raw = value;
+                    ChangedItems.Add(nameof(Time_Rate));
+                    OnPropertyChanged(nameof(Time_Rate));
                 }
             }
 
-            protected float X_Offset_raw;
-            public const string X_Offset_displayName = "X Offset";
-            public const int X_Offset_sortIndex = 150;
-            [SortOrder(X_Offset_sortIndex)]
-            [DisplayName(X_Offset_displayName)]
-            public virtual float X_Offset {
-                get => X_Offset_raw;
+            protected float Initial_X_Velocity_raw;
+            public const string Initial_X_Velocity_displayName = "Initial X Velocity";
+            public const int Initial_X_Velocity_sortIndex = 150;
+            [SortOrder(Initial_X_Velocity_sortIndex)]
+            [DisplayName(Initial_X_Velocity_displayName)]
+            public virtual float Initial_X_Velocity {
+                get => Initial_X_Velocity_raw;
                 set {
-                    if (X_Offset_raw == value) return;
-                    X_Offset_raw = value;
-                    ChangedItems.Add(nameof(X_Offset));
-                    OnPropertyChanged(nameof(X_Offset));
+                    if (Initial_X_Velocity_raw == value) return;
+                    Initial_X_Velocity_raw = value;
+                    ChangedItems.Add(nameof(Initial_X_Velocity));
+                    OnPropertyChanged(nameof(Initial_X_Velocity));
                 }
             }
 
-            protected float Y_Offset_raw;
-            public const string Y_Offset_displayName = "Y Offset";
-            public const int Y_Offset_sortIndex = 200;
-            [SortOrder(Y_Offset_sortIndex)]
-            [DisplayName(Y_Offset_displayName)]
-            public virtual float Y_Offset {
-                get => Y_Offset_raw;
+            protected float Initial_Y_Velocity_raw;
+            public const string Initial_Y_Velocity_displayName = "Initial Y Velocity";
+            public const int Initial_Y_Velocity_sortIndex = 200;
+            [SortOrder(Initial_Y_Velocity_sortIndex)]
+            [DisplayName(Initial_Y_Velocity_displayName)]
+            public virtual float Initial_Y_Velocity {
+                get => Initial_Y_Velocity_raw;
                 set {
-                    if (Y_Offset_raw == value) return;
-                    Y_Offset_raw = value;
-                    ChangedItems.Add(nameof(Y_Offset));
-                    OnPropertyChanged(nameof(Y_Offset));
+                    if (Initial_Y_Velocity_raw == value) return;
+                    Initial_Y_Velocity_raw = value;
+                    ChangedItems.Add(nameof(Initial_Y_Velocity));
+                    OnPropertyChanged(nameof(Initial_Y_Velocity));
                 }
             }
 
-            protected float Z_Offset_raw;
-            public const string Z_Offset_displayName = "Z Offset";
-            public const int Z_Offset_sortIndex = 250;
-            [SortOrder(Z_Offset_sortIndex)]
-            [DisplayName(Z_Offset_displayName)]
-            public virtual float Z_Offset {
-                get => Z_Offset_raw;
+            protected float Initial_Z_Velocity_raw;
+            public const string Initial_Z_Velocity_displayName = "Initial Z Velocity";
+            public const int Initial_Z_Velocity_sortIndex = 250;
+            [SortOrder(Initial_Z_Velocity_sortIndex)]
+            [DisplayName(Initial_Z_Velocity_displayName)]
+            public virtual float Initial_Z_Velocity {
+                get => Initial_Z_Velocity_raw;
                 set {
-                    if (Z_Offset_raw == value) return;
-                    Z_Offset_raw = value;
-                    ChangedItems.Add(nameof(Z_Offset));
-                    OnPropertyChanged(nameof(Z_Offset));
+                    if (Initial_Z_Velocity_raw == value) return;
+                    Initial_Z_Velocity_raw = value;
+                    ChangedItems.Add(nameof(Initial_Z_Velocity));
+                    OnPropertyChanged(nameof(Initial_Z_Velocity));
                 }
             }
 
@@ -3121,19 +3121,19 @@ namespace MHW_Editor.Structs.Weapons {
                 var data = new Action_Param_Relate_Vault_();
                 data.Index = i;
                 data.Gravity_raw = reader.ReadSingle();
-                data.Speed_Rate_raw = reader.ReadSingle();
-                data.X_Offset_raw = reader.ReadSingle();
-                data.Y_Offset_raw = reader.ReadSingle();
-                data.Z_Offset_raw = reader.ReadSingle();
+                data.Time_Rate_raw = reader.ReadSingle();
+                data.Initial_X_Velocity_raw = reader.ReadSingle();
+                data.Initial_Y_Velocity_raw = reader.ReadSingle();
+                data.Initial_Z_Velocity_raw = reader.ReadSingle();
                 return data;
             }
 
             public void WriteData(BinaryWriter writer) {
                 writer.Write(Gravity_raw);
-                writer.Write(Speed_Rate_raw);
-                writer.Write(X_Offset_raw);
-                writer.Write(Y_Offset_raw);
-                writer.Write(Z_Offset_raw);
+                writer.Write(Time_Rate_raw);
+                writer.Write(Initial_X_Velocity_raw);
+                writer.Write(Initial_Y_Velocity_raw);
+                writer.Write(Initial_Z_Velocity_raw);
             }
         }
 
@@ -3252,63 +3252,63 @@ namespace MHW_Editor.Structs.Weapons {
                 }
             }
 
-            protected float Speed_Rate_raw;
-            public const string Speed_Rate_displayName = "Speed Rate";
-            public const int Speed_Rate_sortIndex = 100;
-            [SortOrder(Speed_Rate_sortIndex)]
-            [DisplayName(Speed_Rate_displayName)]
-            public virtual float Speed_Rate {
-                get => Speed_Rate_raw;
+            protected float Time_Rate_raw;
+            public const string Time_Rate_displayName = "Time Rate";
+            public const int Time_Rate_sortIndex = 100;
+            [SortOrder(Time_Rate_sortIndex)]
+            [DisplayName(Time_Rate_displayName)]
+            public virtual float Time_Rate {
+                get => Time_Rate_raw;
                 set {
-                    if (Speed_Rate_raw == value) return;
-                    Speed_Rate_raw = value;
-                    ChangedItems.Add(nameof(Speed_Rate));
-                    OnPropertyChanged(nameof(Speed_Rate));
+                    if (Time_Rate_raw == value) return;
+                    Time_Rate_raw = value;
+                    ChangedItems.Add(nameof(Time_Rate));
+                    OnPropertyChanged(nameof(Time_Rate));
                 }
             }
 
-            protected float X_Offset_raw;
-            public const string X_Offset_displayName = "X Offset";
-            public const int X_Offset_sortIndex = 150;
-            [SortOrder(X_Offset_sortIndex)]
-            [DisplayName(X_Offset_displayName)]
-            public virtual float X_Offset {
-                get => X_Offset_raw;
+            protected float Initial_X_Velocity_raw;
+            public const string Initial_X_Velocity_displayName = "Initial X Velocity";
+            public const int Initial_X_Velocity_sortIndex = 150;
+            [SortOrder(Initial_X_Velocity_sortIndex)]
+            [DisplayName(Initial_X_Velocity_displayName)]
+            public virtual float Initial_X_Velocity {
+                get => Initial_X_Velocity_raw;
                 set {
-                    if (X_Offset_raw == value) return;
-                    X_Offset_raw = value;
-                    ChangedItems.Add(nameof(X_Offset));
-                    OnPropertyChanged(nameof(X_Offset));
+                    if (Initial_X_Velocity_raw == value) return;
+                    Initial_X_Velocity_raw = value;
+                    ChangedItems.Add(nameof(Initial_X_Velocity));
+                    OnPropertyChanged(nameof(Initial_X_Velocity));
                 }
             }
 
-            protected float Y_Offset_raw;
-            public const string Y_Offset_displayName = "Y Offset";
-            public const int Y_Offset_sortIndex = 200;
-            [SortOrder(Y_Offset_sortIndex)]
-            [DisplayName(Y_Offset_displayName)]
-            public virtual float Y_Offset {
-                get => Y_Offset_raw;
+            protected float Initial_Y_Velocity_raw;
+            public const string Initial_Y_Velocity_displayName = "Initial Y Velocity";
+            public const int Initial_Y_Velocity_sortIndex = 200;
+            [SortOrder(Initial_Y_Velocity_sortIndex)]
+            [DisplayName(Initial_Y_Velocity_displayName)]
+            public virtual float Initial_Y_Velocity {
+                get => Initial_Y_Velocity_raw;
                 set {
-                    if (Y_Offset_raw == value) return;
-                    Y_Offset_raw = value;
-                    ChangedItems.Add(nameof(Y_Offset));
-                    OnPropertyChanged(nameof(Y_Offset));
+                    if (Initial_Y_Velocity_raw == value) return;
+                    Initial_Y_Velocity_raw = value;
+                    ChangedItems.Add(nameof(Initial_Y_Velocity));
+                    OnPropertyChanged(nameof(Initial_Y_Velocity));
                 }
             }
 
-            protected float Z_Offset_raw;
-            public const string Z_Offset_displayName = "Z Offset";
-            public const int Z_Offset_sortIndex = 250;
-            [SortOrder(Z_Offset_sortIndex)]
-            [DisplayName(Z_Offset_displayName)]
-            public virtual float Z_Offset {
-                get => Z_Offset_raw;
+            protected float Initial_Z_Velocity_raw;
+            public const string Initial_Z_Velocity_displayName = "Initial Z Velocity";
+            public const int Initial_Z_Velocity_sortIndex = 250;
+            [SortOrder(Initial_Z_Velocity_sortIndex)]
+            [DisplayName(Initial_Z_Velocity_displayName)]
+            public virtual float Initial_Z_Velocity {
+                get => Initial_Z_Velocity_raw;
                 set {
-                    if (Z_Offset_raw == value) return;
-                    Z_Offset_raw = value;
-                    ChangedItems.Add(nameof(Z_Offset));
-                    OnPropertyChanged(nameof(Z_Offset));
+                    if (Initial_Z_Velocity_raw == value) return;
+                    Initial_Z_Velocity_raw = value;
+                    ChangedItems.Add(nameof(Initial_Z_Velocity));
+                    OnPropertyChanged(nameof(Initial_Z_Velocity));
                 }
             }
 
@@ -3327,19 +3327,19 @@ namespace MHW_Editor.Structs.Weapons {
                 var data = new Action_Param_Relate_Vault_Dance_();
                 data.Index = i;
                 data.Gravity_raw = reader.ReadSingle();
-                data.Speed_Rate_raw = reader.ReadSingle();
-                data.X_Offset_raw = reader.ReadSingle();
-                data.Y_Offset_raw = reader.ReadSingle();
-                data.Z_Offset_raw = reader.ReadSingle();
+                data.Time_Rate_raw = reader.ReadSingle();
+                data.Initial_X_Velocity_raw = reader.ReadSingle();
+                data.Initial_Y_Velocity_raw = reader.ReadSingle();
+                data.Initial_Z_Velocity_raw = reader.ReadSingle();
                 return data;
             }
 
             public void WriteData(BinaryWriter writer) {
                 writer.Write(Gravity_raw);
-                writer.Write(Speed_Rate_raw);
-                writer.Write(X_Offset_raw);
-                writer.Write(Y_Offset_raw);
-                writer.Write(Z_Offset_raw);
+                writer.Write(Time_Rate_raw);
+                writer.Write(Initial_X_Velocity_raw);
+                writer.Write(Initial_Y_Velocity_raw);
+                writer.Write(Initial_Z_Velocity_raw);
             }
         }
 
@@ -3436,63 +3436,63 @@ namespace MHW_Editor.Structs.Weapons {
                 }
             }
 
-            protected float Speed_Rate_raw;
-            public const string Speed_Rate_displayName = "Speed Rate";
-            public const int Speed_Rate_sortIndex = 100;
-            [SortOrder(Speed_Rate_sortIndex)]
-            [DisplayName(Speed_Rate_displayName)]
-            public virtual float Speed_Rate {
-                get => Speed_Rate_raw;
+            protected float Time_Rate_raw;
+            public const string Time_Rate_displayName = "Time Rate";
+            public const int Time_Rate_sortIndex = 100;
+            [SortOrder(Time_Rate_sortIndex)]
+            [DisplayName(Time_Rate_displayName)]
+            public virtual float Time_Rate {
+                get => Time_Rate_raw;
                 set {
-                    if (Speed_Rate_raw == value) return;
-                    Speed_Rate_raw = value;
-                    ChangedItems.Add(nameof(Speed_Rate));
-                    OnPropertyChanged(nameof(Speed_Rate));
+                    if (Time_Rate_raw == value) return;
+                    Time_Rate_raw = value;
+                    ChangedItems.Add(nameof(Time_Rate));
+                    OnPropertyChanged(nameof(Time_Rate));
                 }
             }
 
-            protected float X_Offset_raw;
-            public const string X_Offset_displayName = "X Offset";
-            public const int X_Offset_sortIndex = 150;
-            [SortOrder(X_Offset_sortIndex)]
-            [DisplayName(X_Offset_displayName)]
-            public virtual float X_Offset {
-                get => X_Offset_raw;
+            protected float Initial_X_Velocity_raw;
+            public const string Initial_X_Velocity_displayName = "Initial X Velocity";
+            public const int Initial_X_Velocity_sortIndex = 150;
+            [SortOrder(Initial_X_Velocity_sortIndex)]
+            [DisplayName(Initial_X_Velocity_displayName)]
+            public virtual float Initial_X_Velocity {
+                get => Initial_X_Velocity_raw;
                 set {
-                    if (X_Offset_raw == value) return;
-                    X_Offset_raw = value;
-                    ChangedItems.Add(nameof(X_Offset));
-                    OnPropertyChanged(nameof(X_Offset));
+                    if (Initial_X_Velocity_raw == value) return;
+                    Initial_X_Velocity_raw = value;
+                    ChangedItems.Add(nameof(Initial_X_Velocity));
+                    OnPropertyChanged(nameof(Initial_X_Velocity));
                 }
             }
 
-            protected float Y_Offset_raw;
-            public const string Y_Offset_displayName = "Y Offset";
-            public const int Y_Offset_sortIndex = 200;
-            [SortOrder(Y_Offset_sortIndex)]
-            [DisplayName(Y_Offset_displayName)]
-            public virtual float Y_Offset {
-                get => Y_Offset_raw;
+            protected float Initial_Y_Velocity_raw;
+            public const string Initial_Y_Velocity_displayName = "Initial Y Velocity";
+            public const int Initial_Y_Velocity_sortIndex = 200;
+            [SortOrder(Initial_Y_Velocity_sortIndex)]
+            [DisplayName(Initial_Y_Velocity_displayName)]
+            public virtual float Initial_Y_Velocity {
+                get => Initial_Y_Velocity_raw;
                 set {
-                    if (Y_Offset_raw == value) return;
-                    Y_Offset_raw = value;
-                    ChangedItems.Add(nameof(Y_Offset));
-                    OnPropertyChanged(nameof(Y_Offset));
+                    if (Initial_Y_Velocity_raw == value) return;
+                    Initial_Y_Velocity_raw = value;
+                    ChangedItems.Add(nameof(Initial_Y_Velocity));
+                    OnPropertyChanged(nameof(Initial_Y_Velocity));
                 }
             }
 
-            protected float Z_Offset_raw;
-            public const string Z_Offset_displayName = "Z Offset";
-            public const int Z_Offset_sortIndex = 250;
-            [SortOrder(Z_Offset_sortIndex)]
-            [DisplayName(Z_Offset_displayName)]
-            public virtual float Z_Offset {
-                get => Z_Offset_raw;
+            protected float Initial_Z_Velocity_raw;
+            public const string Initial_Z_Velocity_displayName = "Initial Z Velocity";
+            public const int Initial_Z_Velocity_sortIndex = 250;
+            [SortOrder(Initial_Z_Velocity_sortIndex)]
+            [DisplayName(Initial_Z_Velocity_displayName)]
+            public virtual float Initial_Z_Velocity {
+                get => Initial_Z_Velocity_raw;
                 set {
-                    if (Z_Offset_raw == value) return;
-                    Z_Offset_raw = value;
-                    ChangedItems.Add(nameof(Z_Offset));
-                    OnPropertyChanged(nameof(Z_Offset));
+                    if (Initial_Z_Velocity_raw == value) return;
+                    Initial_Z_Velocity_raw = value;
+                    ChangedItems.Add(nameof(Initial_Z_Velocity));
+                    OnPropertyChanged(nameof(Initial_Z_Velocity));
                 }
             }
 
@@ -3511,19 +3511,19 @@ namespace MHW_Editor.Structs.Weapons {
                 var data = new Action_Param_Relate_Mid_air_Evade_();
                 data.Index = i;
                 data.Gravity_raw = reader.ReadSingle();
-                data.Speed_Rate_raw = reader.ReadSingle();
-                data.X_Offset_raw = reader.ReadSingle();
-                data.Y_Offset_raw = reader.ReadSingle();
-                data.Z_Offset_raw = reader.ReadSingle();
+                data.Time_Rate_raw = reader.ReadSingle();
+                data.Initial_X_Velocity_raw = reader.ReadSingle();
+                data.Initial_Y_Velocity_raw = reader.ReadSingle();
+                data.Initial_Z_Velocity_raw = reader.ReadSingle();
                 return data;
             }
 
             public void WriteData(BinaryWriter writer) {
                 writer.Write(Gravity_raw);
-                writer.Write(Speed_Rate_raw);
-                writer.Write(X_Offset_raw);
-                writer.Write(Y_Offset_raw);
-                writer.Write(Z_Offset_raw);
+                writer.Write(Time_Rate_raw);
+                writer.Write(Initial_X_Velocity_raw);
+                writer.Write(Initial_Y_Velocity_raw);
+                writer.Write(Initial_Z_Velocity_raw);
             }
         }
 
@@ -3620,63 +3620,63 @@ namespace MHW_Editor.Structs.Weapons {
                 }
             }
 
-            protected float Speed_Rate_raw;
-            public const string Speed_Rate_displayName = "Speed Rate";
-            public const int Speed_Rate_sortIndex = 100;
-            [SortOrder(Speed_Rate_sortIndex)]
-            [DisplayName(Speed_Rate_displayName)]
-            public virtual float Speed_Rate {
-                get => Speed_Rate_raw;
+            protected float Time_Rate_raw;
+            public const string Time_Rate_displayName = "Time Rate";
+            public const int Time_Rate_sortIndex = 100;
+            [SortOrder(Time_Rate_sortIndex)]
+            [DisplayName(Time_Rate_displayName)]
+            public virtual float Time_Rate {
+                get => Time_Rate_raw;
                 set {
-                    if (Speed_Rate_raw == value) return;
-                    Speed_Rate_raw = value;
-                    ChangedItems.Add(nameof(Speed_Rate));
-                    OnPropertyChanged(nameof(Speed_Rate));
+                    if (Time_Rate_raw == value) return;
+                    Time_Rate_raw = value;
+                    ChangedItems.Add(nameof(Time_Rate));
+                    OnPropertyChanged(nameof(Time_Rate));
                 }
             }
 
-            protected float X_Offset_raw;
-            public const string X_Offset_displayName = "X Offset";
-            public const int X_Offset_sortIndex = 150;
-            [SortOrder(X_Offset_sortIndex)]
-            [DisplayName(X_Offset_displayName)]
-            public virtual float X_Offset {
-                get => X_Offset_raw;
+            protected float Initial_X_Velocity_raw;
+            public const string Initial_X_Velocity_displayName = "Initial X Velocity";
+            public const int Initial_X_Velocity_sortIndex = 150;
+            [SortOrder(Initial_X_Velocity_sortIndex)]
+            [DisplayName(Initial_X_Velocity_displayName)]
+            public virtual float Initial_X_Velocity {
+                get => Initial_X_Velocity_raw;
                 set {
-                    if (X_Offset_raw == value) return;
-                    X_Offset_raw = value;
-                    ChangedItems.Add(nameof(X_Offset));
-                    OnPropertyChanged(nameof(X_Offset));
+                    if (Initial_X_Velocity_raw == value) return;
+                    Initial_X_Velocity_raw = value;
+                    ChangedItems.Add(nameof(Initial_X_Velocity));
+                    OnPropertyChanged(nameof(Initial_X_Velocity));
                 }
             }
 
-            protected float Y_Offset_raw;
-            public const string Y_Offset_displayName = "Y Offset";
-            public const int Y_Offset_sortIndex = 200;
-            [SortOrder(Y_Offset_sortIndex)]
-            [DisplayName(Y_Offset_displayName)]
-            public virtual float Y_Offset {
-                get => Y_Offset_raw;
+            protected float Initial_Y_Velocity_raw;
+            public const string Initial_Y_Velocity_displayName = "Initial Y Velocity";
+            public const int Initial_Y_Velocity_sortIndex = 200;
+            [SortOrder(Initial_Y_Velocity_sortIndex)]
+            [DisplayName(Initial_Y_Velocity_displayName)]
+            public virtual float Initial_Y_Velocity {
+                get => Initial_Y_Velocity_raw;
                 set {
-                    if (Y_Offset_raw == value) return;
-                    Y_Offset_raw = value;
-                    ChangedItems.Add(nameof(Y_Offset));
-                    OnPropertyChanged(nameof(Y_Offset));
+                    if (Initial_Y_Velocity_raw == value) return;
+                    Initial_Y_Velocity_raw = value;
+                    ChangedItems.Add(nameof(Initial_Y_Velocity));
+                    OnPropertyChanged(nameof(Initial_Y_Velocity));
                 }
             }
 
-            protected float Z_Offset_raw;
-            public const string Z_Offset_displayName = "Z Offset";
-            public const int Z_Offset_sortIndex = 250;
-            [SortOrder(Z_Offset_sortIndex)]
-            [DisplayName(Z_Offset_displayName)]
-            public virtual float Z_Offset {
-                get => Z_Offset_raw;
+            protected float Initial_Z_Velocity_raw;
+            public const string Initial_Z_Velocity_displayName = "Initial Z Velocity";
+            public const int Initial_Z_Velocity_sortIndex = 250;
+            [SortOrder(Initial_Z_Velocity_sortIndex)]
+            [DisplayName(Initial_Z_Velocity_displayName)]
+            public virtual float Initial_Z_Velocity {
+                get => Initial_Z_Velocity_raw;
                 set {
-                    if (Z_Offset_raw == value) return;
-                    Z_Offset_raw = value;
-                    ChangedItems.Add(nameof(Z_Offset));
-                    OnPropertyChanged(nameof(Z_Offset));
+                    if (Initial_Z_Velocity_raw == value) return;
+                    Initial_Z_Velocity_raw = value;
+                    ChangedItems.Add(nameof(Initial_Z_Velocity));
+                    OnPropertyChanged(nameof(Initial_Z_Velocity));
                 }
             }
 
@@ -3695,19 +3695,19 @@ namespace MHW_Editor.Structs.Weapons {
                 var data = new Action_Param_Relate_Jumping_Attacks_();
                 data.Index = i;
                 data.Gravity_raw = reader.ReadSingle();
-                data.Speed_Rate_raw = reader.ReadSingle();
-                data.X_Offset_raw = reader.ReadSingle();
-                data.Y_Offset_raw = reader.ReadSingle();
-                data.Z_Offset_raw = reader.ReadSingle();
+                data.Time_Rate_raw = reader.ReadSingle();
+                data.Initial_X_Velocity_raw = reader.ReadSingle();
+                data.Initial_Y_Velocity_raw = reader.ReadSingle();
+                data.Initial_Z_Velocity_raw = reader.ReadSingle();
                 return data;
             }
 
             public void WriteData(BinaryWriter writer) {
                 writer.Write(Gravity_raw);
-                writer.Write(Speed_Rate_raw);
-                writer.Write(X_Offset_raw);
-                writer.Write(Y_Offset_raw);
-                writer.Write(Z_Offset_raw);
+                writer.Write(Time_Rate_raw);
+                writer.Write(Initial_X_Velocity_raw);
+                writer.Write(Initial_Y_Velocity_raw);
+                writer.Write(Initial_Z_Velocity_raw);
             }
         }
 
@@ -3848,63 +3848,63 @@ namespace MHW_Editor.Structs.Weapons {
                 }
             }
 
-            protected float Speed_Rate_raw;
-            public const string Speed_Rate_displayName = "Speed Rate";
-            public const int Speed_Rate_sortIndex = 100;
-            [SortOrder(Speed_Rate_sortIndex)]
-            [DisplayName(Speed_Rate_displayName)]
-            public virtual float Speed_Rate {
-                get => Speed_Rate_raw;
+            protected float Time_Rate_raw;
+            public const string Time_Rate_displayName = "Time Rate";
+            public const int Time_Rate_sortIndex = 100;
+            [SortOrder(Time_Rate_sortIndex)]
+            [DisplayName(Time_Rate_displayName)]
+            public virtual float Time_Rate {
+                get => Time_Rate_raw;
                 set {
-                    if (Speed_Rate_raw == value) return;
-                    Speed_Rate_raw = value;
-                    ChangedItems.Add(nameof(Speed_Rate));
-                    OnPropertyChanged(nameof(Speed_Rate));
+                    if (Time_Rate_raw == value) return;
+                    Time_Rate_raw = value;
+                    ChangedItems.Add(nameof(Time_Rate));
+                    OnPropertyChanged(nameof(Time_Rate));
                 }
             }
 
-            protected float X_Offset_raw;
-            public const string X_Offset_displayName = "X Offset";
-            public const int X_Offset_sortIndex = 150;
-            [SortOrder(X_Offset_sortIndex)]
-            [DisplayName(X_Offset_displayName)]
-            public virtual float X_Offset {
-                get => X_Offset_raw;
+            protected float Initial_X_Velocity_raw;
+            public const string Initial_X_Velocity_displayName = "Initial X Velocity";
+            public const int Initial_X_Velocity_sortIndex = 150;
+            [SortOrder(Initial_X_Velocity_sortIndex)]
+            [DisplayName(Initial_X_Velocity_displayName)]
+            public virtual float Initial_X_Velocity {
+                get => Initial_X_Velocity_raw;
                 set {
-                    if (X_Offset_raw == value) return;
-                    X_Offset_raw = value;
-                    ChangedItems.Add(nameof(X_Offset));
-                    OnPropertyChanged(nameof(X_Offset));
+                    if (Initial_X_Velocity_raw == value) return;
+                    Initial_X_Velocity_raw = value;
+                    ChangedItems.Add(nameof(Initial_X_Velocity));
+                    OnPropertyChanged(nameof(Initial_X_Velocity));
                 }
             }
 
-            protected float Y_Offset_raw;
-            public const string Y_Offset_displayName = "Y Offset";
-            public const int Y_Offset_sortIndex = 200;
-            [SortOrder(Y_Offset_sortIndex)]
-            [DisplayName(Y_Offset_displayName)]
-            public virtual float Y_Offset {
-                get => Y_Offset_raw;
+            protected float Initial_Y_Velocity_raw;
+            public const string Initial_Y_Velocity_displayName = "Initial Y Velocity";
+            public const int Initial_Y_Velocity_sortIndex = 200;
+            [SortOrder(Initial_Y_Velocity_sortIndex)]
+            [DisplayName(Initial_Y_Velocity_displayName)]
+            public virtual float Initial_Y_Velocity {
+                get => Initial_Y_Velocity_raw;
                 set {
-                    if (Y_Offset_raw == value) return;
-                    Y_Offset_raw = value;
-                    ChangedItems.Add(nameof(Y_Offset));
-                    OnPropertyChanged(nameof(Y_Offset));
+                    if (Initial_Y_Velocity_raw == value) return;
+                    Initial_Y_Velocity_raw = value;
+                    ChangedItems.Add(nameof(Initial_Y_Velocity));
+                    OnPropertyChanged(nameof(Initial_Y_Velocity));
                 }
             }
 
-            protected float Z_Offset_raw;
-            public const string Z_Offset_displayName = "Z Offset";
-            public const int Z_Offset_sortIndex = 250;
-            [SortOrder(Z_Offset_sortIndex)]
-            [DisplayName(Z_Offset_displayName)]
-            public virtual float Z_Offset {
-                get => Z_Offset_raw;
+            protected float Initial_Z_Velocity_raw;
+            public const string Initial_Z_Velocity_displayName = "Initial Z Velocity";
+            public const int Initial_Z_Velocity_sortIndex = 250;
+            [SortOrder(Initial_Z_Velocity_sortIndex)]
+            [DisplayName(Initial_Z_Velocity_displayName)]
+            public virtual float Initial_Z_Velocity {
+                get => Initial_Z_Velocity_raw;
                 set {
-                    if (Z_Offset_raw == value) return;
-                    Z_Offset_raw = value;
-                    ChangedItems.Add(nameof(Z_Offset));
-                    OnPropertyChanged(nameof(Z_Offset));
+                    if (Initial_Z_Velocity_raw == value) return;
+                    Initial_Z_Velocity_raw = value;
+                    ChangedItems.Add(nameof(Initial_Z_Velocity));
+                    OnPropertyChanged(nameof(Initial_Z_Velocity));
                 }
             }
 
@@ -3923,19 +3923,19 @@ namespace MHW_Editor.Structs.Weapons {
                 var data = new Action_Param_Relate_Wall_Vault_Wall_Opposite_Vault_White_Extract_or_Not_();
                 data.Index = i;
                 data.Gravity_raw = reader.ReadSingle();
-                data.Speed_Rate_raw = reader.ReadSingle();
-                data.X_Offset_raw = reader.ReadSingle();
-                data.Y_Offset_raw = reader.ReadSingle();
-                data.Z_Offset_raw = reader.ReadSingle();
+                data.Time_Rate_raw = reader.ReadSingle();
+                data.Initial_X_Velocity_raw = reader.ReadSingle();
+                data.Initial_Y_Velocity_raw = reader.ReadSingle();
+                data.Initial_Z_Velocity_raw = reader.ReadSingle();
                 return data;
             }
 
             public void WriteData(BinaryWriter writer) {
                 writer.Write(Gravity_raw);
-                writer.Write(Speed_Rate_raw);
-                writer.Write(X_Offset_raw);
-                writer.Write(Y_Offset_raw);
-                writer.Write(Z_Offset_raw);
+                writer.Write(Time_Rate_raw);
+                writer.Write(Initial_X_Velocity_raw);
+                writer.Write(Initial_Y_Velocity_raw);
+                writer.Write(Initial_Z_Velocity_raw);
             }
         }
 
@@ -6481,63 +6481,63 @@ namespace MHW_Editor.Structs.Weapons {
                 }
             }
 
-            protected float Speed_Rate_raw;
-            public const string Speed_Rate_displayName = "Speed Rate";
-            public const int Speed_Rate_sortIndex = 100;
-            [SortOrder(Speed_Rate_sortIndex)]
-            [DisplayName(Speed_Rate_displayName)]
-            public virtual float Speed_Rate {
-                get => Speed_Rate_raw;
+            protected float Time_Rate_raw;
+            public const string Time_Rate_displayName = "Time Rate";
+            public const int Time_Rate_sortIndex = 100;
+            [SortOrder(Time_Rate_sortIndex)]
+            [DisplayName(Time_Rate_displayName)]
+            public virtual float Time_Rate {
+                get => Time_Rate_raw;
                 set {
-                    if (Speed_Rate_raw == value) return;
-                    Speed_Rate_raw = value;
-                    ChangedItems.Add(nameof(Speed_Rate));
-                    OnPropertyChanged(nameof(Speed_Rate));
+                    if (Time_Rate_raw == value) return;
+                    Time_Rate_raw = value;
+                    ChangedItems.Add(nameof(Time_Rate));
+                    OnPropertyChanged(nameof(Time_Rate));
                 }
             }
 
-            protected float X_Offset_raw;
-            public const string X_Offset_displayName = "X Offset";
-            public const int X_Offset_sortIndex = 150;
-            [SortOrder(X_Offset_sortIndex)]
-            [DisplayName(X_Offset_displayName)]
-            public virtual float X_Offset {
-                get => X_Offset_raw;
+            protected float Initial_X_Velocity_raw;
+            public const string Initial_X_Velocity_displayName = "Initial X Velocity";
+            public const int Initial_X_Velocity_sortIndex = 150;
+            [SortOrder(Initial_X_Velocity_sortIndex)]
+            [DisplayName(Initial_X_Velocity_displayName)]
+            public virtual float Initial_X_Velocity {
+                get => Initial_X_Velocity_raw;
                 set {
-                    if (X_Offset_raw == value) return;
-                    X_Offset_raw = value;
-                    ChangedItems.Add(nameof(X_Offset));
-                    OnPropertyChanged(nameof(X_Offset));
+                    if (Initial_X_Velocity_raw == value) return;
+                    Initial_X_Velocity_raw = value;
+                    ChangedItems.Add(nameof(Initial_X_Velocity));
+                    OnPropertyChanged(nameof(Initial_X_Velocity));
                 }
             }
 
-            protected float Y_Offset_raw;
-            public const string Y_Offset_displayName = "Y Offset";
-            public const int Y_Offset_sortIndex = 200;
-            [SortOrder(Y_Offset_sortIndex)]
-            [DisplayName(Y_Offset_displayName)]
-            public virtual float Y_Offset {
-                get => Y_Offset_raw;
+            protected float Initial_Y_Velocity_raw;
+            public const string Initial_Y_Velocity_displayName = "Initial Y Velocity";
+            public const int Initial_Y_Velocity_sortIndex = 200;
+            [SortOrder(Initial_Y_Velocity_sortIndex)]
+            [DisplayName(Initial_Y_Velocity_displayName)]
+            public virtual float Initial_Y_Velocity {
+                get => Initial_Y_Velocity_raw;
                 set {
-                    if (Y_Offset_raw == value) return;
-                    Y_Offset_raw = value;
-                    ChangedItems.Add(nameof(Y_Offset));
-                    OnPropertyChanged(nameof(Y_Offset));
+                    if (Initial_Y_Velocity_raw == value) return;
+                    Initial_Y_Velocity_raw = value;
+                    ChangedItems.Add(nameof(Initial_Y_Velocity));
+                    OnPropertyChanged(nameof(Initial_Y_Velocity));
                 }
             }
 
-            protected float Z_Offset_raw;
-            public const string Z_Offset_displayName = "Z Offset";
-            public const int Z_Offset_sortIndex = 250;
-            [SortOrder(Z_Offset_sortIndex)]
-            [DisplayName(Z_Offset_displayName)]
-            public virtual float Z_Offset {
-                get => Z_Offset_raw;
+            protected float Initial_Z_Velocity_raw;
+            public const string Initial_Z_Velocity_displayName = "Initial Z Velocity";
+            public const int Initial_Z_Velocity_sortIndex = 250;
+            [SortOrder(Initial_Z_Velocity_sortIndex)]
+            [DisplayName(Initial_Z_Velocity_displayName)]
+            public virtual float Initial_Z_Velocity {
+                get => Initial_Z_Velocity_raw;
                 set {
-                    if (Z_Offset_raw == value) return;
-                    Z_Offset_raw = value;
-                    ChangedItems.Add(nameof(Z_Offset));
-                    OnPropertyChanged(nameof(Z_Offset));
+                    if (Initial_Z_Velocity_raw == value) return;
+                    Initial_Z_Velocity_raw = value;
+                    ChangedItems.Add(nameof(Initial_Z_Velocity));
+                    OnPropertyChanged(nameof(Initial_Z_Velocity));
                 }
             }
 
@@ -6556,19 +6556,19 @@ namespace MHW_Editor.Structs.Weapons {
                 var data = new Action_Param_Relate_Clutch_Attack_Finish_();
                 data.Index = i;
                 data.Gravity_raw = reader.ReadSingle();
-                data.Speed_Rate_raw = reader.ReadSingle();
-                data.X_Offset_raw = reader.ReadSingle();
-                data.Y_Offset_raw = reader.ReadSingle();
-                data.Z_Offset_raw = reader.ReadSingle();
+                data.Time_Rate_raw = reader.ReadSingle();
+                data.Initial_X_Velocity_raw = reader.ReadSingle();
+                data.Initial_Y_Velocity_raw = reader.ReadSingle();
+                data.Initial_Z_Velocity_raw = reader.ReadSingle();
                 return data;
             }
 
             public void WriteData(BinaryWriter writer) {
                 writer.Write(Gravity_raw);
-                writer.Write(Speed_Rate_raw);
-                writer.Write(X_Offset_raw);
-                writer.Write(Y_Offset_raw);
-                writer.Write(Z_Offset_raw);
+                writer.Write(Time_Rate_raw);
+                writer.Write(Initial_X_Velocity_raw);
+                writer.Write(Initial_Y_Velocity_raw);
+                writer.Write(Initial_Z_Velocity_raw);
             }
         }
 

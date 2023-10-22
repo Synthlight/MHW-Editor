@@ -456,10 +456,10 @@ ubyte Unk_331<name="Unk 331 (ubyte)">;
 // Action Param 1
 typedef struct {
     float Gravity<name="Gravity (float)">;
-    float Speed_Rate<name="Speed Rate (float)">;
-    float X_Offset<name="X Offset (float)">;
-    float Y_Offset<name="Y Offset (float)">;
-    float Z_Offset<name="Z Offset (float)">;
+    float Time_Rate<name="Time Rate (float)">;
+    float Initial_X_Velocity<name="Initial X Velocity (float)">;
+    float Initial_Y_Velocity<name="Initial Y Velocity (float)">;
+    float Initial_Z_Velocity<name="Initial Z Velocity (float)">;
 } Action_Param_1;
 
 Action_Param_1 Action_Param_1_<name="Action Param 1">;

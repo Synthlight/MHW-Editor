@@ -17,10 +17,10 @@ namespace MHW_Generator.Weapons {
 
         protected readonly List<MhwMultiStructData.Entry> actionParam = new List<MhwMultiStructData.Entry> {
             new MhwMultiStructData.Entry("Gravity", typeof(float)),
-            new MhwMultiStructData.Entry("Speed Rate", typeof(float)),
-            new MhwMultiStructData.Entry("X Offset", typeof(float)),
-            new MhwMultiStructData.Entry("Y Offset", typeof(float)),
-            new MhwMultiStructData.Entry("Z Offset", typeof(float))
+            new MhwMultiStructData.Entry("Time Rate", typeof(float)),
+            new MhwMultiStructData.Entry("Initial X Velocity", typeof(float)),
+            new MhwMultiStructData.Entry("Initial Y Velocity", typeof(float)),
+            new MhwMultiStructData.Entry("Initial Z Velocity", typeof(float))
         };
 
         protected readonly List<MhwMultiStructData.Entry> eventPadVib = new List<MhwMultiStructData.Entry> {

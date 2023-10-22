@@ -155,10 +155,10 @@ float Unk_15_10_6<name="Unk (15.10) 6 (float)">;
 // Action Param 1
 typedef struct {
     float Gravity<name="Gravity (float)">;
-    float Speed_Rate<name="Speed Rate (float)">;
-    float X_Offset<name="X Offset (float)">;
-    float Y_Offset<name="Y Offset (float)">;
-    float Z_Offset<name="Z Offset (float)">;
+    float Time_Rate<name="Time Rate (float)">;
+    float Initial_X_Velocity<name="Initial X Velocity (float)">;
+    float Initial_Y_Velocity<name="Initial Y Velocity (float)">;
+    float Initial_Z_Velocity<name="Initial Z Velocity (float)">;
 } Action_Param_1;
 
 Action_Param_1 Action_Param_1_[6]<optimize=false, name="Action Param 1">;
@@ -204,10 +204,10 @@ float Time_for_Guard_Up_to_Come_Up_When_Using_Power_Guard<name="Time for Guard U
 // Action Param 2
 typedef struct {
     float Gravity<name="Gravity (float)">;
-    float Speed_Rate<name="Speed Rate (float)">;
-    float X_Offset<name="X Offset (float)">;
-    float Y_Offset<name="Y Offset (float)">;
-    float Z_Offset<name="Z Offset (float)">;
+    float Time_Rate<name="Time Rate (float)">;
+    float Initial_X_Velocity<name="Initial X Velocity (float)">;
+    float Initial_Y_Velocity<name="Initial Y Velocity (float)">;
+    float Initial_Z_Velocity<name="Initial Z Velocity (float)">;
 } Action_Param_2;
 
 Action_Param_2 Action_Param_2_<name="Action Param 2">;
@@ -235,10 +235,10 @@ float Unk_144<name="Unk 144 (float)">;
 // Action Param 3
 typedef struct {
     float Gravity<name="Gravity (float)">;
-    float Speed_Rate<name="Speed Rate (float)">;
-    float X_Offset<name="X Offset (float)">;
-    float Y_Offset<name="Y Offset (float)">;
-    float Z_Offset<name="Z Offset (float)">;
+    float Time_Rate<name="Time Rate (float)">;
+    float Initial_X_Velocity<name="Initial X Velocity (float)">;
+    float Initial_Y_Velocity<name="Initial Y Velocity (float)">;
+    float Initial_Z_Velocity<name="Initial Z Velocity (float)">;
 } Action_Param_3;
 
 Action_Param_3 Action_Param_3_[2]<optimize=false, name="Action Param 3">;

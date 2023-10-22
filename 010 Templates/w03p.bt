@@ -204,10 +204,10 @@ float Iai_Spirit_Slash_Second_Hit_Time_Delay<name="Iai Spirit Slash Second Hit T
 // Action Param 1
 typedef struct {
     float Gravity<name="Gravity (float)">;
-    float Speed_Rate<name="Speed Rate (float)">;
-    float X_Offset<name="X Offset (float)">;
-    float Y_Offset<name="Y Offset (float)">;
-    float Z_Offset<name="Z Offset (float)">;
+    float Time_Rate<name="Time Rate (float)">;
+    float Initial_X_Velocity<name="Initial X Velocity (float)">;
+    float Initial_Y_Velocity<name="Initial Y Velocity (float)">;
+    float Initial_Z_Velocity<name="Initial Z Velocity (float)">;
 } Action_Param_1;
 
 Action_Param_1 Action_Param_1_<name="Action Param 1">;
@@ -219,10 +219,10 @@ float Unk_139<name="Unk 139 (float)">;
 // Action Param 2
 typedef struct {
     float Gravity<name="Gravity (float)">;
-    float Speed_Rate<name="Speed Rate (float)">;
-    float X_Offset<name="X Offset (float)">;
-    float Y_Offset<name="Y Offset (float)">;
-    float Z_Offset<name="Z Offset (float)">;
+    float Time_Rate<name="Time Rate (float)">;
+    float Initial_X_Velocity<name="Initial X Velocity (float)">;
+    float Initial_Y_Velocity<name="Initial Y Velocity (float)">;
+    float Initial_Z_Velocity<name="Initial Z Velocity (float)">;
 } Action_Param_2;
 
 Action_Param_2 Action_Param_2_<name="Action Param 2">;
@@ -233,10 +233,10 @@ float Unk_140<name="Unk 140 (float)">;
 // Action Param 3
 typedef struct {
     float Gravity<name="Gravity (float)">;
-    float Speed_Rate<name="Speed Rate (float)">;
-    float X_Offset<name="X Offset (float)">;
-    float Y_Offset<name="Y Offset (float)">;
-    float Z_Offset<name="Z Offset (float)">;
+    float Time_Rate<name="Time Rate (float)">;
+    float Initial_X_Velocity<name="Initial X Velocity (float)">;
+    float Initial_Y_Velocity<name="Initial Y Velocity (float)">;
+    float Initial_Z_Velocity<name="Initial Z Velocity (float)">;
 } Action_Param_3;
 
 Action_Param_3 Action_Param_3_[3]<optimize=false, name="Action Param 3">;
@@ -247,10 +247,10 @@ float Unk_141<name="Unk 141 (float)">;
 // Action Param 4
 typedef struct {
     float Gravity<name="Gravity (float)">;
-    float Speed_Rate<name="Speed Rate (float)">;
-    float X_Offset<name="X Offset (float)">;
-    float Y_Offset<name="Y Offset (float)">;
-    float Z_Offset<name="Z Offset (float)">;
+    float Time_Rate<name="Time Rate (float)">;
+    float Initial_X_Velocity<name="Initial X Velocity (float)">;
+    float Initial_Y_Velocity<name="Initial Y Velocity (float)">;
+    float Initial_Z_Velocity<name="Initial Z Velocity (float)">;
 } Action_Param_4;
 
 Action_Param_4 Action_Param_4_[2]<optimize=false, name="Action Param 4">;
@@ -269,10 +269,10 @@ float Helmbreaker_Red_Line_Delay<name="Helmbreaker Red Line Delay (float)">;
 // Action Param 5
 typedef struct {
     float Gravity<name="Gravity (float)">;
-    float Speed_Rate<name="Speed Rate (float)">;
-    float X_Offset<name="X Offset (float)">;
-    float Y_Offset<name="Y Offset (float)">;
-    float Z_Offset<name="Z Offset (float)">;
+    float Time_Rate<name="Time Rate (float)">;
+    float Initial_X_Velocity<name="Initial X Velocity (float)">;
+    float Initial_Y_Velocity<name="Initial Y Velocity (float)">;
+    float Initial_Z_Velocity<name="Initial Z Velocity (float)">;
 } Action_Param_5;
 
 Action_Param_5 Action_Param_5_<name="Action Param 5">;
