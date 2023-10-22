@@ -31,7 +31,7 @@ namespace MHW_Generator.Items {
                     new MhwMultiStructData.Entry("Item Id 2 Cnt", typeof(uint)),
                     new MhwMultiStructData.Entry("Item Id 3 Cnt", typeof(uint)),
                     new MhwMultiStructData.Entry("Research Points", typeof(uint))
-                }, _010Link: new MhwMultiStructData.ArrayLink(header, itemCount), uniqueIdFormula: "{Id}")
+                }, canAddRows: true, _010Link: new MhwMultiStructData.ArrayLink(header, itemCount), uniqueIdFormula: "{Id}")
             };
 
             return new MultiStruct("Items", "Bounty", new MhwMultiStructData(structs, "odr"));
