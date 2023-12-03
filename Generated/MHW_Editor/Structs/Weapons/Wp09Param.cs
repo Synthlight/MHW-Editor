@@ -5645,23 +5645,23 @@ namespace MHW_Editor.Structs.Weapons {
             [DisplayName("Offset")]
             public long Unk_190_offset { get; private set; }
 
-            protected float Savage_Axe_Duration_Multiplier_Impact_Phial__raw;
-            public const string Savage_Axe_Duration_Multiplier_Impact_Phial__displayName = "Savage Axe Duration Multiplier (Impact Phial)";
-            public const int Savage_Axe_Duration_Multiplier_Impact_Phial__sortIndex = 150;
-            [SortOrder(Savage_Axe_Duration_Multiplier_Impact_Phial__sortIndex)]
-            [DisplayName(Savage_Axe_Duration_Multiplier_Impact_Phial__displayName)]
-            public virtual float Savage_Axe_Duration_Multiplier_Impact_Phial_ {
-                get => Savage_Axe_Duration_Multiplier_Impact_Phial__raw;
+            protected float Savage_Axe_Duration_Impact_Phial_Inverse_Multiplier_of_Elemental_Phial_Duration__raw;
+            public const string Savage_Axe_Duration_Impact_Phial_Inverse_Multiplier_of_Elemental_Phial_Duration__displayName = "Savage Axe Duration (Impact Phial) (Inverse Multiplier of Elemental Phial Duration)";
+            public const int Savage_Axe_Duration_Impact_Phial_Inverse_Multiplier_of_Elemental_Phial_Duration__sortIndex = 150;
+            [SortOrder(Savage_Axe_Duration_Impact_Phial_Inverse_Multiplier_of_Elemental_Phial_Duration__sortIndex)]
+            [DisplayName(Savage_Axe_Duration_Impact_Phial_Inverse_Multiplier_of_Elemental_Phial_Duration__displayName)]
+            public virtual float Savage_Axe_Duration_Impact_Phial_Inverse_Multiplier_of_Elemental_Phial_Duration_ {
+                get => Savage_Axe_Duration_Impact_Phial_Inverse_Multiplier_of_Elemental_Phial_Duration__raw;
                 set {
-                    if (Savage_Axe_Duration_Multiplier_Impact_Phial__raw == value) return;
-                    Savage_Axe_Duration_Multiplier_Impact_Phial__raw = value;
-                    ChangedItems.Add(nameof(Savage_Axe_Duration_Multiplier_Impact_Phial_));
-                    OnPropertyChanged(nameof(Savage_Axe_Duration_Multiplier_Impact_Phial_));
+                    if (Savage_Axe_Duration_Impact_Phial_Inverse_Multiplier_of_Elemental_Phial_Duration__raw == value) return;
+                    Savage_Axe_Duration_Impact_Phial_Inverse_Multiplier_of_Elemental_Phial_Duration__raw = value;
+                    ChangedItems.Add(nameof(Savage_Axe_Duration_Impact_Phial_Inverse_Multiplier_of_Elemental_Phial_Duration_));
+                    OnPropertyChanged(nameof(Savage_Axe_Duration_Impact_Phial_Inverse_Multiplier_of_Elemental_Phial_Duration_));
                 }
             }
 
             [DisplayName("Offset")]
-            public long Savage_Axe_Duration_Multiplier_Impact_Phial__offset { get; private set; }
+            public long Savage_Axe_Duration_Impact_Phial_Inverse_Multiplier_of_Elemental_Phial_Duration__offset { get; private set; }
 
             protected float Unk_192_raw;
             public const string Unk_192_displayName = "Unk 192";
@@ -5735,8 +5735,8 @@ namespace MHW_Editor.Structs.Weapons {
                 data.Savage_Axe_Duration_Elemental_Phial__raw = reader.ReadSingle();
                 data.Unk_190_offset = reader.BaseStream.Position;
                 data.Unk_190_raw = reader.ReadSingle();
-                data.Savage_Axe_Duration_Multiplier_Impact_Phial__offset = reader.BaseStream.Position;
-                data.Savage_Axe_Duration_Multiplier_Impact_Phial__raw = reader.ReadSingle();
+                data.Savage_Axe_Duration_Impact_Phial_Inverse_Multiplier_of_Elemental_Phial_Duration__offset = reader.BaseStream.Position;
+                data.Savage_Axe_Duration_Impact_Phial_Inverse_Multiplier_of_Elemental_Phial_Duration__raw = reader.ReadSingle();
                 data.Unk_192_offset = reader.BaseStream.Position;
                 data.Unk_192_raw = reader.ReadSingle();
                 data.Unk_193_offset = reader.BaseStream.Position;
@@ -5749,7 +5749,7 @@ namespace MHW_Editor.Structs.Weapons {
             public void WriteData(BinaryWriter writer) {
                 writer.Write(Savage_Axe_Duration_Elemental_Phial__raw);
                 writer.Write(Unk_190_raw);
-                writer.Write(Savage_Axe_Duration_Multiplier_Impact_Phial__raw);
+                writer.Write(Savage_Axe_Duration_Impact_Phial_Inverse_Multiplier_of_Elemental_Phial_Duration__raw);
                 writer.Write(Unk_192_raw);
                 writer.Write(Unk_193_raw);
                 writer.Write(Savage_Axe_Tick_Sharpness_Use_on_N_Hit_raw);
@@ -5759,7 +5759,7 @@ namespace MHW_Editor.Structs.Weapons {
                 return new ObservableCollection<MultiStructItemCustomView> {
                     new MultiStructItemCustomView(this, "Savage Axe Duration (Elemental Phial)", "Savage_Axe_Duration_Elemental_Phial_", "Savage_Axe_Duration_Elemental_Phial__offset"),
                     new MultiStructItemCustomView(this, "Unk 190", "Unk_190", "Unk_190_offset"),
-                    new MultiStructItemCustomView(this, "Savage Axe Duration Multiplier (Impact Phial)", "Savage_Axe_Duration_Multiplier_Impact_Phial_", "Savage_Axe_Duration_Multiplier_Impact_Phial__offset"),
+                    new MultiStructItemCustomView(this, "Savage Axe Duration (Impact Phial) (Inverse Multiplier of Elemental Phial Duration)", "Savage_Axe_Duration_Impact_Phial_Inverse_Multiplier_of_Elemental_Phial_Duration_", "Savage_Axe_Duration_Impact_Phial_Inverse_Multiplier_of_Elemental_Phial_Duration__offset"),
                     new MultiStructItemCustomView(this, "Unk 192", "Unk_192", "Unk_192_offset"),
                     new MultiStructItemCustomView(this, "Unk 193", "Unk_193", "Unk_193_offset"),
                     new MultiStructItemCustomView(this, "Savage Axe Tick Sharpness Use on N Hit", "Savage_Axe_Tick_Sharpness_Use_on_N_Hit", "Savage_Axe_Tick_Sharpness_Use_on_N_Hit_offset"),

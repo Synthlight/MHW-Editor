@@ -345,7 +345,7 @@ Action_Param_5 Action_Param_5_<name="Action Param 5">;
 // W09p Params (18)
 float Savage_Axe_Duration_Elemental_Phial_<name="Savage Axe Duration (Elemental Phial) (float)">;
 float Unk_190<name="Unk 190 (float)">;
-float Savage_Axe_Duration_Multiplier_Impact_Phial_<name="Savage Axe Duration Multiplier (Impact Phial) (float)">;
+float Savage_Axe_Duration_Impact_Phial_Inverse_Multiplier_of_Elemental_Phial_Duration_<name="Savage Axe Duration (Impact Phial) (Inverse Multiplier of Elemental Phial Duration) (float)">;
 float Unk_192<name="Unk 192 (float)">;
 float Unk_193<name="Unk 193 (float)">;
 uint Savage_Axe_Tick_Sharpness_Use_on_N_Hit<name="Savage Axe Tick Sharpness Use on N Hit (uint)">;
