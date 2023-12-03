@@ -711,6 +711,7 @@ namespace MHW_Editor.Windows {
             if (fileName.EndsWith(".em104wud")) return typeof(AwakenedWpUpgrade);
             if (fileName.EndsWith(".em117glt")) return typeof(KulveGradeLottery);
             if (fileName.EndsWith(".em117iot")) return typeof(KulveItemLottery);
+            if (fileName.EndsWith(".emi")) return typeof(EnemyInfo);
             if (fileName.EndsWith(".emst")) return typeof(EnemySort);
             if (fileName.EndsWith(".em_ss")) return typeof(SmallMonsterSizeParams);
             if (fileName.EndsWith(".eq_crt")) return typeof(EqCrt);

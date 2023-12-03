@@ -64,6 +64,8 @@
     <Compile Include="GuildCard\UnlockType.cs" />
     <Compile Include="Items\Augments.cs" />
     <Compile Include="Items\MantleUpgrades.cs" />
+    <Compile Include="Misc\Condition.cs" />
+    <Compile Include="Misc\Stage.cs" />
     <Compile Include="Struct Generation\MultiStruct010Template.cs">
       <DependentUpon>MultiStruct010Template.tt</DependentUpon>
       <AutoGen>True</AutoGen>

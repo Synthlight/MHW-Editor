@@ -129,6 +129,7 @@
     <Compile Include="Generated\MHW_Editor\Structs\Items\ValueTrader.cs" />
     <Compile Include="Generated\MHW_Editor\Structs\Misc\MotionBlendData.cs" />
     <Compile Include="Generated\MHW_Editor\Structs\Monsters\AnimalSize.cs" />
+    <Compile Include="Generated\MHW_Editor\Structs\Monsters\EnemyInfo.cs" />
     <Compile Include="Generated\MHW_Editor\Structs\Monsters\EnemySort.cs" />
     <Compile Include="Generated\MHW_Editor\Structs\Monsters\MonsterClawGrab.cs" />
     <Compile Include="Generated\MHW_Editor\Structs\Monsters\MonsterCommonParam.cs" />
@@ -223,6 +224,7 @@
       <DependentUpon>MhwDataGrid.xaml</DependentUpon>
     </Compile>
     <Compile Include="Structs\Items\RoomAnimal.cs" />
+    <Compile Include="Structs\Monsters\EnemyInfo.cs" />
     <Compile Include="Structs\Monsters\MonsterCommonParam.cs" />
     <Compile Include="Structs\Monsters\MonsterSoften.cs" />
     <Compile Include="Util\EncryptionHelper.cs" />

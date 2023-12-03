@@ -87,6 +87,7 @@
     <Compile Include="Monsters\AnimalSize.cs" />
     <Compile Include="Monsters\MonsterCommonParam.cs" />
     <Compile Include="Monsters\MonsterDamageAttributes.cs" />
+    <Compile Include="Monsters\EnemyInfo.cs" />
     <Compile Include="Monsters\MonsterParts.cs" />
     <Compile Include="Monsters\EnemySort.cs" />
     <Compile Include="Monsters\MonsterClawGrab.cs" />

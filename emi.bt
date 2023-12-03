@@ -1,0 +1,208 @@
+//------------------------------------------------
+//--- 010 Editor v13.0.1 Binary Template
+//
+//      File: rEnemyInfo
+//   Authors: Fexty
+//   Version:
+//   Purpose:
+//  Category:
+// File Mask: *.emi
+//  ID Bytes:
+//   History:
+//------------------------------------------------
+
+typedef enum<uint32> {
+    Stage_None = 0,
+    Stage_AncientForest = 101,
+    Stage_WildspireWaste = 102,
+    Stage_CoralHighlands = 103,
+    Stage_RottenValue = 104,
+    Stage_EldersRecess = 105,
+    Stage_HoarfrostReach = 108,
+    Stage_GuidingLands = 109
+} Stage;
+
+typedef enum<int32> {
+    Anjanath=0,
+    Rathalos=1,
+    Aptonoth=2,
+    Jagras=3,
+    ZorahMagdaros=4,
+    Mosswine=5,
+    Gajau=6,
+    GreatJagras=7,
+    KestodonM=8,
+    Rathian=9,
+    PinkRathian=10,
+    AzureRathalos=11,
+    Diablos=12,
+    BlackDiablos=13,
+    Kirin=14,
+    Behemoth=15,
+    KushalaDaora=16,
+    Lunastra=17,
+    Teostra=18,
+    Lavasioth=19,
+    Deviljho=20,
+    Barroth=21,
+    Uragaan=22,
+    Leshen=23,
+    Pukei=24,
+    Nergigante=25,
+    XenoJiiva=26,
+    KuluYaKu=27,
+    TzitziYaKu=28,
+    Jyuratodus=29,
+    TobiKadachi=30,
+    Paolumu=31,
+    Legiana=32,
+    GreatGirros=33,
+    Odogaron=34,
+    Radobaan=35,
+    VaalHazak=36,
+    Dodogama=37,
+    KulveTaroth=38,
+    Bazelgeuse=39,
+    Apceros=40,
+    KelbiM=41,
+    KelbiF=42,
+    Hornetaur=43,
+    Vespoid=44,
+    Mernos=45,
+    KestodonF=46,
+    Raphinos=47,
+    Shamos=48,
+    Barnos=49,
+    Girros=50,
+    AncientLeshen=51,
+    Gastodon=52,
+    Noios=53,
+    Magmacore=54,
+    Magmacore2=55,
+    Gajalaka=56,
+    SmallBarrel=57,
+    LargeBarrel=58,
+    TrainingPole=59,
+    TrainingWagon=60,
+    Tigrex=61,
+    Nargacuga=62,
+    Barioth=63,
+    SavageDeviljho=64,
+    Brachydios=65,
+    Glavenus=66,
+    AcidicGlavenus=67,
+    FulgurAnjanath=68,
+    CoralPukei=69,
+    RuinerNergigante=70,
+    ViperTobi=71,
+    NightshadePaolumu=72,
+    ShriekingLegiana=73,
+    EbonyOdogaron=74,
+    BlackveilVaal=75,
+    SeethingBazelgeuse=76,
+    Beotodus=77,
+    Banbaro=78,
+    Velkhana=79,
+    Namielle=80,
+    SharaIshvalda=81,
+    Popo=82,
+    Anteka=83,
+    Wulg=84,
+    Cortos=85,
+    Boaboa=86,
+    Alatreon=87,
+    GoldRathian=88,
+    SilverRathalos=89,
+    YianGaruga=90,
+    Rajang=91,
+    FuriousRajang=92,
+    BruteTigrex=93,
+    Zinogre=94,
+    StygianZinogre=95,
+    RagingBrachy=96,
+    SafiJiiva=97,
+    Unavaliable=98,
+    ScarredYianGaruga=99,
+    FrostfangBarioth=100,
+    Fatalis=101
+} Monster;
+
+typedef enum<int32> {
+    None = -1,
+    WhenHardened = 0,
+    WhenCoveredInMud = 1,
+    WhenCoveredInGold = 2,
+    WhenCharged = 3,
+    WhenCrystallized = 4,
+    WhenEmittingLight = 5,
+    EldersealEfficacy = 6,
+    FireActive = 7,
+    IceActive = 8,
+    DragonActive = 9
+} Condition;
+
+typedef struct {
+    uint32 modifier;
+    uint32 part;
+    uint32 part;
+    uint32 part;
+} PartWeakness<read=Str("%d %d %d", this.part[0], this.part[1], this.part[2])>;
+
+typedef struct {
+    int32 name_displayed;
+    int32 unk;
+    int32 unk;
+} BreakConfig<read=Str("%d %d %d", this.name_displayed, this.unk[0], this.unk[1])>;
+
+typedef struct {
+    uint ib;
+    int16 version;
+    uint32 count;
+} Header;
+
+typedef struct {
+    Stage stage;
+    Stage stage;
+    Stage stage;
+    Stage stage;
+    Stage stage;
+    Stage stage;
+} AvailableStages<read=Str("%d %d %d %d %d %d", this.stage[0], this.stage[1], this.stage[2], this.stage[3], this.stage[4], this.stage[5])>;
+
+typedef struct {
+    Monster monster;
+    AvailableStages stages;
+    uint32 unk1;
+    uint32 unk2;
+    PartWeakness cut;
+    PartWeakness blunt;
+    PartWeakness shot;
+    BreakConfig part;
+    BreakConfig part;
+    BreakConfig part;
+    int32 unk3;
+    int32 fire;
+    int32 water;
+    int32 thunder;
+    int32 ice;
+    int32 dragon;
+    int32 poison;
+    int32 sleep;
+    int32 paralysis;
+    int32 blast;
+    int32 stun;
+    int32 conditional_fire;
+    int32 conditional_water;
+    int32 conditional_thunder;
+    int32 conditional_ice;
+    int32 conditional_dragon;
+    Condition condition;
+    int32 skeleton;
+    int32 rewards_skeleton;
+} EnemyInfo<read=Str("%s", EnumToString(this.monster))>;
+
+Header header;
+local uint i = 0;
+for (i; i < header.count; ++i) {
+    EnemyInfo info;
+}

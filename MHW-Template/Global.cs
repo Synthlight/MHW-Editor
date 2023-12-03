@@ -71,6 +71,7 @@ namespace MHW_Template {
             "*.em104wud",
             "*.em117glt",
             "*.em117iot",
+            "*.emi",
             "*.emst",
             "*.em_ss",
             "*.eq_crt",

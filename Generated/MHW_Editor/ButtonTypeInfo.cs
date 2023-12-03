@@ -18,6 +18,7 @@ namespace MHW_Editor {
             "DecoGradeLottery",
             "DecoLottery",
             "Decorations",
+            "EnemyInfo",
             "Entries",
             "EqCrt",
             "EqCus",
@@ -128,6 +129,7 @@ namespace MHW_Editor {
             "Mod_2_button",
             "Mod_3_button",
             "Mod_4_button",
+            "Monster_button",
             "Monster_Id_button",
             "Monster_Unlock_button",
             "Needed_Item_Id_to_Unlock_button",
@@ -361,6 +363,9 @@ namespace MHW_Editor {
                 "Unlock_Skill_4",
                 "Unlock_Skill_5",
                 "Unlock_Skill_6",
+            }},
+            {typeof(MHW_Editor.Structs.Monsters.EnemyInfo.Entries), new List<string> {
+                "Monster",
             }},
             {typeof(MHW_Editor.Structs.Monsters.MonsterDamageAttributes.Monster_Damage_Attributes_1_), new List<string> {
                 "Monster_Id",

@@ -1,0 +1,112 @@
+//------------------------------------------------
+//--- 010 Editor v10.0 Binary Template
+//   Authors: Many. See MHW Editor Cretits.
+// File Mask: *.emi
+//  Category: MHW-Editor
+//------------------------------------------------
+
+// Header
+typedef struct {
+    uint Magic_1<name="Magic 1 (uint)">;
+    ushort Magic_2<name="Magic 2 (ushort)">;
+    uint Entry_Count<name="Entry Count (uint)">;
+} Header;
+
+Header Header_<name="Header">;
+
+// Entries
+typedef struct {
+    uint Monster<name="Monster (uint)">;
+
+    // Available Stages
+    typedef struct {
+        uint Stage_1<name="Stage 1 (uint)">;
+        uint Stage_2<name="Stage 2 (uint)">;
+        uint Stage_3<name="Stage 3 (uint)">;
+        uint Stage_4<name="Stage 4 (uint)">;
+        uint Stage_5<name="Stage 5 (uint)">;
+        uint Stage_6<name="Stage 6 (uint)">;
+    } Available_Stages;
+
+    Available_Stages Available_Stages_<name="Available Stages">;
+    uint Unk_1<name="Unk 1 (uint)">;
+    uint Unk_2<name="Unk 2 (uint)">;
+
+    // Part Weakness: Cut
+    typedef struct {
+        uint Modifier<name="Modifier (uint)">;
+        uint Part_1<name="Part 1 (uint)">;
+        uint Part_2<name="Part 2 (uint)">;
+        uint Part_3<name="Part 3 (uint)">;
+    } Part_Weakness_Cut;
+
+    Part_Weakness_Cut Part_Weakness_Cut_<name="Part Weakness: Cut">;
+
+    // Part Weakness: Blunt
+    typedef struct {
+        uint Modifier<name="Modifier (uint)">;
+        uint Part_1<name="Part 1 (uint)">;
+        uint Part_2<name="Part 2 (uint)">;
+        uint Part_3<name="Part 3 (uint)">;
+    } Part_Weakness_Blunt;
+
+    Part_Weakness_Blunt Part_Weakness_Blunt_<name="Part Weakness: Blunt">;
+
+    // Part Weakness: Shot
+    typedef struct {
+        uint Modifier<name="Modifier (uint)">;
+        uint Part_1<name="Part 1 (uint)">;
+        uint Part_2<name="Part 2 (uint)">;
+        uint Part_3<name="Part 3 (uint)">;
+    } Part_Weakness_Shot;
+
+    Part_Weakness_Shot Part_Weakness_Shot_<name="Part Weakness: Shot">;
+
+    // Break Config 1
+    typedef struct {
+        uint Name_Displayed<name="Name Displayed (uint)">;
+        int Unk_1<name="Unk 1 (int)">;
+        int Unk_2<name="Unk 2 (int)">;
+    } Break_Config_1;
+
+    Break_Config_1 Break_Config_1_<name="Break Config 1">;
+
+    // Break Config 2
+    typedef struct {
+        uint Name_Displayed<name="Name Displayed (uint)">;
+        int Unk_1<name="Unk 1 (int)">;
+        int Unk_2<name="Unk 2 (int)">;
+    } Break_Config_2;
+
+    Break_Config_2 Break_Config_2_<name="Break Config 2">;
+
+    // Break Config 3
+    typedef struct {
+        uint Name_Displayed<name="Name Displayed (uint)">;
+        int Unk_1<name="Unk 1 (int)">;
+        int Unk_2<name="Unk 2 (int)">;
+    } Break_Config_3;
+
+    Break_Config_3 Break_Config_3_<name="Break Config 3">;
+    int Unk_3<name="Unk 3 (int)">;
+    int Fire<name="Fire (int)">;
+    int Water<name="Water (int)">;
+    int Thunder<name="Thunder (int)">;
+    int Ice<name="Ice (int)">;
+    int Dragon<name="Dragon (int)">;
+    int Poison<name="Poison (int)">;
+    int Sleep<name="Sleep (int)">;
+    int Paralysis<name="Paralysis (int)">;
+    int Blast<name="Blast (int)">;
+    int Stun<name="Stun (int)">;
+    int Conditional_Fire<name="Conditional Fire (int)">;
+    int Conditional_Water<name="Conditional Water (int)">;
+    int Conditional_Thunder<name="Conditional Thunder (int)">;
+    int Conditional_Ice<name="Conditional Ice (int)">;
+    int Conditional_Dragon<name="Conditional Dragon (int)">;
+    int Condition<name="Condition (int)">;
+    int Skeleton<name="Skeleton (int)">;
+    int Rewards_Skeleton<name="Rewards Skeleton (int)">;
+} Entries;
+
+Entries Entries_[Header_.Entry_Count]<optimize=false, name="Entries">;
