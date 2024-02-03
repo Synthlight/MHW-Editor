@@ -133,6 +133,9 @@
   <data name="ara_bow" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>weapondata\ara_bow.json;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
+  <data name="ara_catSkillData" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>CatSkillData\ara_catSkillData.json;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
   <data name="ara_customPartsData" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>custompartsdata\ara_custompartsdata.json;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
@@ -141,6 +144,9 @@
   </data>
   <data name="ara_expressionData" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>guildcarddata\expressions\ara_expressiondata.json;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="ara_foodData" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>FoodData\ara_foodData.json;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="ara_g_lance" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>weapondata\ara_g_lance.json;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
@@ -226,6 +232,9 @@
   <data name="chS_bow" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>weapondata\chs_bow.json;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
+  <data name="chS_catSkillData" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>CatSkillData\chS_catSkillData.json;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
   <data name="chS_customPartsData" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>custompartsdata\chs_custompartsdata.json;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
@@ -234,6 +243,9 @@
   </data>
   <data name="chS_expressionData" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>guildcarddata\expressions\chs_expressiondata.json;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="chS_foodData" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>FoodData\chS_foodData.json;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="chS_g_lance" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>weapondata\chs_g_lance.json;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
@@ -319,6 +331,9 @@
   <data name="chT_bow" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>weapondata\cht_bow.json;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
+  <data name="chT_catSkillData" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>CatSkillData\chT_catSkillData.json;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
   <data name="chT_customPartsData" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>custompartsdata\cht_custompartsdata.json;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
@@ -327,6 +342,9 @@
   </data>
   <data name="chT_expressionData" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>guildcarddata\expressions\cht_expressiondata.json;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="chT_foodData" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>FoodData\chT_foodData.json;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="chT_g_lance" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>weapondata\cht_g_lance.json;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
@@ -415,6 +433,9 @@
   <data name="eng_bow" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>weapondata\eng_bow.json;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
+  <data name="eng_catSkillData" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>CatSkillData\eng_catSkillData.json;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
   <data name="eng_customPartsData" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>custompartsdata\eng_custompartsdata.json;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
@@ -423,6 +444,9 @@
   </data>
   <data name="eng_expressionData" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>guildcarddata\expressions\eng_expressiondata.json;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="eng_foodData" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>FoodData\eng_foodData.json;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="eng_g_lance" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>weapondata\eng_g_lance.json;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
@@ -508,6 +532,9 @@
   <data name="fre_bow" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>weapondata\fre_bow.json;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
+  <data name="fre_catSkillData" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>CatSkillData\fre_catSkillData.json;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
   <data name="fre_customPartsData" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>custompartsdata\fre_custompartsdata.json;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
@@ -516,6 +543,9 @@
   </data>
   <data name="fre_expressionData" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>guildcarddata\expressions\fre_expressiondata.json;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="fre_foodData" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>FoodData\fre_foodData.json;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="fre_g_lance" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>weapondata\fre_g_lance.json;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
@@ -601,6 +631,9 @@
   <data name="ger_bow" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>weapondata\ger_bow.json;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
+  <data name="ger_catSkillData" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>CatSkillData\ger_catSkillData.json;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
   <data name="ger_customPartsData" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>custompartsdata\ger_custompartsdata.json;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
@@ -609,6 +642,9 @@
   </data>
   <data name="ger_expressionData" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>guildcarddata\expressions\ger_expressiondata.json;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="ger_foodData" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>FoodData\ger_foodData.json;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="ger_g_lance" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>weapondata\ger_g_lance.json;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
@@ -694,6 +730,9 @@
   <data name="ita_bow" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>weapondata\ita_bow.json;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
+  <data name="ita_catSkillData" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>CatSkillData\ita_catSkillData.json;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
   <data name="ita_customPartsData" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>custompartsdata\ita_custompartsdata.json;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
@@ -702,6 +741,9 @@
   </data>
   <data name="ita_expressionData" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>guildcarddata\expressions\ita_expressiondata.json;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="ita_foodData" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>FoodData\ita_foodData.json;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="ita_g_lance" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>weapondata\ita_g_lance.json;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
@@ -787,6 +829,9 @@
   <data name="jpn_bow" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>weapondata\jpn_bow.json;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
+  <data name="jpn_catSkillData" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>CatSkillData\jpn_catSkillData.json;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
   <data name="jpn_customPartsData" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>custompartsdata\jpn_custompartsdata.json;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
@@ -795,6 +840,9 @@
   </data>
   <data name="jpn_expressionData" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>guildcarddata\expressions\jpn_expressiondata.json;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="jpn_foodData" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>FoodData\jpn_foodData.json;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="jpn_g_lance" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>weapondata\jpn_g_lance.json;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
@@ -880,6 +928,9 @@
   <data name="kor_bow" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>weapondata\kor_bow.json;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
+  <data name="kor_catSkillData" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>CatSkillData\kor_catSkillData.json;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
   <data name="kor_customPartsData" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>custompartsdata\kor_custompartsdata.json;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
@@ -888,6 +939,9 @@
   </data>
   <data name="kor_expressionData" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>guildcarddata\expressions\kor_expressiondata.json;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="kor_foodData" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>FoodData\kor_foodData.json;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="kor_g_lance" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>weapondata\kor_g_lance.json;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
@@ -1561,6 +1615,9 @@
   <data name="pol_bow" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>weapondata\pol_bow.json;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
+  <data name="pol_catSkillData" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>CatSkillData\pol_catSkillData.json;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
   <data name="pol_customPartsData" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>custompartsdata\pol_custompartsdata.json;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
@@ -1569,6 +1626,9 @@
   </data>
   <data name="pol_expressionData" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>guildcarddata\expressions\pol_expressiondata.json;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="pol_foodData" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>FoodData\pol_foodData.json;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="pol_g_lance" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>weapondata\pol_g_lance.json;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
@@ -1654,6 +1714,9 @@
   <data name="ptB_bow" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>weapondata\ptb_bow.json;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
+  <data name="ptB_catSkillData" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>CatSkillData\ptB_catSkillData.json;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
   <data name="ptB_customPartsData" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>custompartsdata\ptb_custompartsdata.json;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
@@ -1662,6 +1725,9 @@
   </data>
   <data name="ptB_expressionData" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>guildcarddata\expressions\ptb_expressiondata.json;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="ptB_foodData" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>FoodData\ptB_foodData.json;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="ptB_g_lance" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>weapondata\ptb_g_lance.json;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
@@ -1747,6 +1813,9 @@
   <data name="rus_bow" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>weapondata\rus_bow.json;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
+  <data name="rus_catSkillData" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>CatSkillData\rus_catSkillData.json;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
   <data name="rus_customPartsData" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>custompartsdata\rus_custompartsdata.json;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
@@ -1755,6 +1824,9 @@
   </data>
   <data name="rus_expressionData" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>guildcarddata\expressions\rus_expressiondata.json;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="rus_foodData" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>FoodData\rus_foodData.json;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="rus_g_lance" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>weapondata\rus_g_lance.json;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
@@ -1843,6 +1915,9 @@
   <data name="spa_bow" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>weapondata\spa_bow.json;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
+  <data name="spa_catSkillData" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>CatSkillData\spa_catSkillData.json;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
   <data name="spa_customPartsData" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>custompartsdata\spa_custompartsdata.json;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
@@ -1851,6 +1926,9 @@
   </data>
   <data name="spa_expressionData" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>guildcarddata\expressions\spa_expressiondata.json;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="spa_foodData" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>FoodData\spa_foodData.json;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="spa_g_lance" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>weapondata\spa_g_lance.json;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
@@ -1936,6 +2014,9 @@
   <data name="spL_bow" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>WeaponData\spL_bow.json;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
+  <data name="spL_catSkillData" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>CatSkillData\spL_catSkillData.json;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
   <data name="spL_customPartsData" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>CustomPartsData\spL_customPartsData.json;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
@@ -1944,6 +2025,9 @@
   </data>
   <data name="spL_expressionData" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>GuildCardData\Expressions\spL_expressionData.json;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="spL_foodData" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>FoodData\spL_foodData.json;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="spL_g_lance" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>WeaponData\spL_g_lance.json;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>

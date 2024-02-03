@@ -123,6 +123,16 @@ namespace MHW_Editor.Assets {
         /// <summary>
         ///   Looks up a localized resource of type System.Byte[].
         /// </summary>
+        internal static byte[] ara_catSkillData {
+            get {
+                object obj = ResourceManager.GetObject("ara_catSkillData", resourceCulture);
+                return ((byte[])(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Byte[].
+        /// </summary>
         internal static byte[] ara_customPartsData {
             get {
                 object obj = ResourceManager.GetObject("ara_customPartsData", resourceCulture);
@@ -136,6 +146,16 @@ namespace MHW_Editor.Assets {
         internal static byte[] ara_expressionData {
             get {
                 object obj = ResourceManager.GetObject("ara_expressionData", resourceCulture);
+                return ((byte[])(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Byte[].
+        /// </summary>
+        internal static byte[] ara_foodData {
+            get {
+                object obj = ResourceManager.GetObject("ara_foodData", resourceCulture);
                 return ((byte[])(obj));
             }
         }
@@ -433,6 +453,16 @@ namespace MHW_Editor.Assets {
         /// <summary>
         ///   Looks up a localized resource of type System.Byte[].
         /// </summary>
+        internal static byte[] chS_catSkillData {
+            get {
+                object obj = ResourceManager.GetObject("chS_catSkillData", resourceCulture);
+                return ((byte[])(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Byte[].
+        /// </summary>
         internal static byte[] chS_customPartsData {
             get {
                 object obj = ResourceManager.GetObject("chS_customPartsData", resourceCulture);
@@ -446,6 +476,16 @@ namespace MHW_Editor.Assets {
         internal static byte[] chS_expressionData {
             get {
                 object obj = ResourceManager.GetObject("chS_expressionData", resourceCulture);
+                return ((byte[])(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Byte[].
+        /// </summary>
+        internal static byte[] chS_foodData {
+            get {
+                object obj = ResourceManager.GetObject("chS_foodData", resourceCulture);
                 return ((byte[])(obj));
             }
         }
@@ -743,6 +783,16 @@ namespace MHW_Editor.Assets {
         /// <summary>
         ///   Looks up a localized resource of type System.Byte[].
         /// </summary>
+        internal static byte[] chT_catSkillData {
+            get {
+                object obj = ResourceManager.GetObject("chT_catSkillData", resourceCulture);
+                return ((byte[])(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Byte[].
+        /// </summary>
         internal static byte[] chT_customPartsData {
             get {
                 object obj = ResourceManager.GetObject("chT_customPartsData", resourceCulture);
@@ -756,6 +806,16 @@ namespace MHW_Editor.Assets {
         internal static byte[] chT_expressionData {
             get {
                 object obj = ResourceManager.GetObject("chT_expressionData", resourceCulture);
+                return ((byte[])(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Byte[].
+        /// </summary>
+        internal static byte[] chT_foodData {
+            get {
+                object obj = ResourceManager.GetObject("chT_foodData", resourceCulture);
                 return ((byte[])(obj));
             }
         }
@@ -1063,6 +1123,16 @@ namespace MHW_Editor.Assets {
         /// <summary>
         ///   Looks up a localized resource of type System.Byte[].
         /// </summary>
+        internal static byte[] eng_catSkillData {
+            get {
+                object obj = ResourceManager.GetObject("eng_catSkillData", resourceCulture);
+                return ((byte[])(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Byte[].
+        /// </summary>
         internal static byte[] eng_customPartsData {
             get {
                 object obj = ResourceManager.GetObject("eng_customPartsData", resourceCulture);
@@ -1076,6 +1146,16 @@ namespace MHW_Editor.Assets {
         internal static byte[] eng_expressionData {
             get {
                 object obj = ResourceManager.GetObject("eng_expressionData", resourceCulture);
+                return ((byte[])(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Byte[].
+        /// </summary>
+        internal static byte[] eng_foodData {
+            get {
+                object obj = ResourceManager.GetObject("eng_foodData", resourceCulture);
                 return ((byte[])(obj));
             }
         }
@@ -1373,6 +1453,16 @@ namespace MHW_Editor.Assets {
         /// <summary>
         ///   Looks up a localized resource of type System.Byte[].
         /// </summary>
+        internal static byte[] fre_catSkillData {
+            get {
+                object obj = ResourceManager.GetObject("fre_catSkillData", resourceCulture);
+                return ((byte[])(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Byte[].
+        /// </summary>
         internal static byte[] fre_customPartsData {
             get {
                 object obj = ResourceManager.GetObject("fre_customPartsData", resourceCulture);
@@ -1386,6 +1476,16 @@ namespace MHW_Editor.Assets {
         internal static byte[] fre_expressionData {
             get {
                 object obj = ResourceManager.GetObject("fre_expressionData", resourceCulture);
+                return ((byte[])(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Byte[].
+        /// </summary>
+        internal static byte[] fre_foodData {
+            get {
+                object obj = ResourceManager.GetObject("fre_foodData", resourceCulture);
                 return ((byte[])(obj));
             }
         }
@@ -1683,6 +1783,16 @@ namespace MHW_Editor.Assets {
         /// <summary>
         ///   Looks up a localized resource of type System.Byte[].
         /// </summary>
+        internal static byte[] ger_catSkillData {
+            get {
+                object obj = ResourceManager.GetObject("ger_catSkillData", resourceCulture);
+                return ((byte[])(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Byte[].
+        /// </summary>
         internal static byte[] ger_customPartsData {
             get {
                 object obj = ResourceManager.GetObject("ger_customPartsData", resourceCulture);
@@ -1696,6 +1806,16 @@ namespace MHW_Editor.Assets {
         internal static byte[] ger_expressionData {
             get {
                 object obj = ResourceManager.GetObject("ger_expressionData", resourceCulture);
+                return ((byte[])(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Byte[].
+        /// </summary>
+        internal static byte[] ger_foodData {
+            get {
+                object obj = ResourceManager.GetObject("ger_foodData", resourceCulture);
                 return ((byte[])(obj));
             }
         }
@@ -1993,6 +2113,16 @@ namespace MHW_Editor.Assets {
         /// <summary>
         ///   Looks up a localized resource of type System.Byte[].
         /// </summary>
+        internal static byte[] ita_catSkillData {
+            get {
+                object obj = ResourceManager.GetObject("ita_catSkillData", resourceCulture);
+                return ((byte[])(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Byte[].
+        /// </summary>
         internal static byte[] ita_customPartsData {
             get {
                 object obj = ResourceManager.GetObject("ita_customPartsData", resourceCulture);
@@ -2006,6 +2136,16 @@ namespace MHW_Editor.Assets {
         internal static byte[] ita_expressionData {
             get {
                 object obj = ResourceManager.GetObject("ita_expressionData", resourceCulture);
+                return ((byte[])(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Byte[].
+        /// </summary>
+        internal static byte[] ita_foodData {
+            get {
+                object obj = ResourceManager.GetObject("ita_foodData", resourceCulture);
                 return ((byte[])(obj));
             }
         }
@@ -2303,6 +2443,16 @@ namespace MHW_Editor.Assets {
         /// <summary>
         ///   Looks up a localized resource of type System.Byte[].
         /// </summary>
+        internal static byte[] jpn_catSkillData {
+            get {
+                object obj = ResourceManager.GetObject("jpn_catSkillData", resourceCulture);
+                return ((byte[])(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Byte[].
+        /// </summary>
         internal static byte[] jpn_customPartsData {
             get {
                 object obj = ResourceManager.GetObject("jpn_customPartsData", resourceCulture);
@@ -2316,6 +2466,16 @@ namespace MHW_Editor.Assets {
         internal static byte[] jpn_expressionData {
             get {
                 object obj = ResourceManager.GetObject("jpn_expressionData", resourceCulture);
+                return ((byte[])(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Byte[].
+        /// </summary>
+        internal static byte[] jpn_foodData {
+            get {
+                object obj = ResourceManager.GetObject("jpn_foodData", resourceCulture);
                 return ((byte[])(obj));
             }
         }
@@ -2613,6 +2773,16 @@ namespace MHW_Editor.Assets {
         /// <summary>
         ///   Looks up a localized resource of type System.Byte[].
         /// </summary>
+        internal static byte[] kor_catSkillData {
+            get {
+                object obj = ResourceManager.GetObject("kor_catSkillData", resourceCulture);
+                return ((byte[])(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Byte[].
+        /// </summary>
         internal static byte[] kor_customPartsData {
             get {
                 object obj = ResourceManager.GetObject("kor_customPartsData", resourceCulture);
@@ -2626,6 +2796,16 @@ namespace MHW_Editor.Assets {
         internal static byte[] kor_expressionData {
             get {
                 object obj = ResourceManager.GetObject("kor_expressionData", resourceCulture);
+                return ((byte[])(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Byte[].
+        /// </summary>
+        internal static byte[] kor_foodData {
+            get {
+                object obj = ResourceManager.GetObject("kor_foodData", resourceCulture);
                 return ((byte[])(obj));
             }
         }
@@ -4883,6 +5063,16 @@ namespace MHW_Editor.Assets {
         /// <summary>
         ///   Looks up a localized resource of type System.Byte[].
         /// </summary>
+        internal static byte[] pol_catSkillData {
+            get {
+                object obj = ResourceManager.GetObject("pol_catSkillData", resourceCulture);
+                return ((byte[])(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Byte[].
+        /// </summary>
         internal static byte[] pol_customPartsData {
             get {
                 object obj = ResourceManager.GetObject("pol_customPartsData", resourceCulture);
@@ -4896,6 +5086,16 @@ namespace MHW_Editor.Assets {
         internal static byte[] pol_expressionData {
             get {
                 object obj = ResourceManager.GetObject("pol_expressionData", resourceCulture);
+                return ((byte[])(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Byte[].
+        /// </summary>
+        internal static byte[] pol_foodData {
+            get {
+                object obj = ResourceManager.GetObject("pol_foodData", resourceCulture);
                 return ((byte[])(obj));
             }
         }
@@ -5193,6 +5393,16 @@ namespace MHW_Editor.Assets {
         /// <summary>
         ///   Looks up a localized resource of type System.Byte[].
         /// </summary>
+        internal static byte[] ptB_catSkillData {
+            get {
+                object obj = ResourceManager.GetObject("ptB_catSkillData", resourceCulture);
+                return ((byte[])(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Byte[].
+        /// </summary>
         internal static byte[] ptB_customPartsData {
             get {
                 object obj = ResourceManager.GetObject("ptB_customPartsData", resourceCulture);
@@ -5206,6 +5416,16 @@ namespace MHW_Editor.Assets {
         internal static byte[] ptB_expressionData {
             get {
                 object obj = ResourceManager.GetObject("ptB_expressionData", resourceCulture);
+                return ((byte[])(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Byte[].
+        /// </summary>
+        internal static byte[] ptB_foodData {
+            get {
+                object obj = ResourceManager.GetObject("ptB_foodData", resourceCulture);
                 return ((byte[])(obj));
             }
         }
@@ -5503,6 +5723,16 @@ namespace MHW_Editor.Assets {
         /// <summary>
         ///   Looks up a localized resource of type System.Byte[].
         /// </summary>
+        internal static byte[] rus_catSkillData {
+            get {
+                object obj = ResourceManager.GetObject("rus_catSkillData", resourceCulture);
+                return ((byte[])(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Byte[].
+        /// </summary>
         internal static byte[] rus_customPartsData {
             get {
                 object obj = ResourceManager.GetObject("rus_customPartsData", resourceCulture);
@@ -5516,6 +5746,16 @@ namespace MHW_Editor.Assets {
         internal static byte[] rus_expressionData {
             get {
                 object obj = ResourceManager.GetObject("rus_expressionData", resourceCulture);
+                return ((byte[])(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Byte[].
+        /// </summary>
+        internal static byte[] rus_foodData {
+            get {
+                object obj = ResourceManager.GetObject("rus_foodData", resourceCulture);
                 return ((byte[])(obj));
             }
         }
@@ -5823,6 +6063,16 @@ namespace MHW_Editor.Assets {
         /// <summary>
         ///   Looks up a localized resource of type System.Byte[].
         /// </summary>
+        internal static byte[] spa_catSkillData {
+            get {
+                object obj = ResourceManager.GetObject("spa_catSkillData", resourceCulture);
+                return ((byte[])(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Byte[].
+        /// </summary>
         internal static byte[] spa_customPartsData {
             get {
                 object obj = ResourceManager.GetObject("spa_customPartsData", resourceCulture);
@@ -5836,6 +6086,16 @@ namespace MHW_Editor.Assets {
         internal static byte[] spa_expressionData {
             get {
                 object obj = ResourceManager.GetObject("spa_expressionData", resourceCulture);
+                return ((byte[])(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Byte[].
+        /// </summary>
+        internal static byte[] spa_foodData {
+            get {
+                object obj = ResourceManager.GetObject("spa_foodData", resourceCulture);
                 return ((byte[])(obj));
             }
         }
@@ -6133,6 +6393,16 @@ namespace MHW_Editor.Assets {
         /// <summary>
         ///   Looks up a localized resource of type System.Byte[].
         /// </summary>
+        internal static byte[] spL_catSkillData {
+            get {
+                object obj = ResourceManager.GetObject("spL_catSkillData", resourceCulture);
+                return ((byte[])(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Byte[].
+        /// </summary>
         internal static byte[] spL_customPartsData {
             get {
                 object obj = ResourceManager.GetObject("spL_customPartsData", resourceCulture);
@@ -6146,6 +6416,16 @@ namespace MHW_Editor.Assets {
         internal static byte[] spL_expressionData {
             get {
                 object obj = ResourceManager.GetObject("spL_expressionData", resourceCulture);
+                return ((byte[])(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Byte[].
+        /// </summary>
+        internal static byte[] spL_foodData {
+            get {
+                object obj = ResourceManager.GetObject("spL_foodData", resourceCulture);
                 return ((byte[])(obj));
             }
         }

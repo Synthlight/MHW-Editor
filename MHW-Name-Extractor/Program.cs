@@ -39,6 +39,9 @@ namespace MHW_Name_Extractor {
                 GetAndWriteGmdStringsAsJson($@"{Global.COMMON_TEXT_ROOT}\steam\GC_Facial_{lang}.gmd", $@"{Global.ASSETS_ROOT}\GuildCardData\Expressions\{lang}_expressionData.json"); // .gcod
                 GetAndWriteGmdStringsAsJson($@"{Global.COMMON_TEXT_ROOT}\steam\GC_Pose_{lang}.gmd", $@"{Global.ASSETS_ROOT}\GuildCardData\Poses\{lang}_poseData.json"); // .gcod
 
+                GetAndWriteGmdStringsAsJson($@"{Global.COMMON_TEXT_ROOT}\vfont\food_{lang}.gmd", $@"{Global.ASSETS_ROOT}\FoodData\{lang}_foodData.json"); // food.rfd
+                GetAndWriteGmdStringsAsJson($@"{Global.COMMON_TEXT_ROOT}\vfont\catSkill_{lang}.gmd", $@"{Global.ASSETS_ROOT}\CatSkillData\{lang}_catSkillData.json"); // .cat_skill
+
                 GetAndWriteGmdStringsAsJson($@"{Global.COMMON_TEXT_ROOT}\em_names_{lang}.gmd", $@"{Global.ASSETS_ROOT}\MonsterData\{lang}_monsterData.json"); // Monster Id lookup.
 
                 // Not sure how it connects to skill id.

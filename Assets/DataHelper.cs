@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Diagnostics.CodeAnalysis;
 using System.Text;
 using MHW_Template;
 using MHW_Template.Armors;
@@ -9,17 +10,22 @@ using MHW_Template.Weapons;
 using Newtonsoft.Json;
 
 namespace MHW_Editor.Assets {
+    [SuppressMessage("ReSharper", "InconsistentNaming")]
     public static class DataHelper {
         public static readonly LangMap                     armorData                     = new LangMap(); // Uses GMD reference.
         public static readonly LangMap                     awakeningNames                = new LangMap();
         public static readonly LangMap                     awakeningDescriptions         = new LangMap();
         public static readonly LangMap                     bountyNames                   = new LangMap();
         public static readonly LangMap                     bountyDescriptions            = new LangMap();
+        public static readonly LangMap                     catSkillNames                 = new LangMap();
+        public static readonly LangMap                     catSkillDescriptions          = new LangMap();
         public static readonly Dictionary<uint, string>    colorData                     = new Dictionary<uint, string>();
         public static readonly LangMap                     customPartsNames              = new LangMap();
         public static readonly LangMap                     customPartsDescriptions       = new LangMap();
         public static readonly LangMap                     customPartsRecipeNames        = new LangMap();
         public static readonly LangMap                     customPartsRecipeDescriptions = new LangMap();
+        public static readonly LangMap                     foodNames                     = new LangMap();
+        public static readonly LangMap                     foodDescriptions              = new LangMap();
         public static readonly LangMap                     gcBackgroundsGmd              = new LangMap();
         public static readonly LangMap                     gcTitles1Gmd                  = new LangMap();
         public static readonly LangMap                     gcTitles2Gmd                  = new LangMap();
@@ -103,6 +109,8 @@ namespace MHW_Editor.Assets {
                 ParseAwakeningData(lang);
                 ParseMonsterData(lang);
                 ParseCustomPartsData(lang);
+                ParseCatSkillData(lang);
+                ParseFoodData(lang);
 
                 armorData[lang]       = LoadDict<uint, string>(GetAsset($"{lang}_armorData"));
                 otomoArmorData[lang]  = LoadDict<uint, string>(GetAsset($"{lang}_otomo_armorData"));
@@ -274,6 +282,36 @@ namespace MHW_Editor.Assets {
                 if (name == "Unavailable") continue;
                 customPartsRecipeNames[lang][s]          = name;
                 customPartsRecipeDescriptions[lang][s++] = desc;
+            }
+        }
+
+        private static void ParseCatSkillData(string lang) {
+            catSkillNames[lang]        = new Dictionary<uint, string>();
+            catSkillDescriptions[lang] = new Dictionary<uint, string>();
+
+            var rawItemData = LoadDict<uint, string>(GetAsset($"{lang}_catSkillData"));
+
+            const uint step = 2;
+            for (uint index = 0; index < rawItemData.Count; index += step) {
+                var key = index / step;
+
+                catSkillNames[lang][key]        = rawItemData[index];
+                catSkillDescriptions[lang][key] = rawItemData[index + 1].Replace("\r\n", " ");
+            }
+        }
+
+        private static void ParseFoodData(string lang) {
+            foodNames[lang]        = new Dictionary<uint, string>();
+            foodDescriptions[lang] = new Dictionary<uint, string>();
+
+            var rawItemData = LoadDict<uint, string>(GetAsset($"{lang}_foodData"));
+
+            const uint step = 2;
+            for (uint index = 0; index < rawItemData.Count; index += step) {
+                var key = index / step;
+
+                foodNames[lang][key]        = rawItemData[index];
+                foodDescriptions[lang][key] = rawItemData[index + 1].Replace("\r\n", " ");
             }
         }
 
