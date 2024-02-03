@@ -1,0 +1,25 @@
+//------------------------------------------------
+//--- 010 Editor v10.0 Binary Template
+//   Authors: Many. See MHW Editor Cretits.
+// File Mask: *.cat_skill
+//  Category: MHW-Editor
+//------------------------------------------------
+
+// Header
+typedef struct {
+    uint Magic_1<name="Magic 1 (uint)">;
+    ushort Magic_2<name="Magic 2 (ushort)">;
+    uint Entry_Count<name="Entry Count (uint)">;
+} Header;
+
+Header Header_<name="Header">;
+
+// Entries
+typedef struct {
+    uint Unk_1<name="Unk 1 (uint)">;
+    uint Unk_2<name="Unk 2 (uint)">;
+    int Unk_3<name="Unk 3 (int)">;
+    uint Unk_4<name="Unk 4 (uint)">;
+} Entries;
+
+Entries Entries_[Header_.Entry_Count]<optimize=false, name="Entries">;

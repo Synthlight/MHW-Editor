@@ -684,6 +684,7 @@ namespace MHW_Editor.Windows {
             if (fileName.EndsWith(".ask")) return typeof(ASkill);
             if (fileName.EndsWith(".asp")) return typeof(PlMantleParam);
             if (fileName.EndsWith(".bbtbl")) return typeof(BottleTable);
+            if (fileName.EndsWith(".cat_skill")) return typeof(CatSkill);
             if (fileName.EndsWith(".ch_dat")) return typeof(PendantData);
             if (fileName.EndsWith(".col")) return typeof(Collision);
             if (fileName.EndsWith(".cus_otr")) return typeof(CustomOuterRecipe);
@@ -747,6 +748,7 @@ namespace MHW_Editor.Windows {
             if (fileName.EndsWith(".ranml")) return typeof(RoomAnimal);
             if (fileName.EndsWith(".ransz")) return typeof(AnimalSize);
             if (fileName.EndsWith(".rem")) return typeof(QuestReward);
+            if (fileName.EndsWith(".rfd")) return typeof(Food);
             if (fileName.EndsWith(".rfur")) return typeof(RoomFurniture);
             if (fileName.EndsWith(".sed")) return typeof(ShopSed);
             if (fileName.EndsWith(".sgpa")) return typeof(Gem);

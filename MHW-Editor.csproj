@@ -128,6 +128,7 @@
     <Compile Include="Generated\MHW_Editor\Structs\Items\Treasure.cs" />
     <Compile Include="Generated\MHW_Editor\Structs\Items\ValueTrader.cs" />
     <Compile Include="Generated\MHW_Editor\Structs\Misc\FestivalSchedule.cs" />
+    <Compile Include="Generated\MHW_Editor\Structs\Misc\Food.cs" />
     <Compile Include="Generated\MHW_Editor\Structs\Misc\MotionBlendData.cs" />
     <Compile Include="Generated\MHW_Editor\Structs\Monsters\AnimalSize.cs" />
     <Compile Include="Generated\MHW_Editor\Structs\Monsters\EnemyInfo.cs" />
@@ -148,6 +149,7 @@
     <Compile Include="Generated\MHW_Editor\Structs\PlData\PlPlayerParam.cs" />
     <Compile Include="Generated\MHW_Editor\Structs\PlData\PlSkillParam.cs" />
     <Compile Include="Generated\MHW_Editor\Structs\PlData\ScoutflyData.cs" />
+    <Compile Include="Generated\MHW_Editor\Structs\Skills\CatSkill.cs" />
     <Compile Include="Generated\MHW_Editor\Structs\Skills\MusicSkill.cs" />
     <Compile Include="Generated\MHW_Editor\Structs\Skills\SkillDat.cs" />
     <Compile Include="Generated\MHW_Editor\Structs\Skills\SkillPointData.cs" />
@@ -225,10 +227,12 @@
       <DependentUpon>MhwDataGrid.xaml</DependentUpon>
     </Compile>
     <Compile Include="Structs\Items\RoomAnimal.cs" />
+    <Compile Include="Structs\Misc\Food.cs" />
     <Compile Include="Structs\Misc\FestivalSchedule.cs" />
     <Compile Include="Structs\Monsters\EnemyInfo.cs" />
     <Compile Include="Structs\Monsters\MonsterCommonParam.cs" />
     <Compile Include="Structs\Monsters\MonsterSoften.cs" />
+    <Compile Include="Structs\Skills\CatSkill.cs" />
     <Compile Include="Util\EncryptionHelper.cs" />
     <Compile Include="Windows\FindFileInChunk.xaml.cs">
       <DependentUpon>FindFileInChunk.xaml</DependentUpon>

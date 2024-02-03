@@ -1,0 +1,28 @@
+//------------------------------------------------
+//--- 010 Editor v10.0 Binary Template
+//   Authors: Many. See MHW Editor Cretits.
+// File Mask: *.rfd
+//  Category: MHW-Editor
+//------------------------------------------------
+
+// Header
+typedef struct {
+    uint Magic_1<name="Magic 1 (uint)">;
+    ushort Magic_2<name="Magic 2 (ushort)">;
+    uint Entry_Count<name="Entry Count (uint)">;
+} Header;
+
+Header Header_<name="Header">;
+
+// Entries
+typedef struct {
+    uint Unk_1<name="Unk 1 (uint)">;
+    uint Unk_2<name="Unk 2 (uint)">;
+    ushort Unk_3<name="Unk 3 (ushort)">;
+    ubyte Padding_1_<name="Padding 1? (ubyte)">;
+    uint Story_Flag<name="Story Flag (uint)">;
+    ubyte Padding_2_<name="Padding 2? (ubyte)">;
+    uint Flags_<name="Flags? (uint)">;
+} Entries;
+
+Entries Entries_[Header_.Entry_Count]<optimize=false, name="Entries">;

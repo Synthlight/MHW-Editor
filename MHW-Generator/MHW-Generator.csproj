@@ -80,6 +80,7 @@
     <Compile Include="Items\SwapN.cs" />
     <Compile Include="Items\Treasure.cs" />
     <Compile Include="Items\ValueTrader.cs" />
+    <Compile Include="Misc\Food.cs" />
     <Compile Include="Misc\FestivalSchedule.cs" />
     <Compile Include="Misc\MotionBlendData.cs" />
     <Compile Include="Models\IMultiStruct.cs" />
@@ -105,6 +106,7 @@
     <Compile Include="PlData\PlSkillParam.cs" />
     <Compile Include="PlData\ScoutflyData.cs" />
     <Compile Include="Program.cs" />
+    <Compile Include="Skills\CatSkill.cs" />
     <Compile Include="Skills\MusicSkill.cs" />
     <Compile Include="Skills\SkillDat.cs" />
     <Compile Include="Skills\SkillPointData.cs" />
