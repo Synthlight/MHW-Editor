@@ -144,6 +144,7 @@ namespace MHW_Template {
             "*.wep_wsl",
             "*.wp_dat",
             "*.wp_dat_g",
+            "*.ysm",
             // Special cases. Leave at the end so they're obscured from the UI.
             "Block_26.bin"
         };

@@ -20,6 +20,7 @@ using MHW_Editor.Models;
 using MHW_Editor.Structs.Armors;
 using MHW_Editor.Structs.Gems;
 using MHW_Editor.Structs.Items;
+using MHW_Editor.Structs.Misc;
 using MHW_Editor.Structs.Weapons;
 using MHW_Editor.Windows;
 using MHW_Template;
@@ -219,6 +220,10 @@ namespace MHW_Editor.Controls {
 
             if (e.PropertyName == "Index") {
                 e.Column.IsReadOnly = true; // Do before normal readOnly checks.
+
+                if (mainWindow.targetFileType.Is(typeof(FestivalSchedule))) {
+                    e.Column.Header = "Week";
+                }
             }
 
             e.Column.CanUserSort = true;

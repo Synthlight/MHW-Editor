@@ -784,6 +784,7 @@ namespace MHW_Editor.Windows {
             if (fileName.EndsWith(".wep_wsl")) return typeof(WeaponWhistle);
             if (fileName.EndsWith(".wp_dat")) return typeof(Melee);
             if (fileName.EndsWith(".wp_dat_g")) return typeof(Ranged);
+            if (fileName.EndsWith(".ysm")) return typeof(FestivalSchedule);
 
             // Special Cases
             if (fileName == "block_26.bin") return typeof(TimeGate);

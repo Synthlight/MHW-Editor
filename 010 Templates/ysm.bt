@@ -1,0 +1,25 @@
+//------------------------------------------------
+//--- 010 Editor v10.0 Binary Template
+//   Authors: Many. See MHW Editor Cretits.
+// File Mask: *.ysm
+//  Category: MHW-Editor
+//------------------------------------------------
+
+// Header
+typedef struct {
+    uint Magic_1<name="Magic 1 (uint)">;
+    ushort Magic_2<name="Magic 2 (ushort)">;
+    uint Entry_Count<name="Entry Count (uint)">;
+} Header;
+
+Header Header_<name="Header">;
+
+// Entries
+typedef struct {
+    uint Festival<name="Festival (uint)">;
+    uint Enable_Event_Quests<name="Enable Event Quests (uint)">;
+    uint Resource_Unknown_High_No<name="Resource Unknown High No (uint)">;
+    uint Resource_Unknown_Low_No<name="Resource Unknown Low No (uint)">;
+} Entries;
+
+Entries Entries_[Header_.Entry_Count]<optimize=false, name="Entries">;
