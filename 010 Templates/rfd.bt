@@ -18,10 +18,8 @@ Header Header_<name="Header">;
 typedef struct {
     uint Page<name="Page (uint)">;
     uint Column<name="Column (uint)">;
-    ushort Unk_3<name="Unk 3 (ushort)">;
-    ubyte Padding_1_<name="Padding 1? (ubyte)">;
+    uint Unk_3<name="Unk 3 (uint)">;
     uint Story_Flag<name="Story Flag (uint)">;
-    ubyte Padding_2_<name="Padding 2? (ubyte)">;
     uint Color<name="Color (uint)">;
 } Entries;
 

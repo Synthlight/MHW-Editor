@@ -130,12 +130,12 @@ namespace MHW_Editor.Structs.Misc {
                 }
             }
 
-            protected ushort Unk_3_raw;
+            protected uint Unk_3_raw;
             public const string Unk_3_displayName = "Unk 3";
             public const int Unk_3_sortIndex = 150;
             [SortOrder(Unk_3_sortIndex)]
             [DisplayName(Unk_3_displayName)]
-            public virtual ushort Unk_3 {
+            public virtual uint Unk_3 {
                 get => Unk_3_raw;
                 set {
                     if (Unk_3_raw == value) return;
@@ -145,24 +145,9 @@ namespace MHW_Editor.Structs.Misc {
                 }
             }
 
-            protected byte Padding_1__raw;
-            public const string Padding_1__displayName = "Padding 1?";
-            public const int Padding_1__sortIndex = 200;
-            [SortOrder(Padding_1__sortIndex)]
-            [DisplayName(Padding_1__displayName)]
-            private byte Padding_1_ {
-                get => Padding_1__raw;
-                set {
-                    if (Padding_1__raw == value) return;
-                    Padding_1__raw = value;
-                    ChangedItems.Add(nameof(Padding_1_));
-                    OnPropertyChanged(nameof(Padding_1_));
-                }
-            }
-
             protected uint Story_Flag_raw;
             public const string Story_Flag_displayName = "Story Flag";
-            public const int Story_Flag_sortIndex = 250;
+            public const int Story_Flag_sortIndex = 200;
             [SortOrder(Story_Flag_sortIndex)]
             [DisplayName(Story_Flag_displayName)]
             public virtual uint Story_Flag {
@@ -175,24 +160,9 @@ namespace MHW_Editor.Structs.Misc {
                 }
             }
 
-            protected byte Padding_2__raw;
-            public const string Padding_2__displayName = "Padding 2?";
-            public const int Padding_2__sortIndex = 300;
-            [SortOrder(Padding_2__sortIndex)]
-            [DisplayName(Padding_2__displayName)]
-            private byte Padding_2_ {
-                get => Padding_2__raw;
-                set {
-                    if (Padding_2__raw == value) return;
-                    Padding_2__raw = value;
-                    ChangedItems.Add(nameof(Padding_2_));
-                    OnPropertyChanged(nameof(Padding_2_));
-                }
-            }
-
             protected uint Color_raw;
             public const string Color_displayName = "Color";
-            public const int Color_sortIndex = 350;
+            public const int Color_sortIndex = 250;
             [SortOrder(Color_sortIndex)]
             [DisplayName(Color_displayName)]
             public virtual uint Color {
@@ -205,7 +175,7 @@ namespace MHW_Editor.Structs.Misc {
                 }
             }
 
-            public const int lastSortIndex = 400;
+            public const int lastSortIndex = 300;
 
             public static ObservableMhwStructCollection<Entries> LoadData(BinaryReader reader, ObservableMhwStructCollection<Header> lastStruct) {
                 var list = new ObservableMhwStructCollection<Entries>();
@@ -222,10 +192,8 @@ namespace MHW_Editor.Structs.Misc {
                 data.Index = i;
                 data.Page_raw = reader.ReadUInt32();
                 data.Column_raw = reader.ReadUInt32();
-                data.Unk_3_raw = reader.ReadUInt16();
-                data.Padding_1__raw = reader.ReadByte();
+                data.Unk_3_raw = reader.ReadUInt32();
                 data.Story_Flag_raw = reader.ReadUInt32();
-                data.Padding_2__raw = reader.ReadByte();
                 data.Color_raw = reader.ReadUInt32();
                 return data;
             }
@@ -234,9 +202,7 @@ namespace MHW_Editor.Structs.Misc {
                 writer.Write(Page_raw);
                 writer.Write(Column_raw);
                 writer.Write(Unk_3_raw);
-                writer.Write(Padding_1__raw);
                 writer.Write(Story_Flag_raw);
-                writer.Write(Padding_2__raw);
                 writer.Write(Color_raw);
             }
         }
