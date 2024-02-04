@@ -16,13 +16,13 @@ Header Header_<name="Header">;
 
 // Entries
 typedef struct {
-    uint Unk_1<name="Unk 1 (uint)">;
-    uint Unk_2<name="Unk 2 (uint)">;
+    uint Page<name="Page (uint)">;
+    uint Column<name="Column (uint)">;
     ushort Unk_3<name="Unk 3 (ushort)">;
     ubyte Padding_1_<name="Padding 1? (ubyte)">;
     uint Story_Flag<name="Story Flag (uint)">;
     ubyte Padding_2_<name="Padding 2? (ubyte)">;
-    uint Flags_<name="Flags? (uint)">;
+    uint Color<name="Color (uint)">;
 } Entries;
 
 Entries Entries_[Header_.Entry_Count]<optimize=false, name="Entries">;

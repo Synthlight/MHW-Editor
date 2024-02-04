@@ -100,33 +100,33 @@ namespace MHW_Editor.Structs.Misc {
             public const ulong FixedSizeCount = 0;
             public const string GridName = "Entries";
 
-            protected uint Unk_1_raw;
-            public const string Unk_1_displayName = "Unk 1";
-            public const int Unk_1_sortIndex = 50;
-            [SortOrder(Unk_1_sortIndex)]
-            [DisplayName(Unk_1_displayName)]
-            public virtual uint Unk_1 {
-                get => Unk_1_raw;
+            protected uint Page_raw;
+            public const string Page_displayName = "Page";
+            public const int Page_sortIndex = 50;
+            [SortOrder(Page_sortIndex)]
+            [DisplayName(Page_displayName)]
+            public virtual MHW_Template.Misc.FoodPage Page {
+                get => (MHW_Template.Misc.FoodPage) Page_raw;
                 set {
-                    if (Unk_1_raw == value) return;
-                    Unk_1_raw = value;
-                    ChangedItems.Add(nameof(Unk_1));
-                    OnPropertyChanged(nameof(Unk_1));
+                    if ((MHW_Template.Misc.FoodPage) Page_raw == value) return;
+                    Page_raw = (uint) value;
+                    ChangedItems.Add(nameof(Page));
+                    OnPropertyChanged(nameof(Page));
                 }
             }
 
-            protected uint Unk_2_raw;
-            public const string Unk_2_displayName = "Unk 2";
-            public const int Unk_2_sortIndex = 100;
-            [SortOrder(Unk_2_sortIndex)]
-            [DisplayName(Unk_2_displayName)]
-            public virtual uint Unk_2 {
-                get => Unk_2_raw;
+            protected uint Column_raw;
+            public const string Column_displayName = "Column";
+            public const int Column_sortIndex = 100;
+            [SortOrder(Column_sortIndex)]
+            [DisplayName(Column_displayName)]
+            public virtual uint Column {
+                get => Column_raw;
                 set {
-                    if (Unk_2_raw == value) return;
-                    Unk_2_raw = value;
-                    ChangedItems.Add(nameof(Unk_2));
-                    OnPropertyChanged(nameof(Unk_2));
+                    if (Column_raw == value) return;
+                    Column_raw = value;
+                    ChangedItems.Add(nameof(Column));
+                    OnPropertyChanged(nameof(Column));
                 }
             }
 
@@ -150,7 +150,7 @@ namespace MHW_Editor.Structs.Misc {
             public const int Padding_1__sortIndex = 200;
             [SortOrder(Padding_1__sortIndex)]
             [DisplayName(Padding_1__displayName)]
-            public virtual byte Padding_1_ {
+            private byte Padding_1_ {
                 get => Padding_1__raw;
                 set {
                     if (Padding_1__raw == value) return;
@@ -180,7 +180,7 @@ namespace MHW_Editor.Structs.Misc {
             public const int Padding_2__sortIndex = 300;
             [SortOrder(Padding_2__sortIndex)]
             [DisplayName(Padding_2__displayName)]
-            public virtual byte Padding_2_ {
+            private byte Padding_2_ {
                 get => Padding_2__raw;
                 set {
                     if (Padding_2__raw == value) return;
@@ -190,18 +190,18 @@ namespace MHW_Editor.Structs.Misc {
                 }
             }
 
-            protected uint Flags__raw;
-            public const string Flags__displayName = "Flags?";
-            public const int Flags__sortIndex = 350;
-            [SortOrder(Flags__sortIndex)]
-            [DisplayName(Flags__displayName)]
-            public virtual uint Flags_ {
-                get => Flags__raw;
+            protected uint Color_raw;
+            public const string Color_displayName = "Color";
+            public const int Color_sortIndex = 350;
+            [SortOrder(Color_sortIndex)]
+            [DisplayName(Color_displayName)]
+            public virtual uint Color {
+                get => Color_raw;
                 set {
-                    if (Flags__raw == value) return;
-                    Flags__raw = value;
-                    ChangedItems.Add(nameof(Flags_));
-                    OnPropertyChanged(nameof(Flags_));
+                    if (Color_raw == value) return;
+                    Color_raw = value;
+                    ChangedItems.Add(nameof(Color));
+                    OnPropertyChanged(nameof(Color));
                 }
             }
 
@@ -220,24 +220,24 @@ namespace MHW_Editor.Structs.Misc {
             public static Entries LoadData(BinaryReader reader, ulong i) {
                 var data = new Entries();
                 data.Index = i;
-                data.Unk_1_raw = reader.ReadUInt32();
-                data.Unk_2_raw = reader.ReadUInt32();
+                data.Page_raw = reader.ReadUInt32();
+                data.Column_raw = reader.ReadUInt32();
                 data.Unk_3_raw = reader.ReadUInt16();
                 data.Padding_1__raw = reader.ReadByte();
                 data.Story_Flag_raw = reader.ReadUInt32();
                 data.Padding_2__raw = reader.ReadByte();
-                data.Flags__raw = reader.ReadUInt32();
+                data.Color_raw = reader.ReadUInt32();
                 return data;
             }
 
             public void WriteData(BinaryWriter writer) {
-                writer.Write(Unk_1_raw);
-                writer.Write(Unk_2_raw);
+                writer.Write(Page_raw);
+                writer.Write(Column_raw);
                 writer.Write(Unk_3_raw);
                 writer.Write(Padding_1__raw);
                 writer.Write(Story_Flag_raw);
                 writer.Write(Padding_2__raw);
-                writer.Write(Flags__raw);
+                writer.Write(Color_raw);
             }
         }
 

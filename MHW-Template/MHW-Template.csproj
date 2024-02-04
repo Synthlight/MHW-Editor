@@ -64,6 +64,7 @@
     <Compile Include="GuildCard\UnlockType.cs" />
     <Compile Include="Items\Augments.cs" />
     <Compile Include="Items\MantleUpgrades.cs" />
+    <Compile Include="Misc\FoodPage.cs" />
     <Compile Include="Misc\Condition.cs" />
     <Compile Include="Misc\Festival.cs" />
     <Compile Include="Misc\Stage.cs" />
