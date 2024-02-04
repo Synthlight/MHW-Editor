@@ -145,18 +145,18 @@ namespace MHW_Editor.Structs.Skills {
                 }
             }
 
-            protected uint Unk_4_raw;
-            public const string Unk_4_displayName = "Unk 4";
-            public const int Unk_4_sortIndex = 200;
-            [SortOrder(Unk_4_sortIndex)]
-            [DisplayName(Unk_4_displayName)]
-            public virtual uint Unk_4 {
-                get => Unk_4_raw;
+            protected uint Rarity_raw;
+            public const string Rarity_displayName = "Rarity";
+            public const int Rarity_sortIndex = 200;
+            [SortOrder(Rarity_sortIndex)]
+            [DisplayName(Rarity_displayName)]
+            public virtual uint Rarity {
+                get => Rarity_raw;
                 set {
-                    if (Unk_4_raw == value) return;
-                    Unk_4_raw = value;
-                    ChangedItems.Add(nameof(Unk_4));
-                    OnPropertyChanged(nameof(Unk_4));
+                    if (Rarity_raw == value) return;
+                    Rarity_raw = value;
+                    ChangedItems.Add(nameof(Rarity));
+                    OnPropertyChanged(nameof(Rarity));
                 }
             }
 
@@ -178,7 +178,7 @@ namespace MHW_Editor.Structs.Skills {
                 data.Unk_1_raw = reader.ReadUInt32();
                 data.Unk_2_raw = reader.ReadUInt32();
                 data.Unk_3_raw = reader.ReadInt32();
-                data.Unk_4_raw = reader.ReadUInt32();
+                data.Rarity_raw = reader.ReadUInt32();
                 return data;
             }
 
@@ -186,7 +186,7 @@ namespace MHW_Editor.Structs.Skills {
                 writer.Write(Unk_1_raw);
                 writer.Write(Unk_2_raw);
                 writer.Write(Unk_3_raw);
-                writer.Write(Unk_4_raw);
+                writer.Write(Rarity_raw);
             }
         }
 

@@ -19,7 +19,7 @@ typedef struct {
     uint Unk_1<name="Unk 1 (uint)">;
     uint Unk_2<name="Unk 2 (uint)">;
     int Unk_3<name="Unk 3 (int)">;
-    uint Unk_4<name="Unk 4 (uint)">;
+    uint Rarity<name="Rarity (uint)">;
 } Entries;
 
 Entries Entries_[Header_.Entry_Count]<optimize=false, name="Entries">;

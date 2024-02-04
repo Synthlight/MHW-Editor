@@ -12,7 +12,7 @@ namespace MHW_Generator.Skills {
                     new MhwMultiStructData.Entry("Unk 1", typeof(uint)),
                     new MhwMultiStructData.Entry("Unk 2", typeof(uint)),
                     new MhwMultiStructData.Entry("Unk 3", typeof(int)),
-                    new MhwMultiStructData.Entry("Unk 4", typeof(uint)),
+                    new MhwMultiStructData.Entry("Rarity", typeof(uint)),
                 }, _010Link: new MhwMultiStructData.ArrayLink(header, itemCount))
             };
 
