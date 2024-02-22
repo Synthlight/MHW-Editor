@@ -133,24 +133,9 @@ namespace MHW_Editor.Structs.PlData {
                 }
             }
 
-            protected float Extension_raw;
-            public const string Extension_displayName = "Extension";
-            public const int Extension_sortIndex = 100;
-            [SortOrder(Extension_sortIndex)]
-            [DisplayName(Extension_displayName)]
-            public virtual float Extension {
-                get => Extension_raw;
-                set {
-                    if (Extension_raw == value) return;
-                    Extension_raw = value;
-                    ChangedItems.Add(nameof(Extension));
-                    OnPropertyChanged(nameof(Extension));
-                }
-            }
-
             protected float M1_Duration_raw;
             public const string M1_Duration_displayName = "M1 Duration";
-            public const int M1_Duration_sortIndex = 150;
+            public const int M1_Duration_sortIndex = 100;
             [SortOrder(M1_Duration_sortIndex)]
             [DisplayName(M1_Duration_displayName)]
             public virtual float M1_Duration {
@@ -163,24 +148,9 @@ namespace MHW_Editor.Structs.PlData {
                 }
             }
 
-            protected float M1_Extension_raw;
-            public const string M1_Extension_displayName = "M1 Extension";
-            public const int M1_Extension_sortIndex = 200;
-            [SortOrder(M1_Extension_sortIndex)]
-            [DisplayName(M1_Extension_displayName)]
-            public virtual float M1_Extension {
-                get => M1_Extension_raw;
-                set {
-                    if (M1_Extension_raw == value) return;
-                    M1_Extension_raw = value;
-                    ChangedItems.Add(nameof(M1_Extension));
-                    OnPropertyChanged(nameof(M1_Extension));
-                }
-            }
-
             protected float M2_Duration_raw;
             public const string M2_Duration_displayName = "M2 Duration";
-            public const int M2_Duration_sortIndex = 250;
+            public const int M2_Duration_sortIndex = 150;
             [SortOrder(M2_Duration_sortIndex)]
             [DisplayName(M2_Duration_displayName)]
             public virtual float M2_Duration {
@@ -190,6 +160,36 @@ namespace MHW_Editor.Structs.PlData {
                     M2_Duration_raw = value;
                     ChangedItems.Add(nameof(M2_Duration));
                     OnPropertyChanged(nameof(M2_Duration));
+                }
+            }
+
+            protected float Extension_raw;
+            public const string Extension_displayName = "Extension";
+            public const int Extension_sortIndex = 200;
+            [SortOrder(Extension_sortIndex)]
+            [DisplayName(Extension_displayName)]
+            public virtual float Extension {
+                get => Extension_raw;
+                set {
+                    if (Extension_raw == value) return;
+                    Extension_raw = value;
+                    ChangedItems.Add(nameof(Extension));
+                    OnPropertyChanged(nameof(Extension));
+                }
+            }
+
+            protected float M1_Extension_raw;
+            public const string M1_Extension_displayName = "M1 Extension";
+            public const int M1_Extension_sortIndex = 250;
+            [SortOrder(M1_Extension_sortIndex)]
+            [DisplayName(M1_Extension_displayName)]
+            public virtual float M1_Extension {
+                get => M1_Extension_raw;
+                set {
+                    if (M1_Extension_raw == value) return;
+                    M1_Extension_raw = value;
+                    ChangedItems.Add(nameof(M1_Extension));
+                    OnPropertyChanged(nameof(M1_Extension));
                 }
             }
 
@@ -344,10 +344,10 @@ namespace MHW_Editor.Structs.PlData {
                 var data = new Entries();
                 data.Index = i;
                 data.Duration_raw = reader.ReadSingle();
-                data.Extension_raw = reader.ReadSingle();
                 data.M1_Duration_raw = reader.ReadSingle();
-                data.M1_Extension_raw = reader.ReadSingle();
                 data.M2_Duration_raw = reader.ReadSingle();
+                data.Extension_raw = reader.ReadSingle();
+                data.M1_Extension_raw = reader.ReadSingle();
                 data.M2_Extension_raw = reader.ReadSingle();
                 data.Effect_raw = reader.ReadSingle();
                 data.Recast_Effect_raw = reader.ReadSingle();
@@ -362,10 +362,10 @@ namespace MHW_Editor.Structs.PlData {
 
             public void WriteData(BinaryWriter writer) {
                 writer.Write(Duration_raw);
-                writer.Write(Extension_raw);
                 writer.Write(M1_Duration_raw);
-                writer.Write(M1_Extension_raw);
                 writer.Write(M2_Duration_raw);
+                writer.Write(Extension_raw);
+                writer.Write(M1_Extension_raw);
                 writer.Write(M2_Extension_raw);
                 writer.Write(Effect_raw);
                 writer.Write(Recast_Effect_raw);

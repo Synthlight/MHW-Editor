@@ -18,10 +18,10 @@ Header Header_<name="Header">;
 // Entries
 typedef struct {
     float Duration<name="Duration (float)">;
-    float Extension<name="Extension (float)">;
     float M1_Duration<name="M1 Duration (float)">;
-    float M1_Extension<name="M1 Extension (float)">;
     float M2_Duration<name="M2 Duration (float)">;
+    float Extension<name="Extension (float)">;
+    float M1_Extension<name="M1 Extension (float)">;
     float M2_Extension<name="M2 Extension (float)">;
     float Effect<name="Effect (float)">;
     float Recast_Effect<name="Recast Effect (float)">;

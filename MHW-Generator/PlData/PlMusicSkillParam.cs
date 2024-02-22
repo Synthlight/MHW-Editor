@@ -16,10 +16,10 @@ namespace MHW_Generator.PlData {
 
                 new MhwMultiStructData.StructData("Entries", new List<MhwMultiStructData.Entry> {
                     new MhwMultiStructData.Entry("Duration", typeof(float)),
-                    new MhwMultiStructData.Entry("Extension", typeof(float)),
                     new MhwMultiStructData.Entry("M1 Duration", typeof(float)),
-                    new MhwMultiStructData.Entry("M1 Extension", typeof(float)),
                     new MhwMultiStructData.Entry("M2 Duration", typeof(float)),
+                    new MhwMultiStructData.Entry("Extension", typeof(float)),
+                    new MhwMultiStructData.Entry("M1 Extension", typeof(float)),
                     new MhwMultiStructData.Entry("M2 Extension", typeof(float)),
                     new MhwMultiStructData.Entry("Effect", typeof(float)),
                     new MhwMultiStructData.Entry("Recast Effect", typeof(float)),
