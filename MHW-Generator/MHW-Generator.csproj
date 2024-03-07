@@ -1,172 +1,19 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
-<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
-  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
-  <PropertyGroup>
-    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
-    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{A9B24F96-DBC9-4E0B-8D11-4C985D7F97FA}</ProjectGuid>
-    <OutputType>WinExe</OutputType>
-    <RootNamespace>MHW_Generator</RootNamespace>
-    <AssemblyName>MHW-Generator</AssemblyName>
-    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
-    <FileAlignment>512</FileAlignment>
-    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
-    <Deterministic>true</Deterministic>
-  </PropertyGroup>
-  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
-    <PlatformTarget>AnyCPU</PlatformTarget>
-    <DebugSymbols>true</DebugSymbols>
-    <DebugType>full</DebugType>
-    <Optimize>false</Optimize>
-    <OutputPath>bin\Debug\</OutputPath>
-    <DefineConstants>DEBUG;TRACE</DefineConstants>
-    <ErrorReport>prompt</ErrorReport>
-    <WarningLevel>4</WarningLevel>
-  </PropertyGroup>
-  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
-    <PlatformTarget>AnyCPU</PlatformTarget>
-    <DebugType>pdbonly</DebugType>
-    <Optimize>true</Optimize>
-    <OutputPath>bin\Release\</OutputPath>
-    <DefineConstants>TRACE</DefineConstants>
-    <ErrorReport>prompt</ErrorReport>
-    <WarningLevel>4</WarningLevel>
-  </PropertyGroup>
-  <PropertyGroup>
-    <StartupObject />
-  </PropertyGroup>
-  <ItemGroup>
-    <None Include="App.config" />
-    <None Include="packages.config" />
-  </ItemGroup>
-  <ItemGroup>
-    <Compile Include="Armors\Armor.cs" />
-    <Compile Include="Armors\ASkill.cs" />
-    <Compile Include="Armors\OtomoArmorDat.cs" />
-    <Compile Include="Armors\Opst.cs" />
-    <Compile Include="Armors\PendantData.cs" />
-    <Compile Include="Gems\DecoGradeLottery.cs" />
-    <Compile Include="Gems\DecoLottery.cs" />
-    <Compile Include="Gems\Gem.cs" />
-    <Compile Include="GuildCard\GcData.cs" />
-    <Compile Include="Items\ArmUp.cs" />
-    <Compile Include="Items\BottleTable.cs" />
-    <Compile Include="Items\Bounty.cs" />
-    <Compile Include="Items\EqCrt.cs" />
-    <Compile Include="Items\EqCus.cs" />
-    <Compile Include="Items\RoomAnimal.cs" />
-    <Compile Include="Items\Item.cs" />
-    <Compile Include="Items\ItemDelivery.cs" />
-    <Compile Include="Items\ItemList.cs" />
-    <Compile Include="Items\ItemLottery.cs" />
-    <Compile Include="Items\ItemMake.cs" />
-    <Compile Include="Items\KulveGradeLottery.cs" />
-    <Compile Include="Items\MelderExchange.cs" />
-    <Compile Include="Items\MelderItem.cs" />
-    <Compile Include="Items\PlantFertilizer.cs" />
-    <Compile Include="Items\PlantItem.cs" />
-    <Compile Include="Items\QuestReward.cs" />
-    <Compile Include="Items\RoomFurniture.cs" />
-    <Compile Include="Items\SafiItemGradeLottery.cs" />
-    <Compile Include="Items\KulveItemLottery.cs" />
-    <Compile Include="Items\SafiItemLottery.cs" />
-    <Compile Include="Items\ShopList.cs" />
-    <Compile Include="Items\ShopSed.cs" />
-    <Compile Include="Items\SteamRewardList.cs" />
-    <Compile Include="Items\SupplyData.cs" />
-    <Compile Include="Items\SwapC.cs" />
-    <Compile Include="Items\SwapEnemyRate.cs" />
-    <Compile Include="Items\SwapItem.cs" />
-    <Compile Include="Items\SwapN.cs" />
-    <Compile Include="Items\Treasure.cs" />
-    <Compile Include="Items\ValueTrader.cs" />
-    <Compile Include="Misc\Food.cs" />
-    <Compile Include="Misc\FestivalSchedule.cs" />
-    <Compile Include="Misc\MotionBlendData.cs" />
-    <Compile Include="Models\IMultiStruct.cs" />
-    <Compile Include="Models\MultiStruct.cs" />
-    <Compile Include="Models\SingleStructBase.cs" />
-    <Compile Include="Monsters\AnimalSize.cs" />
-    <Compile Include="Monsters\MonsterCommonParam.cs" />
-    <Compile Include="Monsters\MonsterDamageAttributes.cs" />
-    <Compile Include="Monsters\EnemyInfo.cs" />
-    <Compile Include="Monsters\MonsterParts.cs" />
-    <Compile Include="Monsters\EnemySort.cs" />
-    <Compile Include="Monsters\MonsterClawGrab.cs" />
-    <Compile Include="Monsters\MonsterDifficulty.cs" />
-    <Compile Include="Monsters\MonsterEnrage.cs" />
-    <Compile Include="Monsters\MonsterRandomSize.cs" />
-    <Compile Include="Monsters\MonsterStamina.cs" />
-    <Compile Include="Monsters\MonsterSoften.cs" />
-    <Compile Include="Monsters\SmallMonsterSizeParams.cs" />
-    <Compile Include="PlData\PlItemParam.cs" />
-    <Compile Include="PlData\PlMantleParam.cs" />
-    <Compile Include="PlData\PlMusicSkillParam.cs" />
-    <Compile Include="PlData\PlPlayerParam.cs" />
-    <Compile Include="PlData\PlSkillParam.cs" />
-    <Compile Include="PlData\ScoutflyData.cs" />
-    <Compile Include="Program.cs" />
-    <Compile Include="Skills\CatSkill.cs" />
-    <Compile Include="Skills\MusicSkill.cs" />
-    <Compile Include="Skills\SkillDat.cs" />
-    <Compile Include="Skills\SkillPointData.cs" />
-    <Compile Include="Weapons\Collision.cs" />
-    <Compile Include="Weapons\AwakenedLimitBreakR.cs" />
-    <Compile Include="Weapons\AwakenedLimitBreak.cs" />
-    <Compile Include="Weapons\AwakenedExp.cs" />
-    <Compile Include="Weapons\AwakenedWpCustom.cs" />
-    <Compile Include="Weapons\AwakenedWpUpgrade.cs" />
-    <Compile Include="Weapons\CustomOuterWeapon.cs" />
-    <Compile Include="Weapons\CustomOuterRecipe.cs" />
-    <Compile Include="Weapons\CustomParts.cs" />
-    <Compile Include="Weapons\CustomPartsR.cs" />
-    <Compile Include="Weapons\GunnerReload.cs" />
-    <Compile Include="Weapons\GunnerShoot.cs" />
-    <Compile Include="Weapons\LimitBreakMaterialBase.cs" />
-    <Compile Include="Weapons\LimitBreakMaterialSkill.cs" />
-    <Compile Include="Weapons\Melee.cs" />
-    <Compile Include="Weapons\NewLimitBreak.cs" />
-    <Compile Include="Weapons\NewLimitBreakR.cs" />
-    <Compile Include="Weapons\OtomoWeaponDat.cs" />
-    <Compile Include="Weapons\Ranged.cs" />
-    <Compile Include="Weapons\RodInsect.cs" />
-    <Compile Include="Weapons\Sharpness.cs" />
-    <Compile Include="Weapons\ShellParam.cs" />
-    <Compile Include="Weapons\ShellTable.cs" />
-    <Compile Include="Weapons\WeaponGunLance.cs" />
-    <Compile Include="Weapons\WeaponSwitchAxe.cs" />
-    <Compile Include="Weapons\WeaponWhistle.cs" />
-    <Compile Include="Weapons\WeaponWSword.cs" />
-    <Compile Include="Weapons\Wp09Param.cs" />
-    <Compile Include="Weapons\Wp08Param.cs" />
-    <Compile Include="Weapons\Wp07Param.cs" />
-    <Compile Include="Weapons\Wp06Param.cs" />
-    <Compile Include="Weapons\Wp05Param.cs" />
-    <Compile Include="Weapons\Wp04Param.cs" />
-    <Compile Include="Weapons\Wp03Param.cs" />
-    <Compile Include="Weapons\Wp02Param.cs" />
-    <Compile Include="Weapons\Wp01Param.cs" />
-    <Compile Include="Weapons\WpParamBase.cs" />
-    <Compile Include="Weapons\Wp11Param.cs" />
-    <Compile Include="Weapons\Wp10Param.cs" />
-    <Compile Include="Weapons\Wp00Param.cs" />
-    <Compile Include="Weapons\Wp12Param.cs" />
-    <Compile Include="Weapons\ArenaEquipment.cs" />
-    <Compile Include="Weapons\Wp13Param.cs" />
-  </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\MHW-Template\MHW-Template.csproj">
-      <Project>{89c7cc4e-8a7b-45d0-95de-fb945b1def4c}</Project>
-      <Name>MHW-Template</Name>
-    </ProjectReference>
-  </ItemGroup>
-  <ItemGroup>
-    <Reference Include="Microsoft.CSharp" />
-    <Reference Include="Newtonsoft.Json, Version=13.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
-      <HintPath>..\packages\Newtonsoft.Json.13.0.3\lib\net45\Newtonsoft.Json.dll</HintPath>
-    </Reference>
-    <Reference Include="System" />
-  </ItemGroup>
-  <ItemGroup />
-  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+﻿<Project Sdk="Microsoft.NET.Sdk">
+	<PropertyGroup>
+		<TargetFramework>net472</TargetFramework>
+		<OutputType>WinExe</OutputType>
+		<RootNamespace>MHW_Generator</RootNamespace>
+		<GenerateAssemblyInfo>false</GenerateAssemblyInfo>
+		<AppendTargetFrameworkToOutputPath>false</AppendTargetFrameworkToOutputPath>
+		<AppendRuntimeIdentifierToOutputPath>false</AppendRuntimeIdentifierToOutputPath>
+		<LangVersion>latest</LangVersion>
+	</PropertyGroup>
+	<ItemGroup>
+		<ProjectReference Include="..\MHW-Template\MHW-Template.csproj"/>
+	</ItemGroup>
+	<ItemGroup>
+		<PackageReference Include="JetBrains.Annotations" Version="2023.3.0"/>
+		<PackageReference Include="Microsoft.CSharp" Version="4.7.0"/>
+		<PackageReference Include="Newtonsoft.Json" Version="13.0.3"/>
+	</ItemGroup>
 </Project>
