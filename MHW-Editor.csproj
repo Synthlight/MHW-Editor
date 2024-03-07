@@ -17,24 +17,28 @@
 		<Compile Remove="MHW-Generator\**"/>
 		<Compile Remove="MHW-Name-Extractor\**"/>
 		<Compile Remove="MHW-Template\**"/>
+		<Compile Remove="Mod-Maker\**"/>
 		<Compile Remove="Obsolete-Detector\**"/>
 		<EmbeddedResource Remove="Kulve-Crafter\**"/>
 		<EmbeddedResource Remove="MHW-Generator-Data\**"/>
 		<EmbeddedResource Remove="MHW-Generator\**"/>
 		<EmbeddedResource Remove="MHW-Name-Extractor\**"/>
 		<EmbeddedResource Remove="MHW-Template\**"/>
+		<EmbeddedResource Remove="Mod-Maker\**"/>
 		<EmbeddedResource Remove="Obsolete-Detector\**"/>
 		<None Remove="Kulve-Crafter\**"/>
 		<None Remove="MHW-Generator-Data\**"/>
 		<None Remove="MHW-Generator\**"/>
 		<None Remove="MHW-Name-Extractor\**"/>
 		<None Remove="MHW-Template\**"/>
+		<None Remove="Mod-Maker\**"/>
 		<None Remove="Obsolete-Detector\**"/>
 		<Page Remove="Kulve-Crafter\**"/>
 		<Page Remove="MHW-Generator-Data\**"/>
 		<Page Remove="MHW-Generator\**"/>
 		<Page Remove="MHW-Name-Extractor\**"/>
 		<Page Remove="MHW-Template\**"/>
+		<Page Remove="Mod-Maker\**"/>
 		<Page Remove="Obsolete-Detector\**"/>
 	</ItemGroup>
 	<ItemGroup>
@@ -50,5 +54,10 @@
 	</ItemGroup>
 	<ItemGroup>
 		<Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}"/>
+	</ItemGroup>
+	<ItemGroup>
+		<Compile Update="Windows\MainWindow.xaml.buttons.cs">
+			<DependentUpon>Windows\MainWindow.xaml</DependentUpon>
+		</Compile>
 	</ItemGroup>
 </Project>

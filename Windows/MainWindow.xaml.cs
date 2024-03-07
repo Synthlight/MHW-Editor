@@ -552,59 +552,20 @@ namespace MHW_Editor.Windows {
             if (string.IsNullOrEmpty(targetFile)) return;
 
             try {
-                var         fileName      = Path.GetFileName(targetFile);
-                JsonChanges changesToSave = null;
+                var         fileName   = Path.GetFileName(targetFile);
+                JsonChanges oldChanges = null;
 
                 if (mergeWithTarget) {
                     try {
                         var target = GetOpenTarget($"JSON|*{Path.GetExtension(targetFile)}.json");
                         // Should migrate the loaded changes too.
-                        changesToSave = JsonMigrations.Migrate(File.ReadAllText(target), fileName, fileData);
+                        oldChanges = JsonMigrations.Migrate(File.ReadAllText(target), fileName, fileData);
                     } catch (Exception) {
                         // Don't care. If it doesn't exist or can't be read, it gets overwritten.
                     }
                 }
 
-                if (changesToSave == null) {
-                    changesToSave = new JsonChanges {
-                        targetFile = fileName,
-                        version    = JsonMigrations.CURRENT_VERSION
-                    };
-                } else {
-                    // Set target & version explicitly in case the user is merging into a different wp_dat or something.
-                    changesToSave.targetFile = fileName;
-                }
-
-                changesToSave.changesV3 ??= new Dictionary<string, Dictionary<string, Dictionary<string, object>>>();
-
-                // For all entries in all structs as a single enumerable.
-                foreach (var item in fileData.GetAllEnumerableOfType<IJsonItem>()) {
-                    var itemUniqueId   = item.UniqueId;
-                    var itemType       = item.GetType();
-                    var structTypeName = itemType.Name;
-                    var changed        = item.ChangedItems;
-                    if (changed.Count == 0) continue;
-
-                    if (!changesToSave.changesV3.ContainsKey(structTypeName)) {
-                        changesToSave.changesV3[structTypeName] = new Dictionary<string, Dictionary<string, object>>();
-                    }
-
-                    if (!changesToSave.changesV3[structTypeName].ContainsKey(itemUniqueId)) {
-                        changesToSave.changesV3[structTypeName][itemUniqueId] = new Dictionary<string, object>();
-                    }
-
-                    foreach (var changedItem in changed) {
-                        // Ignore. it's always 'changed' since it's computed.
-                        if (changedItem == nameof(IMhwStructItem.Index)) continue;
-
-                        // ReSharper disable once PossibleNullReferenceException
-                        var value = itemType.GetProperty(changedItem, BindingFlags.Instance | BindingFlags.Public | BindingFlags.NonPublic).GetValue(item);
-                        changesToSave.changesV3[structTypeName][itemUniqueId][changedItem] = value;
-                    }
-                }
-
-                // Removes empty entries.
-                CleanDictionary(changesToSave.changesV3);
+                var changesToSave = GetChangesToSave(targetFile, fileData, oldChanges);
 
                 if (changesToSave.changesV3.Any()) {
                     // Get file after checking for what to save else we show a dialog even if there are no changes.
@@ -624,7 +585,53 @@ namespace MHW_Editor.Windows {
             }
         }
 
-        private bool CleanDictionary(dynamic dict) {
+        public static JsonChanges GetChangesToSave(string fileName, IMhwMultiStructFile fileData, [CanBeNull] JsonChanges oldChanges) {
+            var changesToSave = oldChanges;
+
+            if (changesToSave == null) {
+                changesToSave = new JsonChanges {
+                    targetFile = fileName,
+                    version    = JsonMigrations.CURRENT_VERSION
+                };
+            } else {
+                // Set target & version explicitly in case the user is merging into a different wp_dat or something.
+                changesToSave.targetFile = fileName;
+            }
+
+            changesToSave.changesV3 ??= [];
+
+            // For all entries in all structs as a single enumerable.
+            foreach (var item in fileData.GetAllEnumerableOfType<IJsonItem>()) {
+                var itemUniqueId   = item.UniqueId;
+                var itemType       = item.GetType();
+                var structTypeName = itemType.Name;
+                var changed        = item.ChangedItems;
+                if (changed.Count == 0) continue;
+
+                if (!changesToSave.changesV3.ContainsKey(structTypeName)) {
+                    changesToSave.changesV3[structTypeName] = [];
+                }
+
+                if (!changesToSave.changesV3[structTypeName].ContainsKey(itemUniqueId)) {
+                    changesToSave.changesV3[structTypeName][itemUniqueId] = [];
+                }
+
+                foreach (var changedItem in changed) {
+                    // Ignore. it's always 'changed' since it's computed.
+                    if (changedItem == nameof(IMhwStructItem.Index)) continue;
+
+                    // ReSharper disable once PossibleNullReferenceException
+                    var value = itemType.GetProperty(changedItem, BindingFlags.Instance | BindingFlags.Public | BindingFlags.NonPublic).GetValue(item);
+                    changesToSave.changesV3[structTypeName][itemUniqueId][changedItem] = value;
+                }
+            }
+
+            // Removes empty entries.
+            CleanDictionary(changesToSave.changesV3);
+            return changesToSave;
+        }
+
+        private static bool CleanDictionary(dynamic dict) {
             var toRemove         = new List<string>();
             var effectivelyEmpty = true;
 
