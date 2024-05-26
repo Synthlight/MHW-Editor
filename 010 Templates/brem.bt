@@ -1,0 +1,39 @@
+//------------------------------------------------
+//--- 010 Editor v10.0 Binary Template
+//   Authors: Many. See MHW Editor Cretits.
+// File Mask: *.brem
+//  Category: MHW-Editor
+//------------------------------------------------
+
+// Header
+typedef struct {
+    uint Magic_1<name="Magic 1 (uint)">;
+    uint Magic_2<name="Magic 2 (uint)">;
+    ushort Magic_3<name="Magic 3 (ushort)">;
+    uint Monster_Ingame_Id<name="Monster Ingame Id (uint)">;
+    ubyte Part_Id_<name="Part Id (?) (ubyte)">;
+    uint Magic_4<name="Magic 4 (uint)">;
+} Header;
+
+Header Header_<name="Header">;
+
+// Items
+typedef struct {
+    uint Item_Id<name="Item Id (uint)">;
+} Items;
+
+Items Items_[8]<optimize=false, name="Items">;
+
+// Counts
+typedef struct {
+    ubyte Item_Count<name="Item Count (ubyte)">;
+} Counts;
+
+Counts Counts_[8]<optimize=false, name="Counts">;
+
+// Weights
+typedef struct {
+    ubyte Item_Weight<name="Item Weight (ubyte)">;
+} Weights;
+
+Weights Weights_[8]<optimize=false, name="Weights">;

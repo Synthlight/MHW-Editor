@@ -415,7 +415,8 @@ namespace MHW_Editor.Windows {
 
             btn_sort_jewel_order_by_name.Visibility = targetFileType.Is(typeof(Item)).VisibleIfTrue();
 
-            cb_show_id_before_name.Visibility = (targetFileType.Is(typeof(DecoGradeLottery),
+            cb_show_id_before_name.Visibility = (targetFileType.Is(typeof(BonusReward),
+                                                                   typeof(DecoGradeLottery),
                                                                    typeof(DecoLottery),
                                                                    typeof(KulveGradeLottery),
                                                                    typeof(MusicSkill),
@@ -691,6 +692,7 @@ namespace MHW_Editor.Windows {
             if (fileName.EndsWith(".ask")) return typeof(ASkill);
             if (fileName.EndsWith(".asp")) return typeof(PlMantleParam);
             if (fileName.EndsWith(".bbtbl")) return typeof(BottleTable);
+            if (fileName.EndsWith(".brem")) return typeof(BonusReward);
             if (fileName.EndsWith(".cat_skill")) return typeof(CatSkill);
             if (fileName.EndsWith(".ch_dat")) return typeof(PendantData);
             if (fileName.EndsWith(".col")) return typeof(Collision);
