@@ -102,7 +102,8 @@ namespace MHW_Editor.Controls {
                 // This will set the merged check on all those filters so all we have to do layer is update the filter text, then refresh.
                 ((ListCollectionView) ItemsSource).Filter = groupFilter.MergedFilters;
 
-                if (mainWindow.targetFileType.Is(typeof(DecoGradeLottery),
+                if (mainWindow.targetFileType.Is(typeof(BonusReward),
+                                                 typeof(DecoGradeLottery),
                                                  typeof(DecoLottery),
                                                  typeof(ItemLottery),
                                                  typeof(KulveGradeLottery),
