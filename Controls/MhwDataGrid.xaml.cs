@@ -102,7 +102,8 @@ namespace MHW_Editor.Controls {
                 // This will set the merged check on all those filters so all we have to do layer is update the filter text, then refresh.
                 ((ListCollectionView) ItemsSource).Filter = groupFilter.MergedFilters;
 
-                if (mainWindow.targetFileType.Is(typeof(DecoGradeLottery),
+                if (mainWindow.targetFileType.Is(typeof(BonusReward),
+                                                 typeof(DecoGradeLottery),
                                                  typeof(DecoLottery),
                                                  typeof(ItemLottery),
                                                  typeof(KulveGradeLottery),
@@ -666,6 +667,19 @@ namespace MHW_Editor.Controls {
                 foreach (var item in items) {
                     var x = (QuestReward.QuestRewardCustomView) (object) item;
                     x.Item_Weight_percent = x.Item_Weight > 0f ? (float) x.Item_Weight / total : 0f;
+                }
+            } else if (typeof(T).Is(typeof(BonusReward.BonusRewardCustomView))) {
+                //Since the BonusReward class is partially generated,
+                //it's annoying to make the QuestRewardCustomView work with BonusRewards,
+                //and only because they are only 8 instead of 16 table entries
+                //and have a different header...
+                var total = items.Select(item => (BonusReward.BonusRewardCustomView)(object)item)
+                                 .Aggregate(0u, (current, item) => current + item.Item_Weight);
+
+                foreach (var item in items)
+                {
+                    var x = (BonusReward.BonusRewardCustomView)(object)item;
+                    x.Item_Weight_percent = x.Item_Weight > 0f ? (float)x.Item_Weight / total : 0f;
                 }
             }
         }

@@ -45,6 +45,7 @@ namespace MHW_Template {
             "*.ask",
             "*.asp",
             "*.bbtbl",
+            "*.brem",
             "*.ch_dat",
             "*.cat_skill",
             "*.col",
