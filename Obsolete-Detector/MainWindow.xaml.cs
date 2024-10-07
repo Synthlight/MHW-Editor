@@ -14,17 +14,19 @@ using Obsolete_Detector.Assets;
 namespace Obsolete_Detector {
     public partial class MainWindow {
         private const           string   NEXUS_LINK = "https://www.nexusmods.com/monsterhunterworld/mods/3191";
-        private static readonly DateTime PRE_IB     = new DateTime(2020, 1, 9);
+        private static readonly DateTime PRE_IB     = new(2020, 1, 9);
         private static readonly DateTime CHUNK_0    = PRE_IB;
-        private static readonly DateTime CHUNK_1    = new DateTime(2020, 2, 5);
-        private static readonly DateTime CHUNK_2    = new DateTime(2020, 3, 11);
-        private static readonly DateTime CHUNK_3    = new DateTime(2020, 4, 8);
-        private static readonly DateTime CHUNK_4    = new DateTime(2020, 4, 22);
-        private static readonly DateTime CHUNK_5    = new DateTime(2020, 6, 9);
-        private static readonly DateTime CHUNK_6    = new DateTime(2020, 7, 20);
-        private static readonly DateTime CHUNK_7    = new DateTime(2020, 9, 30);
-        private static readonly DateTime CHUNK_8    = new DateTime(2020, 12, 3);
-        private static readonly DateTime CHUNK_9    = new DateTime(2023, 10, 16);
+        private static readonly DateTime CHUNK_1    = new(2020, 2, 5);
+        private static readonly DateTime CHUNK_2    = new(2020, 3, 11);
+        private static readonly DateTime CHUNK_3    = new(2020, 4, 8);
+        private static readonly DateTime CHUNK_4    = new(2020, 4, 22);
+        private static readonly DateTime CHUNK_5    = new(2020, 6, 9);
+        private static readonly DateTime CHUNK_6    = new(2020, 7, 20);
+        private static readonly DateTime CHUNK_7    = new(2020, 9, 30);
+        private static readonly DateTime CHUNK_8    = new(2020, 12, 3);
+        private static readonly DateTime CHUNK_9    = new(2023, 10, 16);
+        private static readonly DateTime CHUNK_10   = new(2023, 11, 15); // No editor files altered.
+        private static readonly DateTime CHUNK_11   = new(2024, 10, 6); // No editor files altered. Altered first on 2024-06-04 and again on 2024-10-06. (Some GMD files were altered.)
 
         public static readonly Dictionary<string, string> GOOD_CHUNK_MAP;
 
@@ -141,7 +143,9 @@ namespace Obsolete_Detector {
                 case "chunkG7": return CHUNK_7;
                 case "chunkG8": return CHUNK_8;
                 case "chunkG9": return CHUNK_9;
-                default: throw new Exception($"No date for: {chunk}");
+                case "chunkG10": return CHUNK_10;
+                case "chunkG11": return CHUNK_11;
+                default: throw new($"No date for: {chunk}");
             }
         }
 

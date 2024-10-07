@@ -11,6 +11,8 @@ namespace MHW_Editor {
             "Armors",
             "ASkill",
             "AwakenedLimitBreak",
+            "BonusReward",
+            "BonusRewardCustomView",
             "Bounty",
             "CustomOuterRecipe",
             "CustomOuterWeapon",
@@ -212,11 +214,11 @@ namespace MHW_Editor {
             {typeof(MHW_Editor.Structs.Items.TimeGate.Models.Armor), new List<string> {
                 "armorId",
             }},
-            {typeof(MHW_Editor.Structs.Items.TimeGate.Models.Pendant), new List<string> {
-                "pendantId",
-            }},
             {typeof(MHW_Editor.Structs.Items.TimeGate.Models.ItemTg), new List<string> {
                 "itemId",
+            }},
+            {typeof(MHW_Editor.Structs.Items.TimeGate.Models.Pendant), new List<string> {
+                "pendantId",
             }},
             {typeof(MHW_Editor.Structs.Items.TimeGate.Models.Weapon), new List<string> {
                 "weaponId",
@@ -384,6 +386,12 @@ namespace MHW_Editor {
             }},
             {typeof(MHW_Editor.Structs.Monsters.SmallMonsterSizeParams.Size_Settings), new List<string> {
                 "Monster_Id",
+            }},
+            {typeof(MHW_Editor.Structs.Items.BonusReward.Items), new List<string> {
+                "Item_Id",
+            }},
+            {typeof(MHW_Editor.Structs.Items.BonusReward.BonusRewardCustomView), new List<string> {
+                "Item_Id",
             }},
             {typeof(MHW_Editor.Structs.Items.Bounty.Entries), new List<string> {
                 "Item_Id_1",

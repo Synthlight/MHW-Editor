@@ -1,0 +1,11 @@
+{
+  "profiles": {
+    "Full": {
+      "commandName": "Project"
+    },
+    "JustData": {
+      "commandName": "Project",
+      "commandLineArgs": "-justData"
+    }
+  }
+}
