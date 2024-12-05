@@ -14,7 +14,7 @@
 		<ProjectReference Include="..\MHW-Template\MHW-Template.csproj"/>
 	</ItemGroup>
 	<ItemGroup>
-		<PackageReference Include="JetBrains.Annotations" Version="2024.2.0"/>
+		<PackageReference Include="JetBrains.Annotations" Version="2024.3.0"/>
 		<PackageReference Include="Microsoft.CSharp" Version="4.7.0"/>
 		<PackageReference Include="Newtonsoft.Json" Version="13.0.3"/>
 	</ItemGroup>
