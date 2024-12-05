@@ -1,0 +1,137 @@
+//------------------------------------------------
+//--- 010 Editor v10.0 Binary Template
+//   Authors: Many. See MHW Editor Cretits.
+// File Mask: *.oprm
+//  Category: MHW-Editor
+//------------------------------------------------
+
+// Header
+typedef struct {
+    uint Magic_1<name="Magic 1 (uint)">;
+    char OPRM[4]<optimize=false, name="OPRM">;
+    uint Unk_1<name="Unk 1 (uint)">;
+} Header;
+
+Header Header_<name="Header">;
+
+// Params (1)
+typedef struct {
+    float Unk_1_float_<name="Unk 1 (float) (float)">;
+    float Unk_2_float_<name="Unk 2 (float) (float)">;
+    float Unk_3_float_<name="Unk 3 (float) (float)">;
+    float Unk_4_float_<name="Unk 4 (float) (float)">;
+    float Unk_5_float_<name="Unk 5 (float) (float)">;
+} Params_1_;
+
+Params_1_ Params_1__[37]<optimize=false, name="Params (1)">;
+
+// Params (2)
+typedef struct {
+    uint Unk_1_float_<name="Unk 1 (float) (uint)">;
+} Params_2_;
+
+Params_2_ Params_2__[4]<optimize=false, name="Params (2)">;
+
+// Params (3)
+typedef struct {
+    uint Unk_1_uint_<name="Unk 1 (uint) (uint)">;
+    uint Unk_2_uint_<name="Unk 2 (uint) (uint)">;
+    uint Unk_3_uint_<name="Unk 3 (uint) (uint)">;
+    uint Unk_4_uint_<name="Unk 4 (uint) (uint)">;
+    uint Unk_5_uint_<name="Unk 5 (uint) (uint)">;
+    uint Unk_6_uint_<name="Unk 6 (uint) (uint)">;
+    uint Unk_7_uint_<name="Unk 7 (uint) (uint)">;
+    uint Unk_8_uint_<name="Unk 8 (uint) (uint)">;
+    uint Unk_9_uint_<name="Unk 9 (uint) (uint)">;
+} Params_3_;
+
+Params_3_ Params_3__[5]<optimize=false, name="Params (3)">;
+
+// Params (4)
+float Unk_1_float_<name="Unk 1 (float) (float)">;
+float Unk_2_float_<name="Unk 2 (float) (float)">;
+float Unk_3_float_<name="Unk 3 (float) (float)">;
+float Unk_4_float_<name="Unk 4 (float) (float)">;
+float Unk_5_float_<name="Unk 5 (float) (float)">;
+uint Unk_6_uint_<name="Unk 6 (uint) (uint)">;
+float Unk_7_float_<name="Unk 7 (float) (float)">;
+float Unk_8_float_<name="Unk 8 (float) (float)">;
+float Unk_9_float_<name="Unk 9 (float) (float)">;
+float Unk_10_float_<name="Unk 10 (float) (float)">;
+float Unk_11_float_<name="Unk 11 (float) (float)">;
+float Unk_12_float_<name="Unk 12 (float) (float)">;
+uint Unk_13_uint_<name="Unk 13 (uint) (uint)">;
+uint Unk_14_uint_<name="Unk 14 (uint) (uint)">;
+float Unk_15_float_<name="Unk 15 (float) (float)">;
+float Unk_16_float_<name="Unk 16 (float) (float)">;
+float Unk_17_float_<name="Unk 17 (float) (float)">;
+uint Unk_18_float_<name="Unk 18 (float) (uint)">;
+float Unk_19_float_<name="Unk 19 (float) (float)">;
+float Unk_20_float_<name="Unk 20 (float) (float)">;
+float Unk_21_float_<name="Unk 21 (float) (float)">;
+float Unk_22_float_<name="Unk 22 (float) (float)">;
+float Unk_23_float_<name="Unk 23 (float) (float)">;
+float Unk_24_float_<name="Unk 24 (float) (float)">;
+float Unk_25_float_<name="Unk 25 (float) (float)">;
+ubyte Unk_26_float_<name="Unk 26 (float) (ubyte)">;
+ubyte Unk_27_float_<name="Unk 27 (float) (ubyte)">;
+float Unk_28_float_<name="Unk 28 (float) (float)">;
+float Unk_29_float_<name="Unk 29 (float) (float)">;
+ubyte Unk_30_float_<name="Unk 30 (float) (ubyte)">;
+ubyte Unk_31_float_<name="Unk 31 (float) (ubyte)">;
+ubyte Unk_32_float_<name="Unk 32 (float) (ubyte)">;
+ubyte Unk_33_float_<name="Unk 33 (float) (ubyte)">;
+float Unk_34_float_<name="Unk 34 (float) (float)">;
+float Unk_35_float_<name="Unk 35 (float) (float)">;
+float Unk_36_float_<name="Unk 36 (float) (float)">;
+ubyte Unk_37_float_<name="Unk 37 (float) (ubyte)">;
+ubyte Unk_38_float_<name="Unk 38 (float) (ubyte)">;
+float Unk_39_float_<name="Unk 39 (float) (float)">;
+float Unk_40_float_<name="Unk 40 (float) (float)">;
+float Unk_41_float_<name="Unk 41 (float) (float)">;
+float Unk_42_float_<name="Unk 42 (float) (float)">;
+float Unk_43_float_<name="Unk 43 (float) (float)">;
+float Unk_44_float_<name="Unk 44 (float) (float)">;
+float Unk_45_float_<name="Unk 45 (float) (float)">;
+float Unk_46_float_<name="Unk 46 (float) (float)">;
+float Unk_47_float_<name="Unk 47 (float) (float)">;
+float Unk_48_float_<name="Unk 48 (float) (float)">;
+float Unk_49_float_<name="Unk 49 (float) (float)">;
+float Unk_50_float_<name="Unk 50 (float) (float)">;
+float Unk_51_float_<name="Unk 51 (float) (float)">;
+float Unk_52_float_<name="Unk 52 (float) (float)">;
+float Unk_53_float_<name="Unk 53 (float) (float)">;
+float Unk_54_float_<name="Unk 54 (float) (float)">;
+float Unk_55_float_<name="Unk 55 (float) (float)">;
+float Unk_56_float_<name="Unk 56 (float) (float)">;
+float Unk_57_float_<name="Unk 57 (float) (float)">;
+uint Unk_58_float_<name="Unk 58 (float) (uint)">;
+float Unk_59_float_<name="Unk 59 (float) (float)">;
+float Unk_60_float_<name="Unk 60 (float) (float)">;
+uint Unk_61_float_<name="Unk 61 (float) (uint)">;
+float Unk_62_float_<name="Unk 62 (float) (float)">;
+float Unk_63_float_<name="Unk 63 (float) (float)">;
+float Unk_64_float_<name="Unk 64 (float) (float)">;
+float Unk_65_float_<name="Unk 65 (float) (float)">;
+float Unk_66_float_<name="Unk 66 (float) (float)">;
+float Unk_67_float_<name="Unk 67 (float) (float)">;
+float Unk_68_float_<name="Unk 68 (float) (float)">;
+float Unk_69_float_<name="Unk 69 (float) (float)">;
+float Unk_70_float_<name="Unk 70 (float) (float)">;
+float Unk_71_float_<name="Unk 71 (float) (float)">;
+float Unk_72_float_<name="Unk 72 (float) (float)">;
+float Unk_73_float_<name="Unk 73 (float) (float)">;
+float Unk_74_float_<name="Unk 74 (float) (float)">;
+float Unk_75_float_<name="Unk 75 (float) (float)">;
+float Unk_76_float_<name="Unk 76 (float) (float)">;
+float Unk_77_float_<name="Unk 77 (float) (float)">;
+float Unk_78_float_<name="Unk 78 (float) (float)">;
+float Unk_79_float_<name="Unk 79 (float) (float)">;
+float Unk_80_float_<name="Unk 80 (float) (float)">;
+float Unk_81_float_<name="Unk 81 (float) (float)">;
+float Unk_82_float_<name="Unk 82 (float) (float)">;
+float Unk_83_float_<name="Unk 83 (float) (float)">;
+float Unk_84_float_<name="Unk 84 (float) (float)">;
+float Unk_85_float_<name="Unk 85 (float) (float)">;
+float Unk_86_float_<name="Unk 86 (float) (float)">;
+float Unk_87_float_<name="Unk 87 (float) (float)">;

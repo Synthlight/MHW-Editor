@@ -1,0 +1,35 @@
+//------------------------------------------------
+//--- 010 Editor v10.0 Binary Template
+//   Authors: Many. See MHW Editor Cretits.
+// File Mask: *.ot_tlv
+//  Category: MHW-Editor
+//------------------------------------------------
+
+// Header
+typedef struct {
+    uint Magic_1<name="Magic 1 (uint)">;
+    ushort Magic_2<name="Magic 2 (ushort)">;
+    uint Entry_Count<name="Entry Count (uint)">;
+} Header;
+
+Header Header_<name="Header">;
+
+// Entries
+typedef struct {
+    ushort Unk_1_ushort_<name="Unk 1 (ushort) (ushort)">;
+    ushort Unk_2_ushort_<name="Unk 2 (ushort) (ushort)">;
+    ushort Unk_3_ushort_<name="Unk 3 (ushort) (ushort)">;
+    ushort Unk_4_ushort_<name="Unk 4 (ushort) (ushort)">;
+    ushort Unk_5_ushort_<name="Unk 5 (ushort) (ushort)">;
+    ushort Unk_6_ushort_<name="Unk 6 (ushort) (ushort)">;
+    ushort Unk_7_ushort_<name="Unk 7 (ushort) (ushort)">;
+    ushort Unk_8_ushort_<name="Unk 8 (ushort) (ushort)">;
+    ushort Unk_9_ushort_<name="Unk 9 (ushort) (ushort)">;
+    ushort Unk_10_ushort_<name="Unk 10 (ushort) (ushort)">;
+    ushort Unk_11_ushort_<name="Unk 11 (ushort) (ushort)">;
+    ushort Unk_12_ushort_<name="Unk 12 (ushort) (ushort)">;
+    ushort Unk_13_ushort_<name="Unk 13 (ushort) (ushort)">;
+    uint Unk_14_uint_<name="Unk 14 (uint) (uint)">;
+} Entries;
+
+Entries Entries_[Header_.Entry_Count]<optimize=false, name="Entries">;
