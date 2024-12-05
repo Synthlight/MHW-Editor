@@ -726,6 +726,7 @@ namespace MHW_Editor.Windows {
             if (fileName.EndsWith(".em_ss")) return typeof(SmallMonsterSizeParams);
             if (fileName.EndsWith(".eq_crt")) return typeof(EqCrt);
             if (fileName.EndsWith(".eq_cus")) return typeof(EqCus);
+            if (fileName.EndsWith(".evsc")) return typeof(EquipColor);
             if (fileName.EndsWith(".gcod")) return typeof(GcData);
             if (fileName.EndsWith(".gip")) return typeof(ScoutflyData);
             if (fileName.EndsWith(".gun_rd")) return typeof(GunnerReload);

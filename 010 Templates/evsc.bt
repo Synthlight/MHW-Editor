@@ -1,0 +1,42 @@
+//------------------------------------------------
+//--- 010 Editor v10.0 Binary Template
+//   Authors: Many. See MHW Editor Cretits.
+// File Mask: *.evsc
+//  Category: MHW-Editor
+//------------------------------------------------
+
+// Header
+typedef struct {
+    uint Magic_1<name="Magic 1 (uint)">;
+    char EVSC[4]<optimize=false, name="EVSC">;
+    uint Entry_Count<name="Entry Count (uint)">;
+} Header;
+
+Header Header_<name="Header">;
+
+// Parts
+typedef struct {
+    uint Array_Count<name="Array Count (uint)">;
+
+    // Part
+    typedef struct {
+        ubyte Unk_1_byte_<name="Unk 1 (byte) (ubyte)">;
+        ubyte Unk_2_byte_<name="Unk 2 (byte) (ubyte)">;
+        ubyte Unk_3_byte_<name="Unk 3 (byte) (ubyte)">;
+        ubyte Unk_4_byte_<name="Unk 4 (byte) (ubyte)">;
+        uint Unk_5_uint_<name="Unk 5 (uint) (uint)">;
+        float Unk_6_float_<name="Unk 6 (float) (float)">;
+        float Unk_7_float_<name="Unk 7 (float) (float)">;
+        float Unk_8_float_<name="Unk 8 (float) (float)">;
+        float Unk_9_float_<name="Unk 9 (float) (float)">;
+        float Unk_10_float_<name="Unk 10 (float) (float)">;
+        float Unk_11_float_<name="Unk 11 (float) (float)">;
+        float Unk_12_float_<name="Unk 12 (float) (float)">;
+        float Unk_13_float_<name="Unk 13 (float) (float)">;
+        float Unk_14_float_<name="Unk 14 (float) (float)">;
+    } Part;
+
+    Part Part_[Array_Count]<optimize=false, name="Part">;
+} Parts;
+
+Parts Parts_[Header_.Entry_Count]<optimize=false, name="Parts">;

@@ -18,3 +18,16 @@ dunno if unk 149 effect like pierce ammo effect but affect by monster height
 GraillLord:
 w03p (LS)
 Unk 133 => iai movespeed (increases the value makes the skill faster)
+
+
+
+
+.col:
+    CLND section from Fexty:
+    https://discord.com/channels/481188092636823552/492813100089606155/1200012840908632116
+
+    Ratipone:
+        Under Atk1, Unk 16 and 19 determine the speed at which the attack animation continues to play at slowmo during the hitstop.
+        For example:
+        Most regular attacks have this value at 0 therefore they come to a full stop during hitstop
+        But heavier attacks like Greatsword's Strong Charge, True Charge, and Jumping Wide Slash have these values at 0.01, 0.02, and 0.05
