@@ -19,7 +19,8 @@ namespace MHW_Generator.Items {
                     new MhwMultiStructData.Entry("Sort Order", typeof(ushort)),
                     new MhwMultiStructData.Entry("Flags Raw", typeof(uint), accessLevel: "private", extraOnPropertyChanged: new[] {"Flags"}, overrideSortIndex: true),
                     new MhwMultiStructData.Entry("Icon Id", typeof(uint)),
-                    new MhwMultiStructData.Entry("Icon Color Id", typeof(ushort)),
+                    new MhwMultiStructData.Entry("Icon Color Id", typeof(byte)),
+                    new MhwMultiStructData.Entry("Is Huge Carryable", typeof(byte), enumReturn: typeof(bool)),
                     new MhwMultiStructData.Entry("Sell Price", typeof(uint)),
                     new MhwMultiStructData.Entry("Buy Price", typeof(uint))
                 }, _010Link: new MhwMultiStructData.ArrayLink(header, itemCount), uniqueIdFormula: "{Id}")

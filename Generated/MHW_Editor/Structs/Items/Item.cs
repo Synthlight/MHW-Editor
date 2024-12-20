@@ -237,12 +237,12 @@ namespace MHW_Editor.Structs.Items {
                 }
             }
 
-            protected ushort Icon_Color_Id_raw;
+            protected byte Icon_Color_Id_raw;
             public const string Icon_Color_Id_displayName = "Icon Color Id";
             public const int Icon_Color_Id_sortIndex = 500;
             [SortOrder(Icon_Color_Id_sortIndex)]
             [DisplayName(Icon_Color_Id_displayName)]
-            public virtual ushort Icon_Color_Id {
+            public virtual byte Icon_Color_Id {
                 get => Icon_Color_Id_raw;
                 set {
                     if (Icon_Color_Id_raw == value) return;
@@ -252,9 +252,24 @@ namespace MHW_Editor.Structs.Items {
                 }
             }
 
+            protected byte Is_Huge_Carryable_raw;
+            public const string Is_Huge_Carryable_displayName = "Is Huge Carryable";
+            public const int Is_Huge_Carryable_sortIndex = 550;
+            [SortOrder(Is_Huge_Carryable_sortIndex)]
+            [DisplayName(Is_Huge_Carryable_displayName)]
+            public virtual bool Is_Huge_Carryable {
+                get => (bool) Convert.ToBoolean(Is_Huge_Carryable_raw);
+                set {
+                    if (Convert.ToBoolean(Is_Huge_Carryable_raw) == value) return;
+                    Is_Huge_Carryable_raw = Convert.ToByte(value);
+                    ChangedItems.Add(nameof(Is_Huge_Carryable));
+                    OnPropertyChanged(nameof(Is_Huge_Carryable));
+                }
+            }
+
             protected uint Sell_Price_raw;
             public const string Sell_Price_displayName = "Sell Price";
-            public const int Sell_Price_sortIndex = 550;
+            public const int Sell_Price_sortIndex = 600;
             [SortOrder(Sell_Price_sortIndex)]
             [DisplayName(Sell_Price_displayName)]
             public virtual uint Sell_Price {
@@ -269,7 +284,7 @@ namespace MHW_Editor.Structs.Items {
 
             protected uint Buy_Price_raw;
             public const string Buy_Price_displayName = "Buy Price";
-            public const int Buy_Price_sortIndex = 600;
+            public const int Buy_Price_sortIndex = 650;
             [SortOrder(Buy_Price_sortIndex)]
             [DisplayName(Buy_Price_displayName)]
             public virtual uint Buy_Price {
@@ -282,7 +297,7 @@ namespace MHW_Editor.Structs.Items {
                 }
             }
 
-            public const int lastSortIndex = 650;
+            public const int lastSortIndex = 700;
 
             public static ObservableMhwStructCollection<Entries> LoadData(BinaryReader reader, ObservableMhwStructCollection<Header> lastStruct) {
                 var list = new ObservableMhwStructCollection<Entries>();
@@ -306,7 +321,8 @@ namespace MHW_Editor.Structs.Items {
                 data.Sort_Order_raw = reader.ReadUInt16();
                 data.Flags_Raw_raw = reader.ReadUInt32();
                 data.Icon_Id_raw = reader.ReadUInt32();
-                data.Icon_Color_Id_raw = reader.ReadUInt16();
+                data.Icon_Color_Id_raw = reader.ReadByte();
+                data.Is_Huge_Carryable_raw = reader.ReadByte();
                 data.Sell_Price_raw = reader.ReadUInt32();
                 data.Buy_Price_raw = reader.ReadUInt32();
                 return data;
@@ -323,6 +339,7 @@ namespace MHW_Editor.Structs.Items {
                 writer.Write(Flags_Raw_raw);
                 writer.Write(Icon_Id_raw);
                 writer.Write(Icon_Color_Id_raw);
+                writer.Write(Is_Huge_Carryable_raw);
                 writer.Write(Sell_Price_raw);
                 writer.Write(Buy_Price_raw);
             }

@@ -25,7 +25,8 @@ typedef struct {
     ushort Sort_Order<name="Sort Order (ushort)">;
     uint Flags_Raw<name="Flags Raw (uint)">;
     uint Icon_Id<name="Icon Id (uint)">;
-    ushort Icon_Color_Id<name="Icon Color Id (ushort)">;
+    ubyte Icon_Color_Id<name="Icon Color Id (ubyte)">;
+    ubyte Is_Huge_Carryable<name="Is Huge Carryable (ubyte)">;
     uint Sell_Price<name="Sell Price (uint)">;
     uint Buy_Price<name="Buy Price (uint)">;
 } Entries;
