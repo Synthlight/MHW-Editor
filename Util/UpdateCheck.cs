@@ -15,6 +15,7 @@ using Newtonsoft.Json;
 namespace MHW_Editor.Util {
     public static class UpdateCheck {
         private const string NEXUS_LINK = "https://www.nexusmods.com/monsterhunterworld/mods/2068";
+        public static bool SingleClick_Mode = true;
 
         [CanBeNull] public static NotifyIcon notifyIcon;
 

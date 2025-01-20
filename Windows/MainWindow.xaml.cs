@@ -97,7 +97,7 @@ namespace MHW_Editor.Windows {
             }
         }
 
-        public bool SingleClickToEditMode { get; set; } = true;
+        public bool SingleClickToEditMode { get { return UpdateCheck.SingleClick_Mode; } set { UpdateCheck.SingleClick_Mode = value; } }
 
         public MainWindow() {
             var args = Environment.GetCommandLineArgs();

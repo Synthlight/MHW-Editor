@@ -14,9 +14,13 @@
           EnableRowVirtualization="True"
           GotFocus="On_GotFocus"
           HorizontalScrollBarVisibility="Disabled"
-          SelectionUnit="CellOrRowHeader"
+          SelectionUnit="Cell"
+          SelectionMode="Extended"
           Sorting="On_Sorting"
           VerticalScrollBarVisibility="Disabled"
+          KeyDown="DataGrid_KeyDown"
+          SelectionChanged="DataGrid_SelectionChanged"
+          PreviewKeyDown="DataGrid_PreviewKeyDown"
           mc:Ignorable="d">
     <DataGrid.Resources>
         <Style TargetType="{x:Type DataGridCell}">
