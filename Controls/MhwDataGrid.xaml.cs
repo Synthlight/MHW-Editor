@@ -22,6 +22,7 @@ using MHW_Editor.Structs.Gems;
 using MHW_Editor.Structs.Items;
 using MHW_Editor.Structs.Misc;
 using MHW_Editor.Structs.Weapons;
+using MHW_Editor.Util;
 using MHW_Editor.Windows;
 using MHW_Template;
 using MHW_Template.Armors;
@@ -42,12 +43,15 @@ namespace MHW_Editor.Controls {
         void SetItems(MainWindow mainWindow, ObservableCollection<T> items);
     }
 
-    public abstract partial class MhwDataGrid : IMhwDataGrid {
-        protected static readonly Brush BACKGROUND_BRUSH = (Brush) new BrushConverter().ConvertFrom("#c0e1fb");
+    public abstract partial class MhwDataGrid : IMhwDataGrid
+    {
+        protected static readonly Brush BACKGROUND_BRUSH = (Brush)new BrushConverter().ConvertFrom("#c0e1fb");
+        private bool isEditing = false;
 
         public abstract bool IsAddingAllowed { get; set; }
 
-        protected MhwDataGrid() {
+        protected MhwDataGrid()
+        {
             InitializeComponent();
         }
 
@@ -65,6 +69,85 @@ namespace MHW_Editor.Controls {
         protected abstract void On_Sorting(object sender, DataGridSortingEventArgs e);
 
         protected abstract void On_Cell_MouseClick(object sender, MouseButtonEventArgs e);
+
+        private void DataGrid_KeyDown(object sender, KeyEventArgs e)
+        {
+            try
+            {
+                if (sender is DataGrid MyDataGrid)
+                {
+                    if ((Keyboard.Modifiers & ModifierKeys.Control) == ModifierKeys.Control && e.Key == Key.V)
+                    {
+                        // Gérer le collage des données du presse-papiers
+                        PasteClipboardValueToSelectedCells((DataGrid)sender);
+                        e.Handled = true; // Empêche tout autre comportement
+                    }
+                }
+            }
+            catch (Exception)
+            {
+                isEditing = false; // Fin de la saisie
+            }
+            isEditing = false; // Fin de la saisie
+        }
+
+        private void PasteClipboardValueToSelectedCells(DataGrid MyDataGrid)
+        {
+            if (Clipboard.ContainsText())
+            {
+                string clipboardText = Clipboard.GetText();
+
+                foreach (var cellInfo in MyDataGrid.SelectedCells)
+                {
+                    var row = cellInfo.Item; // Obtenir l'objet de la ligne
+                    var column = cellInfo.Column; // Obtenir la colonne
+
+                    // Obtenir la propriété associée
+                    string bindingPath = (column.ClipboardContentBinding as Binding)?.Path.Path;
+                    if (!string.IsNullOrEmpty(bindingPath))
+                    {
+                        var property = row.GetType().GetProperty(bindingPath, BindingFlags.Public | BindingFlags.Instance);
+                        if (property != null && property.CanWrite)
+                        {
+                            try
+                            {
+                                property.SetValue(row, Convert.ChangeType(clipboardText, property.PropertyType));
+                            }
+                            catch (Exception)
+                            {
+                                MessageBox.Show($"Impossible de coller la valeur \"{clipboardText}\" dans la colonne {bindingPath}.",
+                                                "Erreur de collage", MessageBoxButton.OK, MessageBoxImage.Warning);
+                            }
+                        }
+                    }
+                }
+
+                // Rafraîchir la DataGrid
+                MyDataGrid.Items.Refresh();
+            }
+        }
+
+        private void DataGrid_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        {
+            // Réinitialiser la variable d'édition si la sélection change
+            isEditing = false;
+        }
+
+        private void DataGrid_PreviewKeyDown(object sender, KeyEventArgs e)
+        {
+            // Vérifie si la combinaison est Ctrl + V (permet le collage)
+            if ((Keyboard.Modifiers & ModifierKeys.Control) == ModifierKeys.Control && (e.Key == Key.V || e.Key == Key.A || e.Key == Key.C))
+            {
+                // Ne pas bloquer le comportement pour Ctrl + V
+                return;
+            }
+
+            // Bloque le comportement par défaut si seule la touche Ctrl est pressée
+            if (e.Key == Key.LeftCtrl || e.Key == Key.RightCtrl)
+            {
+                e.Handled = true; // Empêche l'entrée en mode édition pour Ctrl seul
+            }
+        }
     }
 
     public class MhwDataGridGeneric<T> : MhwDataGrid, IMhwDataGrid<T> {
