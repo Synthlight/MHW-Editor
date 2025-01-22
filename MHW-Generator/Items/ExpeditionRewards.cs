@@ -18,7 +18,7 @@ public class ExpeditionRewards : SingleStructBase, IMultiStruct {
 
         for (var i = 1; i <= 15; i++) {
             entries.AddRange([
-                new($"Unk a{i} (byte)", typeof(byte)),
+                new($"Quantity {i}", typeof(byte)),
                 new($"Weight {i}", typeof(byte)),
                 new($"Item Id {i}", typeof(uint), dataSourceType: DataSourceType.Items)
             ]);

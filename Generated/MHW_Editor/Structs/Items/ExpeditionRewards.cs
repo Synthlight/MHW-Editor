@@ -190,18 +190,18 @@ namespace MHW_Editor.Structs.Items {
                 }
             }
 
-            protected byte Unk_a1_byte__raw;
-            public const string Unk_a1_byte__displayName = "Unk a1 (byte)";
-            public const int Unk_a1_byte__sortIndex = 350;
-            [SortOrder(Unk_a1_byte__sortIndex)]
-            [DisplayName(Unk_a1_byte__displayName)]
-            public virtual byte Unk_a1_byte_ {
-                get => Unk_a1_byte__raw;
+            protected byte Quantity_1_raw;
+            public const string Quantity_1_displayName = "Quantity 1";
+            public const int Quantity_1_sortIndex = 350;
+            [SortOrder(Quantity_1_sortIndex)]
+            [DisplayName(Quantity_1_displayName)]
+            public virtual byte Quantity_1 {
+                get => Quantity_1_raw;
                 set {
-                    if (Unk_a1_byte__raw == value) return;
-                    Unk_a1_byte__raw = value;
-                    ChangedItems.Add(nameof(Unk_a1_byte_));
-                    OnPropertyChanged(nameof(Unk_a1_byte_));
+                    if (Quantity_1_raw == value) return;
+                    Quantity_1_raw = value;
+                    ChangedItems.Add(nameof(Quantity_1));
+                    OnPropertyChanged(nameof(Quantity_1));
                 }
             }
 
@@ -242,18 +242,18 @@ namespace MHW_Editor.Structs.Items {
             [CustomSorter(typeof(ButtonSorter))]
             public string Item_Id_1_button => DataHelper.itemNames[MainWindow.locale].TryGet(Item_Id_1).ToStringWithId(Item_Id_1);
 
-            protected byte Unk_a2_byte__raw;
-            public const string Unk_a2_byte__displayName = "Unk a2 (byte)";
-            public const int Unk_a2_byte__sortIndex = 500;
-            [SortOrder(Unk_a2_byte__sortIndex)]
-            [DisplayName(Unk_a2_byte__displayName)]
-            public virtual byte Unk_a2_byte_ {
-                get => Unk_a2_byte__raw;
+            protected byte Quantity_2_raw;
+            public const string Quantity_2_displayName = "Quantity 2";
+            public const int Quantity_2_sortIndex = 500;
+            [SortOrder(Quantity_2_sortIndex)]
+            [DisplayName(Quantity_2_displayName)]
+            public virtual byte Quantity_2 {
+                get => Quantity_2_raw;
                 set {
-                    if (Unk_a2_byte__raw == value) return;
-                    Unk_a2_byte__raw = value;
-                    ChangedItems.Add(nameof(Unk_a2_byte_));
-                    OnPropertyChanged(nameof(Unk_a2_byte_));
+                    if (Quantity_2_raw == value) return;
+                    Quantity_2_raw = value;
+                    ChangedItems.Add(nameof(Quantity_2));
+                    OnPropertyChanged(nameof(Quantity_2));
                 }
             }
 
@@ -294,18 +294,18 @@ namespace MHW_Editor.Structs.Items {
             [CustomSorter(typeof(ButtonSorter))]
             public string Item_Id_2_button => DataHelper.itemNames[MainWindow.locale].TryGet(Item_Id_2).ToStringWithId(Item_Id_2);
 
-            protected byte Unk_a3_byte__raw;
-            public const string Unk_a3_byte__displayName = "Unk a3 (byte)";
-            public const int Unk_a3_byte__sortIndex = 650;
-            [SortOrder(Unk_a3_byte__sortIndex)]
-            [DisplayName(Unk_a3_byte__displayName)]
-            public virtual byte Unk_a3_byte_ {
-                get => Unk_a3_byte__raw;
+            protected byte Quantity_3_raw;
+            public const string Quantity_3_displayName = "Quantity 3";
+            public const int Quantity_3_sortIndex = 650;
+            [SortOrder(Quantity_3_sortIndex)]
+            [DisplayName(Quantity_3_displayName)]
+            public virtual byte Quantity_3 {
+                get => Quantity_3_raw;
                 set {
-                    if (Unk_a3_byte__raw == value) return;
-                    Unk_a3_byte__raw = value;
-                    ChangedItems.Add(nameof(Unk_a3_byte_));
-                    OnPropertyChanged(nameof(Unk_a3_byte_));
+                    if (Quantity_3_raw == value) return;
+                    Quantity_3_raw = value;
+                    ChangedItems.Add(nameof(Quantity_3));
+                    OnPropertyChanged(nameof(Quantity_3));
                 }
             }
 
@@ -346,18 +346,18 @@ namespace MHW_Editor.Structs.Items {
             [CustomSorter(typeof(ButtonSorter))]
             public string Item_Id_3_button => DataHelper.itemNames[MainWindow.locale].TryGet(Item_Id_3).ToStringWithId(Item_Id_3);
 
-            protected byte Unk_a4_byte__raw;
-            public const string Unk_a4_byte__displayName = "Unk a4 (byte)";
-            public const int Unk_a4_byte__sortIndex = 800;
-            [SortOrder(Unk_a4_byte__sortIndex)]
-            [DisplayName(Unk_a4_byte__displayName)]
-            public virtual byte Unk_a4_byte_ {
-                get => Unk_a4_byte__raw;
+            protected byte Quantity_4_raw;
+            public const string Quantity_4_displayName = "Quantity 4";
+            public const int Quantity_4_sortIndex = 800;
+            [SortOrder(Quantity_4_sortIndex)]
+            [DisplayName(Quantity_4_displayName)]
+            public virtual byte Quantity_4 {
+                get => Quantity_4_raw;
                 set {
-                    if (Unk_a4_byte__raw == value) return;
-                    Unk_a4_byte__raw = value;
-                    ChangedItems.Add(nameof(Unk_a4_byte_));
-                    OnPropertyChanged(nameof(Unk_a4_byte_));
+                    if (Quantity_4_raw == value) return;
+                    Quantity_4_raw = value;
+                    ChangedItems.Add(nameof(Quantity_4));
+                    OnPropertyChanged(nameof(Quantity_4));
                 }
             }
 
@@ -398,18 +398,18 @@ namespace MHW_Editor.Structs.Items {
             [CustomSorter(typeof(ButtonSorter))]
             public string Item_Id_4_button => DataHelper.itemNames[MainWindow.locale].TryGet(Item_Id_4).ToStringWithId(Item_Id_4);
 
-            protected byte Unk_a5_byte__raw;
-            public const string Unk_a5_byte__displayName = "Unk a5 (byte)";
-            public const int Unk_a5_byte__sortIndex = 950;
-            [SortOrder(Unk_a5_byte__sortIndex)]
-            [DisplayName(Unk_a5_byte__displayName)]
-            public virtual byte Unk_a5_byte_ {
-                get => Unk_a5_byte__raw;
+            protected byte Quantity_5_raw;
+            public const string Quantity_5_displayName = "Quantity 5";
+            public const int Quantity_5_sortIndex = 950;
+            [SortOrder(Quantity_5_sortIndex)]
+            [DisplayName(Quantity_5_displayName)]
+            public virtual byte Quantity_5 {
+                get => Quantity_5_raw;
                 set {
-                    if (Unk_a5_byte__raw == value) return;
-                    Unk_a5_byte__raw = value;
-                    ChangedItems.Add(nameof(Unk_a5_byte_));
-                    OnPropertyChanged(nameof(Unk_a5_byte_));
+                    if (Quantity_5_raw == value) return;
+                    Quantity_5_raw = value;
+                    ChangedItems.Add(nameof(Quantity_5));
+                    OnPropertyChanged(nameof(Quantity_5));
                 }
             }
 
@@ -450,18 +450,18 @@ namespace MHW_Editor.Structs.Items {
             [CustomSorter(typeof(ButtonSorter))]
             public string Item_Id_5_button => DataHelper.itemNames[MainWindow.locale].TryGet(Item_Id_5).ToStringWithId(Item_Id_5);
 
-            protected byte Unk_a6_byte__raw;
-            public const string Unk_a6_byte__displayName = "Unk a6 (byte)";
-            public const int Unk_a6_byte__sortIndex = 1100;
-            [SortOrder(Unk_a6_byte__sortIndex)]
-            [DisplayName(Unk_a6_byte__displayName)]
-            public virtual byte Unk_a6_byte_ {
-                get => Unk_a6_byte__raw;
+            protected byte Quantity_6_raw;
+            public const string Quantity_6_displayName = "Quantity 6";
+            public const int Quantity_6_sortIndex = 1100;
+            [SortOrder(Quantity_6_sortIndex)]
+            [DisplayName(Quantity_6_displayName)]
+            public virtual byte Quantity_6 {
+                get => Quantity_6_raw;
                 set {
-                    if (Unk_a6_byte__raw == value) return;
-                    Unk_a6_byte__raw = value;
-                    ChangedItems.Add(nameof(Unk_a6_byte_));
-                    OnPropertyChanged(nameof(Unk_a6_byte_));
+                    if (Quantity_6_raw == value) return;
+                    Quantity_6_raw = value;
+                    ChangedItems.Add(nameof(Quantity_6));
+                    OnPropertyChanged(nameof(Quantity_6));
                 }
             }
 
@@ -502,18 +502,18 @@ namespace MHW_Editor.Structs.Items {
             [CustomSorter(typeof(ButtonSorter))]
             public string Item_Id_6_button => DataHelper.itemNames[MainWindow.locale].TryGet(Item_Id_6).ToStringWithId(Item_Id_6);
 
-            protected byte Unk_a7_byte__raw;
-            public const string Unk_a7_byte__displayName = "Unk a7 (byte)";
-            public const int Unk_a7_byte__sortIndex = 1250;
-            [SortOrder(Unk_a7_byte__sortIndex)]
-            [DisplayName(Unk_a7_byte__displayName)]
-            public virtual byte Unk_a7_byte_ {
-                get => Unk_a7_byte__raw;
+            protected byte Quantity_7_raw;
+            public const string Quantity_7_displayName = "Quantity 7";
+            public const int Quantity_7_sortIndex = 1250;
+            [SortOrder(Quantity_7_sortIndex)]
+            [DisplayName(Quantity_7_displayName)]
+            public virtual byte Quantity_7 {
+                get => Quantity_7_raw;
                 set {
-                    if (Unk_a7_byte__raw == value) return;
-                    Unk_a7_byte__raw = value;
-                    ChangedItems.Add(nameof(Unk_a7_byte_));
-                    OnPropertyChanged(nameof(Unk_a7_byte_));
+                    if (Quantity_7_raw == value) return;
+                    Quantity_7_raw = value;
+                    ChangedItems.Add(nameof(Quantity_7));
+                    OnPropertyChanged(nameof(Quantity_7));
                 }
             }
 
@@ -554,18 +554,18 @@ namespace MHW_Editor.Structs.Items {
             [CustomSorter(typeof(ButtonSorter))]
             public string Item_Id_7_button => DataHelper.itemNames[MainWindow.locale].TryGet(Item_Id_7).ToStringWithId(Item_Id_7);
 
-            protected byte Unk_a8_byte__raw;
-            public const string Unk_a8_byte__displayName = "Unk a8 (byte)";
-            public const int Unk_a8_byte__sortIndex = 1400;
-            [SortOrder(Unk_a8_byte__sortIndex)]
-            [DisplayName(Unk_a8_byte__displayName)]
-            public virtual byte Unk_a8_byte_ {
-                get => Unk_a8_byte__raw;
+            protected byte Quantity_8_raw;
+            public const string Quantity_8_displayName = "Quantity 8";
+            public const int Quantity_8_sortIndex = 1400;
+            [SortOrder(Quantity_8_sortIndex)]
+            [DisplayName(Quantity_8_displayName)]
+            public virtual byte Quantity_8 {
+                get => Quantity_8_raw;
                 set {
-                    if (Unk_a8_byte__raw == value) return;
-                    Unk_a8_byte__raw = value;
-                    ChangedItems.Add(nameof(Unk_a8_byte_));
-                    OnPropertyChanged(nameof(Unk_a8_byte_));
+                    if (Quantity_8_raw == value) return;
+                    Quantity_8_raw = value;
+                    ChangedItems.Add(nameof(Quantity_8));
+                    OnPropertyChanged(nameof(Quantity_8));
                 }
             }
 
@@ -606,18 +606,18 @@ namespace MHW_Editor.Structs.Items {
             [CustomSorter(typeof(ButtonSorter))]
             public string Item_Id_8_button => DataHelper.itemNames[MainWindow.locale].TryGet(Item_Id_8).ToStringWithId(Item_Id_8);
 
-            protected byte Unk_a9_byte__raw;
-            public const string Unk_a9_byte__displayName = "Unk a9 (byte)";
-            public const int Unk_a9_byte__sortIndex = 1550;
-            [SortOrder(Unk_a9_byte__sortIndex)]
-            [DisplayName(Unk_a9_byte__displayName)]
-            public virtual byte Unk_a9_byte_ {
-                get => Unk_a9_byte__raw;
+            protected byte Quantity_9_raw;
+            public const string Quantity_9_displayName = "Quantity 9";
+            public const int Quantity_9_sortIndex = 1550;
+            [SortOrder(Quantity_9_sortIndex)]
+            [DisplayName(Quantity_9_displayName)]
+            public virtual byte Quantity_9 {
+                get => Quantity_9_raw;
                 set {
-                    if (Unk_a9_byte__raw == value) return;
-                    Unk_a9_byte__raw = value;
-                    ChangedItems.Add(nameof(Unk_a9_byte_));
-                    OnPropertyChanged(nameof(Unk_a9_byte_));
+                    if (Quantity_9_raw == value) return;
+                    Quantity_9_raw = value;
+                    ChangedItems.Add(nameof(Quantity_9));
+                    OnPropertyChanged(nameof(Quantity_9));
                 }
             }
 
@@ -658,18 +658,18 @@ namespace MHW_Editor.Structs.Items {
             [CustomSorter(typeof(ButtonSorter))]
             public string Item_Id_9_button => DataHelper.itemNames[MainWindow.locale].TryGet(Item_Id_9).ToStringWithId(Item_Id_9);
 
-            protected byte Unk_a10_byte__raw;
-            public const string Unk_a10_byte__displayName = "Unk a10 (byte)";
-            public const int Unk_a10_byte__sortIndex = 1700;
-            [SortOrder(Unk_a10_byte__sortIndex)]
-            [DisplayName(Unk_a10_byte__displayName)]
-            public virtual byte Unk_a10_byte_ {
-                get => Unk_a10_byte__raw;
+            protected byte Quantity_10_raw;
+            public const string Quantity_10_displayName = "Quantity 10";
+            public const int Quantity_10_sortIndex = 1700;
+            [SortOrder(Quantity_10_sortIndex)]
+            [DisplayName(Quantity_10_displayName)]
+            public virtual byte Quantity_10 {
+                get => Quantity_10_raw;
                 set {
-                    if (Unk_a10_byte__raw == value) return;
-                    Unk_a10_byte__raw = value;
-                    ChangedItems.Add(nameof(Unk_a10_byte_));
-                    OnPropertyChanged(nameof(Unk_a10_byte_));
+                    if (Quantity_10_raw == value) return;
+                    Quantity_10_raw = value;
+                    ChangedItems.Add(nameof(Quantity_10));
+                    OnPropertyChanged(nameof(Quantity_10));
                 }
             }
 
@@ -710,18 +710,18 @@ namespace MHW_Editor.Structs.Items {
             [CustomSorter(typeof(ButtonSorter))]
             public string Item_Id_10_button => DataHelper.itemNames[MainWindow.locale].TryGet(Item_Id_10).ToStringWithId(Item_Id_10);
 
-            protected byte Unk_a11_byte__raw;
-            public const string Unk_a11_byte__displayName = "Unk a11 (byte)";
-            public const int Unk_a11_byte__sortIndex = 1850;
-            [SortOrder(Unk_a11_byte__sortIndex)]
-            [DisplayName(Unk_a11_byte__displayName)]
-            public virtual byte Unk_a11_byte_ {
-                get => Unk_a11_byte__raw;
+            protected byte Quantity_11_raw;
+            public const string Quantity_11_displayName = "Quantity 11";
+            public const int Quantity_11_sortIndex = 1850;
+            [SortOrder(Quantity_11_sortIndex)]
+            [DisplayName(Quantity_11_displayName)]
+            public virtual byte Quantity_11 {
+                get => Quantity_11_raw;
                 set {
-                    if (Unk_a11_byte__raw == value) return;
-                    Unk_a11_byte__raw = value;
-                    ChangedItems.Add(nameof(Unk_a11_byte_));
-                    OnPropertyChanged(nameof(Unk_a11_byte_));
+                    if (Quantity_11_raw == value) return;
+                    Quantity_11_raw = value;
+                    ChangedItems.Add(nameof(Quantity_11));
+                    OnPropertyChanged(nameof(Quantity_11));
                 }
             }
 
@@ -762,18 +762,18 @@ namespace MHW_Editor.Structs.Items {
             [CustomSorter(typeof(ButtonSorter))]
             public string Item_Id_11_button => DataHelper.itemNames[MainWindow.locale].TryGet(Item_Id_11).ToStringWithId(Item_Id_11);
 
-            protected byte Unk_a12_byte__raw;
-            public const string Unk_a12_byte__displayName = "Unk a12 (byte)";
-            public const int Unk_a12_byte__sortIndex = 2000;
-            [SortOrder(Unk_a12_byte__sortIndex)]
-            [DisplayName(Unk_a12_byte__displayName)]
-            public virtual byte Unk_a12_byte_ {
-                get => Unk_a12_byte__raw;
+            protected byte Quantity_12_raw;
+            public const string Quantity_12_displayName = "Quantity 12";
+            public const int Quantity_12_sortIndex = 2000;
+            [SortOrder(Quantity_12_sortIndex)]
+            [DisplayName(Quantity_12_displayName)]
+            public virtual byte Quantity_12 {
+                get => Quantity_12_raw;
                 set {
-                    if (Unk_a12_byte__raw == value) return;
-                    Unk_a12_byte__raw = value;
-                    ChangedItems.Add(nameof(Unk_a12_byte_));
-                    OnPropertyChanged(nameof(Unk_a12_byte_));
+                    if (Quantity_12_raw == value) return;
+                    Quantity_12_raw = value;
+                    ChangedItems.Add(nameof(Quantity_12));
+                    OnPropertyChanged(nameof(Quantity_12));
                 }
             }
 
@@ -814,18 +814,18 @@ namespace MHW_Editor.Structs.Items {
             [CustomSorter(typeof(ButtonSorter))]
             public string Item_Id_12_button => DataHelper.itemNames[MainWindow.locale].TryGet(Item_Id_12).ToStringWithId(Item_Id_12);
 
-            protected byte Unk_a13_byte__raw;
-            public const string Unk_a13_byte__displayName = "Unk a13 (byte)";
-            public const int Unk_a13_byte__sortIndex = 2150;
-            [SortOrder(Unk_a13_byte__sortIndex)]
-            [DisplayName(Unk_a13_byte__displayName)]
-            public virtual byte Unk_a13_byte_ {
-                get => Unk_a13_byte__raw;
+            protected byte Quantity_13_raw;
+            public const string Quantity_13_displayName = "Quantity 13";
+            public const int Quantity_13_sortIndex = 2150;
+            [SortOrder(Quantity_13_sortIndex)]
+            [DisplayName(Quantity_13_displayName)]
+            public virtual byte Quantity_13 {
+                get => Quantity_13_raw;
                 set {
-                    if (Unk_a13_byte__raw == value) return;
-                    Unk_a13_byte__raw = value;
-                    ChangedItems.Add(nameof(Unk_a13_byte_));
-                    OnPropertyChanged(nameof(Unk_a13_byte_));
+                    if (Quantity_13_raw == value) return;
+                    Quantity_13_raw = value;
+                    ChangedItems.Add(nameof(Quantity_13));
+                    OnPropertyChanged(nameof(Quantity_13));
                 }
             }
 
@@ -866,18 +866,18 @@ namespace MHW_Editor.Structs.Items {
             [CustomSorter(typeof(ButtonSorter))]
             public string Item_Id_13_button => DataHelper.itemNames[MainWindow.locale].TryGet(Item_Id_13).ToStringWithId(Item_Id_13);
 
-            protected byte Unk_a14_byte__raw;
-            public const string Unk_a14_byte__displayName = "Unk a14 (byte)";
-            public const int Unk_a14_byte__sortIndex = 2300;
-            [SortOrder(Unk_a14_byte__sortIndex)]
-            [DisplayName(Unk_a14_byte__displayName)]
-            public virtual byte Unk_a14_byte_ {
-                get => Unk_a14_byte__raw;
+            protected byte Quantity_14_raw;
+            public const string Quantity_14_displayName = "Quantity 14";
+            public const int Quantity_14_sortIndex = 2300;
+            [SortOrder(Quantity_14_sortIndex)]
+            [DisplayName(Quantity_14_displayName)]
+            public virtual byte Quantity_14 {
+                get => Quantity_14_raw;
                 set {
-                    if (Unk_a14_byte__raw == value) return;
-                    Unk_a14_byte__raw = value;
-                    ChangedItems.Add(nameof(Unk_a14_byte_));
-                    OnPropertyChanged(nameof(Unk_a14_byte_));
+                    if (Quantity_14_raw == value) return;
+                    Quantity_14_raw = value;
+                    ChangedItems.Add(nameof(Quantity_14));
+                    OnPropertyChanged(nameof(Quantity_14));
                 }
             }
 
@@ -918,18 +918,18 @@ namespace MHW_Editor.Structs.Items {
             [CustomSorter(typeof(ButtonSorter))]
             public string Item_Id_14_button => DataHelper.itemNames[MainWindow.locale].TryGet(Item_Id_14).ToStringWithId(Item_Id_14);
 
-            protected byte Unk_a15_byte__raw;
-            public const string Unk_a15_byte__displayName = "Unk a15 (byte)";
-            public const int Unk_a15_byte__sortIndex = 2450;
-            [SortOrder(Unk_a15_byte__sortIndex)]
-            [DisplayName(Unk_a15_byte__displayName)]
-            public virtual byte Unk_a15_byte_ {
-                get => Unk_a15_byte__raw;
+            protected byte Quantity_15_raw;
+            public const string Quantity_15_displayName = "Quantity 15";
+            public const int Quantity_15_sortIndex = 2450;
+            [SortOrder(Quantity_15_sortIndex)]
+            [DisplayName(Quantity_15_displayName)]
+            public virtual byte Quantity_15 {
+                get => Quantity_15_raw;
                 set {
-                    if (Unk_a15_byte__raw == value) return;
-                    Unk_a15_byte__raw = value;
-                    ChangedItems.Add(nameof(Unk_a15_byte_));
-                    OnPropertyChanged(nameof(Unk_a15_byte_));
+                    if (Quantity_15_raw == value) return;
+                    Quantity_15_raw = value;
+                    ChangedItems.Add(nameof(Quantity_15));
+                    OnPropertyChanged(nameof(Quantity_15));
                 }
             }
 
@@ -1006,49 +1006,49 @@ namespace MHW_Editor.Structs.Items {
                 data.Pad_2_raw = reader.ReadByte();
                 data.Pad_3_raw = reader.ReadByte();
                 data.Unk_3_uint__raw = reader.ReadUInt32();
-                data.Unk_a1_byte__raw = reader.ReadByte();
+                data.Quantity_1_raw = reader.ReadByte();
                 data.Weight_1_raw = reader.ReadByte();
                 data.Item_Id_1_raw = reader.ReadUInt32();
-                data.Unk_a2_byte__raw = reader.ReadByte();
+                data.Quantity_2_raw = reader.ReadByte();
                 data.Weight_2_raw = reader.ReadByte();
                 data.Item_Id_2_raw = reader.ReadUInt32();
-                data.Unk_a3_byte__raw = reader.ReadByte();
+                data.Quantity_3_raw = reader.ReadByte();
                 data.Weight_3_raw = reader.ReadByte();
                 data.Item_Id_3_raw = reader.ReadUInt32();
-                data.Unk_a4_byte__raw = reader.ReadByte();
+                data.Quantity_4_raw = reader.ReadByte();
                 data.Weight_4_raw = reader.ReadByte();
                 data.Item_Id_4_raw = reader.ReadUInt32();
-                data.Unk_a5_byte__raw = reader.ReadByte();
+                data.Quantity_5_raw = reader.ReadByte();
                 data.Weight_5_raw = reader.ReadByte();
                 data.Item_Id_5_raw = reader.ReadUInt32();
-                data.Unk_a6_byte__raw = reader.ReadByte();
+                data.Quantity_6_raw = reader.ReadByte();
                 data.Weight_6_raw = reader.ReadByte();
                 data.Item_Id_6_raw = reader.ReadUInt32();
-                data.Unk_a7_byte__raw = reader.ReadByte();
+                data.Quantity_7_raw = reader.ReadByte();
                 data.Weight_7_raw = reader.ReadByte();
                 data.Item_Id_7_raw = reader.ReadUInt32();
-                data.Unk_a8_byte__raw = reader.ReadByte();
+                data.Quantity_8_raw = reader.ReadByte();
                 data.Weight_8_raw = reader.ReadByte();
                 data.Item_Id_8_raw = reader.ReadUInt32();
-                data.Unk_a9_byte__raw = reader.ReadByte();
+                data.Quantity_9_raw = reader.ReadByte();
                 data.Weight_9_raw = reader.ReadByte();
                 data.Item_Id_9_raw = reader.ReadUInt32();
-                data.Unk_a10_byte__raw = reader.ReadByte();
+                data.Quantity_10_raw = reader.ReadByte();
                 data.Weight_10_raw = reader.ReadByte();
                 data.Item_Id_10_raw = reader.ReadUInt32();
-                data.Unk_a11_byte__raw = reader.ReadByte();
+                data.Quantity_11_raw = reader.ReadByte();
                 data.Weight_11_raw = reader.ReadByte();
                 data.Item_Id_11_raw = reader.ReadUInt32();
-                data.Unk_a12_byte__raw = reader.ReadByte();
+                data.Quantity_12_raw = reader.ReadByte();
                 data.Weight_12_raw = reader.ReadByte();
                 data.Item_Id_12_raw = reader.ReadUInt32();
-                data.Unk_a13_byte__raw = reader.ReadByte();
+                data.Quantity_13_raw = reader.ReadByte();
                 data.Weight_13_raw = reader.ReadByte();
                 data.Item_Id_13_raw = reader.ReadUInt32();
-                data.Unk_a14_byte__raw = reader.ReadByte();
+                data.Quantity_14_raw = reader.ReadByte();
                 data.Weight_14_raw = reader.ReadByte();
                 data.Item_Id_14_raw = reader.ReadUInt32();
-                data.Unk_a15_byte__raw = reader.ReadByte();
+                data.Quantity_15_raw = reader.ReadByte();
                 data.Weight_15_raw = reader.ReadByte();
                 data.Item_Id_15_raw = reader.ReadUInt32();
                 data.Unk_4_uint16__raw = reader.ReadUInt16();
@@ -1062,49 +1062,49 @@ namespace MHW_Editor.Structs.Items {
                 writer.Write(Pad_2_raw);
                 writer.Write(Pad_3_raw);
                 writer.Write(Unk_3_uint__raw);
-                writer.Write(Unk_a1_byte__raw);
+                writer.Write(Quantity_1_raw);
                 writer.Write(Weight_1_raw);
                 writer.Write(Item_Id_1_raw);
-                writer.Write(Unk_a2_byte__raw);
+                writer.Write(Quantity_2_raw);
                 writer.Write(Weight_2_raw);
                 writer.Write(Item_Id_2_raw);
-                writer.Write(Unk_a3_byte__raw);
+                writer.Write(Quantity_3_raw);
                 writer.Write(Weight_3_raw);
                 writer.Write(Item_Id_3_raw);
-                writer.Write(Unk_a4_byte__raw);
+                writer.Write(Quantity_4_raw);
                 writer.Write(Weight_4_raw);
                 writer.Write(Item_Id_4_raw);
-                writer.Write(Unk_a5_byte__raw);
+                writer.Write(Quantity_5_raw);
                 writer.Write(Weight_5_raw);
                 writer.Write(Item_Id_5_raw);
-                writer.Write(Unk_a6_byte__raw);
+                writer.Write(Quantity_6_raw);
                 writer.Write(Weight_6_raw);
                 writer.Write(Item_Id_6_raw);
-                writer.Write(Unk_a7_byte__raw);
+                writer.Write(Quantity_7_raw);
                 writer.Write(Weight_7_raw);
                 writer.Write(Item_Id_7_raw);
-                writer.Write(Unk_a8_byte__raw);
+                writer.Write(Quantity_8_raw);
                 writer.Write(Weight_8_raw);
                 writer.Write(Item_Id_8_raw);
-                writer.Write(Unk_a9_byte__raw);
+                writer.Write(Quantity_9_raw);
                 writer.Write(Weight_9_raw);
                 writer.Write(Item_Id_9_raw);
-                writer.Write(Unk_a10_byte__raw);
+                writer.Write(Quantity_10_raw);
                 writer.Write(Weight_10_raw);
                 writer.Write(Item_Id_10_raw);
-                writer.Write(Unk_a11_byte__raw);
+                writer.Write(Quantity_11_raw);
                 writer.Write(Weight_11_raw);
                 writer.Write(Item_Id_11_raw);
-                writer.Write(Unk_a12_byte__raw);
+                writer.Write(Quantity_12_raw);
                 writer.Write(Weight_12_raw);
                 writer.Write(Item_Id_12_raw);
-                writer.Write(Unk_a13_byte__raw);
+                writer.Write(Quantity_13_raw);
                 writer.Write(Weight_13_raw);
                 writer.Write(Item_Id_13_raw);
-                writer.Write(Unk_a14_byte__raw);
+                writer.Write(Quantity_14_raw);
                 writer.Write(Weight_14_raw);
                 writer.Write(Item_Id_14_raw);
-                writer.Write(Unk_a15_byte__raw);
+                writer.Write(Quantity_15_raw);
                 writer.Write(Weight_15_raw);
                 writer.Write(Item_Id_15_raw);
                 writer.Write(Unk_4_uint16__raw);
