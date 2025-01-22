@@ -79,6 +79,8 @@ namespace MHW_Template {
             "*.eq_crt",
             "*.eq_cus",
             "*.evsc",
+            "*.ex_map",
+            "*.ex_rem",
             "*.gcod",
             "*.gip",
             "*.gun_rd",

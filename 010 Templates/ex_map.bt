@@ -1,0 +1,31 @@
+//------------------------------------------------
+//--- 010 Editor v10.0 Binary Template
+//   Authors: Many. See MHW Editor Cretits.
+// File Mask: *.ex_map
+//  Category: MHW-Editor
+//------------------------------------------------
+
+// Header
+typedef struct {
+    uint Magic_1<name="Magic 1 (uint)">;
+    ushort Magic_2<name="Magic 2 (ushort)">;
+    uint Entry_Count<name="Entry Count (uint)">;
+} Header;
+
+Header Header_<name="Header">;
+
+// Entries
+typedef struct {
+    uint Unk_1_uint_<name="Unk 1 (uint) (uint)">;
+    uint Unk_2_uint_<name="Unk 2 (uint) (uint)">;
+    ubyte Unk_3_byte_<name="Unk 3 (byte) (ubyte)">;
+    ubyte Unk_4_byte_<name="Unk 4 (byte) (ubyte)">;
+    ubyte Unk_5_byte_<name="Unk 5 (byte) (ubyte)">;
+    ubyte Unk_6_byte_<name="Unk 6 (byte) (ubyte)">;
+    ubyte Unk_7_byte_<name="Unk 7 (byte) (ubyte)">;
+    ubyte Unk_8_byte_<name="Unk 8 (byte) (ubyte)">;
+    ubyte Unk_9_byte_<name="Unk 9 (byte) (ubyte)">;
+    ubyte Unk_10_byte_<name="Unk 10 (byte) (ubyte)">;
+} Entries;
+
+Entries Entries_[Header_.Entry_Count]<optimize=false, name="Entries">;
