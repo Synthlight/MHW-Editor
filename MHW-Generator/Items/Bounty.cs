@@ -1,6 +1,7 @@
 ﻿using System.Collections.Generic;
 using MHW_Generator.Models;
 using MHW_Template.Items;
+using MHW_Template.Misc;
 using MHW_Template.Models;
 using MHW_Template.Struct_Generation;
 
@@ -22,7 +23,7 @@ namespace MHW_Generator.Items {
                     new MhwMultiStructData.Entry("Unk8", typeof(uint)),
                     new MhwMultiStructData.Entry("Monster Type", typeof(int), enumReturn: typeof(MonsterType)),
                     new MhwMultiStructData.Entry("Unk10", typeof(uint)),
-                    new MhwMultiStructData.Entry("Map", typeof(uint), enumReturn: typeof(Location)),
+                    new MhwMultiStructData.Entry("Map", typeof(uint), enumReturn: typeof(Stage)),
                     new MhwMultiStructData.Entry("Target Count", typeof(uint)),
                     new MhwMultiStructData.Entry("Item Id 1", typeof(uint), dataSourceType: DataSourceType.Items),
                     new MhwMultiStructData.Entry("Item Id 2", typeof(uint), dataSourceType: DataSourceType.Items),

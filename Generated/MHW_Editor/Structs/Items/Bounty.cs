@@ -278,10 +278,10 @@ namespace MHW_Editor.Structs.Items {
             public const int Map_sortIndex = 600;
             [SortOrder(Map_sortIndex)]
             [DisplayName(Map_displayName)]
-            public virtual MHW_Template.Items.Location Map {
-                get => (MHW_Template.Items.Location) Map_raw;
+            public virtual MHW_Template.Misc.Stage Map {
+                get => (MHW_Template.Misc.Stage) Map_raw;
                 set {
-                    if ((MHW_Template.Items.Location) Map_raw == value) return;
+                    if ((MHW_Template.Misc.Stage) Map_raw == value) return;
                     Map_raw = (uint) value;
                     ChangedItems.Add(nameof(Map));
                     OnPropertyChanged(nameof(Map));
