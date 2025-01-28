@@ -124,6 +124,7 @@ namespace MHW_Editor {
             "Item_Id_13_button",
             "Item_Id_14_button",
             "Item_Id_15_button",
+            "Item_Id_16_button",
             "Item_Id_2_button",
             "Item_Id_3_button",
             "Item_Id_4_button",
@@ -146,6 +147,7 @@ namespace MHW_Editor {
             "Mod_4_button",
             "Monster_button",
             "Monster_Id_button",
+            "Monster_ID_button",
             "Monster_Unlock_button",
             "Needed_Item_Id_to_Unlock_button",
             "No_Mods_button",
@@ -432,6 +434,7 @@ namespace MHW_Editor {
                 "Equipment_Index_Weapon",
             }},
             {typeof(MHW_Editor.Structs.Items.ExpeditionRewards.Entries), new List<string> {
+                "Monster_ID",
                 "Item_Id_1",
                 "Item_Id_2",
                 "Item_Id_3",
@@ -447,6 +450,7 @@ namespace MHW_Editor {
                 "Item_Id_13",
                 "Item_Id_14",
                 "Item_Id_15",
+                "Item_Id_16",
             }},
             {typeof(MHW_Editor.Structs.Items.ItemDelivery.Entries), new List<string> {
                 "Decoration_Reward",
