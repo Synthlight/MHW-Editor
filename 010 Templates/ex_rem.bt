@@ -16,7 +16,7 @@ Header Header_<name="Header">;
 
 // Entries
 typedef struct {
-    uint Monster_ID<name="Monster ID (uint)">;
+    uint Unk_1_uint_<name="Unk 1 (uint) (uint)">;
     uint Gather_Type<name="Gather Type (uint)">;
     uint Item_Id_1<name="Item Id 1 (uint)">;
     ubyte Quantity_1<name="Quantity 1 (ubyte)">;

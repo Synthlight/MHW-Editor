@@ -9,7 +9,7 @@ namespace MHW_Generator.Items;
 public class ExpeditionRewards : SingleStructBase, IMultiStruct {
     public MultiStruct Generate() { // .ex_rem
         List<MhwMultiStructData.Entry> entries = [
-            new("Monster ID", typeof(uint), true, dataSourceType: DataSourceType.Monsters),
+            new("Unk 1 (uint)", typeof(uint)),
             new("Gather Type", typeof(uint), true, enumReturn: typeof(ExpeditionRewardsType))
         ];
 
@@ -24,7 +24,7 @@ public class ExpeditionRewards : SingleStructBase, IMultiStruct {
         var structs = new List<MhwMultiStructData.StructData> {
             CreateSingleStructBase(out var header, out var itemCount),
 
-            new("Entries", entries, _010Link: new(header, itemCount), uniqueIdFormula: "{Monster_ID}|{Gather_Type}")
+            new("Entries", entries, _010Link: new(header, itemCount))
         };
 
         return new("Items", "ExpeditionRewards", new(structs, "ex_rem"));

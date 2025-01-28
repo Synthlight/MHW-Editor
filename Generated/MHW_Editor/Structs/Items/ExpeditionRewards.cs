@@ -99,30 +99,21 @@ namespace MHW_Editor.Structs.Items {
         public partial class Entries : MhwStructItem, IWriteData {
             public const ulong FixedSizeCount = 0;
             public const string GridName = "Entries";
-            public override string UniqueId => $"{Monster_ID}|{Gather_Type}";
 
-            protected uint Monster_ID_raw;
-            public const string Monster_ID_displayName = "Monster ID";
-            public const int Monster_ID_sortIndex = 50;
-            [SortOrder(Monster_ID_sortIndex)]
-            [DisplayName(Monster_ID_displayName)]
-            [DataSource(DataSourceType.Monsters)]
-            [IsReadOnly]
-            public virtual uint Monster_ID {
-                get => Monster_ID_raw;
+            protected uint Unk_1_uint__raw;
+            public const string Unk_1_uint__displayName = "Unk 1 (uint)";
+            public const int Unk_1_uint__sortIndex = 50;
+            [SortOrder(Unk_1_uint__sortIndex)]
+            [DisplayName(Unk_1_uint__displayName)]
+            public virtual uint Unk_1_uint_ {
+                get => Unk_1_uint__raw;
                 set {
-                    if (Monster_ID_raw == value) return;
-                    Monster_ID_raw = value;
-                    ChangedItems.Add(nameof(Monster_ID));
-                    OnPropertyChanged(nameof(Monster_ID));
-                    OnPropertyChanged(nameof(Monster_ID_button));
+                    if (Unk_1_uint__raw == value) return;
+                    Unk_1_uint__raw = value;
+                    ChangedItems.Add(nameof(Unk_1_uint_));
+                    OnPropertyChanged(nameof(Unk_1_uint_));
                 }
             }
-
-            [SortOrder(Monster_ID_sortIndex)]
-            [DisplayName(Monster_ID_displayName)]
-            [CustomSorter(typeof(ButtonSorter))]
-            public string Monster_ID_button => DataHelper.monsterNames[MainWindow.locale].TryGet(Monster_ID).ToStringWithId(Monster_ID);
 
             protected uint Gather_Type_raw;
             public const string Gather_Type_displayName = "Gather Type";
@@ -987,7 +978,7 @@ namespace MHW_Editor.Structs.Items {
             public static Entries LoadData(BinaryReader reader, ulong i) {
                 var data = new Entries();
                 data.Index = i;
-                data.Monster_ID_raw = reader.ReadUInt32();
+                data.Unk_1_uint__raw = reader.ReadUInt32();
                 data.Gather_Type_raw = reader.ReadUInt32();
                 data.Item_Id_1_raw = reader.ReadUInt32();
                 data.Quantity_1_raw = reader.ReadByte();
@@ -1041,7 +1032,7 @@ namespace MHW_Editor.Structs.Items {
             }
 
             public void WriteData(BinaryWriter writer) {
-                writer.Write(Monster_ID_raw);
+                writer.Write(Unk_1_uint__raw);
                 writer.Write(Gather_Type_raw);
                 writer.Write(Item_Id_1_raw);
                 writer.Write(Quantity_1_raw);

@@ -147,7 +147,6 @@ namespace MHW_Editor {
             "Mod_4_button",
             "Monster_button",
             "Monster_Id_button",
-            "Monster_ID_button",
             "Monster_Unlock_button",
             "Needed_Item_Id_to_Unlock_button",
             "No_Mods_button",
@@ -434,7 +433,6 @@ namespace MHW_Editor {
                 "Equipment_Index_Weapon",
             }},
             {typeof(MHW_Editor.Structs.Items.ExpeditionRewards.Entries), new List<string> {
-                "Monster_ID",
                 "Item_Id_1",
                 "Item_Id_2",
                 "Item_Id_3",
