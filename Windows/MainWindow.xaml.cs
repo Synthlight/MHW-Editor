@@ -828,5 +828,14 @@ namespace MHW_Editor.Windows {
 
             base.OnClosed(e);
         }
+
+        private void MainWindow_OnDrop(object sender, DragEventArgs e) {
+            if (e.Data.GetDataPresent(DataFormats.FileDrop)) {
+                var files = (string[]) e.Data.GetData(DataFormats.FileDrop);
+                if (files != null && files.Length > 0) {
+                    Load(files[0]);
+                }
+            }
+        }
     }
 }
