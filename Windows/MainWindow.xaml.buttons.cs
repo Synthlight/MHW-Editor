@@ -42,6 +42,10 @@ namespace MHW_Editor.Windows {
             SaveJson(true);
         }
 
+        private void Btn_save_as_Click(object sender, RoutedEventArgs e) {
+            SaveAs();
+        }
+
         private void Btn_chunk_search_Click(object sender, RoutedEventArgs e) {
             new FindFileInChunk().ShowDialog();
         }

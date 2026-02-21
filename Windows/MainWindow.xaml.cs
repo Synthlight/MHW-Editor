@@ -332,12 +332,23 @@ namespace MHW_Editor.Windows {
         }
 
         private async void Save() {
+            SaveTo(targetFile);
+        }
+
+        private async void SaveAs() {
             if (string.IsNullOrEmpty(targetFile)) return;
+            SaveTo(GetSaveTargetForTargetFile());
+        }
+
+        private async void SaveTo(string file) {
+            if (string.IsNullOrEmpty(file)) return;
 
             try {
                 var saveData = targetFileType.GetMethod("SaveData", BindingFlags.Static | BindingFlags.Public | BindingFlags.FlattenHierarchy);
                 Debug.Assert(saveData != null, nameof(saveData) + " != null");
-                saveData.Invoke(null, new object[] {fileData, targetFile});
+                saveData.Invoke(null, new object[] { fileData, file });
+                targetFile = file;
+                Title      = Path.GetFileName(file);
 
                 await ShowChangesSaved(true);
             } catch (Exception e) when (!Debugger.IsAttached) {
@@ -676,6 +687,17 @@ namespace MHW_Editor.Windows {
         private string GetSaveTarget() {
             var sfdResult = new SaveFileDialog {
                 Filter           = $"JSON|*{Path.GetExtension(targetFile)}.json",
+                FileName         = $"{Path.GetFileNameWithoutExtension(targetFile)}",
+                InitialDirectory = targetFile == null ? string.Empty : Path.GetDirectoryName(targetFile) ?? string.Empty,
+                AddExtension     = true
+            };
+            return sfdResult.ShowDialog() == true ? sfdResult.FileName : null;
+        }
+
+        private string GetSaveTargetForTargetFile() {
+            var ext = Path.GetExtension(targetFile);
+            var sfdResult = new SaveFileDialog {
+                Filter           = $"{ext.TrimStart('.').ToUpper()}|*{ext}",
                 FileName         = $"{Path.GetFileNameWithoutExtension(targetFile)}",
                 InitialDirectory = targetFile == null ? string.Empty : Path.GetDirectoryName(targetFile) ?? string.Empty,
                 AddExtension     = true
