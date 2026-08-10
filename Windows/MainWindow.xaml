@@ -66,6 +66,11 @@
                         </StackPanel>
                     </xctk:SplitButton.DropDownContent>
                 </xctk:SplitButton>
+                <Button Name="Btn_save_as"
+                        Margin="8, 0, 0, 0"
+                        HorizontalAlignment="Left"
+                        Content="Save As"
+                        Click="Btn_save_as_Click"/>
                 <Button Margin="8,0,0,0"
                         HorizontalAlignment="Left"
                         Click="Btn_chunk_search_Click">
