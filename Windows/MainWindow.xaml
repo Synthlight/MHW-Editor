@@ -10,7 +10,9 @@
         Width="1800"
         Height="500"
         DataContext="{x:Reference this}"
-        WindowStartupLocation="CenterScreen">
+        WindowStartupLocation="CenterScreen"
+        Drop="MainWindow_OnDrop"
+        AllowDrop="True">
     <Grid Name="main_grid">
         <Grid.RowDefinitions>
             <RowDefinition Height="Auto"/>
