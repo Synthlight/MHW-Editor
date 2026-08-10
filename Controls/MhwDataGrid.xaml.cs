@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Collections.ObjectModel;
 using System.ComponentModel;
@@ -75,6 +75,148 @@ namespace MHW_Editor.Controls {
         private             bool                             shadeThisColumn;
 
         public MainWindow mainWindow;
+
+        private static readonly HashSet<Type> NumericTypes = new HashSet<Type> {
+            typeof(byte), typeof(sbyte), typeof(short), typeof(ushort),
+            typeof(int), typeof(uint), typeof(long), typeof(ulong),
+            typeof(float), typeof(double), typeof(decimal)
+        };
+
+        private static bool IsNumericType(Type type) {
+            if (type == null) return false;
+            var underlyingType = Nullable.GetUnderlyingType(type) ?? type;
+            return NumericTypes.Contains(underlyingType);
+        }
+
+        public MhwDataGridGeneric() : base() {
+            SetupContextMenu();
+        }
+
+        private void SetupContextMenu() {
+            var contextMenu = new ContextMenu();
+
+            var setValuesItem = new MenuItem { Header = "Set Value for Selected Cells..." };
+            var multiplyValuesItem = new MenuItem { Header = "Multiply Value for Selected Cells (e.g. 1.1 = +10%)..." };
+
+            setValuesItem.Click += SetValuesItem_Click;
+            multiplyValuesItem.Click += MultiplyValuesItem_Click;
+
+            contextMenu.Items.Add(setValuesItem);
+            contextMenu.Items.Add(multiplyValuesItem);
+
+            this.ContextMenu = contextMenu;
+        }
+
+        private void SetValuesItem_Click(object sender, RoutedEventArgs e) {
+            try {
+                var selectedCells = SelectedCells;
+                if (selectedCells.Count == 0) return;
+
+                var inputWin = new ValueInputWindow("Set Value", "Enter the new value for selected cells:", "OK", "Cancel", "");
+                inputWin.Owner = Window.GetWindow(this);
+                if (inputWin.ShowDialog() == true) {
+                    var valueStr = inputWin.Value;
+                    bool anyChanged = false;
+
+                    foreach (var cellInfo in selectedCells) {
+                        if (cellInfo.Column.IsReadOnly) continue;
+
+                        var item = cellInfo.Item;
+                        if (item == null || item.ToString() == "{DataGrid.NewItemPlaceholder}") continue;
+
+                        var propertyName = columnMap.FirstOrDefault(x => x.Value.column == cellInfo.Column).Key;
+                        if (propertyName == null) continue;
+
+                        var prop = item.GetType().GetProperty(propertyName);
+                        if (prop == null || !prop.CanWrite) continue;
+
+                        try {
+                            object convertedValue;
+                            var targetType = Nullable.GetUnderlyingType(prop.PropertyType) ?? prop.PropertyType;
+                            
+                            if (targetType.IsEnum) {
+                                convertedValue = Enum.Parse(targetType, valueStr);
+                            } else {
+                                convertedValue = Convert.ChangeType(valueStr, targetType);
+                            }
+
+                            prop.SetValue(item, convertedValue);
+
+                            if (item is IOnPropertyChanged opc) {
+                                opc.OnPropertyChanged(propertyName);
+                            }
+                            anyChanged = true;
+                        } catch {
+                            // Skip cells that cannot be converted
+                        }
+                    }
+
+                    if (anyChanged) {
+                        CalculatePercents();
+                    }
+                }
+            } catch (Exception err) when (!Debugger.IsAttached) {
+                MainWindow.ShowError(err, "Error Occurred");
+            }
+        }
+
+        private void MultiplyValuesItem_Click(object sender, RoutedEventArgs e) {
+            try {
+                var selectedCells = SelectedCells;
+                if (selectedCells.Count == 0) return;
+
+                var inputWin = new ValueInputWindow("Multiply Value", "Enter multiplication factor (e.g. 1.2 to increase by 20%):", "OK", "Cancel", "1.0");
+                inputWin.Owner = Window.GetWindow(this);
+                if (inputWin.ShowDialog() == true) {
+                    if (!double.TryParse(inputWin.Value, out double factor)) {
+                        MessageBox.Show("Invalid number format.", "Error", MessageBoxButton.OK, MessageBoxImage.Error);
+                        return;
+                    }
+
+                    bool anyChanged = false;
+
+                    foreach (var cellInfo in selectedCells) {
+                        if (cellInfo.Column.IsReadOnly) continue;
+
+                        var item = cellInfo.Item;
+                        if (item == null || item.ToString() == "{DataGrid.NewItemPlaceholder}") continue;
+
+                        var propertyName = columnMap.FirstOrDefault(x => x.Value.column == cellInfo.Column).Key;
+                        if (propertyName == null) continue;
+
+                        var prop = item.GetType().GetProperty(propertyName);
+                        if (prop == null || !prop.CanWrite) continue;
+
+                        var targetType = Nullable.GetUnderlyingType(prop.PropertyType) ?? prop.PropertyType;
+                        if (!IsNumericType(targetType)) continue;
+
+                        try {
+                            var val = prop.GetValue(item);
+                            if (val == null) continue;
+
+                            double doubleVal = Convert.ToDouble(val);
+                            double newVal = doubleVal * factor;
+
+                            object convertedValue = Convert.ChangeType(newVal, targetType);
+                            prop.SetValue(item, convertedValue);
+
+                            if (item is IOnPropertyChanged opc) {
+                                opc.OnPropertyChanged(propertyName);
+                            }
+                            anyChanged = true;
+                        } catch {
+                            // Skip cells that cannot be calculated or converted
+                        }
+                    }
+
+                    if (anyChanged) {
+                        CalculatePercents();
+                    }
+                }
+            } catch (Exception err) when (!Debugger.IsAttached) {
+                MainWindow.ShowError(err, "Error Occurred");
+            }
+        }
 
         private ObservableCollection<T> items;
         public new ObservableCollection<T> Items {
