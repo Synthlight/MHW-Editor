@@ -509,9 +509,9 @@ namespace MHW_Generator.PlData {
                 new MhwMultiStructData.StructData($"Skill Params ({++paramsIndex})", new List<MhwMultiStructData.Entry> {
                     new MhwMultiStructData.Entry("Music Skill: Bless: Random Rate", typeof(float)),
                     new MhwMultiStructData.Entry("Music Skill: Bless: Damage Cut Rate", typeof(float)),
-                    new MhwMultiStructData.Entry("Music Skill: Extend: Time", typeof(float)),
-                    new MhwMultiStructData.Entry("Music Skill: Extend: Time Master", typeof(float)),
-                    new MhwMultiStructData.Entry("Music Skill: Extend: Time MR Master", typeof(float)),
+                    new MhwMultiStructData.Entry("Music Skill: Extend All Melodies: Time", typeof(float)),
+                    new MhwMultiStructData.Entry("Music Skill: Extend All Melodies: Time (Horn Maestro-1)", typeof(float)),
+                    new MhwMultiStructData.Entry("Music Skill: Extend All Melodies: Time (Horn Maestro-2)", typeof(float)),
                     new MhwMultiStructData.Entry("Music Skill: Major Heal: Rand Rate", typeof(float)),
                     new MhwMultiStructData.Entry("Music Skill: Major Heal: Rand Master Rate", typeof(float)),
                     new MhwMultiStructData.Entry("Music Skill: Major Heal: Rand MR Master Rate", typeof(float)),
@@ -531,12 +531,12 @@ namespace MHW_Generator.PlData {
                     new MhwMultiStructData.Entry($"Unk{++i}", typeof(float)),
                     new MhwMultiStructData.Entry($"Unk{++i}", typeof(uint)),
                     new MhwMultiStructData.Entry($"Unk{++i}", typeof(uint)),
-                    new MhwMultiStructData.Entry($"Unk{++i}", typeof(float)),
-                    new MhwMultiStructData.Entry($"Unk{++i}", typeof(float)),
-                    new MhwMultiStructData.Entry($"Unk{++i}", typeof(float)),
-                    new MhwMultiStructData.Entry($"Unk{++i}", typeof(uint)),
-                    new MhwMultiStructData.Entry($"Unk{++i}", typeof(uint)),
-                    new MhwMultiStructData.Entry($"Unk{++i}", typeof(float)),
+                    new MhwMultiStructData.Entry("Music Skill: Elemental Effectiveness Up: Base Multiplier", typeof(float)),
+                    new MhwMultiStructData.Entry("Music Skill: Elemental Effectiveness Up: Elem-attack-boost-S Multiplier", typeof(float)),
+                    new MhwMultiStructData.Entry("Music Skill: Elemental Effectiveness Up: Elem-attack-boost-L Multiplier", typeof(float)),
+                    new MhwMultiStructData.Entry("Music Skill: Elemental Effectiveness Up: Elem-resistance-up", typeof(uint)),
+                    new MhwMultiStructData.Entry("Music Skill: Elemental Effectiveness Up: Blight-Res-Up Bonus resistance", typeof(uint)),
+                    new MhwMultiStructData.Entry($"Unk{i+=6}", typeof(float)),
                     new MhwMultiStructData.Entry($"Unk{++i}", typeof(float))
                 }, 1, showVertically: true)
             });
