@@ -9703,59 +9703,59 @@ namespace MHW_Editor.Structs.PlData {
             [DisplayName("Offset")]
             public long Music_Skill_Bless_Damage_Cut_Rate_offset { get; private set; }
 
-            protected float Music_Skill_Extend_Time_raw;
-            public const string Music_Skill_Extend_Time_displayName = "Music Skill: Extend: Time";
-            public const int Music_Skill_Extend_Time_sortIndex = 150;
-            [SortOrder(Music_Skill_Extend_Time_sortIndex)]
-            [DisplayName(Music_Skill_Extend_Time_displayName)]
-            public virtual float Music_Skill_Extend_Time {
-                get => Music_Skill_Extend_Time_raw;
+            protected float Music_Skill_Extend_All_Melodies_Time_raw;
+            public const string Music_Skill_Extend_All_Melodies_Time_displayName = "Music Skill: Extend All Melodies: Time";
+            public const int Music_Skill_Extend_All_Melodies_Time_sortIndex = 150;
+            [SortOrder(Music_Skill_Extend_All_Melodies_Time_sortIndex)]
+            [DisplayName(Music_Skill_Extend_All_Melodies_Time_displayName)]
+            public virtual float Music_Skill_Extend_All_Melodies_Time {
+                get => Music_Skill_Extend_All_Melodies_Time_raw;
                 set {
-                    if (Music_Skill_Extend_Time_raw == value) return;
-                    Music_Skill_Extend_Time_raw = value;
-                    ChangedItems.Add(nameof(Music_Skill_Extend_Time));
-                    OnPropertyChanged(nameof(Music_Skill_Extend_Time));
+                    if (Music_Skill_Extend_All_Melodies_Time_raw == value) return;
+                    Music_Skill_Extend_All_Melodies_Time_raw = value;
+                    ChangedItems.Add(nameof(Music_Skill_Extend_All_Melodies_Time));
+                    OnPropertyChanged(nameof(Music_Skill_Extend_All_Melodies_Time));
                 }
             }
 
             [DisplayName("Offset")]
-            public long Music_Skill_Extend_Time_offset { get; private set; }
+            public long Music_Skill_Extend_All_Melodies_Time_offset { get; private set; }
 
-            protected float Music_Skill_Extend_Time_Master_raw;
-            public const string Music_Skill_Extend_Time_Master_displayName = "Music Skill: Extend: Time Master";
-            public const int Music_Skill_Extend_Time_Master_sortIndex = 200;
-            [SortOrder(Music_Skill_Extend_Time_Master_sortIndex)]
-            [DisplayName(Music_Skill_Extend_Time_Master_displayName)]
-            public virtual float Music_Skill_Extend_Time_Master {
-                get => Music_Skill_Extend_Time_Master_raw;
+            protected float Music_Skill_Extend_All_Melodies_Time_Horn_Maestro_1__raw;
+            public const string Music_Skill_Extend_All_Melodies_Time_Horn_Maestro_1__displayName = "Music Skill: Extend All Melodies: Time (Horn Maestro-1)";
+            public const int Music_Skill_Extend_All_Melodies_Time_Horn_Maestro_1__sortIndex = 200;
+            [SortOrder(Music_Skill_Extend_All_Melodies_Time_Horn_Maestro_1__sortIndex)]
+            [DisplayName(Music_Skill_Extend_All_Melodies_Time_Horn_Maestro_1__displayName)]
+            public virtual float Music_Skill_Extend_All_Melodies_Time_Horn_Maestro_1_ {
+                get => Music_Skill_Extend_All_Melodies_Time_Horn_Maestro_1__raw;
                 set {
-                    if (Music_Skill_Extend_Time_Master_raw == value) return;
-                    Music_Skill_Extend_Time_Master_raw = value;
-                    ChangedItems.Add(nameof(Music_Skill_Extend_Time_Master));
-                    OnPropertyChanged(nameof(Music_Skill_Extend_Time_Master));
+                    if (Music_Skill_Extend_All_Melodies_Time_Horn_Maestro_1__raw == value) return;
+                    Music_Skill_Extend_All_Melodies_Time_Horn_Maestro_1__raw = value;
+                    ChangedItems.Add(nameof(Music_Skill_Extend_All_Melodies_Time_Horn_Maestro_1_));
+                    OnPropertyChanged(nameof(Music_Skill_Extend_All_Melodies_Time_Horn_Maestro_1_));
                 }
             }
 
             [DisplayName("Offset")]
-            public long Music_Skill_Extend_Time_Master_offset { get; private set; }
+            public long Music_Skill_Extend_All_Melodies_Time_Horn_Maestro_1__offset { get; private set; }
 
-            protected float Music_Skill_Extend_Time_MR_Master_raw;
-            public const string Music_Skill_Extend_Time_MR_Master_displayName = "Music Skill: Extend: Time MR Master";
-            public const int Music_Skill_Extend_Time_MR_Master_sortIndex = 250;
-            [SortOrder(Music_Skill_Extend_Time_MR_Master_sortIndex)]
-            [DisplayName(Music_Skill_Extend_Time_MR_Master_displayName)]
-            public virtual float Music_Skill_Extend_Time_MR_Master {
-                get => Music_Skill_Extend_Time_MR_Master_raw;
+            protected float Music_Skill_Extend_All_Melodies_Time_Horn_Maestro_2__raw;
+            public const string Music_Skill_Extend_All_Melodies_Time_Horn_Maestro_2__displayName = "Music Skill: Extend All Melodies: Time (Horn Maestro-2)";
+            public const int Music_Skill_Extend_All_Melodies_Time_Horn_Maestro_2__sortIndex = 250;
+            [SortOrder(Music_Skill_Extend_All_Melodies_Time_Horn_Maestro_2__sortIndex)]
+            [DisplayName(Music_Skill_Extend_All_Melodies_Time_Horn_Maestro_2__displayName)]
+            public virtual float Music_Skill_Extend_All_Melodies_Time_Horn_Maestro_2_ {
+                get => Music_Skill_Extend_All_Melodies_Time_Horn_Maestro_2__raw;
                 set {
-                    if (Music_Skill_Extend_Time_MR_Master_raw == value) return;
-                    Music_Skill_Extend_Time_MR_Master_raw = value;
-                    ChangedItems.Add(nameof(Music_Skill_Extend_Time_MR_Master));
-                    OnPropertyChanged(nameof(Music_Skill_Extend_Time_MR_Master));
+                    if (Music_Skill_Extend_All_Melodies_Time_Horn_Maestro_2__raw == value) return;
+                    Music_Skill_Extend_All_Melodies_Time_Horn_Maestro_2__raw = value;
+                    ChangedItems.Add(nameof(Music_Skill_Extend_All_Melodies_Time_Horn_Maestro_2_));
+                    OnPropertyChanged(nameof(Music_Skill_Extend_All_Melodies_Time_Horn_Maestro_2_));
                 }
             }
 
             [DisplayName("Offset")]
-            public long Music_Skill_Extend_Time_MR_Master_offset { get; private set; }
+            public long Music_Skill_Extend_All_Melodies_Time_Horn_Maestro_2__offset { get; private set; }
 
             protected float Music_Skill_Major_Heal_Rand_Rate_raw;
             public const string Music_Skill_Major_Heal_Rand_Rate_displayName = "Music Skill: Major Heal: Rand Rate";
@@ -10081,95 +10081,95 @@ namespace MHW_Editor.Structs.PlData {
             [DisplayName("Offset")]
             public long Unk82_offset { get; private set; }
 
-            protected float Unk83_raw;
-            public const string Unk83_displayName = "Unk83";
-            public const int Unk83_sortIndex = 1200;
-            [SortOrder(Unk83_sortIndex)]
-            [DisplayName(Unk83_displayName)]
-            public virtual float Unk83 {
-                get => Unk83_raw;
+            protected float Music_Skill_Elemental_Effectiveness_Up_Base_Multiplier_raw;
+            public const string Music_Skill_Elemental_Effectiveness_Up_Base_Multiplier_displayName = "Music Skill: Elemental Effectiveness Up: Base Multiplier";
+            public const int Music_Skill_Elemental_Effectiveness_Up_Base_Multiplier_sortIndex = 1200;
+            [SortOrder(Music_Skill_Elemental_Effectiveness_Up_Base_Multiplier_sortIndex)]
+            [DisplayName(Music_Skill_Elemental_Effectiveness_Up_Base_Multiplier_displayName)]
+            public virtual float Music_Skill_Elemental_Effectiveness_Up_Base_Multiplier {
+                get => Music_Skill_Elemental_Effectiveness_Up_Base_Multiplier_raw;
                 set {
-                    if (Unk83_raw == value) return;
-                    Unk83_raw = value;
-                    ChangedItems.Add(nameof(Unk83));
-                    OnPropertyChanged(nameof(Unk83));
+                    if (Music_Skill_Elemental_Effectiveness_Up_Base_Multiplier_raw == value) return;
+                    Music_Skill_Elemental_Effectiveness_Up_Base_Multiplier_raw = value;
+                    ChangedItems.Add(nameof(Music_Skill_Elemental_Effectiveness_Up_Base_Multiplier));
+                    OnPropertyChanged(nameof(Music_Skill_Elemental_Effectiveness_Up_Base_Multiplier));
                 }
             }
 
             [DisplayName("Offset")]
-            public long Unk83_offset { get; private set; }
+            public long Music_Skill_Elemental_Effectiveness_Up_Base_Multiplier_offset { get; private set; }
 
-            protected float Unk84_raw;
-            public const string Unk84_displayName = "Unk84";
-            public const int Unk84_sortIndex = 1250;
-            [SortOrder(Unk84_sortIndex)]
-            [DisplayName(Unk84_displayName)]
-            public virtual float Unk84 {
-                get => Unk84_raw;
+            protected float Music_Skill_Elemental_Effectiveness_Up_Elem_attack_boost_S_Multiplier_raw;
+            public const string Music_Skill_Elemental_Effectiveness_Up_Elem_attack_boost_S_Multiplier_displayName = "Music Skill: Elemental Effectiveness Up: Elem-attack-boost-S Multiplier";
+            public const int Music_Skill_Elemental_Effectiveness_Up_Elem_attack_boost_S_Multiplier_sortIndex = 1250;
+            [SortOrder(Music_Skill_Elemental_Effectiveness_Up_Elem_attack_boost_S_Multiplier_sortIndex)]
+            [DisplayName(Music_Skill_Elemental_Effectiveness_Up_Elem_attack_boost_S_Multiplier_displayName)]
+            public virtual float Music_Skill_Elemental_Effectiveness_Up_Elem_attack_boost_S_Multiplier {
+                get => Music_Skill_Elemental_Effectiveness_Up_Elem_attack_boost_S_Multiplier_raw;
                 set {
-                    if (Unk84_raw == value) return;
-                    Unk84_raw = value;
-                    ChangedItems.Add(nameof(Unk84));
-                    OnPropertyChanged(nameof(Unk84));
+                    if (Music_Skill_Elemental_Effectiveness_Up_Elem_attack_boost_S_Multiplier_raw == value) return;
+                    Music_Skill_Elemental_Effectiveness_Up_Elem_attack_boost_S_Multiplier_raw = value;
+                    ChangedItems.Add(nameof(Music_Skill_Elemental_Effectiveness_Up_Elem_attack_boost_S_Multiplier));
+                    OnPropertyChanged(nameof(Music_Skill_Elemental_Effectiveness_Up_Elem_attack_boost_S_Multiplier));
                 }
             }
 
             [DisplayName("Offset")]
-            public long Unk84_offset { get; private set; }
+            public long Music_Skill_Elemental_Effectiveness_Up_Elem_attack_boost_S_Multiplier_offset { get; private set; }
 
-            protected float Unk85_raw;
-            public const string Unk85_displayName = "Unk85";
-            public const int Unk85_sortIndex = 1300;
-            [SortOrder(Unk85_sortIndex)]
-            [DisplayName(Unk85_displayName)]
-            public virtual float Unk85 {
-                get => Unk85_raw;
+            protected float Music_Skill_Elemental_Effectiveness_Up_Elem_attack_boost_L_Multiplier_raw;
+            public const string Music_Skill_Elemental_Effectiveness_Up_Elem_attack_boost_L_Multiplier_displayName = "Music Skill: Elemental Effectiveness Up: Elem-attack-boost-L Multiplier";
+            public const int Music_Skill_Elemental_Effectiveness_Up_Elem_attack_boost_L_Multiplier_sortIndex = 1300;
+            [SortOrder(Music_Skill_Elemental_Effectiveness_Up_Elem_attack_boost_L_Multiplier_sortIndex)]
+            [DisplayName(Music_Skill_Elemental_Effectiveness_Up_Elem_attack_boost_L_Multiplier_displayName)]
+            public virtual float Music_Skill_Elemental_Effectiveness_Up_Elem_attack_boost_L_Multiplier {
+                get => Music_Skill_Elemental_Effectiveness_Up_Elem_attack_boost_L_Multiplier_raw;
                 set {
-                    if (Unk85_raw == value) return;
-                    Unk85_raw = value;
-                    ChangedItems.Add(nameof(Unk85));
-                    OnPropertyChanged(nameof(Unk85));
+                    if (Music_Skill_Elemental_Effectiveness_Up_Elem_attack_boost_L_Multiplier_raw == value) return;
+                    Music_Skill_Elemental_Effectiveness_Up_Elem_attack_boost_L_Multiplier_raw = value;
+                    ChangedItems.Add(nameof(Music_Skill_Elemental_Effectiveness_Up_Elem_attack_boost_L_Multiplier));
+                    OnPropertyChanged(nameof(Music_Skill_Elemental_Effectiveness_Up_Elem_attack_boost_L_Multiplier));
                 }
             }
 
             [DisplayName("Offset")]
-            public long Unk85_offset { get; private set; }
+            public long Music_Skill_Elemental_Effectiveness_Up_Elem_attack_boost_L_Multiplier_offset { get; private set; }
 
-            protected uint Unk86_raw;
-            public const string Unk86_displayName = "Unk86";
-            public const int Unk86_sortIndex = 1350;
-            [SortOrder(Unk86_sortIndex)]
-            [DisplayName(Unk86_displayName)]
-            public virtual uint Unk86 {
-                get => Unk86_raw;
+            protected uint Music_Skill_Elemental_Effectiveness_Up_Elem_resistance_up_raw;
+            public const string Music_Skill_Elemental_Effectiveness_Up_Elem_resistance_up_displayName = "Music Skill: Elemental Effectiveness Up: Elem-resistance-up";
+            public const int Music_Skill_Elemental_Effectiveness_Up_Elem_resistance_up_sortIndex = 1350;
+            [SortOrder(Music_Skill_Elemental_Effectiveness_Up_Elem_resistance_up_sortIndex)]
+            [DisplayName(Music_Skill_Elemental_Effectiveness_Up_Elem_resistance_up_displayName)]
+            public virtual uint Music_Skill_Elemental_Effectiveness_Up_Elem_resistance_up {
+                get => Music_Skill_Elemental_Effectiveness_Up_Elem_resistance_up_raw;
                 set {
-                    if (Unk86_raw == value) return;
-                    Unk86_raw = value;
-                    ChangedItems.Add(nameof(Unk86));
-                    OnPropertyChanged(nameof(Unk86));
+                    if (Music_Skill_Elemental_Effectiveness_Up_Elem_resistance_up_raw == value) return;
+                    Music_Skill_Elemental_Effectiveness_Up_Elem_resistance_up_raw = value;
+                    ChangedItems.Add(nameof(Music_Skill_Elemental_Effectiveness_Up_Elem_resistance_up));
+                    OnPropertyChanged(nameof(Music_Skill_Elemental_Effectiveness_Up_Elem_resistance_up));
                 }
             }
 
             [DisplayName("Offset")]
-            public long Unk86_offset { get; private set; }
+            public long Music_Skill_Elemental_Effectiveness_Up_Elem_resistance_up_offset { get; private set; }
 
-            protected uint Unk87_raw;
-            public const string Unk87_displayName = "Unk87";
-            public const int Unk87_sortIndex = 1400;
-            [SortOrder(Unk87_sortIndex)]
-            [DisplayName(Unk87_displayName)]
-            public virtual uint Unk87 {
-                get => Unk87_raw;
+            protected uint Music_Skill_Elemental_Effectiveness_Up_Blight_Res_Up_Bonus_resistance_raw;
+            public const string Music_Skill_Elemental_Effectiveness_Up_Blight_Res_Up_Bonus_resistance_displayName = "Music Skill: Elemental Effectiveness Up: Blight-Res-Up Bonus resistance";
+            public const int Music_Skill_Elemental_Effectiveness_Up_Blight_Res_Up_Bonus_resistance_sortIndex = 1400;
+            [SortOrder(Music_Skill_Elemental_Effectiveness_Up_Blight_Res_Up_Bonus_resistance_sortIndex)]
+            [DisplayName(Music_Skill_Elemental_Effectiveness_Up_Blight_Res_Up_Bonus_resistance_displayName)]
+            public virtual uint Music_Skill_Elemental_Effectiveness_Up_Blight_Res_Up_Bonus_resistance {
+                get => Music_Skill_Elemental_Effectiveness_Up_Blight_Res_Up_Bonus_resistance_raw;
                 set {
-                    if (Unk87_raw == value) return;
-                    Unk87_raw = value;
-                    ChangedItems.Add(nameof(Unk87));
-                    OnPropertyChanged(nameof(Unk87));
+                    if (Music_Skill_Elemental_Effectiveness_Up_Blight_Res_Up_Bonus_resistance_raw == value) return;
+                    Music_Skill_Elemental_Effectiveness_Up_Blight_Res_Up_Bonus_resistance_raw = value;
+                    ChangedItems.Add(nameof(Music_Skill_Elemental_Effectiveness_Up_Blight_Res_Up_Bonus_resistance));
+                    OnPropertyChanged(nameof(Music_Skill_Elemental_Effectiveness_Up_Blight_Res_Up_Bonus_resistance));
                 }
             }
 
             [DisplayName("Offset")]
-            public long Unk87_offset { get; private set; }
+            public long Music_Skill_Elemental_Effectiveness_Up_Blight_Res_Up_Bonus_resistance_offset { get; private set; }
 
             protected float Unk88_raw;
             public const string Unk88_displayName = "Unk88";
@@ -10225,12 +10225,12 @@ namespace MHW_Editor.Structs.PlData {
                 data.Music_Skill_Bless_Random_Rate_raw = reader.ReadSingle();
                 data.Music_Skill_Bless_Damage_Cut_Rate_offset = reader.BaseStream.Position;
                 data.Music_Skill_Bless_Damage_Cut_Rate_raw = reader.ReadSingle();
-                data.Music_Skill_Extend_Time_offset = reader.BaseStream.Position;
-                data.Music_Skill_Extend_Time_raw = reader.ReadSingle();
-                data.Music_Skill_Extend_Time_Master_offset = reader.BaseStream.Position;
-                data.Music_Skill_Extend_Time_Master_raw = reader.ReadSingle();
-                data.Music_Skill_Extend_Time_MR_Master_offset = reader.BaseStream.Position;
-                data.Music_Skill_Extend_Time_MR_Master_raw = reader.ReadSingle();
+                data.Music_Skill_Extend_All_Melodies_Time_offset = reader.BaseStream.Position;
+                data.Music_Skill_Extend_All_Melodies_Time_raw = reader.ReadSingle();
+                data.Music_Skill_Extend_All_Melodies_Time_Horn_Maestro_1__offset = reader.BaseStream.Position;
+                data.Music_Skill_Extend_All_Melodies_Time_Horn_Maestro_1__raw = reader.ReadSingle();
+                data.Music_Skill_Extend_All_Melodies_Time_Horn_Maestro_2__offset = reader.BaseStream.Position;
+                data.Music_Skill_Extend_All_Melodies_Time_Horn_Maestro_2__raw = reader.ReadSingle();
                 data.Music_Skill_Major_Heal_Rand_Rate_offset = reader.BaseStream.Position;
                 data.Music_Skill_Major_Heal_Rand_Rate_raw = reader.ReadSingle();
                 data.Music_Skill_Major_Heal_Rand_Master_Rate_offset = reader.BaseStream.Position;
@@ -10267,16 +10267,16 @@ namespace MHW_Editor.Structs.PlData {
                 data.Unk81_raw = reader.ReadUInt32();
                 data.Unk82_offset = reader.BaseStream.Position;
                 data.Unk82_raw = reader.ReadUInt32();
-                data.Unk83_offset = reader.BaseStream.Position;
-                data.Unk83_raw = reader.ReadSingle();
-                data.Unk84_offset = reader.BaseStream.Position;
-                data.Unk84_raw = reader.ReadSingle();
-                data.Unk85_offset = reader.BaseStream.Position;
-                data.Unk85_raw = reader.ReadSingle();
-                data.Unk86_offset = reader.BaseStream.Position;
-                data.Unk86_raw = reader.ReadUInt32();
-                data.Unk87_offset = reader.BaseStream.Position;
-                data.Unk87_raw = reader.ReadUInt32();
+                data.Music_Skill_Elemental_Effectiveness_Up_Base_Multiplier_offset = reader.BaseStream.Position;
+                data.Music_Skill_Elemental_Effectiveness_Up_Base_Multiplier_raw = reader.ReadSingle();
+                data.Music_Skill_Elemental_Effectiveness_Up_Elem_attack_boost_S_Multiplier_offset = reader.BaseStream.Position;
+                data.Music_Skill_Elemental_Effectiveness_Up_Elem_attack_boost_S_Multiplier_raw = reader.ReadSingle();
+                data.Music_Skill_Elemental_Effectiveness_Up_Elem_attack_boost_L_Multiplier_offset = reader.BaseStream.Position;
+                data.Music_Skill_Elemental_Effectiveness_Up_Elem_attack_boost_L_Multiplier_raw = reader.ReadSingle();
+                data.Music_Skill_Elemental_Effectiveness_Up_Elem_resistance_up_offset = reader.BaseStream.Position;
+                data.Music_Skill_Elemental_Effectiveness_Up_Elem_resistance_up_raw = reader.ReadUInt32();
+                data.Music_Skill_Elemental_Effectiveness_Up_Blight_Res_Up_Bonus_resistance_offset = reader.BaseStream.Position;
+                data.Music_Skill_Elemental_Effectiveness_Up_Blight_Res_Up_Bonus_resistance_raw = reader.ReadUInt32();
                 data.Unk88_offset = reader.BaseStream.Position;
                 data.Unk88_raw = reader.ReadSingle();
                 data.Unk89_offset = reader.BaseStream.Position;
@@ -10287,9 +10287,9 @@ namespace MHW_Editor.Structs.PlData {
             public void WriteData(BinaryWriter writer) {
                 writer.Write(Music_Skill_Bless_Random_Rate_raw);
                 writer.Write(Music_Skill_Bless_Damage_Cut_Rate_raw);
-                writer.Write(Music_Skill_Extend_Time_raw);
-                writer.Write(Music_Skill_Extend_Time_Master_raw);
-                writer.Write(Music_Skill_Extend_Time_MR_Master_raw);
+                writer.Write(Music_Skill_Extend_All_Melodies_Time_raw);
+                writer.Write(Music_Skill_Extend_All_Melodies_Time_Horn_Maestro_1__raw);
+                writer.Write(Music_Skill_Extend_All_Melodies_Time_Horn_Maestro_2__raw);
                 writer.Write(Music_Skill_Major_Heal_Rand_Rate_raw);
                 writer.Write(Music_Skill_Major_Heal_Rand_Master_Rate_raw);
                 writer.Write(Music_Skill_Major_Heal_Rand_MR_Master_Rate_raw);
@@ -10308,11 +10308,11 @@ namespace MHW_Editor.Structs.PlData {
                 writer.Write(Unk80_raw);
                 writer.Write(Unk81_raw);
                 writer.Write(Unk82_raw);
-                writer.Write(Unk83_raw);
-                writer.Write(Unk84_raw);
-                writer.Write(Unk85_raw);
-                writer.Write(Unk86_raw);
-                writer.Write(Unk87_raw);
+                writer.Write(Music_Skill_Elemental_Effectiveness_Up_Base_Multiplier_raw);
+                writer.Write(Music_Skill_Elemental_Effectiveness_Up_Elem_attack_boost_S_Multiplier_raw);
+                writer.Write(Music_Skill_Elemental_Effectiveness_Up_Elem_attack_boost_L_Multiplier_raw);
+                writer.Write(Music_Skill_Elemental_Effectiveness_Up_Elem_resistance_up_raw);
+                writer.Write(Music_Skill_Elemental_Effectiveness_Up_Blight_Res_Up_Bonus_resistance_raw);
                 writer.Write(Unk88_raw);
                 writer.Write(Unk89_raw);
             }
@@ -10321,9 +10321,9 @@ namespace MHW_Editor.Structs.PlData {
                 return new ObservableCollection<MultiStructItemCustomView> {
                     new MultiStructItemCustomView(this, "Music Skill: Bless: Random Rate", "Music_Skill_Bless_Random_Rate", "Music_Skill_Bless_Random_Rate_offset"),
                     new MultiStructItemCustomView(this, "Music Skill: Bless: Damage Cut Rate", "Music_Skill_Bless_Damage_Cut_Rate", "Music_Skill_Bless_Damage_Cut_Rate_offset"),
-                    new MultiStructItemCustomView(this, "Music Skill: Extend: Time", "Music_Skill_Extend_Time", "Music_Skill_Extend_Time_offset"),
-                    new MultiStructItemCustomView(this, "Music Skill: Extend: Time Master", "Music_Skill_Extend_Time_Master", "Music_Skill_Extend_Time_Master_offset"),
-                    new MultiStructItemCustomView(this, "Music Skill: Extend: Time MR Master", "Music_Skill_Extend_Time_MR_Master", "Music_Skill_Extend_Time_MR_Master_offset"),
+                    new MultiStructItemCustomView(this, "Music Skill: Extend All Melodies: Time", "Music_Skill_Extend_All_Melodies_Time", "Music_Skill_Extend_All_Melodies_Time_offset"),
+                    new MultiStructItemCustomView(this, "Music Skill: Extend All Melodies: Time (Horn Maestro-1)", "Music_Skill_Extend_All_Melodies_Time_Horn_Maestro_1_", "Music_Skill_Extend_All_Melodies_Time_Horn_Maestro_1__offset"),
+                    new MultiStructItemCustomView(this, "Music Skill: Extend All Melodies: Time (Horn Maestro-2)", "Music_Skill_Extend_All_Melodies_Time_Horn_Maestro_2_", "Music_Skill_Extend_All_Melodies_Time_Horn_Maestro_2__offset"),
                     new MultiStructItemCustomView(this, "Music Skill: Major Heal: Rand Rate", "Music_Skill_Major_Heal_Rand_Rate", "Music_Skill_Major_Heal_Rand_Rate_offset"),
                     new MultiStructItemCustomView(this, "Music Skill: Major Heal: Rand Master Rate", "Music_Skill_Major_Heal_Rand_Master_Rate", "Music_Skill_Major_Heal_Rand_Master_Rate_offset"),
                     new MultiStructItemCustomView(this, "Music Skill: Major Heal: Rand MR Master Rate", "Music_Skill_Major_Heal_Rand_MR_Master_Rate", "Music_Skill_Major_Heal_Rand_MR_Master_Rate_offset"),
@@ -10342,11 +10342,11 @@ namespace MHW_Editor.Structs.PlData {
                     new MultiStructItemCustomView(this, "Unk80", "Unk80", "Unk80_offset"),
                     new MultiStructItemCustomView(this, "Unk81", "Unk81", "Unk81_offset"),
                     new MultiStructItemCustomView(this, "Unk82", "Unk82", "Unk82_offset"),
-                    new MultiStructItemCustomView(this, "Unk83", "Unk83", "Unk83_offset"),
-                    new MultiStructItemCustomView(this, "Unk84", "Unk84", "Unk84_offset"),
-                    new MultiStructItemCustomView(this, "Unk85", "Unk85", "Unk85_offset"),
-                    new MultiStructItemCustomView(this, "Unk86", "Unk86", "Unk86_offset"),
-                    new MultiStructItemCustomView(this, "Unk87", "Unk87", "Unk87_offset"),
+                    new MultiStructItemCustomView(this, "Music Skill: Elemental Effectiveness Up: Base Multiplier", "Music_Skill_Elemental_Effectiveness_Up_Base_Multiplier", "Music_Skill_Elemental_Effectiveness_Up_Base_Multiplier_offset"),
+                    new MultiStructItemCustomView(this, "Music Skill: Elemental Effectiveness Up: Elem-attack-boost-S Multiplier", "Music_Skill_Elemental_Effectiveness_Up_Elem_attack_boost_S_Multiplier", "Music_Skill_Elemental_Effectiveness_Up_Elem_attack_boost_S_Multiplier_offset"),
+                    new MultiStructItemCustomView(this, "Music Skill: Elemental Effectiveness Up: Elem-attack-boost-L Multiplier", "Music_Skill_Elemental_Effectiveness_Up_Elem_attack_boost_L_Multiplier", "Music_Skill_Elemental_Effectiveness_Up_Elem_attack_boost_L_Multiplier_offset"),
+                    new MultiStructItemCustomView(this, "Music Skill: Elemental Effectiveness Up: Elem-resistance-up", "Music_Skill_Elemental_Effectiveness_Up_Elem_resistance_up", "Music_Skill_Elemental_Effectiveness_Up_Elem_resistance_up_offset"),
+                    new MultiStructItemCustomView(this, "Music Skill: Elemental Effectiveness Up: Blight-Res-Up Bonus resistance", "Music_Skill_Elemental_Effectiveness_Up_Blight_Res_Up_Bonus_resistance", "Music_Skill_Elemental_Effectiveness_Up_Blight_Res_Up_Bonus_resistance_offset"),
                     new MultiStructItemCustomView(this, "Unk88", "Unk88", "Unk88_offset"),
                     new MultiStructItemCustomView(this, "Unk89", "Unk89", "Unk89_offset"),
                 };
